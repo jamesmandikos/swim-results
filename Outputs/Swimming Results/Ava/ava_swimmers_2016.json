@@ -1,0 +1,291 @@
+{
+  "club": "Chelsea & Westminster SC",
+  "gender": "Female",
+  "year_of_birth": 2016,
+  "swimmers": [
+    {
+      "name": "Olivia Cuffe",
+      "member_id": "1724379"
+    },
+    {
+      "name": "Viola Trickett",
+      "member_id": "1745717"
+    },
+    {
+      "name": "Rose Bridges",
+      "member_id": "1646680"
+    },
+    {
+      "name": "Colette Balcombe",
+      "member_id": "1763985"
+    },
+    {
+      "name": "Zimeng Liu",
+      "member_id": "1713486"
+    },
+    {
+      "name": "Aurelia Hall",
+      "member_id": "1722371"
+    },
+    {
+      "name": "Nova Burke",
+      "member_id": "1673626"
+    },
+    {
+      "name": "Sophia Alam",
+      "member_id": "1680374"
+    },
+    {
+      "name": "Giulia Briche",
+      "member_id": "1670282"
+    },
+    {
+      "name": "Maisy McGill",
+      "member_id": "1605139"
+    },
+    {
+      "name": "Luna Marley",
+      "member_id": "1716724"
+    },
+    {
+      "name": "Charlotte Ling",
+      "member_id": "1748276"
+    },
+    {
+      "name": "Aria Du",
+      "member_id": "1846166"
+    },
+    {
+      "name": "Julia Panzeri",
+      "member_id": "1612095"
+    },
+    {
+      "name": "Marlowe Barnes",
+      "member_id": "1832455"
+    },
+    {
+      "name": "Hana Bakhtar",
+      "member_id": "1797678"
+    },
+    {
+      "name": "Willow Green",
+      "member_id": "1698632"
+    },
+    {
+      "name": "Zeynep Delibasi",
+      "member_id": "1829952"
+    },
+    {
+      "name": "Claudia Husmann",
+      "member_id": "1661055"
+    },
+    {
+      "name": "Olivia Li",
+      "member_id": "1800524"
+    },
+    {
+      "name": "Yustyniia Pavlichenko",
+      "member_id": "1748283"
+    },
+    {
+      "name": "Grace Barchak",
+      "member_id": "1590603"
+    },
+    {
+      "name": "Sophie Davies",
+      "member_id": "1705238"
+    },
+    {
+      "name": "Gytte Gniewosz",
+      "member_id": "1800512"
+    },
+    {
+      "name": "Sara Virani",
+      "member_id": "1800513"
+    },
+    {
+      "name": "Romilly Burton",
+      "member_id": "1708355"
+    },
+    {
+      "name": "Louisa Ely",
+      "member_id": "1845919"
+    },
+    {
+      "name": "Dahlia Spillane",
+      "member_id": "1784608"
+    },
+    {
+      "name": "Elodie Scorer",
+      "member_id": "1779245"
+    },
+    {
+      "name": "Mila Gutnik",
+      "member_id": "1766884"
+    },
+    {
+      "name": "Diana Dohova",
+      "member_id": "1687182"
+    },
+    {
+      "name": "Victoria Dohring",
+      "member_id": "1695834"
+    },
+    {
+      "name": "Ana Valdivieso Rosetti",
+      "member_id": "1609079"
+    },
+    {
+      "name": "Luana Christie",
+      "member_id": "1653194"
+    },
+    {
+      "name": "Aaliyah Allam",
+      "member_id": "1736594"
+    },
+    {
+      "name": "Elliana Patricio",
+      "member_id": "1779239"
+    },
+    {
+      "name": "Alba Williams",
+      "member_id": "1670281"
+    },
+    {
+      "name": "Isabel Yuqi Shuang",
+      "member_id": "1757815"
+    },
+    {
+      "name": "Vita Fallesen",
+      "member_id": "1710204"
+    },
+    {
+      "name": "Arielle Williams",
+      "member_id": "1670266"
+    },
+    {
+      "name": "Sophia Gu",
+      "member_id": "1727501"
+    },
+    {
+      "name": "Georgiana Speight",
+      "member_id": "1670299"
+    },
+    {
+      "name": "Julia Zaprawa",
+      "member_id": "1800560"
+    },
+    {
+      "name": "Matilda Mould",
+      "member_id": "1711133"
+    },
+    {
+      "name": "Alice Tinto",
+      "member_id": "1656044"
+    },
+    {
+      "name": "Clementine Clark",
+      "member_id": "1766880"
+    },
+    {
+      "name": "Lena Helli",
+      "member_id": "1829955"
+    },
+    {
+      "name": "Jade McEvilly",
+      "member_id": "1711127"
+    },
+    {
+      "name": "Emilia Cass",
+      "member_id": "1703314"
+    },
+    {
+      "name": "Flora Maclean",
+      "member_id": "1816964"
+    },
+    {
+      "name": "Georgia Burt",
+      "member_id": "1766877"
+    },
+    {
+      "name": "Catherine Coleman",
+      "member_id": "1817794"
+    },
+    {
+      "name": "Letizia Discepoli",
+      "member_id": "1501049"
+    },
+    {
+      "name": "Ellen Secker",
+      "member_id": "1757820"
+    },
+    {
+      "name": "Jianing Peng",
+      "member_id": "1687196"
+    },
+    {
+      "name": "Eleonore Bihari - Van Den Kieboom",
+      "member_id": "1833574"
+    },
+    {
+      "name": "Angelia Yu",
+      "member_id": "1817797"
+    },
+    {
+      "name": "Clara Pasalic",
+      "member_id": "1713482"
+    },
+    {
+      "name": "Alexandra Demetriad",
+      "member_id": "1733717"
+    },
+    {
+      "name": "Rania Puccia",
+      "member_id": "1663820"
+    },
+    {
+      "name": "Sumiko Tsutsui Guerra",
+      "member_id": "1763618"
+    },
+    {
+      "name": "Caterina Brugnolo",
+      "member_id": "1745747"
+    },
+    {
+      "name": "Jana Pflieger",
+      "member_id": "1722377"
+    },
+    {
+      "name": "Rose Cobby",
+      "member_id": "1495613"
+    },
+    {
+      "name": "Olivia Main",
+      "member_id": "1804427"
+    },
+    {
+      "name": "Joelle Mirza",
+      "member_id": "1827175"
+    },
+    {
+      "name": "Iona Tait",
+      "member_id": "1574199"
+    },
+    {
+      "name": "Alexandra Tait",
+      "member_id": "1574200"
+    },
+    {
+      "name": "Teresa Wang",
+      "member_id": "1816961"
+    },
+    {
+      "name": "Asta Nilsson",
+      "member_id": "1804436"
+    },
+    {
+      "name": "Isla Taylor",
+      "member_id": "1816458"
+    }
+  ]
+}

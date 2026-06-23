@@ -1,0 +1,1057 @@
+{
+  "Matilda Tran": {
+    "50 Free|LC": {
+      "time_str": "28.96",
+      "time_secs": 28.96,
+      "date_str": "16/03/25",
+      "converted": "28.20",
+      "meet_str": "The Derby Excel Spring Qualifier 2025"
+    },
+    "100 Free|LC": {
+      "time_str": "1:03.93",
+      "time_secs": 63.93,
+      "date_str": "15/02/25",
+      "converted": "1:02.60",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "200 Free|LC": {
+      "time_str": "2:23.73",
+      "time_secs": 143.73,
+      "date_str": "22/06/25",
+      "converted": "2:21.30",
+      "meet_str": "Gators Summer Gala 2025"
+    },
+    "400 Free|LC": {
+      "time_str": "5:12.94",
+      "time_secs": 312.94,
+      "date_str": "09/02/25",
+      "converted": "5:08.40",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "50 Breast|LC": {
+      "time_str": "42.41",
+      "time_secs": 42.41,
+      "date_str": "28/01/24",
+      "converted": "41.70",
+      "meet_str": "2024 Middlesex County Championships"
+    },
+    "50 Fly|LC": {
+      "time_str": "30.96",
+      "time_secs": 30.96,
+      "date_str": "16/03/25",
+      "converted": "30.30",
+      "meet_str": "The Derby Excel Spring Qualifier 2025"
+    },
+    "100 Fly|LC": {
+      "time_str": "1:10.64",
+      "time_secs": 70.64,
+      "date_str": "26/04/25",
+      "converted": "1:09.60",
+      "meet_str": "SE London Summer Championships 2025"
+    },
+    "50 Back|LC": {
+      "time_str": "34.81",
+      "time_secs": 34.81,
+      "date_str": "08/02/25",
+      "converted": "34.20",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "100 Back|LC": {
+      "time_str": "1:16.56",
+      "time_secs": 76.56,
+      "date_str": "15/03/26",
+      "converted": "1:15.50",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "200 Back|LC": {
+      "time_str": "2:55.31",
+      "time_secs": 175.31,
+      "date_str": "23/07/23",
+      "converted": "2:53.40",
+      "meet_str": "Winchester City Penguins Summer Scorcher 2023"
+    },
+    "200 IM|LC": {
+      "time_str": "2:46.21",
+      "time_secs": 166.21,
+      "date_str": "14/03/26",
+      "converted": "2:43.80",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "50 Free|SC": {
+      "time_str": "28.59",
+      "time_secs": 28.59,
+      "date_str": "29/11/25",
+      "converted": "29.30",
+      "meet_str": "Ealing SC Xmas County Qualifier 2025"
+    },
+    "100 Free|SC": {
+      "time_str": "1:03.05",
+      "time_secs": 63.05,
+      "date_str": "29/11/25",
+      "converted": "1:04.40",
+      "meet_str": "Ealing SC Xmas County Qualifier 2025"
+    },
+    "200 Free|SC": {
+      "time_str": "2:21.46",
+      "time_secs": 141.46,
+      "date_str": "09/11/25",
+      "converted": "2:23.90",
+      "meet_str": "Brompton SC 2025 Winter Club Championships"
+    },
+    "400 Free|SC": {
+      "time_str": "4:56.04",
+      "time_secs": 296.04,
+      "date_str": "12/07/25",
+      "converted": "5:00.70",
+      "meet_str": "Ealing SC End of Season Summer Splash 2025"
+    },
+    "50 Breast|SC": {
+      "time_str": "42.57",
+      "time_secs": 42.57,
+      "date_str": "08/10/23",
+      "converted": "43.30",
+      "meet_str": "Saxon Crown (Lewisham) SC Autumn Showdown 2023"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:36.01",
+      "time_secs": 96.00999999999999,
+      "date_str": "08/05/22",
+      "converted": "1:37.30",
+      "meet_str": "MCASA Middlesex May Open"
+    },
+    "200 Breast|SC": {
+      "time_str": "3:26.42",
+      "time_secs": 206.42000000000002,
+      "date_str": "16/07/22",
+      "converted": "3:29.00",
+      "meet_str": "Swim Bournemouth L3 Summer Splash"
+    },
+    "50 Fly|SC": {
+      "time_str": "31.53",
+      "time_secs": 31.53,
+      "date_str": "13/07/25",
+      "converted": "32.10",
+      "meet_str": "Ealing SC End of Season Summer Splash 2025"
+    },
+    "100 Fly|SC": {
+      "time_str": "1:09.50",
+      "time_secs": 69.5,
+      "date_str": "01/11/25",
+      "converted": "1:10.60",
+      "meet_str": "SE London Winter Championships 2025"
+    },
+    "50 Back|SC": {
+      "time_str": "33.49",
+      "time_secs": 33.49,
+      "date_str": "30/11/25",
+      "converted": "34.10",
+      "meet_str": "Ealing SC Xmas County Qualifier 2025"
+    },
+    "100 Back|SC": {
+      "time_str": "1:13.19",
+      "time_secs": 73.19,
+      "date_str": "12/07/25",
+      "converted": "1:14.30",
+      "meet_str": "Ealing SC End of Season Summer Splash 2025"
+    },
+    "200 Back|SC": {
+      "time_str": "2:54.41",
+      "time_secs": 174.41,
+      "date_str": "25/06/23",
+      "converted": "2:56.30",
+      "meet_str": "Brompton SC Summer Club Championship Meet 2023"
+    },
+    "200 IM|SC": {
+      "time_str": "2:45.00",
+      "time_secs": 165.0,
+      "date_str": "23/11/24",
+      "converted": "2:47.40",
+      "meet_str": "Brompton SC 2024 Winter Club Championships"
+    },
+    "100 IM|SC": {
+      "time_str": "1:18.27",
+      "time_secs": 78.27,
+      "date_str": "02/03/24",
+      "converted": "1:18.30",
+      "meet_str": "Ealing SC 2024 Regional Qualifier Open Meet"
+    }
+  },
+  "Elizabete Kuduma": {
+    "50 Free|LC": {
+      "time_str": "29.26",
+      "time_secs": 29.26,
+      "date_str": "26/04/26",
+      "converted": "28.50",
+      "meet_str": "SE London Summer Championships 2026"
+    },
+    "100 Free|LC": {
+      "time_str": "1:02.47",
+      "time_secs": 62.47,
+      "date_str": "02/05/26",
+      "converted": "1:01.10",
+      "meet_str": "SE London Summer Championships 2026"
+    },
+    "200 Free|LC": {
+      "time_str": "2:16.83",
+      "time_secs": 136.82999999999998,
+      "date_str": "22/03/26",
+      "converted": "2:14.30",
+      "meet_str": "Winchester City Penguins Spring Qualifier 2026"
+    },
+    "400 Free|LC": {
+      "time_str": "4:54.73",
+      "time_secs": 294.73,
+      "date_str": "09/02/25",
+      "converted": "4:49.90",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "50 Breast|LC": {
+      "time_str": "36.86",
+      "time_secs": 36.86,
+      "date_str": "04/05/24",
+      "converted": "36.00",
+      "meet_str": "SE London Region Summer Championships 2024"
+    },
+    "100 Breast|LC": {
+      "time_str": "1:23.22",
+      "time_secs": 83.22,
+      "date_str": "23/04/23",
+      "converted": "1:21.70",
+      "meet_str": "SE London Summer Championships 2023"
+    },
+    "200 Breast|LC": {
+      "time_str": "2:59.83",
+      "time_secs": 179.82999999999998,
+      "date_str": "05/05/24",
+      "converted": "2:56.90",
+      "meet_str": "SE London Region Summer Championships 2024"
+    },
+    "50 Fly|LC": {
+      "time_str": "33.11",
+      "time_secs": 33.11,
+      "date_str": "22/09/24",
+      "converted": "32.50",
+      "meet_str": "Bo Waltham Forest Gators Autumn LAC Gala 2024"
+    },
+    "50 Back|LC": {
+      "time_str": "32.49",
+      "time_secs": 32.49,
+      "date_str": "23/05/26",
+      "converted": "31.90",
+      "meet_str": "AP Race London International 2026"
+    },
+    "100 Back|LC": {
+      "time_str": "1:11.26",
+      "time_secs": 71.26,
+      "date_str": "14/02/26",
+      "converted": "1:10.10",
+      "meet_str": "2026 Middlesex County Championships"
+    },
+    "200 Back|LC": {
+      "time_str": "2:44.17",
+      "time_secs": 164.17000000000002,
+      "date_str": "25/03/23",
+      "converted": "2:42.10",
+      "meet_str": "Rushmoor Royals SC Spring Open Meet 2023"
+    },
+    "200 IM|LC": {
+      "time_str": "2:38.87",
+      "time_secs": 158.87,
+      "date_str": "08/02/25",
+      "converted": "2:36.40",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "50 Free|SC": {
+      "time_str": "28.45",
+      "time_secs": 28.45,
+      "date_str": "02/11/25",
+      "converted": "29.20",
+      "meet_str": "SE London Winter Championships 2025"
+    },
+    "100 Free|SC": {
+      "time_str": "1:02.02",
+      "time_secs": 62.02,
+      "date_str": "03/11/24",
+      "converted": "1:03.40",
+      "meet_str": "SE London Region Winter Championships 2024"
+    },
+    "200 Free|SC": {
+      "time_str": "2:13.73",
+      "time_secs": 133.73,
+      "date_str": "02/11/24",
+      "converted": "2:16.30",
+      "meet_str": "SE London Region Winter Championships 2024"
+    },
+    "400 Free|SC": {
+      "time_str": "4:47.89",
+      "time_secs": 287.89,
+      "date_str": "19/10/24",
+      "converted": "4:52.70",
+      "meet_str": "Cambridge Grand Prix 2024"
+    },
+    "50 Breast|SC": {
+      "time_str": "36.37",
+      "time_secs": 36.37,
+      "date_str": "23/11/25",
+      "converted": "37.20",
+      "meet_str": "Stockport Metro November Short Course Meet 2025"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:23.84",
+      "time_secs": 83.84,
+      "date_str": "04/11/23",
+      "converted": "1:25.30",
+      "meet_str": "SE London Winter Championships 2023"
+    },
+    "200 Breast|SC": {
+      "time_str": "2:59.46",
+      "time_secs": 179.46,
+      "date_str": "05/11/23",
+      "converted": "3:02.40",
+      "meet_str": "SE London Winter Championships 2023"
+    },
+    "50 Fly|SC": {
+      "time_str": "32.96",
+      "time_secs": 32.96,
+      "date_str": "08/12/24",
+      "converted": "33.50",
+      "meet_str": "Ealing SC 2024 XMAS County Qualifier Open 2024"
+    },
+    "100 Fly|SC": {
+      "time_str": "1:23.58",
+      "time_secs": 83.58,
+      "date_str": "25/06/23",
+      "converted": "1:24.50",
+      "meet_str": "Brompton SC Summer Club Championship Meet 2023"
+    },
+    "50 Back|SC": {
+      "time_str": "32.20",
+      "time_secs": 32.2,
+      "date_str": "01/03/26",
+      "converted": "32.80",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "100 Back|SC": {
+      "time_str": "1:08.19",
+      "time_secs": 68.19,
+      "date_str": "02/11/25",
+      "converted": "1:09.40",
+      "meet_str": "SE London Winter Championships 2025"
+    },
+    "200 Back|SC": {
+      "time_str": "2:37.07",
+      "time_secs": 157.07,
+      "date_str": "04/10/25",
+      "converted": "2:39.20",
+      "meet_str": "Winchester Autumn Qualifier 2025"
+    },
+    "200 IM|SC": {
+      "time_str": "2:41.06",
+      "time_secs": 161.06,
+      "date_str": "23/11/25",
+      "converted": "2:43.50",
+      "meet_str": "Stockport Metro November Short Course Meet 2025"
+    },
+    "400 IM|SC": {
+      "time_str": "6:03.89",
+      "time_secs": 363.89,
+      "date_str": "23/06/24",
+      "converted": "6:08.70",
+      "meet_str": "2024 Brompton SC Summer Club Champs"
+    },
+    "100 IM|SC": {
+      "time_str": "1:11.83",
+      "time_secs": 71.83,
+      "date_str": "02/11/24",
+      "converted": "1:11.80",
+      "meet_str": "SE London Region Winter Championships 2024"
+    }
+  },
+  "Kathryn Schreiber": {
+    "50 Free|LC": {
+      "time_str": "29.88",
+      "time_secs": 29.88,
+      "date_str": "24/05/25",
+      "converted": "29.20",
+      "meet_str": "AP Race London International 2025"
+    },
+    "100 Free|LC": {
+      "time_str": "1:05.01",
+      "time_secs": 65.01,
+      "date_str": "26/05/25",
+      "converted": "1:03.70",
+      "meet_str": "AP Race London International 2025"
+    },
+    "200 Free|LC": {
+      "time_str": "2:23.76",
+      "time_secs": 143.76,
+      "date_str": "15/02/25",
+      "converted": "2:21.30",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "50 Breast|LC": {
+      "time_str": "42.86",
+      "time_secs": 42.86,
+      "date_str": "16/03/25",
+      "converted": "42.10",
+      "meet_str": "CWSC + Millfield School 2025 March Grand Prix"
+    },
+    "100 Breast|LC": {
+      "time_str": "1:32.01",
+      "time_secs": 92.00999999999999,
+      "date_str": "18/07/24",
+      "converted": "1:30.60",
+      "meet_str": "New Member Long Course"
+    },
+    "50 Fly|LC": {
+      "time_str": "32.14",
+      "time_secs": 32.14,
+      "date_str": "24/05/26",
+      "converted": "31.50",
+      "meet_str": "AP Race London International 2026"
+    },
+    "100 Fly|LC": {
+      "time_str": "1:24.07",
+      "time_secs": 84.07,
+      "date_str": "17/07/24",
+      "converted": "1:23.20",
+      "meet_str": "New Member Long Course"
+    },
+    "100 Back|LC": {
+      "time_str": "1:18.05",
+      "time_secs": 78.05,
+      "date_str": "25/05/25",
+      "converted": "1:17.00",
+      "meet_str": "AP Race London International 2025"
+    },
+    "200 Back|LC": {
+      "time_str": "3:01.66",
+      "time_secs": 181.66,
+      "date_str": "17/07/24",
+      "converted": "2:59.80",
+      "meet_str": "New Member Long Course"
+    },
+    "200 IM|LC": {
+      "time_str": "2:50.04",
+      "time_secs": 170.04,
+      "date_str": "12/04/25",
+      "converted": "2:47.70",
+      "meet_str": "London Legacy Swimming Meet 2025"
+    },
+    "400 IM|LC": {
+      "time_str": "6:21.74",
+      "time_secs": 381.74,
+      "date_str": "26/04/24",
+      "converted": "6:17.10",
+      "meet_str": "New Member Long Course"
+    },
+    "50 Free|SC": {
+      "time_str": "28.97",
+      "time_secs": 28.97,
+      "date_str": "08/12/24",
+      "converted": "29.70",
+      "meet_str": "Newham UEL SC Late County Qualifier Open Meet 2024"
+    },
+    "100 Free|SC": {
+      "time_str": "1:04.77",
+      "time_secs": 64.77,
+      "date_str": "29/11/25",
+      "converted": "1:06.00",
+      "meet_str": "Ealing SC Xmas County Qualifier 2025"
+    },
+    "200 Free|SC": {
+      "time_str": "2:17.66",
+      "time_secs": 137.66,
+      "date_str": "08/12/24",
+      "converted": "2:20.20",
+      "meet_str": "Newham UEL SC Late County Qualifier Open Meet 2024"
+    },
+    "50 Breast|SC": {
+      "time_str": "41.64",
+      "time_secs": 41.64,
+      "date_str": "29/11/25",
+      "converted": "42.40",
+      "meet_str": "Ealing SC Xmas County Qualifier 2025"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:26.57",
+      "time_secs": 86.57,
+      "date_str": "08/12/24",
+      "converted": "1:28.00",
+      "meet_str": "Newham UEL SC Late County Qualifier Open Meet 2024"
+    },
+    "50 Fly|SC": {
+      "time_str": "31.70",
+      "time_secs": 31.7,
+      "date_str": "02/11/25",
+      "converted": "32.30",
+      "meet_str": "SE London Winter Championships 2025"
+    },
+    "100 Fly|SC": {
+      "time_str": "1:13.46",
+      "time_secs": 73.46000000000001,
+      "date_str": "01/03/26",
+      "converted": "1:14.50",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "50 Back|SC": {
+      "time_str": "36.23",
+      "time_secs": 36.23,
+      "date_str": "01/03/26",
+      "converted": "36.80",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "200 IM|SC": {
+      "time_str": "2:45.42",
+      "time_secs": 165.42000000000002,
+      "date_str": "07/12/24",
+      "converted": "2:47.80",
+      "meet_str": "Newham UEL SC Late County Qualifier Open Meet 2024"
+    },
+    "100 IM|SC": {
+      "time_str": "1:20.82",
+      "time_secs": 80.82,
+      "date_str": "07/06/26",
+      "converted": "1:20.80",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    }
+  },
+  "Martina Bonetti": {
+    "50 Free|LC": {
+      "time_str": "30.63",
+      "time_secs": 30.63,
+      "date_str": "23/03/24",
+      "converted": "29.90",
+      "meet_str": "Newham & UEL SC National Qualifier Open Meet 2024"
+    },
+    "100 Free|LC": {
+      "time_str": "1:07.36",
+      "time_secs": 67.36,
+      "date_str": "24/03/24",
+      "converted": "1:06.10",
+      "meet_str": "Newham & UEL SC National Qualifier Open Meet 2024"
+    },
+    "50 Breast|LC": {
+      "time_str": "38.35",
+      "time_secs": 38.35,
+      "date_str": "09/02/25",
+      "converted": "37.50",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "100 Breast|LC": {
+      "time_str": "1:21.97",
+      "time_secs": 81.97,
+      "date_str": "06/05/24",
+      "converted": "1:20.40",
+      "meet_str": "SE London Region Summer Championships 2024"
+    },
+    "200 Breast|LC": {
+      "time_str": "2:54.59",
+      "time_secs": 174.59,
+      "date_str": "15/03/26",
+      "converted": "2:51.50",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "50 Fly|LC": {
+      "time_str": "30.91",
+      "time_secs": 30.91,
+      "date_str": "09/02/25",
+      "converted": "30.30",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "100 Fly|LC": {
+      "time_str": "1:09.41",
+      "time_secs": 69.41,
+      "date_str": "16/02/25",
+      "converted": "1:08.30",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "200 Fly|LC": {
+      "time_str": "2:40.71",
+      "time_secs": 160.71,
+      "date_str": "03/05/25",
+      "converted": "2:38.70",
+      "meet_str": "SE London Summer Championships 2025"
+    },
+    "50 Back|LC": {
+      "time_str": "34.20",
+      "time_secs": 34.2,
+      "date_str": "28/03/26",
+      "converted": "33.60",
+      "meet_str": "London Legacy Swimming Meet 2026 (Long Course)"
+    },
+    "100 Back|LC": {
+      "time_str": "1:15.58",
+      "time_secs": 75.58,
+      "date_str": "15/02/25",
+      "converted": "1:14.50",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "200 IM|LC": {
+      "time_str": "2:39.55",
+      "time_secs": 159.55,
+      "date_str": "08/02/25",
+      "converted": "2:37.10",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "50 Free|SC": {
+      "time_str": "30.55",
+      "time_secs": 30.55,
+      "date_str": "18/11/23",
+      "converted": "31.20",
+      "meet_str": "Brompton SC 2023 Winter Club Championships"
+    },
+    "100 Free|SC": {
+      "time_str": "1:08.35",
+      "time_secs": 68.35,
+      "date_str": "02/12/23",
+      "converted": "1:09.60",
+      "meet_str": "Ealing SC 2023 XMAS County Qualifier"
+    },
+    "200 Free|SC": {
+      "time_str": "2:37.22",
+      "time_secs": 157.22,
+      "date_str": "11/06/22",
+      "converted": "2:39.40",
+      "meet_str": "Ealing SC Summer Open"
+    },
+    "50 Breast|SC": {
+      "time_str": "37.96",
+      "time_secs": 37.96,
+      "date_str": "23/11/25",
+      "converted": "38.80",
+      "meet_str": "Stockport Metro November Short Course Meet 2025"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:20.20",
+      "time_secs": 80.2,
+      "date_str": "01/03/26",
+      "converted": "1:21.80",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "200 Breast|SC": {
+      "time_str": "2:51.72",
+      "time_secs": 171.72,
+      "date_str": "02/11/25",
+      "converted": "2:54.80",
+      "meet_str": "SE London Winter Championships 2025"
+    },
+    "50 Fly|SC": {
+      "time_str": "31.34",
+      "time_secs": 31.34,
+      "date_str": "01/03/26",
+      "converted": "31.90",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "100 Fly|SC": {
+      "time_str": "1:10.08",
+      "time_secs": 70.08,
+      "date_str": "01/03/26",
+      "converted": "1:11.20",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "200 Fly|SC": {
+      "time_str": "2:43.65",
+      "time_secs": 163.65,
+      "date_str": "24/11/24",
+      "converted": "2:45.60",
+      "meet_str": "Brompton SC 2024 Winter Club Championships"
+    },
+    "50 Back|SC": {
+      "time_str": "33.43",
+      "time_secs": 33.43,
+      "date_str": "01/11/25",
+      "converted": "34.00",
+      "meet_str": "SE London Winter Championships 2025"
+    },
+    "100 Back|SC": {
+      "time_str": "1:13.82",
+      "time_secs": 73.82,
+      "date_str": "02/03/24",
+      "converted": "1:14.90",
+      "meet_str": "Ealing SC 2024 Regional Qualifier Open Meet"
+    },
+    "200 IM|SC": {
+      "time_str": "2:36.93",
+      "time_secs": 156.93,
+      "date_str": "23/11/24",
+      "converted": "2:39.40",
+      "meet_str": "Brompton SC 2024 Winter Club Championships"
+    },
+    "100 IM|SC": {
+      "time_str": "1:13.73",
+      "time_secs": 73.73,
+      "date_str": "03/12/23",
+      "converted": "1:13.70",
+      "meet_str": "Ealing SC 2023 XMAS County Qualifier"
+    }
+  },
+  "Eva Dramitinos": {
+    "50 Free|LC": {
+      "time_str": "27.85",
+      "time_secs": 27.85,
+      "date_str": "26/04/26",
+      "converted": "27.10",
+      "meet_str": "SE London Summer Championships 2026"
+    },
+    "100 Free|LC": {
+      "time_str": "1:00.99",
+      "time_secs": 60.99,
+      "date_str": "03/05/25",
+      "converted": "59.60",
+      "meet_str": "SE London Summer Championships 2025"
+    },
+    "200 Free|LC": {
+      "time_str": "2:19.62",
+      "time_secs": 139.62,
+      "date_str": "09/03/24",
+      "converted": "2:17.10",
+      "meet_str": "Chelsea & Westminster & Millfield March Grand Prix"
+    },
+    "50 Breast|LC": {
+      "time_str": "41.79",
+      "time_secs": 41.79,
+      "date_str": "07/05/22",
+      "converted": "41.00",
+      "meet_str": "NUEL SC National Qualifier Open Meet 2022"
+    },
+    "50 Fly|LC": {
+      "time_str": "29.35",
+      "time_secs": 29.35,
+      "date_str": "03/08/24",
+      "converted": "28.70",
+      "meet_str": "GoCardless Swim England National Summer Meet 2024"
+    },
+    "100 Fly|LC": {
+      "time_str": "1:07.85",
+      "time_secs": 67.85,
+      "date_str": "09/03/24",
+      "converted": "1:06.70",
+      "meet_str": "Chelsea & Westminster & Millfield March Grand Prix"
+    },
+    "50 Back|LC": {
+      "time_str": "35.61",
+      "time_secs": 35.61,
+      "date_str": "11/03/23",
+      "converted": "35.00",
+      "meet_str": "Derventio eXcel Early March Meet 2023"
+    },
+    "100 Back|LC": {
+      "time_str": "1:19.67",
+      "time_secs": 79.67,
+      "date_str": "07/05/22",
+      "converted": "1:18.70",
+      "meet_str": "NUEL SC National Qualifier Open Meet 2022"
+    },
+    "200 Back|LC": {
+      "time_str": "2:56.70",
+      "time_secs": 176.7,
+      "date_str": "18/12/22",
+      "converted": "2:54.80",
+      "meet_str": "Winchester Winter Sparkler Meet 2022"
+    },
+    "200 IM|LC": {
+      "time_str": "2:44.19",
+      "time_secs": 164.19,
+      "date_str": "27/01/24",
+      "converted": "2:41.80",
+      "meet_str": "2024 Middlesex County Championships"
+    },
+    "50 Free|SC": {
+      "time_str": "27.73",
+      "time_secs": 27.73,
+      "date_str": "08/12/24",
+      "converted": "28.50",
+      "meet_str": "Newham UEL SC Late County Qualifier Open Meet 2024"
+    },
+    "100 Free|SC": {
+      "time_str": "1:01.10",
+      "time_secs": 61.1,
+      "date_str": "07/12/24",
+      "converted": "1:02.50",
+      "meet_str": "Newham UEL SC Late County Qualifier Open Meet 2024"
+    },
+    "200 Free|SC": {
+      "time_str": "2:13.83",
+      "time_secs": 133.83,
+      "date_str": "08/12/24",
+      "converted": "2:16.40",
+      "meet_str": "Newham UEL SC Late County Qualifier Open Meet 2024"
+    },
+    "400 Free|SC": {
+      "time_str": "5:33.93",
+      "time_secs": 333.93,
+      "date_str": "26/06/22",
+      "converted": "5:38.10",
+      "meet_str": "2022 CWSC Club Championships"
+    },
+    "50 Breast|SC": {
+      "time_str": "41.63",
+      "time_secs": 41.63,
+      "date_str": "19/11/22",
+      "converted": "42.40",
+      "meet_str": "Guildford City SC Level 2 Winter Open"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:33.70",
+      "time_secs": 93.7,
+      "date_str": "26/06/22",
+      "converted": "1:35.00",
+      "meet_str": "2022 CWSC Club Championships"
+    },
+    "200 Breast|SC": {
+      "time_str": "4:00.99",
+      "time_secs": 240.99,
+      "date_str": "23/03/19",
+      "converted": "4:03.20",
+      "meet_str": "Middx Spring Development Meet 2019"
+    },
+    "50 Fly|SC": {
+      "time_str": "29.74",
+      "time_secs": 29.74,
+      "date_str": "03/11/24",
+      "converted": "30.40",
+      "meet_str": "SE London Region Winter Championships 2024"
+    },
+    "100 Fly|SC": {
+      "time_str": "1:06.27",
+      "time_secs": 66.27,
+      "date_str": "02/11/24",
+      "converted": "1:07.40",
+      "meet_str": "SE London Region Winter Championships 2024"
+    },
+    "200 Fly|SC": {
+      "time_str": "2:39.94",
+      "time_secs": 159.94,
+      "date_str": "03/11/24",
+      "converted": "2:41.90",
+      "meet_str": "SE London Region Winter Championships 2024"
+    },
+    "50 Back|SC": {
+      "time_str": "34.92",
+      "time_secs": 34.92,
+      "date_str": "23/10/23",
+      "converted": "35.50",
+      "meet_str": "CW+Millfield Int'l Meet Part of 23/24 Arena Series"
+    },
+    "100 Back|SC": {
+      "time_str": "1:15.74",
+      "time_secs": 75.74,
+      "date_str": "09/12/23",
+      "converted": "1:16.80",
+      "meet_str": "2023 Cheslsea & Westminster Dec Duel in the Pool"
+    },
+    "200 Back|SC": {
+      "time_str": "2:54.06",
+      "time_secs": 174.06,
+      "date_str": "26/06/22",
+      "converted": "2:56.00",
+      "meet_str": "2022 CWSC Club Championships"
+    },
+    "200 IM|SC": {
+      "time_str": "2:55.60",
+      "time_secs": 175.6,
+      "date_str": "15/01/22",
+      "converted": "2:57.80",
+      "meet_str": "The Royals New Year Meet 2022"
+    },
+    "400 IM|SC": {
+      "time_str": "7:15.13",
+      "time_secs": 435.13,
+      "date_str": "03/07/21",
+      "converted": "7:19.20",
+      "meet_str": "2021 CWSC Club Championships"
+    },
+    "100 IM|SC": {
+      "time_str": "1:14.64",
+      "time_secs": 74.64,
+      "date_str": "18/11/23",
+      "converted": "1:14.60",
+      "meet_str": "Guildford City L2 Winter Open Meet 2023"
+    }
+  },
+  "Alice Man": {
+    "50 Free|LC": {
+      "time_str": "28.97",
+      "time_secs": 28.97,
+      "date_str": "28/04/24",
+      "converted": "28.20",
+      "meet_str": "SE London Region Summer Championships 2024"
+    },
+    "100 Free|LC": {
+      "time_str": "1:04.19",
+      "time_secs": 64.19,
+      "date_str": "16/03/25",
+      "converted": "1:02.90",
+      "meet_str": "The Derby Excel Spring Qualifier 2025"
+    },
+    "200 Free|LC": {
+      "time_str": "2:24.17",
+      "time_secs": 144.17000000000002,
+      "date_str": "09/06/24",
+      "converted": "2:21.70",
+      "meet_str": "Bo Waltham Gators Early Summer LAC Gala 2024"
+    },
+    "50 Breast|LC": {
+      "time_str": "37.84",
+      "time_secs": 37.84,
+      "date_str": "09/02/25",
+      "converted": "37.00",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "100 Breast|LC": {
+      "time_str": "1:23.17",
+      "time_secs": 83.17,
+      "date_str": "05/05/25",
+      "converted": "1:21.60",
+      "meet_str": "SE London Summer Championships 2025"
+    },
+    "200 Breast|LC": {
+      "time_str": "2:57.81",
+      "time_secs": 177.81,
+      "date_str": "05/05/24",
+      "converted": "2:54.80",
+      "meet_str": "SE London Region Summer Championships 2024"
+    },
+    "50 Fly|LC": {
+      "time_str": "31.30",
+      "time_secs": 31.3,
+      "date_str": "26/05/24",
+      "converted": "30.70",
+      "meet_str": "AP Race International 2024"
+    },
+    "100 Fly|LC": {
+      "time_str": "1:14.19",
+      "time_secs": 74.19,
+      "date_str": "09/06/24",
+      "converted": "1:13.20",
+      "meet_str": "Bo Waltham Gators Early Summer LAC Gala 2024"
+    },
+    "50 Back|LC": {
+      "time_str": "32.82",
+      "time_secs": 32.82,
+      "date_str": "26/04/25",
+      "converted": "32.20",
+      "meet_str": "SE London Summer Championships 2025"
+    },
+    "100 Back|LC": {
+      "time_str": "1:11.93",
+      "time_secs": 71.93,
+      "date_str": "16/03/25",
+      "converted": "1:10.80",
+      "meet_str": "The Derby Excel Spring Qualifier 2025"
+    },
+    "200 Back|LC": {
+      "time_str": "2:40.27",
+      "time_secs": 160.27,
+      "date_str": "28/04/24",
+      "converted": "2:38.20",
+      "meet_str": "SE London Region Summer Championships 2024"
+    },
+    "200 IM|LC": {
+      "time_str": "2:36.33",
+      "time_secs": 156.32999999999998,
+      "date_str": "26/05/25",
+      "converted": "2:33.80",
+      "meet_str": "AP Race London International 2025"
+    },
+    "50 Free|SC": {
+      "time_str": "28.89",
+      "time_secs": 28.89,
+      "date_str": "22/11/25",
+      "converted": "29.60",
+      "meet_str": "Stockport Metro November Short Course Meet 2025"
+    },
+    "100 Free|SC": {
+      "time_str": "1:03.77",
+      "time_secs": 63.77,
+      "date_str": "02/12/23",
+      "converted": "1:05.10",
+      "meet_str": "Ealing SC 2023 XMAS County Qualifier"
+    },
+    "200 Free|SC": {
+      "time_str": "2:23.87",
+      "time_secs": 143.87,
+      "date_str": "19/11/23",
+      "converted": "2:26.30",
+      "meet_str": "Brompton SC 2023 Winter Club Championships"
+    },
+    "400 Free|SC": {
+      "time_str": "5:15.38",
+      "time_secs": 315.38,
+      "date_str": "28/10/23",
+      "converted": "5:19.80",
+      "meet_str": "Ealing Autumn 2023 Lv4 Invite 2023"
+    },
+    "50 Breast|SC": {
+      "time_str": "36.97",
+      "time_secs": 36.97,
+      "date_str": "23/11/25",
+      "converted": "37.80",
+      "meet_str": "Stockport Metro November Short Course Meet 2025"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:20.90",
+      "time_secs": 80.9,
+      "date_str": "04/10/25",
+      "converted": "1:22.40",
+      "meet_str": "Winchester Autumn Qualifier 2025"
+    },
+    "200 Breast|SC": {
+      "time_str": "2:54.36",
+      "time_secs": 174.36,
+      "date_str": "05/11/23",
+      "converted": "2:57.40",
+      "meet_str": "SE London Winter Championships 2023"
+    },
+    "50 Fly|SC": {
+      "time_str": "31.22",
+      "time_secs": 31.22,
+      "date_str": "22/11/25",
+      "converted": "31.80",
+      "meet_str": "Stockport Metro November Short Course Meet 2025"
+    },
+    "100 Fly|SC": {
+      "time_str": "1:13.44",
+      "time_secs": 73.44,
+      "date_str": "08/12/24",
+      "converted": "1:14.50",
+      "meet_str": "Ealing SC 2024 XMAS County Qualifier Open 2024"
+    },
+    "50 Back|SC": {
+      "time_str": "32.15",
+      "time_secs": 32.15,
+      "date_str": "05/10/25",
+      "converted": "32.80",
+      "meet_str": "Winchester Autumn Qualifier 2025"
+    },
+    "100 Back|SC": {
+      "time_str": "1:09.68",
+      "time_secs": 69.68,
+      "date_str": "22/11/25",
+      "converted": "1:10.80",
+      "meet_str": "Stockport Metro November Short Course Meet 2025"
+    },
+    "200 Back|SC": {
+      "time_str": "2:32.61",
+      "time_secs": 152.61,
+      "date_str": "03/03/24",
+      "converted": "2:34.80",
+      "meet_str": "Ealing SC 2024 Regional Qualifier Open Meet"
+    },
+    "200 IM|SC": {
+      "time_str": "2:34.68",
+      "time_secs": 154.68,
+      "date_str": "23/11/25",
+      "converted": "2:37.20",
+      "meet_str": "Stockport Metro November Short Course Meet 2025"
+    },
+    "100 IM|SC": {
+      "time_str": "1:10.43",
+      "time_secs": 70.43,
+      "date_str": "22/11/25",
+      "converted": "1:10.40",
+      "meet_str": "Stockport Metro November Short Course Meet 2025"
+    }
+  }
+}

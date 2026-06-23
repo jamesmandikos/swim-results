@@ -1,0 +1,35 @@
+{
+  "club": "Brompton SC",
+  "gender": "Male",
+  "year_of_birth": 2015,
+  "swimmers": [
+    {
+      "name": "Alexander Rich",
+      "member_id": "1777258"
+    },
+    {
+      "name": "Kimi Chen",
+      "member_id": "1694403"
+    },
+    {
+      "name": "Harry Xu",
+      "member_id": "1800503"
+    },
+    {
+      "name": "Skeat Francois",
+      "member_id": "1785957"
+    },
+    {
+      "name": "Oscar Woodhouse",
+      "member_id": "1754356"
+    },
+    {
+      "name": "Alessandro Montesi",
+      "member_id": "1588826"
+    },
+    {
+      "name": "Milo Li",
+      "member_id": "1745732"
+    }
+  ]
+}

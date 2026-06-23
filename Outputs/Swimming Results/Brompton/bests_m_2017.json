@@ -1,0 +1,127 @@
+{
+  "Gabriel Berthet": {
+    "50 Free|SC": {
+      "time_str": "41.74",
+      "time_secs": 41.74,
+      "date_str": "18/04/26",
+      "converted": "42.20",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 Free|SC": {
+      "time_str": "1:40.90",
+      "time_secs": 100.9,
+      "date_str": "24/01/26",
+      "converted": "1:41.70",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Breast|SC": {
+      "time_str": "49.12",
+      "time_secs": 49.12,
+      "date_str": "07/03/26",
+      "converted": "49.80",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:48.63",
+      "time_secs": 108.63,
+      "date_str": "18/04/26",
+      "converted": "1:49.80",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Fly|SC": {
+      "time_str": "54.69",
+      "time_secs": 54.69,
+      "date_str": "07/06/26",
+      "converted": "55.00",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    },
+    "100 Back|SC": {
+      "time_str": "1:51.58",
+      "time_secs": 111.58,
+      "date_str": "07/03/26",
+      "converted": "1:52.30",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 IM|SC": {
+      "time_str": "1:43.66",
+      "time_secs": 103.66,
+      "date_str": "18/04/26",
+      "converted": "1:43.70",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    }
+  },
+  "Kaya Turkoglu": {
+    "50 Free|SC": {
+      "time_str": "43.96",
+      "time_secs": 43.96,
+      "date_str": "18/04/26",
+      "converted": "44.40",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 Free|SC": {
+      "time_str": "1:47.52",
+      "time_secs": 107.52000000000001,
+      "date_str": "24/01/26",
+      "converted": "1:48.30",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "200 Free|SC": {
+      "time_str": "3:42.69",
+      "time_secs": 222.69,
+      "date_str": "07/03/26",
+      "converted": "3:44.30",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Breast|SC": {
+      "time_str": "1:00.75",
+      "time_secs": 60.75,
+      "date_str": "07/03/26",
+      "converted": "1:01.30",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Back|SC": {
+      "time_str": "59.29",
+      "time_secs": 59.29,
+      "date_str": "24/01/26",
+      "converted": "59.60",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 Back|SC": {
+      "time_str": "1:55.51",
+      "time_secs": 115.50999999999999,
+      "date_str": "07/03/26",
+      "converted": "1:56.20",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 IM|SC": {
+      "time_str": "1:52.32",
+      "time_secs": 112.32,
+      "date_str": "18/04/26",
+      "converted": "1:52.30",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    }
+  },
+  "Max Holzinger-Piotrovsky": {
+    "50 Free|SC": {
+      "time_str": "46.33",
+      "time_secs": 46.33,
+      "date_str": "18/04/26",
+      "converted": "46.80",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 Breast|SC": {
+      "time_str": "2:05.15",
+      "time_secs": 125.15,
+      "date_str": "18/04/26",
+      "converted": "2:06.20",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 IM|SC": {
+      "time_str": "1:53.55",
+      "time_secs": 113.55,
+      "date_str": "18/04/26",
+      "converted": "1:53.60",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    }
+  }
+}

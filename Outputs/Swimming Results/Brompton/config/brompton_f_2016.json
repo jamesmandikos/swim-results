@@ -1,0 +1,47 @@
+{
+  "club": "Brompton SC",
+  "gender": "Female",
+  "year_of_birth": 2016,
+  "swimmers": [
+    {
+      "name": "Hani Lee-Hodgkinson",
+      "member_id": "1805744"
+    },
+    {
+      "name": "Saphira Grose",
+      "member_id": "1577032"
+    },
+    {
+      "name": "Anastasia Klochkova",
+      "member_id": "1808500"
+    },
+    {
+      "name": "Arianna Ierodiaconou",
+      "member_id": "1631495"
+    },
+    {
+      "name": "Summer Poon",
+      "member_id": "1632124"
+    },
+    {
+      "name": "Chlo\u00e9 Granger",
+      "member_id": "1852257"
+    },
+    {
+      "name": "Ivy Lawson-Liesching",
+      "member_id": "1852244"
+    },
+    {
+      "name": "Lara Hansen",
+      "member_id": "1722375"
+    },
+    {
+      "name": "Eleanor Ling",
+      "member_id": "1729354"
+    },
+    {
+      "name": "Hana Bakhtar",
+      "member_id": "1797678"
+    }
+  ]
+}

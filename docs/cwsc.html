@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Chelsea &amp; Westminster SC — Swimming Results</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:linear-gradient(170deg,#0A2342 0%,#1565C0 55%,#29B6F6 100%);
+  background-attachment:fixed;
+  min-height:100vh;
+  display:flex;flex-direction:column;
+  justify-content:center;align-items:center;
+  padding:80px 16px 40px;
+  overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;
+  background:repeating-linear-gradient(180deg,
+    transparent 0px,transparent 56px,
+    rgba(255,255,255,0.04) 56px,rgba(255,255,255,0.04) 58px);
+  pointer-events:none;z-index:0;
+}
+.ripple{position:fixed;bottom:-80px;border-radius:50%;background:rgba(255,255,255,0.08);animation:rise linear infinite;z-index:0;pointer-events:none}
+@keyframes rise{0%{transform:translateY(0);opacity:0}10%{opacity:.7}90%{opacity:.2}100%{transform:translateY(-110vh) translateX(10px);opacity:0}}
+.card{
+  background:#fff;border-radius:24px;
+  padding:0 28px 28px;width:100%;max-width:460px;
+  margin:0 auto;
+  box-shadow:0 24px 64px rgba(0,0,0,0.35);
+  text-align:center;position:relative;z-index:1;
+}
+.mascot{
+  width:110px;height:110px;
+  background:linear-gradient(135deg,#1565C0,#29B6F6);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:3.5rem;margin:-55px auto 18px;
+  border:6px solid #fff;
+  box-shadow:0 8px 24px rgba(21,101,192,0.4);
+  animation:bob 3s ease-in-out infinite;
+  overflow:hidden;
+}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.club{font-size:clamp(1.9rem,6vw,2.6rem);font-weight:900;color:#0A2342;line-height:1.1;margin-bottom:2px}
+.sub{color:#aaa;font-size:.75rem;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:14px}
+.desc{color:#555;font-size:.88rem;line-height:1.55;margin-bottom:22px;overflow-wrap:break-word}
+.desc strong{color:#1565C0}
+.wb-box{background:#E3F2FD;border:1px solid #BBDEFB;border-radius:14px;padding:13px 16px;color:#0D47A1;font-size:.9rem;font-weight:600;margin-bottom:12px}
+.select-wrap{position:relative;margin-bottom:12px}
+.select-wrap::after{content:'▾';position:absolute;right:16px;top:50%;transform:translateY(-50%);color:#1565C0;pointer-events:none;font-size:1rem}
+.swimmer-sel{
+  width:100%;padding:13px 40px 13px 16px;
+  border-radius:12px;border:2px solid #E0E0E0;
+  font-size:.95rem;color:#1A1A2E;background:#fff;
+  appearance:none;-webkit-appearance:none;outline:none;cursor:pointer;
+  transition:border-color .2s;
+}
+.swimmer-sel:focus{border-color:#1565C0}
+.go-btn{
+  width:100%;padding:14px;background:#1565C0;color:#fff;
+  border:none;border-radius:99px;font-size:1rem;font-weight:700;
+  cursor:pointer;box-shadow:0 4px 0 #0D47A1;
+  transition:transform .1s,box-shadow .1s;margin-bottom:8px;
+}
+.go-btn:hover{transform:translateY(-1px);box-shadow:0 5px 0 #0D47A1}
+.go-btn:active{transform:translateY(2px);box-shadow:0 2px 0 #0D47A1}
+.change-btn{background:none;border:none;color:#bbb;font-size:.8rem;cursor:pointer;text-decoration:underline;padding:2px 0}
+.change-btn:hover{color:#1565C0}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="mascot">
+    <img src="cwsc_logo.png" alt="CWSC"
+         style="width:100%;height:100%;object-fit:cover"
+         onerror="this.style.display='none'">
+  </div>
+  <div class="club">CWSC</div>
+  <div class="sub">Chelsea Westminster Swimming Club</div>
+  <p class="desc">Track <strong>personal bests</strong>, club rankings and <strong>qualification targets</strong> — updated after every gala.</p>
+
+  <!-- Welcome back -->
+  <div id="wb" style="display:none">
+    <div class="wb-box">👋 Welcome back, <span id="wb-name"></span>!</div>
+    <button class="go-btn" onclick="goToResults()">View My Results →</button>
+    <button class="change-btn" onclick="showPicker()">Switch swimmer</button>
+  </div>
+
+  <!-- Swimmer picker — CWSC Female 2017 only -->
+  <div id="picker">
+    <div class="select-wrap">
+      <select class="swimmer-sel" id="swimmer-sel">
+        <option value="">Select your name…</option>
+        <optgroup label="Female — Born 2016">
+          <option value="Olivia Cuffe"              data-url="ava_club_rankings.html">Olivia Cuffe</option>
+          <option value="Viola Trickett"            data-url="ava_club_rankings.html">Viola Trickett</option>
+          <option value="Rose Bridges"              data-url="ava_club_rankings.html">Rose Bridges</option>
+          <option value="Colette Balcombe"          data-url="ava_club_rankings.html">Colette Balcombe</option>
+          <option value="Zimeng Liu"                data-url="ava_club_rankings.html">Zimeng Liu</option>
+          <option value="Aurelia Hall"              data-url="ava_club_rankings.html">Aurelia Hall</option>
+          <option value="Nova Burke"                data-url="ava_club_rankings.html">Nova Burke</option>
+          <option value="Sophia Alam"               data-url="ava_club_rankings.html">Sophia Alam</option>
+          <option value="Giulia Briche"             data-url="ava_club_rankings.html">Giulia Briche</option>
+          <option value="Maisy McGill"              data-url="ava_club_rankings.html">Maisy McGill</option>
+          <option value="Luna Marley"               data-url="ava_club_rankings.html">Luna Marley</option>
+          <option value="Charlotte Ling"            data-url="ava_club_rankings.html">Charlotte Ling</option>
+          <option value="Aria Du"                   data-url="ava_club_rankings.html">Aria Du</option>
+          <option value="Julia Panzeri"             data-url="ava_club_rankings.html">Julia Panzeri</option>
+          <option value="Marlowe Barnes"            data-url="ava_club_rankings.html">Marlowe Barnes</option>
+          <option value="Hana Bakhtar"              data-url="ava_club_rankings.html">Hana Bakhtar</option>
+          <option value="Willow Green"              data-url="ava_club_rankings.html">Willow Green</option>
+          <option value="Zeynep Delibasi"           data-url="ava_club_rankings.html">Zeynep Delibasi</option>
+          <option value="Claudia Husmann"           data-url="ava_club_rankings.html">Claudia Husmann</option>
+          <option value="Olivia Li"                 data-url="ava_club_rankings.html">Olivia Li</option>
+          <option value="Yustyniia Pavlichenko"     data-url="ava_club_rankings.html">Yustyniia Pavlichenko</option>
+          <option value="Grace Barchak"             data-url="ava_club_rankings.html">Grace Barchak</option>
+          <option value="Sophie Davies"             data-url="ava_club_rankings.html">Sophie Davies</option>
+          <option value="Gytte Gniewosz"            data-url="ava_club_rankings.html">Gytte Gniewosz</option>
+          <option value="Sara Virani"               data-url="ava_club_rankings.html">Sara Virani</option>
+        </optgroup>
+        <optgroup label="Female — Born 2017">
+          <option value="Allegra Saletti"    data-url="ava_club_rankings.html">Allegra Saletti</option>
+          <option value="Annabelle McEvilly" data-url="ava_club_rankings.html">Annabelle McEvilly</option>
+          <option value="Anya Kong"          data-url="ava_club_rankings.html">Anya Kong</option>
+          <option value="Anya Mokashi"       data-url="ava_club_rankings.html">Anya Mokashi</option>
+          <option value="Arina Kucherenko"   data-url="ava_club_rankings.html">Arina Kucherenko</option>
+          <option value="Aryanna Li"         data-url="ava_club_rankings.html">Aryanna Li</option>
+          <option value="Audrey Allan"       data-url="ava_club_rankings.html">Audrey Allan</option>
+          <option value="Ava Mandikos"       data-url="ava_club_rankings.html">Ava Mandikos</option>
+          <option value="Caroline Weber"     data-url="ava_club_rankings.html">Caroline Weber</option>
+          <option value="Elaine Huang"       data-url="ava_club_rankings.html">Elaine Huang</option>
+          <option value="Jasmine He"         data-url="ava_club_rankings.html">Jasmine He</option>
+          <option value="Melody Ares"        data-url="ava_club_rankings.html">Melody Ares</option>
+          <option value="Qiaoyi Zhang"       data-url="ava_club_rankings.html">Qiaoyi Zhang</option>
+          <option value="Thalia Christie"    data-url="ava_club_rankings.html">Thalia Christie</option>
+          <option value="Wilhelmina Given"   data-url="ava_club_rankings.html">Wilhelmina Given</option>
+        </optgroup>
+        <optgroup label="Female — Born 2018">
+          <option value="Sofia Bispo Trypiniotou Silva" data-url="ava_club_rankings.html">Sofia Bispo Trypiniotou Silva</option>
+          <option value="Chloe Huang"                  data-url="ava_club_rankings.html">Chloe Huang</option>
+          <option value="Luna Fallesen"                data-url="ava_club_rankings.html">Luna Fallesen</option>
+        </optgroup>
+      </select>
+    </div>
+    <button class="go-btn" onclick="go()">View My Results →</button>
+  </div>
+</div>
+
+<script>
+var KEY_NAME = 'bsc_swimmer';
+var KEY_URL  = 'bsc_swimmer_url';
+
+for(var i=0;i<12;i++){
+  var b=document.createElement('div');b.className='ripple';
+  var sz=8+Math.random()*22;
+  b.style.cssText='width:'+sz+'px;height:'+sz+'px;left:'+Math.random()*100+'%;animation-duration:'+(8+Math.random()*10)+'s;animation-delay:'+(Math.random()*8)+'s';
+  document.body.appendChild(b);
+}
+
+function init(){
+  var name=localStorage.getItem(KEY_NAME);
+  var url=localStorage.getItem(KEY_URL);
+  if(name && url){
+    document.getElementById('wb-name').textContent=name.split(' ')[0];
+    document.getElementById('wb').style.display='block';
+    document.getElementById('picker').style.display='none';
+  }
+}
+
+function go(){
+  var sel=document.getElementById('swimmer-sel');
+  if(!sel.value){sel.focus();return;}
+  var opt=sel.options[sel.selectedIndex];
+  localStorage.setItem(KEY_NAME,sel.value);
+  localStorage.setItem(KEY_URL,opt.getAttribute('data-url'));
+  window.location.href=opt.getAttribute('data-url');
+}
+
+function goToResults(){
+  window.location.href='ava_club_rankings.html';
+}
+
+function showPicker(){
+  document.getElementById('wb').style.display='none';
+  document.getElementById('picker').style.display='block';
+}
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter')go();});
+init();
+</script>
+</body>
+</html>

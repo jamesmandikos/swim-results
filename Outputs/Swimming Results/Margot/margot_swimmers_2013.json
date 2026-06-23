@@ -1,0 +1,20 @@
+{
+  "club": "Brompton SC",
+  "gender": "Female",
+  "year_of_birth": 2013,
+  "swimmers": [
+    { "name": "Giulia Agostini",      "member_id": "1451663" },
+    { "name": "Phoenix Wakeling",     "member_id": "1643837" },
+    { "name": "Maya Kossoras",        "member_id": "1729450" },
+    { "name": "Katherine Moore",      "member_id": "1574195" },
+    { "name": "Sophia Schellaars",    "member_id": "1713470" },
+    { "name": "Meryem Baltaci",       "member_id": "1616487" },
+    { "name": "Arabella Poole",       "member_id": "1470194" },
+    { "name": "Liv Proudfoot",        "member_id": "1670314" },
+    { "name": "Sophia Hill",          "member_id": "1482707" },
+    { "name": "Alice Bejot",          "member_id": "1622550" },
+    { "name": "Anna Gergolet",        "member_id": "1574218" },
+    { "name": "Daphne Petropoulos",   "member_id": "1816678" },
+    { "name": "Amy Miller",           "member_id": "1599429" }
+  ]
+}

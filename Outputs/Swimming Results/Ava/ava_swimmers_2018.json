@@ -1,0 +1,35 @@
+{
+  "club": "Chelsea & Westminster SC",
+  "gender": "Female",
+  "year_of_birth": 2018,
+  "swimmers": [
+    {
+      "name": "Sofia Bispo Trypiniotou Silva",
+      "member_id": "1804430"
+    },
+    {
+      "name": "Chloe Huang",
+      "member_id": "1842277"
+    },
+    {
+      "name": "Luna Fallesen",
+      "member_id": "1745746"
+    },
+    {
+      "name": "Juliette Trickett",
+      "member_id": "1736592"
+    },
+    {
+      "name": "Adele Schil-Barbier",
+      "member_id": "1762367"
+    },
+    {
+      "name": "Chloe Xu",
+      "member_id": "1783772"
+    },
+    {
+      "name": "Alice Tsvetsinskaya Alario",
+      "member_id": "1783779"
+    }
+  ]
+}

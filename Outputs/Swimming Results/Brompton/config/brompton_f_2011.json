@@ -1,0 +1,55 @@
+{
+  "club": "Brompton SC",
+  "gender": "Female",
+  "year_of_birth": 2011,
+  "swimmers": [
+    {
+      "name": "Ella Miller",
+      "member_id": "1590790"
+    },
+    {
+      "name": "Ines Granger",
+      "member_id": "1669844"
+    },
+    {
+      "name": "Madeleine Moore",
+      "member_id": "1574209"
+    },
+    {
+      "name": "Scout Tran",
+      "member_id": "1397196"
+    },
+    {
+      "name": "Elilta Asmerom",
+      "member_id": "1450712"
+    },
+    {
+      "name": "Emma Zaki",
+      "member_id": "1669838"
+    },
+    {
+      "name": "Gabriella Montgomery",
+      "member_id": "1498145"
+    },
+    {
+      "name": "Alexandra Contogoulas",
+      "member_id": "1385002"
+    },
+    {
+      "name": "Ines Sweeney",
+      "member_id": "1408725"
+    },
+    {
+      "name": "Emma Zhang",
+      "member_id": "1576985"
+    },
+    {
+      "name": "Isabella Brand",
+      "member_id": "1498130"
+    },
+    {
+      "name": "Claire Schreiber",
+      "member_id": "1780091"
+    }
+  ]
+}

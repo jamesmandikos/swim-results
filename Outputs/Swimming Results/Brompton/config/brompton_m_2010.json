@@ -1,0 +1,43 @@
+{
+  "club": "Brompton SC",
+  "gender": "Male",
+  "year_of_birth": 2010,
+  "swimmers": [
+    {
+      "name": "Daniel Panna",
+      "member_id": "1343017"
+    },
+    {
+      "name": "Chun Wang Kwok",
+      "member_id": "1593617"
+    },
+    {
+      "name": "Lorenzo Minerva",
+      "member_id": "1438965"
+    },
+    {
+      "name": "George Aso",
+      "member_id": "1312277"
+    },
+    {
+      "name": "Ricardo Jacob Itriago",
+      "member_id": "1385509"
+    },
+    {
+      "name": "Benjamin Gort-Barten",
+      "member_id": "1482721"
+    },
+    {
+      "name": "Isaac Van Vollenhoven",
+      "member_id": "1590781"
+    },
+    {
+      "name": "Julian Orlando",
+      "member_id": "1530045"
+    },
+    {
+      "name": "Leon Frainer-Law",
+      "member_id": "1413296"
+    }
+  ]
+}

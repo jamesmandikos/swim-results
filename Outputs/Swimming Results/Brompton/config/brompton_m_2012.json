@@ -1,0 +1,59 @@
+{
+  "club": "Brompton SC",
+  "gender": "Male",
+  "year_of_birth": 2012,
+  "swimmers": [
+    {
+      "name": "Vihaan Arora",
+      "member_id": "1611047"
+    },
+    {
+      "name": "Hoi Kit Lau",
+      "member_id": "1689796"
+    },
+    {
+      "name": "Alexander Panna",
+      "member_id": "1405927"
+    },
+    {
+      "name": "Matthieu Bordignon",
+      "member_id": "1699835"
+    },
+    {
+      "name": "Rafael Garcia Johnston",
+      "member_id": "1681471"
+    },
+    {
+      "name": "Max Isaacs",
+      "member_id": "1645883"
+    },
+    {
+      "name": "Charles Desbiens",
+      "member_id": "1501438"
+    },
+    {
+      "name": "Matthew Sim",
+      "member_id": "1613371"
+    },
+    {
+      "name": "Roman Cazzol",
+      "member_id": "1506847"
+    },
+    {
+      "name": "Oliver Barrett-Lennard",
+      "member_id": "1688770"
+    },
+    {
+      "name": "Nileas-Konstantinos Bouganis-Pournaras",
+      "member_id": "1575568"
+    },
+    {
+      "name": "James Levinson Hawes",
+      "member_id": "1495622"
+    },
+    {
+      "name": "William Luo",
+      "member_id": "1450662"
+    }
+  ]
+}

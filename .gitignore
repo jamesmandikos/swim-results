@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Sensitive / temp
+*.pem
+*.key
+~$*
+*.tmp
+*oauth*
+*secret*
+*password*
+*credentials*
+insert_*.py
+load_data.py
+
+# Large binaries not needed in repo
+*.pdf
+*.docx
+
+# Playwright
+/Outputs/Swimming Results/Scripts/node_modules/

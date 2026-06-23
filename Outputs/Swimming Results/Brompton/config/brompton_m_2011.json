@@ -1,0 +1,35 @@
+{
+  "club": "Brompton SC",
+  "gender": "Male",
+  "year_of_birth": 2011,
+  "swimmers": [
+    {
+      "name": "Ivan Iachini",
+      "member_id": "1438980"
+    },
+    {
+      "name": "Kai Francois",
+      "member_id": "1739453"
+    },
+    {
+      "name": "Charles Yeow",
+      "member_id": "1490926"
+    },
+    {
+      "name": "Nicolas Venuti",
+      "member_id": "1312268"
+    },
+    {
+      "name": "Nicholas Rodgers",
+      "member_id": "1406115"
+    },
+    {
+      "name": "Michael Ares",
+      "member_id": "1399393"
+    },
+    {
+      "name": "Max Taylor",
+      "member_id": "1501399"
+    }
+  ]
+}

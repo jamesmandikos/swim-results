@@ -1,0 +1,1815 @@
+{
+  "Vihaan Arora|50 Free|LC": {
+    "swimmer": "Vihaan Arora",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "28.24",
+    "time_secs": 28.24
+  },
+  "Vihaan Arora|100 Free|LC": {
+    "swimmer": "Vihaan Arora",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:03.10",
+    "time_secs": 63.1
+  },
+  "Vihaan Arora|200 Free|LC": {
+    "swimmer": "Vihaan Arora",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "2:28.24",
+    "time_secs": 148.24
+  },
+  "Vihaan Arora|50 Breast|LC": {
+    "swimmer": "Vihaan Arora",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "36.16",
+    "time_secs": 36.16
+  },
+  "Vihaan Arora|100 Breast|LC": {
+    "swimmer": "Vihaan Arora",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:24.79",
+    "time_secs": 84.78999999999999
+  },
+  "Vihaan Arora|50 Fly|LC": {
+    "swimmer": "Vihaan Arora",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "31.92",
+    "time_secs": 31.92
+  },
+  "Vihaan Arora|100 Fly|LC": {
+    "swimmer": "Vihaan Arora",
+    "event": "100 Fly",
+    "course": "LC",
+    "time_str": "1:23.48",
+    "time_secs": 83.48
+  },
+  "Vihaan Arora|50 Back|LC": {
+    "swimmer": "Vihaan Arora",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "34.53",
+    "time_secs": 34.53
+  },
+  "Vihaan Arora|100 Back|LC": {
+    "swimmer": "Vihaan Arora",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:17.72",
+    "time_secs": 77.72
+  },
+  "Vihaan Arora|200 IM|LC": {
+    "swimmer": "Vihaan Arora",
+    "event": "200 IM",
+    "course": "LC",
+    "time_str": "2:50.89",
+    "time_secs": 170.89
+  },
+  "Vihaan Arora|50 Free|SC": {
+    "swimmer": "Vihaan Arora",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "28.06",
+    "time_secs": 28.06
+  },
+  "Vihaan Arora|100 Free|SC": {
+    "swimmer": "Vihaan Arora",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:02.17",
+    "time_secs": 62.17
+  },
+  "Vihaan Arora|200 Free|SC": {
+    "swimmer": "Vihaan Arora",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:27.83",
+    "time_secs": 147.82999999999998
+  },
+  "Vihaan Arora|400 Free|SC": {
+    "swimmer": "Vihaan Arora",
+    "event": "400 Free",
+    "course": "SC",
+    "time_str": "6:17.32",
+    "time_secs": 377.32
+  },
+  "Vihaan Arora|50 Breast|SC": {
+    "swimmer": "Vihaan Arora",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "36.17",
+    "time_secs": 36.17
+  },
+  "Vihaan Arora|100 Breast|SC": {
+    "swimmer": "Vihaan Arora",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:21.36",
+    "time_secs": 81.36
+  },
+  "Vihaan Arora|200 Breast|SC": {
+    "swimmer": "Vihaan Arora",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "3:25.11",
+    "time_secs": 205.11
+  },
+  "Vihaan Arora|50 Fly|SC": {
+    "swimmer": "Vihaan Arora",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "31.28",
+    "time_secs": 31.28
+  },
+  "Vihaan Arora|100 Fly|SC": {
+    "swimmer": "Vihaan Arora",
+    "event": "100 Fly",
+    "course": "SC",
+    "time_str": "1:16.36",
+    "time_secs": 76.36
+  },
+  "Vihaan Arora|50 Back|SC": {
+    "swimmer": "Vihaan Arora",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "34.15",
+    "time_secs": 34.15
+  },
+  "Vihaan Arora|100 Back|SC": {
+    "swimmer": "Vihaan Arora",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:17.94",
+    "time_secs": 77.94
+  },
+  "Vihaan Arora|200 IM|SC": {
+    "swimmer": "Vihaan Arora",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "2:39.45",
+    "time_secs": 159.45
+  },
+  "Vihaan Arora|100 IM|SC": {
+    "swimmer": "Vihaan Arora",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:10.94",
+    "time_secs": 70.94
+  },
+  "Hoi Kit Lau|50 Free|LC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "28.56",
+    "time_secs": 28.56
+  },
+  "Hoi Kit Lau|100 Free|LC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:10.70",
+    "time_secs": 70.7
+  },
+  "Hoi Kit Lau|200 Free|LC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "2:35.13",
+    "time_secs": 155.13
+  },
+  "Hoi Kit Lau|50 Breast|LC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "45.84",
+    "time_secs": 45.84
+  },
+  "Hoi Kit Lau|100 Breast|LC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:45.69",
+    "time_secs": 105.69
+  },
+  "Hoi Kit Lau|50 Fly|LC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "33.11",
+    "time_secs": 33.11
+  },
+  "Hoi Kit Lau|100 Fly|LC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "100 Fly",
+    "course": "LC",
+    "time_str": "1:34.30",
+    "time_secs": 94.3
+  },
+  "Hoi Kit Lau|200 Fly|LC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "200 Fly",
+    "course": "LC",
+    "time_str": "3:29.47",
+    "time_secs": 209.47
+  },
+  "Hoi Kit Lau|50 Back|LC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "35.26",
+    "time_secs": 35.26
+  },
+  "Hoi Kit Lau|100 Back|LC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:22.35",
+    "time_secs": 82.35
+  },
+  "Hoi Kit Lau|200 Back|LC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "200 Back",
+    "course": "LC",
+    "time_str": "2:40.20",
+    "time_secs": 160.2
+  },
+  "Hoi Kit Lau|200 IM|LC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "200 IM",
+    "course": "LC",
+    "time_str": "3:08.43",
+    "time_secs": 188.43
+  },
+  "Hoi Kit Lau|400 IM|LC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "400 IM",
+    "course": "LC",
+    "time_str": "6:34.38",
+    "time_secs": 394.38
+  },
+  "Hoi Kit Lau|50 Free|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "28.09",
+    "time_secs": 28.09
+  },
+  "Hoi Kit Lau|100 Free|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:06.58",
+    "time_secs": 66.58
+  },
+  "Hoi Kit Lau|200 Free|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:23.50",
+    "time_secs": 143.5
+  },
+  "Hoi Kit Lau|400 Free|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "400 Free",
+    "course": "SC",
+    "time_str": "5:39.32",
+    "time_secs": 339.32
+  },
+  "Hoi Kit Lau|50 Breast|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "44.70",
+    "time_secs": 44.7
+  },
+  "Hoi Kit Lau|100 Breast|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:41.60",
+    "time_secs": 101.6
+  },
+  "Hoi Kit Lau|50 Fly|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "33.10",
+    "time_secs": 33.1
+  },
+  "Hoi Kit Lau|100 Fly|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "100 Fly",
+    "course": "SC",
+    "time_str": "1:19.38",
+    "time_secs": 79.38
+  },
+  "Hoi Kit Lau|200 Fly|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "200 Fly",
+    "course": "SC",
+    "time_str": "3:03.29",
+    "time_secs": 183.29
+  },
+  "Hoi Kit Lau|50 Back|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "33.49",
+    "time_secs": 33.49
+  },
+  "Hoi Kit Lau|100 Back|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:12.14",
+    "time_secs": 72.14
+  },
+  "Hoi Kit Lau|200 Back|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "200 Back",
+    "course": "SC",
+    "time_str": "2:32.69",
+    "time_secs": 152.69
+  },
+  "Hoi Kit Lau|200 IM|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "2:37.82",
+    "time_secs": 157.82
+  },
+  "Hoi Kit Lau|400 IM|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "400 IM",
+    "course": "SC",
+    "time_str": "6:32.98",
+    "time_secs": 392.98
+  },
+  "Hoi Kit Lau|100 IM|SC": {
+    "swimmer": "Hoi Kit Lau",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:19.90",
+    "time_secs": 79.9
+  },
+  "Alexander Panna|50 Free|LC": {
+    "swimmer": "Alexander Panna",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "28.18",
+    "time_secs": 28.18
+  },
+  "Alexander Panna|100 Free|LC": {
+    "swimmer": "Alexander Panna",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:02.54",
+    "time_secs": 62.54
+  },
+  "Alexander Panna|200 Free|LC": {
+    "swimmer": "Alexander Panna",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "2:51.78",
+    "time_secs": 171.78
+  },
+  "Alexander Panna|50 Breast|LC": {
+    "swimmer": "Alexander Panna",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "38.03",
+    "time_secs": 38.03
+  },
+  "Alexander Panna|100 Breast|LC": {
+    "swimmer": "Alexander Panna",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:29.23",
+    "time_secs": 89.23
+  },
+  "Alexander Panna|200 Breast|LC": {
+    "swimmer": "Alexander Panna",
+    "event": "200 Breast",
+    "course": "LC",
+    "time_str": "3:14.91",
+    "time_secs": 194.91
+  },
+  "Alexander Panna|50 Fly|LC": {
+    "swimmer": "Alexander Panna",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "31.16",
+    "time_secs": 31.16
+  },
+  "Alexander Panna|100 Fly|LC": {
+    "swimmer": "Alexander Panna",
+    "event": "100 Fly",
+    "course": "LC",
+    "time_str": "1:12.87",
+    "time_secs": 72.87
+  },
+  "Alexander Panna|200 IM|LC": {
+    "swimmer": "Alexander Panna",
+    "event": "200 IM",
+    "course": "LC",
+    "time_str": "3:16.23",
+    "time_secs": 196.23
+  },
+  "Alexander Panna|50 Free|SC": {
+    "swimmer": "Alexander Panna",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "27.97",
+    "time_secs": 27.97
+  },
+  "Alexander Panna|100 Free|SC": {
+    "swimmer": "Alexander Panna",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:02.46",
+    "time_secs": 62.46
+  },
+  "Alexander Panna|200 Free|SC": {
+    "swimmer": "Alexander Panna",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:45.20",
+    "time_secs": 165.2
+  },
+  "Alexander Panna|50 Breast|SC": {
+    "swimmer": "Alexander Panna",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "38.22",
+    "time_secs": 38.22
+  },
+  "Alexander Panna|100 Breast|SC": {
+    "swimmer": "Alexander Panna",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:26.57",
+    "time_secs": 86.57
+  },
+  "Alexander Panna|200 Breast|SC": {
+    "swimmer": "Alexander Panna",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "3:30.33",
+    "time_secs": 210.32999999999998
+  },
+  "Alexander Panna|50 Fly|SC": {
+    "swimmer": "Alexander Panna",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "32.35",
+    "time_secs": 32.35
+  },
+  "Alexander Panna|100 Fly|SC": {
+    "swimmer": "Alexander Panna",
+    "event": "100 Fly",
+    "course": "SC",
+    "time_str": "1:13.54",
+    "time_secs": 73.53999999999999
+  },
+  "Alexander Panna|50 Back|SC": {
+    "swimmer": "Alexander Panna",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "40.02",
+    "time_secs": 40.02
+  },
+  "Alexander Panna|100 IM|SC": {
+    "swimmer": "Alexander Panna",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:10.92",
+    "time_secs": 70.92
+  },
+  "Matthieu Bordignon|100 Free|LC": {
+    "swimmer": "Matthieu Bordignon",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:20.07",
+    "time_secs": 80.07
+  },
+  "Matthieu Bordignon|50 Breast|LC": {
+    "swimmer": "Matthieu Bordignon",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "47.85",
+    "time_secs": 47.85
+  },
+  "Matthieu Bordignon|50 Back|LC": {
+    "swimmer": "Matthieu Bordignon",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "42.03",
+    "time_secs": 42.03
+  },
+  "Matthieu Bordignon|50 Free|SC": {
+    "swimmer": "Matthieu Bordignon",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "31.82",
+    "time_secs": 31.82
+  },
+  "Matthieu Bordignon|100 Free|SC": {
+    "swimmer": "Matthieu Bordignon",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:13.24",
+    "time_secs": 73.24
+  },
+  "Matthieu Bordignon|400 Free|SC": {
+    "swimmer": "Matthieu Bordignon",
+    "event": "400 Free",
+    "course": "SC",
+    "time_str": "5:59.75",
+    "time_secs": 359.75
+  },
+  "Matthieu Bordignon|50 Breast|SC": {
+    "swimmer": "Matthieu Bordignon",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "44.78",
+    "time_secs": 44.78
+  },
+  "Matthieu Bordignon|100 Breast|SC": {
+    "swimmer": "Matthieu Bordignon",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:43.11",
+    "time_secs": 103.11
+  },
+  "Matthieu Bordignon|200 Breast|SC": {
+    "swimmer": "Matthieu Bordignon",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "3:30.07",
+    "time_secs": 210.07
+  },
+  "Matthieu Bordignon|50 Fly|SC": {
+    "swimmer": "Matthieu Bordignon",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "37.85",
+    "time_secs": 37.85
+  },
+  "Matthieu Bordignon|50 Back|SC": {
+    "swimmer": "Matthieu Bordignon",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "49.49",
+    "time_secs": 49.49
+  },
+  "Matthieu Bordignon|100 Back|SC": {
+    "swimmer": "Matthieu Bordignon",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:45.64",
+    "time_secs": 105.64
+  },
+  "Rafael Garcia Johnston|50 Free|LC": {
+    "swimmer": "Rafael Garcia Johnston",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "36.59",
+    "time_secs": 36.59
+  },
+  "Rafael Garcia Johnston|200 Free|LC": {
+    "swimmer": "Rafael Garcia Johnston",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "3:07.53",
+    "time_secs": 187.53
+  },
+  "Rafael Garcia Johnston|50 Fly|LC": {
+    "swimmer": "Rafael Garcia Johnston",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "44.95",
+    "time_secs": 44.95
+  },
+  "Rafael Garcia Johnston|50 Free|SC": {
+    "swimmer": "Rafael Garcia Johnston",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "33.58",
+    "time_secs": 33.58
+  },
+  "Rafael Garcia Johnston|100 Free|SC": {
+    "swimmer": "Rafael Garcia Johnston",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:17.97",
+    "time_secs": 77.97
+  },
+  "Rafael Garcia Johnston|400 Free|SC": {
+    "swimmer": "Rafael Garcia Johnston",
+    "event": "400 Free",
+    "course": "SC",
+    "time_str": "6:04.38",
+    "time_secs": 364.38
+  },
+  "Rafael Garcia Johnston|50 Breast|SC": {
+    "swimmer": "Rafael Garcia Johnston",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "46.11",
+    "time_secs": 46.11
+  },
+  "Rafael Garcia Johnston|100 Breast|SC": {
+    "swimmer": "Rafael Garcia Johnston",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:42.50",
+    "time_secs": 102.5
+  },
+  "Rafael Garcia Johnston|50 Fly|SC": {
+    "swimmer": "Rafael Garcia Johnston",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "38.24",
+    "time_secs": 38.24
+  },
+  "Rafael Garcia Johnston|100 Fly|SC": {
+    "swimmer": "Rafael Garcia Johnston",
+    "event": "100 Fly",
+    "course": "SC",
+    "time_str": "1:39.24",
+    "time_secs": 99.24000000000001
+  },
+  "Rafael Garcia Johnston|200 IM|SC": {
+    "swimmer": "Rafael Garcia Johnston",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "3:14.94",
+    "time_secs": 194.94
+  },
+  "Rafael Garcia Johnston|100 IM|SC": {
+    "swimmer": "Rafael Garcia Johnston",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:26.42",
+    "time_secs": 86.42
+  },
+  "Max Isaacs|50 Free|LC": {
+    "swimmer": "Max Isaacs",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "31.07",
+    "time_secs": 31.07
+  },
+  "Max Isaacs|100 Free|LC": {
+    "swimmer": "Max Isaacs",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:07.20",
+    "time_secs": 67.2
+  },
+  "Max Isaacs|200 Free|LC": {
+    "swimmer": "Max Isaacs",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "2:25.62",
+    "time_secs": 145.62
+  },
+  "Max Isaacs|400 Free|LC": {
+    "swimmer": "Max Isaacs",
+    "event": "400 Free",
+    "course": "LC",
+    "time_str": "5:01.76",
+    "time_secs": 301.76
+  },
+  "Max Isaacs|50 Breast|LC": {
+    "swimmer": "Max Isaacs",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "51.00",
+    "time_secs": 51.0
+  },
+  "Max Isaacs|100 Breast|LC": {
+    "swimmer": "Max Isaacs",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:49.62",
+    "time_secs": 109.62
+  },
+  "Max Isaacs|50 Fly|LC": {
+    "swimmer": "Max Isaacs",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "33.04",
+    "time_secs": 33.04
+  },
+  "Max Isaacs|100 Fly|LC": {
+    "swimmer": "Max Isaacs",
+    "event": "100 Fly",
+    "course": "LC",
+    "time_str": "1:20.24",
+    "time_secs": 80.24
+  },
+  "Max Isaacs|50 Back|LC": {
+    "swimmer": "Max Isaacs",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "34.80",
+    "time_secs": 34.8
+  },
+  "Max Isaacs|100 Back|LC": {
+    "swimmer": "Max Isaacs",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:16.16",
+    "time_secs": 76.16
+  },
+  "Max Isaacs|200 Back|LC": {
+    "swimmer": "Max Isaacs",
+    "event": "200 Back",
+    "course": "LC",
+    "time_str": "2:39.98",
+    "time_secs": 159.98
+  },
+  "Max Isaacs|200 IM|LC": {
+    "swimmer": "Max Isaacs",
+    "event": "200 IM",
+    "course": "LC",
+    "time_str": "2:47.18",
+    "time_secs": 167.18
+  },
+  "Max Isaacs|400 IM|LC": {
+    "swimmer": "Max Isaacs",
+    "event": "400 IM",
+    "course": "LC",
+    "time_str": "6:22.94",
+    "time_secs": 382.94
+  },
+  "Max Isaacs|50 Free|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "31.01",
+    "time_secs": 31.01
+  },
+  "Max Isaacs|100 Free|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:05.92",
+    "time_secs": 65.92
+  },
+  "Max Isaacs|200 Free|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:22.42",
+    "time_secs": 142.42000000000002
+  },
+  "Max Isaacs|400 Free|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "400 Free",
+    "course": "SC",
+    "time_str": "4:54.48",
+    "time_secs": 294.48
+  },
+  "Max Isaacs|800 Free|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "800 Free",
+    "course": "SC",
+    "time_str": "10:26.07",
+    "time_secs": 626.07
+  },
+  "Max Isaacs|50 Breast|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "42.41",
+    "time_secs": 42.41
+  },
+  "Max Isaacs|100 Breast|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:49.21",
+    "time_secs": 109.21000000000001
+  },
+  "Max Isaacs|50 Fly|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "33.33",
+    "time_secs": 33.33
+  },
+  "Max Isaacs|100 Fly|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "100 Fly",
+    "course": "SC",
+    "time_str": "1:20.50",
+    "time_secs": 80.5
+  },
+  "Max Isaacs|50 Back|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "35.76",
+    "time_secs": 35.76
+  },
+  "Max Isaacs|100 Back|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:15.42",
+    "time_secs": 75.42
+  },
+  "Max Isaacs|200 Back|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "200 Back",
+    "course": "SC",
+    "time_str": "2:39.97",
+    "time_secs": 159.97
+  },
+  "Max Isaacs|200 IM|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "2:53.51",
+    "time_secs": 173.51
+  },
+  "Max Isaacs|400 IM|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "400 IM",
+    "course": "SC",
+    "time_str": "5:47.22",
+    "time_secs": 347.22
+  },
+  "Max Isaacs|100 IM|SC": {
+    "swimmer": "Max Isaacs",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:15.56",
+    "time_secs": 75.56
+  },
+  "Charles Desbiens|50 Free|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "27.53",
+    "time_secs": 27.53
+  },
+  "Charles Desbiens|100 Free|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:00.06",
+    "time_secs": 60.06
+  },
+  "Charles Desbiens|200 Free|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "2:17.14",
+    "time_secs": 137.14
+  },
+  "Charles Desbiens|400 Free|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "400 Free",
+    "course": "LC",
+    "time_str": "5:49.56",
+    "time_secs": 349.56
+  },
+  "Charles Desbiens|50 Breast|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "40.81",
+    "time_secs": 40.81
+  },
+  "Charles Desbiens|100 Breast|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:45.44",
+    "time_secs": 105.44
+  },
+  "Charles Desbiens|200 Breast|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "200 Breast",
+    "course": "LC",
+    "time_str": "3:48.41",
+    "time_secs": 228.41
+  },
+  "Charles Desbiens|50 Fly|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "33.74",
+    "time_secs": 33.74
+  },
+  "Charles Desbiens|100 Fly|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "100 Fly",
+    "course": "LC",
+    "time_str": "1:19.40",
+    "time_secs": 79.4
+  },
+  "Charles Desbiens|200 Fly|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "200 Fly",
+    "course": "LC",
+    "time_str": "3:24.68",
+    "time_secs": 204.68
+  },
+  "Charles Desbiens|50 Back|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "33.37",
+    "time_secs": 33.37
+  },
+  "Charles Desbiens|100 Back|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:17.07",
+    "time_secs": 77.07
+  },
+  "Charles Desbiens|200 Back|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "200 Back",
+    "course": "LC",
+    "time_str": "2:58.56",
+    "time_secs": 178.56
+  },
+  "Charles Desbiens|200 IM|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "200 IM",
+    "course": "LC",
+    "time_str": "3:13.96",
+    "time_secs": 193.96
+  },
+  "Charles Desbiens|400 IM|LC": {
+    "swimmer": "Charles Desbiens",
+    "event": "400 IM",
+    "course": "LC",
+    "time_str": "6:50.09",
+    "time_secs": 410.09000000000003
+  },
+  "Charles Desbiens|50 Free|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "28.54",
+    "time_secs": 28.54
+  },
+  "Charles Desbiens|100 Free|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:03.54",
+    "time_secs": 63.54
+  },
+  "Charles Desbiens|200 Free|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:14.34",
+    "time_secs": 134.34
+  },
+  "Charles Desbiens|400 Free|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "400 Free",
+    "course": "SC",
+    "time_str": "5:06.77",
+    "time_secs": 306.77
+  },
+  "Charles Desbiens|800 Free|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "800 Free",
+    "course": "SC",
+    "time_str": "11:10.59",
+    "time_secs": 670.59
+  },
+  "Charles Desbiens|1500 Free|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "1500 Free",
+    "course": "SC",
+    "time_str": "21:36.16",
+    "time_secs": 1296.16
+  },
+  "Charles Desbiens|50 Breast|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "39.41",
+    "time_secs": 39.41
+  },
+  "Charles Desbiens|100 Breast|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:31.83",
+    "time_secs": 91.83
+  },
+  "Charles Desbiens|200 Breast|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "3:27.13",
+    "time_secs": 207.13
+  },
+  "Charles Desbiens|50 Fly|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "33.07",
+    "time_secs": 33.07
+  },
+  "Charles Desbiens|100 Fly|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "100 Fly",
+    "course": "SC",
+    "time_str": "1:19.17",
+    "time_secs": 79.17
+  },
+  "Charles Desbiens|200 Fly|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "200 Fly",
+    "course": "SC",
+    "time_str": "3:08.42",
+    "time_secs": 188.42
+  },
+  "Charles Desbiens|50 Back|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "33.37",
+    "time_secs": 33.37
+  },
+  "Charles Desbiens|100 Back|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:16.66",
+    "time_secs": 76.66
+  },
+  "Charles Desbiens|200 Back|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "200 Back",
+    "course": "SC",
+    "time_str": "2:50.63",
+    "time_secs": 170.63
+  },
+  "Charles Desbiens|200 IM|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "2:47.84",
+    "time_secs": 167.84
+  },
+  "Charles Desbiens|400 IM|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "400 IM",
+    "course": "SC",
+    "time_str": "6:24.70",
+    "time_secs": 384.7
+  },
+  "Charles Desbiens|100 IM|SC": {
+    "swimmer": "Charles Desbiens",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:15.39",
+    "time_secs": 75.39
+  },
+  "Matthew Sim|100 Free|LC": {
+    "swimmer": "Matthew Sim",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:28.59",
+    "time_secs": 88.59
+  },
+  "Matthew Sim|50 Breast|LC": {
+    "swimmer": "Matthew Sim",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "39.78",
+    "time_secs": 39.78
+  },
+  "Matthew Sim|100 Breast|LC": {
+    "swimmer": "Matthew Sim",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:30.61",
+    "time_secs": 90.61
+  },
+  "Matthew Sim|50 Fly|LC": {
+    "swimmer": "Matthew Sim",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "42.74",
+    "time_secs": 42.74
+  },
+  "Matthew Sim|50 Free|SC": {
+    "swimmer": "Matthew Sim",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "31.08",
+    "time_secs": 31.08
+  },
+  "Matthew Sim|100 Free|SC": {
+    "swimmer": "Matthew Sim",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:35.02",
+    "time_secs": 95.02000000000001
+  },
+  "Matthew Sim|200 Free|SC": {
+    "swimmer": "Matthew Sim",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:54.88",
+    "time_secs": 174.88
+  },
+  "Matthew Sim|50 Breast|SC": {
+    "swimmer": "Matthew Sim",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "38.23",
+    "time_secs": 38.23
+  },
+  "Matthew Sim|100 Breast|SC": {
+    "swimmer": "Matthew Sim",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:26.24",
+    "time_secs": 86.24
+  },
+  "Matthew Sim|200 Breast|SC": {
+    "swimmer": "Matthew Sim",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "3:08.83",
+    "time_secs": 188.83
+  },
+  "Matthew Sim|50 Fly|SC": {
+    "swimmer": "Matthew Sim",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "39.39",
+    "time_secs": 39.39
+  },
+  "Matthew Sim|50 Back|SC": {
+    "swimmer": "Matthew Sim",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "48.16",
+    "time_secs": 48.16
+  },
+  "Matthew Sim|100 IM|SC": {
+    "swimmer": "Matthew Sim",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:50.93",
+    "time_secs": 110.93
+  },
+  "Roman Cazzol|50 Free|LC": {
+    "swimmer": "Roman Cazzol",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "27.58",
+    "time_secs": 27.58
+  },
+  "Roman Cazzol|100 Free|LC": {
+    "swimmer": "Roman Cazzol",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:00.72",
+    "time_secs": 60.72
+  },
+  "Roman Cazzol|200 Free|LC": {
+    "swimmer": "Roman Cazzol",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "2:15.60",
+    "time_secs": 135.6
+  },
+  "Roman Cazzol|400 Free|LC": {
+    "swimmer": "Roman Cazzol",
+    "event": "400 Free",
+    "course": "LC",
+    "time_str": "5:02.61",
+    "time_secs": 302.61
+  },
+  "Roman Cazzol|50 Breast|LC": {
+    "swimmer": "Roman Cazzol",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "34.93",
+    "time_secs": 34.93
+  },
+  "Roman Cazzol|100 Breast|LC": {
+    "swimmer": "Roman Cazzol",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:16.32",
+    "time_secs": 76.32
+  },
+  "Roman Cazzol|200 Breast|LC": {
+    "swimmer": "Roman Cazzol",
+    "event": "200 Breast",
+    "course": "LC",
+    "time_str": "2:52.95",
+    "time_secs": 172.95
+  },
+  "Roman Cazzol|50 Fly|LC": {
+    "swimmer": "Roman Cazzol",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "29.07",
+    "time_secs": 29.07
+  },
+  "Roman Cazzol|100 Fly|LC": {
+    "swimmer": "Roman Cazzol",
+    "event": "100 Fly",
+    "course": "LC",
+    "time_str": "1:05.33",
+    "time_secs": 65.33
+  },
+  "Roman Cazzol|50 Back|LC": {
+    "swimmer": "Roman Cazzol",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "31.68",
+    "time_secs": 31.68
+  },
+  "Roman Cazzol|100 Back|LC": {
+    "swimmer": "Roman Cazzol",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:08.99",
+    "time_secs": 68.99
+  },
+  "Roman Cazzol|200 Back|LC": {
+    "swimmer": "Roman Cazzol",
+    "event": "200 Back",
+    "course": "LC",
+    "time_str": "2:28.14",
+    "time_secs": 148.14
+  },
+  "Roman Cazzol|200 IM|LC": {
+    "swimmer": "Roman Cazzol",
+    "event": "200 IM",
+    "course": "LC",
+    "time_str": "2:27.92",
+    "time_secs": 147.92000000000002
+  },
+  "Roman Cazzol|50 Free|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "27.39",
+    "time_secs": 27.39
+  },
+  "Roman Cazzol|100 Free|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:00.86",
+    "time_secs": 60.86
+  },
+  "Roman Cazzol|200 Free|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:14.50",
+    "time_secs": 134.5
+  },
+  "Roman Cazzol|400 Free|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "400 Free",
+    "course": "SC",
+    "time_str": "4:48.59",
+    "time_secs": 288.59000000000003
+  },
+  "Roman Cazzol|50 Breast|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "35.23",
+    "time_secs": 35.23
+  },
+  "Roman Cazzol|100 Breast|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:19.48",
+    "time_secs": 79.48
+  },
+  "Roman Cazzol|200 Breast|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "2:47.64",
+    "time_secs": 167.64
+  },
+  "Roman Cazzol|50 Fly|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "29.78",
+    "time_secs": 29.78
+  },
+  "Roman Cazzol|100 Fly|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "100 Fly",
+    "course": "SC",
+    "time_str": "1:05.88",
+    "time_secs": 65.88
+  },
+  "Roman Cazzol|200 Fly|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "200 Fly",
+    "course": "SC",
+    "time_str": "2:48.16",
+    "time_secs": 168.16
+  },
+  "Roman Cazzol|50 Back|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "31.44",
+    "time_secs": 31.44
+  },
+  "Roman Cazzol|100 Back|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:06.98",
+    "time_secs": 66.98
+  },
+  "Roman Cazzol|200 Back|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "200 Back",
+    "course": "SC",
+    "time_str": "2:25.80",
+    "time_secs": 145.8
+  },
+  "Roman Cazzol|200 IM|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "2:29.47",
+    "time_secs": 149.47
+  },
+  "Roman Cazzol|100 IM|SC": {
+    "swimmer": "Roman Cazzol",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:08.21",
+    "time_secs": 68.21000000000001
+  },
+  "Oliver Barrett-Lennard|50 Free|LC": {
+    "swimmer": "Oliver Barrett-Lennard",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "28.90",
+    "time_secs": 28.9
+  },
+  "Oliver Barrett-Lennard|50 Back|LC": {
+    "swimmer": "Oliver Barrett-Lennard",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "32.86",
+    "time_secs": 32.86
+  },
+  "Oliver Barrett-Lennard|50 Free|SC": {
+    "swimmer": "Oliver Barrett-Lennard",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "29.97",
+    "time_secs": 29.97
+  },
+  "Oliver Barrett-Lennard|100 Free|SC": {
+    "swimmer": "Oliver Barrett-Lennard",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:09.16",
+    "time_secs": 69.16
+  },
+  "Oliver Barrett-Lennard|200 Free|SC": {
+    "swimmer": "Oliver Barrett-Lennard",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "3:04.97",
+    "time_secs": 184.97
+  },
+  "Oliver Barrett-Lennard|50 Back|SC": {
+    "swimmer": "Oliver Barrett-Lennard",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "34.72",
+    "time_secs": 34.72
+  },
+  "Oliver Barrett-Lennard|100 Back|SC": {
+    "swimmer": "Oliver Barrett-Lennard",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:15.38",
+    "time_secs": 75.38
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|50 Free|LC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "29.44",
+    "time_secs": 29.44
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|100 Free|LC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:04.96",
+    "time_secs": 64.96
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|200 Free|LC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "2:23.99",
+    "time_secs": 143.99
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|50 Breast|LC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "36.35",
+    "time_secs": 36.35
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|100 Breast|LC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:17.80",
+    "time_secs": 77.8
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|200 Breast|LC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "200 Breast",
+    "course": "LC",
+    "time_str": "2:50.22",
+    "time_secs": 170.22
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|50 Back|LC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "34.77",
+    "time_secs": 34.77
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|100 Back|LC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:16.06",
+    "time_secs": 76.06
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|200 Back|LC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "200 Back",
+    "course": "LC",
+    "time_str": "2:46.44",
+    "time_secs": 166.44
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|200 IM|LC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "200 IM",
+    "course": "LC",
+    "time_str": "2:37.91",
+    "time_secs": 157.91
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|50 Free|SC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "30.02",
+    "time_secs": 30.02
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|100 Free|SC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:05.96",
+    "time_secs": 65.96
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|200 Free|SC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:22.78",
+    "time_secs": 142.78
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|400 Free|SC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "400 Free",
+    "course": "SC",
+    "time_str": "6:46.32",
+    "time_secs": 406.32
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|50 Breast|SC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "36.79",
+    "time_secs": 36.79
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|100 Breast|SC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:20.18",
+    "time_secs": 80.18
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|200 Breast|SC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "2:52.04",
+    "time_secs": 172.04
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|50 Fly|SC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "34.87",
+    "time_secs": 34.87
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|50 Back|SC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "35.21",
+    "time_secs": 35.21
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|100 Back|SC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:17.54",
+    "time_secs": 77.53999999999999
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|200 Back|SC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "200 Back",
+    "course": "SC",
+    "time_str": "2:46.31",
+    "time_secs": 166.31
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|200 IM|SC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "2:38.67",
+    "time_secs": 158.67000000000002
+  },
+  "Nileas-Konstantinos Bouganis-Pournaras|100 IM|SC": {
+    "swimmer": "Nileas-Konstantinos Bouganis-Pournaras",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:14.18",
+    "time_secs": 74.18
+  },
+  "James Levinson Hawes|50 Free|LC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "33.38",
+    "time_secs": 33.38
+  },
+  "James Levinson Hawes|100 Free|LC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:38.95",
+    "time_secs": 98.95
+  },
+  "James Levinson Hawes|50 Breast|LC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "47.06",
+    "time_secs": 47.06
+  },
+  "James Levinson Hawes|100 Breast|LC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:34.80",
+    "time_secs": 94.8
+  },
+  "James Levinson Hawes|200 Breast|LC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "200 Breast",
+    "course": "LC",
+    "time_str": "3:35.32",
+    "time_secs": 215.32
+  },
+  "James Levinson Hawes|50 Fly|LC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "38.39",
+    "time_secs": 38.39
+  },
+  "James Levinson Hawes|50 Back|LC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "50.02",
+    "time_secs": 50.02
+  },
+  "James Levinson Hawes|100 Back|LC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:39.53",
+    "time_secs": 99.53
+  },
+  "James Levinson Hawes|50 Free|SC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "33.57",
+    "time_secs": 33.57
+  },
+  "James Levinson Hawes|100 Free|SC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:17.66",
+    "time_secs": 77.66
+  },
+  "James Levinson Hawes|50 Breast|SC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "41.88",
+    "time_secs": 41.88
+  },
+  "James Levinson Hawes|100 Breast|SC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:45.37",
+    "time_secs": 105.37
+  },
+  "James Levinson Hawes|200 Breast|SC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "3:36.32",
+    "time_secs": 216.32
+  },
+  "James Levinson Hawes|50 Fly|SC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "37.78",
+    "time_secs": 37.78
+  },
+  "James Levinson Hawes|50 Back|SC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "42.30",
+    "time_secs": 42.3
+  },
+  "James Levinson Hawes|100 Back|SC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:39.85",
+    "time_secs": 99.85
+  },
+  "James Levinson Hawes|200 Back|SC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "200 Back",
+    "course": "SC",
+    "time_str": "3:23.40",
+    "time_secs": 203.4
+  },
+  "James Levinson Hawes|100 IM|SC": {
+    "swimmer": "James Levinson Hawes",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:24.07",
+    "time_secs": 84.07
+  },
+  "William Luo|200 Free|LC": {
+    "swimmer": "William Luo",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "2:36.38",
+    "time_secs": 156.38
+  },
+  "William Luo|50 Breast|LC": {
+    "swimmer": "William Luo",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "34.33",
+    "time_secs": 34.33
+  },
+  "William Luo|100 Breast|LC": {
+    "swimmer": "William Luo",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:19.18",
+    "time_secs": 79.18
+  },
+  "William Luo|200 Breast|LC": {
+    "swimmer": "William Luo",
+    "event": "200 Breast",
+    "course": "LC",
+    "time_str": "2:53.29",
+    "time_secs": 173.29
+  },
+  "William Luo|50 Fly|LC": {
+    "swimmer": "William Luo",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "33.12",
+    "time_secs": 33.12
+  },
+  "William Luo|100 Free|SC": {
+    "swimmer": "William Luo",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:07.41",
+    "time_secs": 67.41
+  },
+  "William Luo|200 Free|SC": {
+    "swimmer": "William Luo",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "3:09.85",
+    "time_secs": 189.85
+  },
+  "William Luo|400 Free|SC": {
+    "swimmer": "William Luo",
+    "event": "400 Free",
+    "course": "SC",
+    "time_str": "6:49.24",
+    "time_secs": 409.24
+  },
+  "William Luo|50 Breast|SC": {
+    "swimmer": "William Luo",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "35.75",
+    "time_secs": 35.75
+  },
+  "William Luo|100 Breast|SC": {
+    "swimmer": "William Luo",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:16.38",
+    "time_secs": 76.38
+  },
+  "William Luo|200 Breast|SC": {
+    "swimmer": "William Luo",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "2:51.48",
+    "time_secs": 171.48
+  },
+  "William Luo|50 Fly|SC": {
+    "swimmer": "William Luo",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "35.52",
+    "time_secs": 35.52
+  },
+  "William Luo|50 Back|SC": {
+    "swimmer": "William Luo",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "44.90",
+    "time_secs": 44.9
+  },
+  "William Luo|100 Back|SC": {
+    "swimmer": "William Luo",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:40.37",
+    "time_secs": 100.37
+  },
+  "William Luo|100 IM|SC": {
+    "swimmer": "William Luo",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:45.99",
+    "time_secs": 105.99000000000001
+  }
+}

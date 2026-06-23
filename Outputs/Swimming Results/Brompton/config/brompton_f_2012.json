@@ -1,0 +1,51 @@
+{
+  "club": "Brompton SC",
+  "gender": "Female",
+  "year_of_birth": 2012,
+  "swimmers": [
+    {
+      "name": "Virginia Elisabetta Vendramin Giardina",
+      "member_id": "1574059"
+    },
+    {
+      "name": "Jessica Ge",
+      "member_id": "1631486"
+    },
+    {
+      "name": "Ines Hill",
+      "member_id": "1482709"
+    },
+    {
+      "name": "Imogen Perryman",
+      "member_id": "1486811"
+    },
+    {
+      "name": "Serena Rich",
+      "member_id": "1495669"
+    },
+    {
+      "name": "Alexandra Ierodiaconou",
+      "member_id": "1495593"
+    },
+    {
+      "name": "Chloe Mahoney",
+      "member_id": "1423237"
+    },
+    {
+      "name": "Annika Olson",
+      "member_id": "1590590"
+    },
+    {
+      "name": "Josephine Barchak",
+      "member_id": "1577045"
+    },
+    {
+      "name": "Annabel Lydiker",
+      "member_id": "1594636"
+    },
+    {
+      "name": "Lavinia Longo",
+      "member_id": "1450714"
+    }
+  ]
+}

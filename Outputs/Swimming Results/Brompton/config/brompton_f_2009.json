@@ -1,0 +1,31 @@
+{
+  "club": "Brompton SC",
+  "gender": "Female",
+  "year_of_birth": 2009,
+  "swimmers": [
+    {
+      "name": "Matilda Tran",
+      "member_id": "1397195"
+    },
+    {
+      "name": "Elizabete Kuduma",
+      "member_id": "1391803"
+    },
+    {
+      "name": "Kathryn Schreiber",
+      "member_id": "1780092"
+    },
+    {
+      "name": "Martina Bonetti",
+      "member_id": "1482662"
+    },
+    {
+      "name": "Eva Dramitinos",
+      "member_id": "1343008"
+    },
+    {
+      "name": "Alice Man",
+      "member_id": "1594126"
+    }
+  ]
+}

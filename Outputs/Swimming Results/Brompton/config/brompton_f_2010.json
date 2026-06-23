@@ -1,0 +1,63 @@
+{
+  "club": "Brompton SC",
+  "gender": "Female",
+  "year_of_birth": 2010,
+  "swimmers": [
+    {
+      "name": "Alexandra Desbiens",
+      "member_id": "1467783"
+    },
+    {
+      "name": "Vittoria Ginevra Vendramin Giardina",
+      "member_id": "1487339"
+    },
+    {
+      "name": "Alexandra Maxwell",
+      "member_id": "1515833"
+    },
+    {
+      "name": "Olivia Bunimovich",
+      "member_id": "1385000"
+    },
+    {
+      "name": "Iara Asiminei Barros Diogo",
+      "member_id": "1729524"
+    },
+    {
+      "name": "Ellen Cruickshank",
+      "member_id": "1577010"
+    },
+    {
+      "name": "Olivia Baring",
+      "member_id": "1275166"
+    },
+    {
+      "name": "Grace Yardley",
+      "member_id": "1387841"
+    },
+    {
+      "name": "Alexandra Yee",
+      "member_id": "1530090"
+    },
+    {
+      "name": "Mia Orlando",
+      "member_id": "1530044"
+    },
+    {
+      "name": "Delilah Paisley",
+      "member_id": "1296184"
+    },
+    {
+      "name": "Ilioni Bougani-Pournara",
+      "member_id": "1387843"
+    },
+    {
+      "name": "Emily Levinson Hawes",
+      "member_id": "1504024"
+    },
+    {
+      "name": "Vasilisa Dyakonyuk",
+      "member_id": "1438967"
+    }
+  ]
+}

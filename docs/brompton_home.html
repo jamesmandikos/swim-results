@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Brompton SC — Swimming Results</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0A2342">
+<script>if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:linear-gradient(170deg,#0A2342 0%,#1565C0 55%,#29B6F6 100%);
+  background-attachment:fixed;
+  min-height:100vh;
+  display:flex;flex-direction:column;
+  justify-content:center;align-items:center;
+  padding:80px 16px 40px;
+  overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;
+  background:repeating-linear-gradient(180deg,
+    transparent 0px,transparent 56px,
+    rgba(255,255,255,0.04) 56px,rgba(255,255,255,0.04) 58px);
+  pointer-events:none;z-index:0;
+}
+.ripple{position:fixed;bottom:-80px;border-radius:50%;background:rgba(255,255,255,0.08);animation:rise linear infinite;z-index:0;pointer-events:none}
+@keyframes rise{0%{transform:translateY(0);opacity:0}10%{opacity:.7}90%{opacity:.2}100%{transform:translateY(-110vh) translateX(10px);opacity:0}}
+.card{
+  background:#fff;border-radius:24px;
+  padding:0 28px 28px;width:100%;max-width:460px;
+  margin:0 auto;
+  box-shadow:0 24px 64px rgba(0,0,0,0.35);
+  text-align:center;position:relative;z-index:1;
+}
+.mascot{
+  width:110px;height:110px;
+  background:linear-gradient(135deg,#1565C0,#29B6F6);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:3.5rem;margin:-55px auto 18px;
+  border:6px solid #fff;
+  box-shadow:0 8px 24px rgba(21,101,192,0.4);
+  animation:bob 3s ease-in-out infinite;
+}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.club{font-size:clamp(1.7rem,5vw,2.2rem);font-weight:900;color:#0A2342;line-height:1.1;margin-bottom:2px}
+.sub{color:#aaa;font-size:.75rem;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:14px}
+.desc{color:#555;font-size:.88rem;line-height:1.55;margin-bottom:22px;overflow-wrap:break-word}
+.desc strong{color:#1565C0}
+.main-btn{
+  display:block;width:100%;padding:14px;background:#1565C0;color:#fff;
+  border:none;border-radius:99px;font-size:1rem;font-weight:700;
+  cursor:pointer;box-shadow:0 4px 0 #0D47A1;
+  transition:transform .1s,box-shadow .1s;margin-bottom:10px;
+  text-decoration:none;
+}
+.main-btn:hover{transform:translateY(-1px);box-shadow:0 5px 0 #0D47A1}
+.main-btn:active{transform:translateY(2px);box-shadow:0 2px 0 #0D47A1}
+.sec-btn{
+  display:block;width:100%;padding:12px;background:#fff;color:#1565C0;
+  border:2px solid #1565C0;border-radius:99px;font-size:.95rem;font-weight:700;
+  cursor:pointer;text-decoration:none;margin-bottom:8px;
+  transition:background .15s,color .15s;
+}
+.sec-btn:hover{background:#E3F2FD}
+.links{margin-top:14px;border-top:1px solid #f0f0f0;padding-top:12px}
+.wb-box{background:#E3F2FD;border:1px solid #BBDEFB;border-radius:14px;padding:11px 16px;
+  color:#0D47A1;font-size:.88rem;font-weight:600;margin-bottom:12px}
+.change-btn{background:none;border:none;color:#bbb;font-size:.78rem;cursor:pointer;
+  text-decoration:underline;padding:2px 0;margin-bottom:10px;display:block}
+.change-btn:hover{color:#1565C0}
+.or-sep{color:#ccc;font-size:.72rem;letter-spacing:1.2px;margin:4px 0 8px}
+.select-wrap{position:relative;margin-bottom:8px}
+.select-wrap::after{content:'▾';position:absolute;right:16px;top:50%;transform:translateY(-50%);color:#1565C0;pointer-events:none;font-size:1rem}
+.swimmer-sel{
+  width:100%;padding:13px 40px 13px 16px;
+  border-radius:12px;border:2px solid #E0E0E0;
+  font-size:.95rem;color:#1A1A2E;background:#fff;
+  appearance:none;-webkit-appearance:none;outline:none;cursor:pointer;
+  transition:border-color .2s;text-align:left;
+}
+.swimmer-sel:focus{border-color:#1565C0}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="mascot">
+    <img src="brompton_logo.png" alt="Brompton SC"
+         style="width:88%;height:88%;object-fit:contain;border-radius:50%"
+         onerror="this.style.display='none'">
+  </div>
+  <div class="club">Brompton SC</div>
+  <div class="sub">Brompton Swimming Club</div>
+  <p class="desc">Track <strong>personal bests</strong>, club rankings and <strong>qualification targets</strong> — updated after every gala.</p>
+
+  <!-- Welcome back block (shown when a personal swimmer was last here) -->
+  <div id="wb" style="display:none">
+    <div class="wb-box">Welcome back, <span id="wb-name"></span>!</div>
+    <a id="wb-btn" class="main-btn" href="#">View My Results →</a>
+    <a id="wb-rankings-btn" class="sec-btn" href="brompton_rankings.html?all=1">View Club Rankings →</a>
+    <button class="change-btn" onclick="showPicker()">Switch swimmer</button>
+  </div>
+
+  <!-- Generic CTAs with inline swimmer picker -->
+  <div id="generic">
+    <a id="generic-rankings-btn" class="main-btn" href="brompton_rankings.html?all=1">View Club Rankings →</a>
+    <div class="or-sep">— OR SELECT YOUR NAME —</div>
+    <div class="select-wrap">
+      <select class="swimmer-sel" id="swimmer-sel" onchange="updateRankingsLink()">
+        <option value="">Select your name…</option>
+        <optgroup label="Female — Born 2013 (age 13)">
+          <option value="Alice Bejot" data-gender="F" data-yob="2013">Alice Bejot</option>
+          <option value="Amy Miller" data-gender="F" data-yob="2013">Amy Miller</option>
+          <option value="Anna Gergolet" data-gender="F" data-yob="2013">Anna Gergolet</option>
+          <option value="Annabelle Ward" data-gender="F" data-yob="2013">Annabelle Ward</option>
+          <option value="Arabella Poole" data-gender="F" data-yob="2013">Arabella Poole</option>
+          <option value="Beatrix Sharman" data-gender="F" data-yob="2013">Beatrix Sharman</option>
+          <option value="Brooke Williams" data-gender="F" data-yob="2013">Brooke Williams</option>
+          <option value="Daphne Petropoulos" data-gender="F" data-yob="2013">Daphne Petropoulos</option>
+          <option value="Giulia Agostini" data-gender="F" data-yob="2013">Giulia Agostini</option>
+          <option value="Grace Miller" data-gender="F" data-yob="2013">Grace Miller</option>
+          <option value="Katherine Moore" data-gender="F" data-yob="2013">Katherine Moore</option>
+          <option value="Liv Proudfoot" data-gender="F" data-yob="2013">Liv Proudfoot</option>
+          <option value="Maya Kossoras" data-gender="F" data-yob="2013">Maya Kossoras</option>
+          <option value="Meryem Baltaci" data-gender="F" data-yob="2013">Meryem Baltaci</option>
+          <option value="Phoenix Wakeling" data-gender="F" data-yob="2013">Phoenix Wakeling</option>
+          <option value="Sophia Hill" data-gender="F" data-yob="2013">Sophia Hill</option>
+          <option value="Sophia Schellaars" data-gender="F" data-yob="2013">Sophia Schellaars</option>
+          <option value="Viola Matteis" data-gender="F" data-yob="2013">Viola Matteis</option>
+          <option value="Zofia Plotkowiak" data-gender="F" data-yob="2013">Zofia Plotkowiak</option>
+        </optgroup>
+        <optgroup label="Female — Born 2014 (age 12)">
+          <option value="Annabel Jeffery" data-gender="F" data-yob="2014">Annabel Jeffery</option>
+          <option value="Bianca Sedda" data-gender="F" data-yob="2014">Bianca Sedda</option>
+          <option value="Cassandra Mayne" data-gender="F" data-yob="2014">Cassandra Mayne</option>
+          <option value="Cassie Mayne" data-gender="F" data-yob="2014">Cassie Mayne</option>
+          <option value="Elizabeth Luo" data-gender="F" data-yob="2014">Elizabeth Luo</option>
+          <option value="Eva Freestone Vasquez" data-gender="F" data-yob="2014">Eva Freestone Vasquez</option>
+          <option value="Ines Montero-Walshe" data-gender="F" data-yob="2014">Ines Montero-Walshe</option>
+          <option value="Isabella Davies" data-gender="F" data-yob="2014">Isabella Davies</option>
+          <option value="Lauren Kang" data-gender="F" data-yob="2014">Lauren Kang</option>
+          <option value="Lilian Mary Sampson" data-gender="F" data-yob="2014">Lilian Mary Sampson</option>
+          <option value="Madeleine Coppel-Hyams" data-gender="F" data-yob="2014">Madeleine Coppel-Hyams</option>
+          <option value="Margot Mandikos" data-gender="F" data-yob="2014">Margot Mandikos</option>
+          <option value="Tara Holzinger-Piotrovskaya" data-gender="F" data-yob="2014">Tara Holzinger-Piotrovskaya</option>
+          <option value="Victoria Melnikova" data-gender="F" data-yob="2014">Victoria Melnikova</option>
+          <option value="Vittoria Cipparrone" data-gender="F" data-yob="2014">Vittoria Cipparrone</option>
+          <option value="Zeynep Kaplan" data-gender="F" data-yob="2014">Zeynep Kaplan</option>
+        </optgroup>
+        <optgroup label="Female — Born 2015 (age 11)">
+          <option value="Anabelle Fortescue-Webb" data-gender="F" data-yob="2015">Anabelle Fortescue-Webb</option>
+          <option value="Ani Fortescue-Webb" data-gender="F" data-yob="2015">Ani Fortescue-Webb</option>
+          <option value="Caroline Wang" data-gender="F" data-yob="2015">Caroline Wang</option>
+          <option value="Georgina Baring" data-gender="F" data-yob="2015">Georgina Baring</option>
+          <option value="Jinyou Yuan" data-gender="F" data-yob="2015">Jinyou Yuan</option>
+          <option value="Leia Brenke" data-gender="F" data-yob="2015">Leia Brenke</option>
+          <option value="Liv Wilder" data-gender="F" data-yob="2015">Liv Wilder</option>
+          <option value="Livia Wilder" data-gender="F" data-yob="2015">Livia Wilder</option>
+          <option value="Natalie Min" data-gender="F" data-yob="2015">Natalie Min</option>
+          <option value="Philippa Safi-Bosson" data-gender="F" data-yob="2015">Philippa Safi-Bosson</option>
+          <option value="Sarina Hasan" data-gender="F" data-yob="2015">Sarina Hasan</option>
+        </optgroup>
+      </select>
+    </div>
+    <button class="sec-btn" onclick="go()">View My Results →</button>
+  </div>
+
+  <div class="links">
+    <a href="brompton_help.html" target="_blank" style="font-size:12px;color:#1565C0;text-decoration:none;font-weight:600">? Help &amp; Guide</a>
+  </div>
+</div>
+
+<script>
+// Swimmers with a dedicated personal page
+var PERSONAL_PAGES = {
+  'Margot Mandikos': 'bsc_u14_girls_rankings.html'
+};
+
+// true when the user arrived via the "\u2190 Home" button from a personal app
+// (personal apps pass ?from=personal in the home URL)
+var _fromPersonal = new URLSearchParams(window.location.search).get('from') === 'personal';
+
+function _swimmerUrl(name, gender, yob){
+  if(_fromPersonal && PERSONAL_PAGES[name]) return PERSONAL_PAGES[name];
+  return 'brompton_rankings.html?swimmer='+encodeURIComponent(name)+'&gender='+gender+'&yob='+yob;
+}
+
+function _rankingsUrl(name, gender, yob){
+  if(_fromPersonal && PERSONAL_PAGES[name]) return PERSONAL_PAGES[name];
+  return 'brompton_rankings.html?focus='+encodeURIComponent(name)+'&gender='+gender+'&yob='+yob;
+}
+
+function init(){
+  var name, gender, yob, savedUrl;
+  try { name     = localStorage.getItem('bsc_swimmer'); } catch(e){}
+  try { gender   = localStorage.getItem('bsc_gender'); } catch(e){}
+  try { yob      = localStorage.getItem('bsc_yob'); } catch(e){}
+  try { savedUrl = localStorage.getItem('bsc_swimmer_url') || ''; } catch(e){}
+  // Don't show a welcome-back for CWSC swimmers — their pages share bsc_swimmer
+  var CWSC_URLS = ['cwsc_u14_girls_rankings.html'];
+  if(CWSC_URLS.indexOf(savedUrl) !== -1) return;
+  if(name && gender && yob){
+    var first = name.split(' ')[0];
+    document.getElementById('wb-name').textContent = first;
+    document.getElementById('wb-btn').textContent = 'View ' + first + '\u2019s Results \u2192';
+    document.getElementById('wb-btn').href = _swimmerUrl(name, gender, yob);
+    document.getElementById('wb-rankings-btn').href = _rankingsUrl(name, gender, yob);
+    document.getElementById('wb').style.display = 'block';
+    document.getElementById('generic').style.display = 'none';
+  }
+}
+
+function updateRankingsLink(){
+  var sel = document.getElementById('swimmer-sel');
+  var btn = document.getElementById('generic-rankings-btn');
+  if(!sel.value){btn.href='brompton_rankings.html?all=1';return;}
+  var opt = sel.options[sel.selectedIndex];
+  var gender = opt.getAttribute('data-gender');
+  var yob    = opt.getAttribute('data-yob');
+  btn.href = _rankingsUrl(sel.value, gender, yob);
+}
+
+function go(){
+  var sel = document.getElementById('swimmer-sel');
+  if(!sel.value){sel.focus();return;}
+  var opt = sel.options[sel.selectedIndex];
+  var gender = opt.getAttribute('data-gender');
+  var yob    = opt.getAttribute('data-yob');
+  try{
+    localStorage.setItem('bsc_swimmer', sel.value);
+    localStorage.setItem('bsc_gender', gender);
+    localStorage.setItem('bsc_yob', yob);
+  }catch(e){}
+  window.location.href = _swimmerUrl(sel.value, gender, yob);
+}
+
+function showPicker(){
+  document.getElementById('wb').style.display = 'none';
+  document.getElementById('generic').style.display = 'block';
+}
+
+for(var i=0;i<12;i++){
+  var b=document.createElement('div');b.className='ripple';
+  var sz=8+Math.random()*22;
+  b.style.cssText='width:'+sz+'px;height:'+sz+'px;left:'+Math.random()*100+'%;animation-duration:'+(8+Math.random()*10)+'s;animation-delay:'+(Math.random()*8)+'s';
+  document.body.appendChild(b);
+}
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter')go();});
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brompton SC Club Rankings — Help</title>
+<style>
+  *{box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:14px;line-height:1.6;margin:0;padding:0;background:#f5f7fa;color:#222}
+  .page{max-width:780px;margin:0 auto;padding:24px 20px 60px}
+  h1{font-size:22px;color:#1a3a5c;margin:0 0 4px}
+  .tagline{font-size:13px;color:#888;margin-bottom:32px}
+  h2{font-size:15px;color:#1a3a5c;margin:28px 0 8px;padding-bottom:5px;border-bottom:2px solid #e0e8f4}
+  h3{font-size:13px;color:#2e4057;margin:16px 0 6px}
+  p{margin:0 0 10px}
+  ul,ol{margin:6px 0 10px;padding-left:20px}
+  li{margin-bottom:4px}
+  .back-btn{display:inline-block;background:#1565C0;color:white;padding:7px 16px;border-radius:20px;
+    text-decoration:none;font-size:12px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,.15);
+    position:fixed;top:12px;right:16px}
+  /* indicator pills */
+  .ind{display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;font-weight:700;
+    margin:1px 3px;vertical-align:middle}
+  .ind-rq{background:#d6e8f5;color:#2980b9}
+  .ind-rc{background:#ede0f5;color:#8e44ad}
+  .ind-cq{background:#d5f0e0;color:#27ae60}
+  .ind-cc{background:#fde8cc;color:#e67e22}
+  /* gap example */
+  .gap-ex{font-size:11px;font-weight:600;color:#e67e22}
+  /* arrow example */
+  .arrow-ex{color:#27ae60;font-size:12px;font-weight:700}
+  /* column type chips */
+  .ct{display:inline-block;padding:2px 8px;border:1px solid #ccc;border-radius:12px;
+    font-size:11px;background:#f0f4fa;margin:1px 2px;font-weight:600;color:#2e4057}
+  /* section card */
+  .card{background:white;border:1px solid #e0e8f4;border-radius:8px;padding:14px 18px;margin-bottom:14px}
+  .card-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;
+    color:#1565C0;margin:0 0 8px}
+  /* note */
+  .note{background:#fff8e1;border-left:3px solid #f6a800;padding:8px 12px;border-radius:0 4px 4px 0;
+    font-size:12px;color:#7a5500;margin:10px 0}
+  table.ref{border-collapse:collapse;font-size:12px;width:100%}
+  table.ref th{background:#f0f4fa;padding:6px 10px;text-align:left;font-weight:700;border:1px solid #dde}
+  table.ref td{padding:6px 10px;border:1px solid #dde;vertical-align:top}
+  table.ref tr:nth-child(even) td{background:#fafbff}
+</style>
+</head>
+<body>
+<a href="brompton_rankings.html" class="back-btn">← Back to Rankings</a>
+<div class="page">
+
+<h1>Brompton SC Club Rankings</h1>
+<p class="tagline">Coach &amp; swimmer reference guide</p>
+
+<h2>Overview</h2>
+<p>This app shows personal best (PB) times for all Brompton SC swimmers, grouped by age and gender. Times are sourced from <strong>swimmingresults.org</strong> and cover both Short Course (SC, 25m) and Long Course (LC, 50m) pools.</p>
+<p>Coaches can compare swimmers across strokes and events, track improvement since the last data refresh, see who is approaching qualification standards, and generate an Arena Shortlist.</p>
+
+<h2>Filters</h2>
+<p>The filter panel is shown by default. Use the <strong>Hide Filters</strong> button (top right of the filter bar) to collapse it and give more space to the table. Click <strong>Show Filters</strong> to bring it back.</p>
+
+<div class="card">
+  <div class="card-title">Gender</div>
+  <p>Toggle between <strong>Female</strong>, <strong>Male</strong>, or <strong>Both</strong>. The age pill counts update automatically to reflect the selected gender.</p>
+</div>
+
+<div class="card">
+  <div class="card-title">Age</div>
+  <p>Each pill represents a year of birth (YOB). The number in brackets shows how many swimmers in that group match the current gender filter. Select one or more to narrow the view. <em>All</em> and <em>None</em> shortcuts are also available.</p>
+</div>
+
+<div class="card">
+  <div class="card-title">Strokes</div>
+  <p>Tick one or more stroke families to show or hide their columns: Back, Free, Fly, Breast, IM. IM covers 100m, 200m, and 400m events.</p>
+</div>
+
+<div class="card">
+  <div class="card-title">Course</div>
+  <ul>
+    <li><span class="ct">SC</span> — Short Course PB (25m pool)</li>
+    <li><span class="ct">LC</span> — Long Course PB (50m pool)</li>
+    <li><span class="ct">LC→SC</span> — Long Course time converted to SC equivalent using standard factors</li>
+    <li><span class="ct">Best</span> — Fastest of SC, LC, and LC→SC. Hidden by default; tick to reveal. Useful for overall ranking regardless of course.</li>
+  </ul>
+  <p>The <strong>Best</strong> cell shows the source in small italic text (SC / LC / →SC) so you know which pool the time came from.</p>
+</div>
+
+<h2>Columns</h2>
+<p>Each stroke has up to four columns (SC, LC, LC→SC, Best). Columns can be sorted by clicking the header — click again to reverse. The <strong>Posn</strong> column updates to show rank among visible swimmers.</p>
+
+<h2>Qualification Indicators (2027)</h2>
+<p>Where a time meets a qualification standard, one or more coloured badges appear below the time:</p>
+
+<table class="ref">
+  <tr><th>Badge</th><th>Meaning</th></tr>
+  <tr><td><span class="ind ind-rq">RQ</span></td><td>Regional Qualifier — meets the Regional Championships qualifying time</td></tr>
+  <tr><td><span class="ind ind-rc">RC</span></td><td>Regional Consideration — meets the Regional Championship consideration standard</td></tr>
+  <tr><td><span class="ind ind-cq">CQ</span></td><td>County Qualifier — meets the County Championships qualifying time</td></tr>
+  <tr><td><span class="ind ind-cc">CC</span></td><td>County Consideration — meets the County Championship consideration standard</td></tr>
+</table>
+
+<p style="margin-top:10px">Standards are age-group specific (based on year of birth) and reflect the qualification age for the <strong>2027 championships</strong> — i.e. how old each swimmer will be when competing next season. Qualification is assessed against times swum in 2026.</p>
+<div class="note">Qualification times shown are the current published standards. Times for the 2027 season will be updated here once new standards are published by Middlesex County and London Region.</div>
+
+<h2>Gap to Next Standard</h2>
+<p>If a swimmer has not yet reached their next qualifying standard, a label like <span class="gap-ex">-1.95s → CQ</span> appears below the date. This shows exactly how much faster they would need to swim to hit that standard. When they reach it, the label disappears and the badge appears instead.</p>
+<p><strong>Hover or tap</strong> the gap label to see a full breakdown of all four standards for that event — with achieved standards shown in green and the remaining gap for standards not yet reached.</p>
+<p>These labels can be hidden with the <strong>Hide markers</strong> button in the status bar.</p>
+
+<h2>Improvement Markers</h2>
+<p>A <span class="arrow-ex">▲ -0.45s</span> marker appears when a swimmer's current PB is faster than the time recorded during the previous data refresh. This makes recent improvements easy to spot at a glance.</p>
+<div class="note">Improvement markers reflect progress since the last time the data was fetched from swimmingresults.org, not since a specific meet.</div>
+
+<h2>Meet Name</h2>
+<p>Each time cell shows the date the PB was set. <strong>Hover or tap</strong> the date to see the name of the gala or meet where that time was achieved.</p>
+<div class="note">Meet names are populated when data is refreshed from swimmingresults.org. If the tooltip is blank, a data refresh is needed.</div>
+
+<h2>Rank Colouring</h2>
+<p>Within each visible group (the rows currently shown), the top three times per event are colour coded:</p>
+<ul>
+  <li style="color:#27ae60;font-weight:700">Gold — 1st fastest</li>
+  <li style="color:#856404;font-weight:700">Silver — 2nd fastest</li>
+  <li style="color:#d35400;font-weight:700">Bronze — 3rd fastest</li>
+</ul>
+<p>Ranking is recalculated any time filters change or a column is sorted.</p>
+
+<h2>Arena Shortlist</h2>
+<p>The <strong>Arena Shortlist</strong> button (in the status bar) generates a shortlist of the four fastest swimmers for every 50m event, based on the selected age and gender filters.</p>
+<p>To use it:</p>
+<ol>
+  <li>Set your gender and age filters to the group you want to select from.</li>
+  <li>Click <strong>Arena Shortlist</strong>.</li>
+  <li>The panel shows up to 4 swimmers for each 50m event (50 Back, 50 Free, 50 Fly, 50 Breast), ranked fastest to slowest and grouped by age. The faster of SC and LC→SC is used automatically, with the source shown.</li>
+  <li>Click <strong>Print</strong> to send to your printer or save as PDF.</li>
+</ol>
+<div class="note">Only 50m events are included in the shortlist — IM and distance events are excluded as Arena races cover sprints only. The shortlist always shows all swimmers for the selected age groups regardless of any active swimmer name filter.</div>
+<div class="note"><strong>The Arena Shortlist does not constitute Arena team selection.</strong> It is a data-driven reference tool based on recorded PBs only. Final selection is at the coach's discretion and may take into account factors such as recent form, training performance, entry limits, relay considerations, and other criteria not reflected in the rankings.</div>
+
+<h2>Sorting</h2>
+<p>Click any course sub-header (e.g. <strong>SC</strong> under 50 Back) to sort all visible rows by that event time, fastest first. Click again to reverse. The <strong>Posn</strong> column always reflects the current sort order.</p>
+
+<h2>PB Summary</h2>
+<p>Tap any swimmer's name in the table to open their <strong>Personal Best Summary</strong>. The popup shows all recorded PBs grouped by stroke (Backstroke, Butterfly, Freestyle, Breaststroke, Individual Medley), with SC and LC columns side by side. Each cell shows the time and the date it was set.</p>
+<p>Tap anywhere outside the panel or press <strong>Esc</strong> to close it.</p>
+
+<h2>Swimmer Filter</h2>
+<p>Type a swimmer's name in the search box (in the filter bar) to filter the table to that person only. An autocomplete list appears as you type. Once selected, a banner appears at the top of the table showing the swimmer's name, age group, and qualification summary.</p>
+<p>You can also arrive at a filtered view directly from the home page — select a name from the dropdown and tap <strong>View My Results →</strong>. The URL includes a <code>?swimmer=</code> parameter so it can be bookmarked or shared.</p>
+<p>Clear the filter with the <strong>✕</strong> button next to the search box, or use the swimmer banner's <em>back to full view</em> link.</p>
+
+<h2>Data Source &amp; Freshness</h2>
+<p>All times shown are the published Swim England personal bests sourced from <a href="https://www.swimmingresults.org" target="_blank">swimmingresults.org</a>. You can verify any swimmer's recorded times directly at <a href="https://www.swimmingresults.org/12months/" target="_blank">swimmingresults.org/12months/</a> — search by name to see the last 12 months of published results.</p>
+<p>Times are cached locally. The generation timestamp is shown at the top of the rankings page (e.g. "Generated 7 June 2026 09:15 · 175 swimmers"). To request a refresh or correct any data issues, contact Bram Montgomery (<a href="mailto:bram@bromptonsc.com">bram@bromptonsc.com</a>) or James Mandikos (<a href="mailto:james.mandikos@gmail.com">james.mandikos@gmail.com</a>).</p>
+
+</div>
+</body>
+</html>

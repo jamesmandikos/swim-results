@@ -1,0 +1,27 @@
+{
+  "club": "Brompton SC",
+  "gender": "Male",
+  "year_of_birth": 2009,
+  "swimmers": [
+    {
+      "name": "Edoardo Gallucci",
+      "member_id": "1515847"
+    },
+    {
+      "name": "Alexandre De Naurois",
+      "member_id": "1611049"
+    },
+    {
+      "name": "Shane Francois",
+      "member_id": "1739452"
+    },
+    {
+      "name": "Anas Triki",
+      "member_id": "1290581"
+    },
+    {
+      "name": "Derin Gorgun",
+      "member_id": "1325346"
+    }
+  ]
+}

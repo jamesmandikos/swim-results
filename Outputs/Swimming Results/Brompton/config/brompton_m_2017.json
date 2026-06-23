@@ -1,0 +1,19 @@
+{
+  "club": "Brompton SC",
+  "gender": "Male",
+  "year_of_birth": 2017,
+  "swimmers": [
+    {
+      "name": "Gabriel Berthet",
+      "member_id": "1844112"
+    },
+    {
+      "name": "Kaya Turkoglu",
+      "member_id": "1674393"
+    },
+    {
+      "name": "Max Holzinger-Piotrovsky",
+      "member_id": "1846250"
+    }
+  ]
+}

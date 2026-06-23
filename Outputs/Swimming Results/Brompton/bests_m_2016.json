@@ -1,0 +1,548 @@
+{
+  "Henry Moore": {
+    "50 Free|LC": {
+      "time_str": "40.20",
+      "time_secs": 40.2,
+      "date_str": "08/03/26",
+      "converted": "39.70",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "100 Free|LC": {
+      "time_str": "1:25.34",
+      "time_secs": 85.34,
+      "date_str": "15/03/26",
+      "converted": "1:24.30",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "100 Breast|LC": {
+      "time_str": "2:02.26",
+      "time_secs": 122.26,
+      "date_str": "15/03/26",
+      "converted": "2:01.20",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "50 Back|LC": {
+      "time_str": "48.18",
+      "time_secs": 48.18,
+      "date_str": "15/03/26",
+      "converted": "47.80",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "100 Back|LC": {
+      "time_str": "1:39.77",
+      "time_secs": 99.77000000000001,
+      "date_str": "08/03/26",
+      "converted": "1:39.00",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Free|SC": {
+      "time_str": "36.30",
+      "time_secs": 36.3,
+      "date_str": "17/05/26",
+      "converted": "36.90",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "100 Free|SC": {
+      "time_str": "1:32.15",
+      "time_secs": 92.15,
+      "date_str": "24/01/26",
+      "converted": "1:33.10",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "200 Free|SC": {
+      "time_str": "3:15.09",
+      "time_secs": 195.09,
+      "date_str": "07/03/26",
+      "converted": "3:16.90",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Breast|SC": {
+      "time_str": "54.42",
+      "time_secs": 54.42,
+      "date_str": "07/03/26",
+      "converted": "55.00",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Back|SC": {
+      "time_str": "48.71",
+      "time_secs": 48.71,
+      "date_str": "09/11/25",
+      "converted": "49.10",
+      "meet_str": "Brompton SC 2025 Winter Club Championships"
+    },
+    "100 Back|SC": {
+      "time_str": "1:42.53",
+      "time_secs": 102.53,
+      "date_str": "07/03/26",
+      "converted": "1:43.30",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    }
+  },
+  "Sean Liu": {
+    "100 Free|LC": {
+      "time_str": "1:24.41",
+      "time_secs": 84.41,
+      "date_str": "08/03/26",
+      "converted": "1:23.40",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "200 Free|LC": {
+      "time_str": "3:00.74",
+      "time_secs": 180.74,
+      "date_str": "08/03/26",
+      "converted": "2:58.80",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Back|LC": {
+      "time_str": "41.28",
+      "time_secs": 41.28,
+      "date_str": "08/02/26",
+      "converted": "40.80",
+      "meet_str": "2026 Middlesex County Championships"
+    },
+    "100 Back|LC": {
+      "time_str": "1:30.03",
+      "time_secs": 90.03,
+      "date_str": "15/02/26",
+      "converted": "1:29.10",
+      "meet_str": "2026 Middlesex County Championships"
+    },
+    "200 IM|LC": {
+      "time_str": "3:27.13",
+      "time_secs": 207.13,
+      "date_str": "08/03/26",
+      "converted": "3:25.20",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Free|SC": {
+      "time_str": "37.25",
+      "time_secs": 37.25,
+      "date_str": "09/11/25",
+      "converted": "37.80",
+      "meet_str": "Brompton SC 2025 Winter Club Championships"
+    },
+    "100 Free|SC": {
+      "time_str": "1:23.73",
+      "time_secs": 83.73,
+      "date_str": "24/01/26",
+      "converted": "1:24.70",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "200 Free|SC": {
+      "time_str": "3:03.14",
+      "time_secs": 183.14,
+      "date_str": "07/03/26",
+      "converted": "3:05.00",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "400 Free|SC": {
+      "time_str": "6:17.23",
+      "time_secs": 377.23,
+      "date_str": "01/03/26",
+      "converted": "6:20.90",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "50 Breast|SC": {
+      "time_str": "49.09",
+      "time_secs": 49.09,
+      "date_str": "07/03/26",
+      "converted": "49.70",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:48.42",
+      "time_secs": 108.42,
+      "date_str": "18/04/26",
+      "converted": "1:49.60",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "200 Breast|SC": {
+      "time_str": "4:04.90",
+      "time_secs": 244.9,
+      "date_str": "30/11/25",
+      "converted": "4:07.10",
+      "meet_str": "Ealing SC Xmas County Qualifier 2025"
+    },
+    "50 Fly|SC": {
+      "time_str": "40.60",
+      "time_secs": 40.6,
+      "date_str": "24/01/26",
+      "converted": "41.10",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 Fly|SC": {
+      "time_str": "1:39.23",
+      "time_secs": 99.22999999999999,
+      "date_str": "28/02/26",
+      "converted": "1:40.00",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "50 Back|SC": {
+      "time_str": "42.65",
+      "time_secs": 42.65,
+      "date_str": "29/11/25",
+      "converted": "43.10",
+      "meet_str": "Ealing SC Xmas County Qualifier 2025"
+    },
+    "100 Back|SC": {
+      "time_str": "1:30.15",
+      "time_secs": 90.15,
+      "date_str": "07/03/26",
+      "converted": "1:31.00",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "200 Back|SC": {
+      "time_str": "3:19.91",
+      "time_secs": 199.91,
+      "date_str": "29/11/25",
+      "converted": "3:21.60",
+      "meet_str": "Ealing SC Xmas County Qualifier 2025"
+    },
+    "200 IM|SC": {
+      "time_str": "3:26.68",
+      "time_secs": 206.68,
+      "date_str": "29/11/25",
+      "converted": "3:28.60",
+      "meet_str": "Ealing SC Xmas County Qualifier 2025"
+    },
+    "400 IM|SC": {
+      "time_str": "7:07.52",
+      "time_secs": 427.52,
+      "date_str": "28/02/26",
+      "converted": "7:11.60",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "100 IM|SC": {
+      "time_str": "1:33.14",
+      "time_secs": 93.14,
+      "date_str": "18/04/26",
+      "converted": "1:33.10",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    }
+  },
+  "Michael Avila Brylowski": {
+    "50 Free|LC": {
+      "time_str": "38.12",
+      "time_secs": 38.12,
+      "date_str": "08/03/26",
+      "converted": "37.60",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Breast|LC": {
+      "time_str": "47.53",
+      "time_secs": 47.53,
+      "date_str": "08/03/26",
+      "converted": "46.90",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "100 Breast|LC": {
+      "time_str": "1:48.81",
+      "time_secs": 108.81,
+      "date_str": "08/03/26",
+      "converted": "1:47.60",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Back|LC": {
+      "time_str": "45.79",
+      "time_secs": 45.79,
+      "date_str": "22/06/25",
+      "converted": "45.30",
+      "meet_str": "Gators Summer Gala 2025"
+    },
+    "100 Back|LC": {
+      "time_str": "1:36.89",
+      "time_secs": 96.89,
+      "date_str": "08/03/26",
+      "converted": "1:36.10",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Free|SC": {
+      "time_str": "37.46",
+      "time_secs": 37.46,
+      "date_str": "17/05/26",
+      "converted": "38.00",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "100 Free|SC": {
+      "time_str": "1:27.04",
+      "time_secs": 87.03999999999999,
+      "date_str": "24/01/26",
+      "converted": "1:28.00",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "200 Free|SC": {
+      "time_str": "3:16.72",
+      "time_secs": 196.72,
+      "date_str": "07/03/26",
+      "converted": "3:18.50",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Breast|SC": {
+      "time_str": "46.70",
+      "time_secs": 46.7,
+      "date_str": "17/05/26",
+      "converted": "47.40",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:45.94",
+      "time_secs": 105.94,
+      "date_str": "18/04/26",
+      "converted": "1:47.10",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Fly|SC": {
+      "time_str": "42.01",
+      "time_secs": 42.01,
+      "date_str": "24/01/26",
+      "converted": "42.50",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Back|SC": {
+      "time_str": "43.03",
+      "time_secs": 43.03,
+      "date_str": "28/02/26",
+      "converted": "43.50",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "100 Back|SC": {
+      "time_str": "1:34.61",
+      "time_secs": 94.61,
+      "date_str": "07/03/26",
+      "converted": "1:35.50",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 IM|SC": {
+      "time_str": "1:34.87",
+      "time_secs": 94.87,
+      "date_str": "18/04/26",
+      "converted": "1:34.90",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    }
+  },
+  "Adam Iwanow": {
+    "50 Free|LC": {
+      "time_str": "39.04",
+      "time_secs": 39.04,
+      "date_str": "08/03/26",
+      "converted": "38.50",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "100 Free|LC": {
+      "time_str": "1:28.16",
+      "time_secs": 88.16,
+      "date_str": "15/03/26",
+      "converted": "1:27.20",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "100 Breast|LC": {
+      "time_str": "1:58.97",
+      "time_secs": 118.97,
+      "date_str": "08/03/26",
+      "converted": "1:57.90",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Back|LC": {
+      "time_str": "44.93",
+      "time_secs": 44.93,
+      "date_str": "15/03/26",
+      "converted": "44.50",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "100 Back|LC": {
+      "time_str": "1:36.78",
+      "time_secs": 96.78,
+      "date_str": "08/03/26",
+      "converted": "1:35.90",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Free|SC": {
+      "time_str": "38.89",
+      "time_secs": 38.89,
+      "date_str": "01/03/26",
+      "converted": "39.40",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "100 Free|SC": {
+      "time_str": "1:28.14",
+      "time_secs": 88.14,
+      "date_str": "01/03/26",
+      "converted": "1:29.10",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "50 Breast|SC": {
+      "time_str": "52.55",
+      "time_secs": 52.55,
+      "date_str": "07/03/26",
+      "converted": "53.10",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:58.13",
+      "time_secs": 118.13,
+      "date_str": "28/02/26",
+      "converted": "1:59.20",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "50 Fly|SC": {
+      "time_str": "52.36",
+      "time_secs": 52.36,
+      "date_str": "28/02/26",
+      "converted": "52.70",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "50 Back|SC": {
+      "time_str": "43.88",
+      "time_secs": 43.88,
+      "date_str": "17/05/26",
+      "converted": "44.30",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "100 Back|SC": {
+      "time_str": "1:34.86",
+      "time_secs": 94.86,
+      "date_str": "01/03/26",
+      "converted": "1:35.70",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "100 IM|SC": {
+      "time_str": "1:42.18",
+      "time_secs": 102.18,
+      "date_str": "18/04/26",
+      "converted": "1:42.20",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    }
+  },
+  "Oscar Burton": {
+    "100 Free|LC": {
+      "time_str": "1:32.53",
+      "time_secs": 92.53,
+      "date_str": "08/03/26",
+      "converted": "1:31.60",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Breast|LC": {
+      "time_str": "52.87",
+      "time_secs": 52.87,
+      "date_str": "08/03/26",
+      "converted": "52.30",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Back|LC": {
+      "time_str": "46.08",
+      "time_secs": 46.08,
+      "date_str": "08/03/26",
+      "converted": "45.60",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Free|SC": {
+      "time_str": "38.97",
+      "time_secs": 38.97,
+      "date_str": "18/04/26",
+      "converted": "39.50",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 Free|SC": {
+      "time_str": "1:30.78",
+      "time_secs": 90.78,
+      "date_str": "01/03/26",
+      "converted": "1:31.70",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "200 Free|SC": {
+      "time_str": "3:25.56",
+      "time_secs": 205.56,
+      "date_str": "07/03/26",
+      "converted": "3:27.30",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Breast|SC": {
+      "time_str": "51.81",
+      "time_secs": 51.81,
+      "date_str": "01/03/26",
+      "converted": "52.40",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:51.58",
+      "time_secs": 111.58,
+      "date_str": "18/04/26",
+      "converted": "1:52.70",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Fly|SC": {
+      "time_str": "43.79",
+      "time_secs": 43.79,
+      "date_str": "17/05/26",
+      "converted": "44.20",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "50 Back|SC": {
+      "time_str": "44.39",
+      "time_secs": 44.39,
+      "date_str": "28/02/26",
+      "converted": "44.80",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "100 Back|SC": {
+      "time_str": "1:42.93",
+      "time_secs": 102.93,
+      "date_str": "07/03/26",
+      "converted": "1:43.70",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 IM|SC": {
+      "time_str": "1:37.48",
+      "time_secs": 97.47999999999999,
+      "date_str": "07/06/26",
+      "converted": "1:37.50",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    }
+  },
+  "Myles Benson": {
+    "50 Free|SC": {
+      "time_str": "43.04",
+      "time_secs": 43.04,
+      "date_str": "18/04/26",
+      "converted": "43.50",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Breast|SC": {
+      "time_str": "55.74",
+      "time_secs": 55.74,
+      "date_str": "07/06/26",
+      "converted": "56.30",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:58.81",
+      "time_secs": 118.81,
+      "date_str": "18/04/26",
+      "converted": "1:59.90",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Back|SC": {
+      "time_str": "52.53",
+      "time_secs": 52.53,
+      "date_str": "07/06/26",
+      "converted": "52.90",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    }
+  },
+  "Agastya Kanthed": {
+    "100 Free|SC": {
+      "time_str": "1:50.09",
+      "time_secs": 110.09,
+      "date_str": "24/01/26",
+      "converted": "1:50.90",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Back|SC": {
+      "time_str": "52.73",
+      "time_secs": 52.73,
+      "date_str": "24/01/26",
+      "converted": "53.10",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    }
+  }
+}

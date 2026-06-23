@@ -1,0 +1,22 @@
+[
+  {
+    "name": "PNS End of Season 2026",
+    "date": "2026-07-11",
+    "date_end": "2026-07-12",
+    "venue": "TBD",
+    "course": "LC",
+    "entries": {
+      "Margot Mandikos": ["100 Back", "50 Free", "200 IM", "400 Free", "50 Breast", "200 Back"]
+    }
+  },
+  {
+    "name": "2026 CWSC Club Championships",
+    "date": "2026-06-20",
+    "date_end": "2026-06-21",
+    "venue": "TBD",
+    "course": "SC",
+    "entries": {
+      "Ava Mandikos": ["50 Fly", "100 Free", "50 Breast", "50 Free", "100 Breast", "100 Back", "50 Back"]
+    }
+  }
+]

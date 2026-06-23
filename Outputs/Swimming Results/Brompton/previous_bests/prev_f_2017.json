@@ -1,0 +1,555 @@
+{
+  "Leah Tarancon-Rusadze|50 Free|SC": {
+    "swimmer": "Leah Tarancon-Rusadze",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "35.20",
+    "time_secs": 35.2
+  },
+  "Leah Tarancon-Rusadze|100 Free|SC": {
+    "swimmer": "Leah Tarancon-Rusadze",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:20.71",
+    "time_secs": 80.71000000000001
+  },
+  "Leah Tarancon-Rusadze|50 Breast|SC": {
+    "swimmer": "Leah Tarancon-Rusadze",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "40.71",
+    "time_secs": 40.71
+  },
+  "Leah Tarancon-Rusadze|100 Breast|SC": {
+    "swimmer": "Leah Tarancon-Rusadze",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:39.66",
+    "time_secs": 99.66
+  },
+  "Leah Tarancon-Rusadze|50 Fly|SC": {
+    "swimmer": "Leah Tarancon-Rusadze",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "38.53",
+    "time_secs": 38.53
+  },
+  "Leah Tarancon-Rusadze|50 Back|SC": {
+    "swimmer": "Leah Tarancon-Rusadze",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "41.87",
+    "time_secs": 41.87
+  },
+  "Leah Tarancon-Rusadze|100 Back|SC": {
+    "swimmer": "Leah Tarancon-Rusadze",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:30.92",
+    "time_secs": 90.92
+  },
+  "Leah Tarancon-Rusadze|200 IM|SC": {
+    "swimmer": "Leah Tarancon-Rusadze",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "3:08.74",
+    "time_secs": 188.74
+  },
+  "Leah Tarancon-Rusadze|100 IM|SC": {
+    "swimmer": "Leah Tarancon-Rusadze",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:24.17",
+    "time_secs": 84.17
+  },
+  "Anna Bachurina|50 Free|SC": {
+    "swimmer": "Anna Bachurina",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "38.85",
+    "time_secs": 38.85
+  },
+  "Anna Bachurina|200 Free|SC": {
+    "swimmer": "Anna Bachurina",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "3:37.71",
+    "time_secs": 217.71
+  },
+  "Anna Bachurina|50 Breast|SC": {
+    "swimmer": "Anna Bachurina",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "54.00",
+    "time_secs": 54.0
+  },
+  "Anna Bachurina|50 Fly|SC": {
+    "swimmer": "Anna Bachurina",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "44.71",
+    "time_secs": 44.71
+  },
+  "Anna Bachurina|50 Back|SC": {
+    "swimmer": "Anna Bachurina",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "45.61",
+    "time_secs": 45.61
+  },
+  "Anna Bachurina|100 IM|SC": {
+    "swimmer": "Anna Bachurina",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:42.25",
+    "time_secs": 102.25
+  },
+  "Victoria Burak|50 Free|LC": {
+    "swimmer": "Victoria Burak",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "40.36",
+    "time_secs": 40.36
+  },
+  "Victoria Burak|100 Free|LC": {
+    "swimmer": "Victoria Burak",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:36.21",
+    "time_secs": 96.21000000000001
+  },
+  "Victoria Burak|200 Free|LC": {
+    "swimmer": "Victoria Burak",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "3:25.35",
+    "time_secs": 205.35
+  },
+  "Victoria Burak|50 Breast|LC": {
+    "swimmer": "Victoria Burak",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "55.21",
+    "time_secs": 55.21
+  },
+  "Victoria Burak|100 Breast|LC": {
+    "swimmer": "Victoria Burak",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:57.20",
+    "time_secs": 117.2
+  },
+  "Victoria Burak|50 Free|SC": {
+    "swimmer": "Victoria Burak",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "41.23",
+    "time_secs": 41.23
+  },
+  "Victoria Burak|100 Free|SC": {
+    "swimmer": "Victoria Burak",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:37.02",
+    "time_secs": 97.02000000000001
+  },
+  "Victoria Burak|200 Free|SC": {
+    "swimmer": "Victoria Burak",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "3:29.15",
+    "time_secs": 209.15
+  },
+  "Victoria Burak|50 Breast|SC": {
+    "swimmer": "Victoria Burak",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "55.05",
+    "time_secs": 55.05
+  },
+  "Victoria Burak|100 Breast|SC": {
+    "swimmer": "Victoria Burak",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "2:01.07",
+    "time_secs": 121.07
+  },
+  "Victoria Burak|50 Fly|SC": {
+    "swimmer": "Victoria Burak",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "1:07.19",
+    "time_secs": 67.19
+  },
+  "Victoria Burak|50 Back|SC": {
+    "swimmer": "Victoria Burak",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "50.29",
+    "time_secs": 50.29
+  },
+  "Victoria Burak|100 Back|SC": {
+    "swimmer": "Victoria Burak",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:47.56",
+    "time_secs": 107.56
+  },
+  "Victoria Burak|100 IM|SC": {
+    "swimmer": "Victoria Burak",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:47.28",
+    "time_secs": 107.28
+  },
+  "Mila Coppel-Hyams|50 Free|SC": {
+    "swimmer": "Mila Coppel-Hyams",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "41.46",
+    "time_secs": 41.46
+  },
+  "Mila Coppel-Hyams|100 Free|SC": {
+    "swimmer": "Mila Coppel-Hyams",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:36.14",
+    "time_secs": 96.14
+  },
+  "Mila Coppel-Hyams|50 Breast|SC": {
+    "swimmer": "Mila Coppel-Hyams",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "1:02.01",
+    "time_secs": 62.01
+  },
+  "Mila Coppel-Hyams|50 Fly|SC": {
+    "swimmer": "Mila Coppel-Hyams",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "53.12",
+    "time_secs": 53.12
+  },
+  "Mila Coppel-Hyams|50 Back|SC": {
+    "swimmer": "Mila Coppel-Hyams",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "50.36",
+    "time_secs": 50.36
+  },
+  "Mila Coppel-Hyams|100 IM|SC": {
+    "swimmer": "Mila Coppel-Hyams",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:45.31",
+    "time_secs": 105.31
+  },
+  "Lavin Kaplan|100 Free|LC": {
+    "swimmer": "Lavin Kaplan",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:40.38",
+    "time_secs": 100.38
+  },
+  "Lavin Kaplan|50 Breast|LC": {
+    "swimmer": "Lavin Kaplan",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "54.67",
+    "time_secs": 54.67
+  },
+  "Lavin Kaplan|50 Free|SC": {
+    "swimmer": "Lavin Kaplan",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "42.02",
+    "time_secs": 42.02
+  },
+  "Lavin Kaplan|100 Free|SC": {
+    "swimmer": "Lavin Kaplan",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:37.88",
+    "time_secs": 97.88
+  },
+  "Lavin Kaplan|50 Breast|SC": {
+    "swimmer": "Lavin Kaplan",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "50.41",
+    "time_secs": 50.41
+  },
+  "Lavin Kaplan|100 Breast|SC": {
+    "swimmer": "Lavin Kaplan",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:56.69",
+    "time_secs": 116.69
+  },
+  "Lavin Kaplan|50 Fly|SC": {
+    "swimmer": "Lavin Kaplan",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "46.74",
+    "time_secs": 46.74
+  },
+  "Lavin Kaplan|100 Fly|SC": {
+    "swimmer": "Lavin Kaplan",
+    "event": "100 Fly",
+    "course": "SC",
+    "time_str": "2:05.19",
+    "time_secs": 125.19
+  },
+  "Lavin Kaplan|50 Back|SC": {
+    "swimmer": "Lavin Kaplan",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "49.16",
+    "time_secs": 49.16
+  },
+  "Lavin Kaplan|100 Back|SC": {
+    "swimmer": "Lavin Kaplan",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:55.64",
+    "time_secs": 115.64
+  },
+  "Lavin Kaplan|100 IM|SC": {
+    "swimmer": "Lavin Kaplan",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:37.65",
+    "time_secs": 97.65
+  },
+  "Victoria Khabibullina|50 Free|LC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "41.82",
+    "time_secs": 41.82
+  },
+  "Victoria Khabibullina|100 Free|LC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:40.95",
+    "time_secs": 100.95
+  },
+  "Victoria Khabibullina|200 Free|LC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "3:36.15",
+    "time_secs": 216.15
+  },
+  "Victoria Khabibullina|50 Breast|LC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "1:02.54",
+    "time_secs": 62.54
+  },
+  "Victoria Khabibullina|50 Fly|LC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "52.79",
+    "time_secs": 52.79
+  },
+  "Victoria Khabibullina|50 Back|LC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "49.20",
+    "time_secs": 49.2
+  },
+  "Victoria Khabibullina|100 Back|LC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:46.84",
+    "time_secs": 106.84
+  },
+  "Victoria Khabibullina|50 Free|SC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "41.44",
+    "time_secs": 41.44
+  },
+  "Victoria Khabibullina|100 Free|SC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:39.70",
+    "time_secs": 99.7
+  },
+  "Victoria Khabibullina|200 Free|SC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "3:31.81",
+    "time_secs": 211.81
+  },
+  "Victoria Khabibullina|50 Breast|SC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "1:00.31",
+    "time_secs": 60.31
+  },
+  "Victoria Khabibullina|50 Fly|SC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "51.21",
+    "time_secs": 51.21
+  },
+  "Victoria Khabibullina|50 Back|SC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "46.37",
+    "time_secs": 46.37
+  },
+  "Victoria Khabibullina|100 Back|SC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:45.87",
+    "time_secs": 105.87
+  },
+  "Victoria Khabibullina|200 Back|SC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "200 Back",
+    "course": "SC",
+    "time_str": "3:41.65",
+    "time_secs": 221.65
+  },
+  "Victoria Khabibullina|200 IM|SC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "3:56.26",
+    "time_secs": 236.26
+  },
+  "Victoria Khabibullina|100 IM|SC": {
+    "swimmer": "Victoria Khabibullina",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:46.13",
+    "time_secs": 106.13
+  },
+  "Jessica Song|50 Free|SC": {
+    "swimmer": "Jessica Song",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "44.68",
+    "time_secs": 44.68
+  },
+  "Jessica Song|50 Breast|SC": {
+    "swimmer": "Jessica Song",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "57.61",
+    "time_secs": 57.61
+  },
+  "Jessica Song|100 Breast|SC": {
+    "swimmer": "Jessica Song",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "2:04.20",
+    "time_secs": 124.2
+  },
+  "Jessica Song|50 Back|SC": {
+    "swimmer": "Jessica Song",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "50.56",
+    "time_secs": 50.56
+  },
+  "Jessica Song|100 Back|SC": {
+    "swimmer": "Jessica Song",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:57.88",
+    "time_secs": 117.88
+  },
+  "Jessica Song|100 IM|SC": {
+    "swimmer": "Jessica Song",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:54.08",
+    "time_secs": 114.08
+  },
+  "Maya Sidhu|50 Free|SC": {
+    "swimmer": "Maya Sidhu",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "37.60",
+    "time_secs": 37.6
+  },
+  "Maya Sidhu|100 Free|SC": {
+    "swimmer": "Maya Sidhu",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:25.86",
+    "time_secs": 85.86
+  },
+  "Maya Sidhu|200 Free|SC": {
+    "swimmer": "Maya Sidhu",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "3:06.38",
+    "time_secs": 186.38
+  },
+  "Maya Sidhu|50 Breast|SC": {
+    "swimmer": "Maya Sidhu",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "49.99",
+    "time_secs": 49.99
+  },
+  "Maya Sidhu|100 Breast|SC": {
+    "swimmer": "Maya Sidhu",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "2:02.68",
+    "time_secs": 122.68
+  },
+  "Maya Sidhu|50 Fly|SC": {
+    "swimmer": "Maya Sidhu",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "42.13",
+    "time_secs": 42.13
+  },
+  "Maya Sidhu|50 Back|SC": {
+    "swimmer": "Maya Sidhu",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "44.89",
+    "time_secs": 44.89
+  },
+  "Maya Sidhu|100 Back|SC": {
+    "swimmer": "Maya Sidhu",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:35.43",
+    "time_secs": 95.43
+  },
+  "Maya Sidhu|200 Back|SC": {
+    "swimmer": "Maya Sidhu",
+    "event": "200 Back",
+    "course": "SC",
+    "time_str": "3:21.93",
+    "time_secs": 201.93
+  },
+  "Maya Sidhu|100 IM|SC": {
+    "swimmer": "Maya Sidhu",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:32.89",
+    "time_secs": 92.89
+  }
+}

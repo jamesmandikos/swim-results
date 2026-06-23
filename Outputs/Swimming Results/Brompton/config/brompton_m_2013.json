@@ -1,0 +1,39 @@
+{
+  "club": "Brompton SC",
+  "gender": "Male",
+  "year_of_birth": 2013,
+  "swimmers": [
+    {
+      "name": "Alexander Petersen",
+      "member_id": "1611044"
+    },
+    {
+      "name": "Yimo Zhao",
+      "member_id": "1525089"
+    },
+    {
+      "name": "Baran Akgun",
+      "member_id": "1681474"
+    },
+    {
+      "name": "Ilyes Triki",
+      "member_id": "1473477"
+    },
+    {
+      "name": "Darcy Doherty",
+      "member_id": "1645878"
+    },
+    {
+      "name": "Matteo Gilberti",
+      "member_id": "1431748"
+    },
+    {
+      "name": "Baptiste Joutard",
+      "member_id": "1702695"
+    },
+    {
+      "name": "Theodor Muresan",
+      "member_id": "1451144"
+    }
+  ]
+}

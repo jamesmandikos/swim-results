@@ -1,0 +1,43 @@
+{
+  "club": "Brompton SC",
+  "gender": "Male",
+  "year_of_birth": 2014,
+  "swimmers": [
+    {
+      "name": "Davide Bonavota",
+      "member_id": "1590589"
+    },
+    {
+      "name": "Otto De Jager",
+      "member_id": "1669847"
+    },
+    {
+      "name": "Erik Anderson-Eggers",
+      "member_id": "1608789"
+    },
+    {
+      "name": "Max Lawson-Liesching",
+      "member_id": "1777246"
+    },
+    {
+      "name": "David Nagy",
+      "member_id": "1647973"
+    },
+    {
+      "name": "John Plackett",
+      "member_id": "1777254"
+    },
+    {
+      "name": "Otto Saunders",
+      "member_id": "1735671"
+    },
+    {
+      "name": "Manfred Zheng",
+      "member_id": "1701165"
+    },
+    {
+      "name": "Ada Akar",
+      "member_id": "1728928"
+    }
+  ]
+}

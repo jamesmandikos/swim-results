@@ -1,0 +1,121 @@
+{
+  "Gabriel Berthet|50 Free|SC": {
+    "swimmer": "Gabriel Berthet",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "41.74",
+    "time_secs": 41.74
+  },
+  "Gabriel Berthet|100 Free|SC": {
+    "swimmer": "Gabriel Berthet",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:40.90",
+    "time_secs": 100.9
+  },
+  "Gabriel Berthet|50 Breast|SC": {
+    "swimmer": "Gabriel Berthet",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "49.12",
+    "time_secs": 49.12
+  },
+  "Gabriel Berthet|100 Breast|SC": {
+    "swimmer": "Gabriel Berthet",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:48.63",
+    "time_secs": 108.63
+  },
+  "Gabriel Berthet|50 Fly|SC": {
+    "swimmer": "Gabriel Berthet",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "54.69",
+    "time_secs": 54.69
+  },
+  "Gabriel Berthet|100 Back|SC": {
+    "swimmer": "Gabriel Berthet",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:51.58",
+    "time_secs": 111.58
+  },
+  "Gabriel Berthet|100 IM|SC": {
+    "swimmer": "Gabriel Berthet",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:43.66",
+    "time_secs": 103.66
+  },
+  "Kaya Turkoglu|50 Free|SC": {
+    "swimmer": "Kaya Turkoglu",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "43.96",
+    "time_secs": 43.96
+  },
+  "Kaya Turkoglu|100 Free|SC": {
+    "swimmer": "Kaya Turkoglu",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:47.52",
+    "time_secs": 107.52000000000001
+  },
+  "Kaya Turkoglu|200 Free|SC": {
+    "swimmer": "Kaya Turkoglu",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "3:42.69",
+    "time_secs": 222.69
+  },
+  "Kaya Turkoglu|50 Breast|SC": {
+    "swimmer": "Kaya Turkoglu",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "1:00.75",
+    "time_secs": 60.75
+  },
+  "Kaya Turkoglu|50 Back|SC": {
+    "swimmer": "Kaya Turkoglu",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "59.29",
+    "time_secs": 59.29
+  },
+  "Kaya Turkoglu|100 Back|SC": {
+    "swimmer": "Kaya Turkoglu",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:55.51",
+    "time_secs": 115.50999999999999
+  },
+  "Kaya Turkoglu|100 IM|SC": {
+    "swimmer": "Kaya Turkoglu",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:52.32",
+    "time_secs": 112.32
+  },
+  "Max Holzinger-Piotrovsky|50 Free|SC": {
+    "swimmer": "Max Holzinger-Piotrovsky",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "46.33",
+    "time_secs": 46.33
+  },
+  "Max Holzinger-Piotrovsky|100 Breast|SC": {
+    "swimmer": "Max Holzinger-Piotrovsky",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "2:05.15",
+    "time_secs": 125.15
+  },
+  "Max Holzinger-Piotrovsky|100 IM|SC": {
+    "swimmer": "Max Holzinger-Piotrovsky",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:53.55",
+    "time_secs": 113.55
+  }
+}

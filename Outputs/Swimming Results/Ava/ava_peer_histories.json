@@ -1,0 +1,2779 @@
+{
+  "Ava Mandikos": {
+    "50 Back|SC": [
+      {
+        "time": "57.30",
+        "pts": "85",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "2:07.96",
+        "pts": "75",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "1:00.49",
+        "pts": "61",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "52.25",
+        "pts": "83",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "2:03.60",
+        "pts": "67",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "2:03.75",
+        "pts": "66",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Chelsea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:06.28",
+        "pts": "78",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:25.93",
+        "pts": "78",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Melody Ares": {
+    "50 Back|SC": [
+      {
+        "time": "44.27",
+        "pts": "185",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      },
+      {
+        "time": "45.36",
+        "pts": "172",
+        "round": "F",
+        "date": "22/03/26",
+        "meet": "2026 CWSC's Future Stars Development Meet"
+      },
+      {
+        "time": "47.81",
+        "pts": "146",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "48.63",
+        "pts": "139",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "50 Back|LC": [
+      {
+        "time": "44.24",
+        "pts": "223",
+        "round": "H",
+        "date": "23/05/26",
+        "meet": "City Of Sheffield SS No Frills Meet 2026"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:32.33",
+        "pts": "200",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:38.09",
+        "pts": "167",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "1:45.06",
+        "pts": "135",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:45.17",
+        "pts": "135",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "100 Back|LC": [
+      {
+        "time": "1:38.07",
+        "pts": "197",
+        "round": "H",
+        "date": "24/05/26",
+        "meet": "City Of Sheffield SS No Frills Meet 2026"
+      }
+    ],
+    "200 Back|SC": [
+      {
+        "time": "3:22.00",
+        "pts": "199",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "3:45.48",
+        "pts": "143",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      },
+      {
+        "time": "3:48.24",
+        "pts": "138",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "200 Back|LC": [
+      {
+        "time": "3:31.00",
+        "pts": "198",
+        "round": "H",
+        "date": "23/05/26",
+        "meet": "City Of Sheffield SS No Frills Meet 2026"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "45.25",
+        "pts": "148",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "51.03",
+        "pts": "103",
+        "round": "F",
+        "date": "22/03/26",
+        "meet": "2026 CWSC's Future Stars Development Meet"
+      },
+      {
+        "time": "51.43",
+        "pts": "100",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Fly|LC": [
+      {
+        "time": "54.26",
+        "pts": "91",
+        "round": "H",
+        "date": "24/05/26",
+        "meet": "City Of Sheffield SS No Frills Meet 2026"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "36.57",
+        "pts": "243",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "38.21",
+        "pts": "213",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      },
+      {
+        "time": "38.22",
+        "pts": "213",
+        "round": "F",
+        "date": "22/03/26",
+        "meet": "2026 CWSC's Future Stars Development Meet"
+      },
+      {
+        "time": "40.26",
+        "pts": "182",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "43.67",
+        "pts": "142",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "50 Free|LC": [
+      {
+        "time": "36.67",
+        "pts": "266",
+        "round": "H",
+        "date": "23/05/26",
+        "meet": "City Of Sheffield SS No Frills Meet 2026"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:21.12",
+        "pts": "237",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:28.31",
+        "pts": "184",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "1:31.96",
+        "pts": "163",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:39.02",
+        "pts": "130",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "100 Free|LC": [
+      {
+        "time": "1:24.91",
+        "pts": "225",
+        "round": "H",
+        "date": "23/05/26",
+        "meet": "City Of Sheffield SS No Frills Meet 2026"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:09.70",
+        "pts": "196",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "3:28.07",
+        "pts": "149",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "3:33.85",
+        "pts": "137",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "200 Free|LC": [
+      {
+        "time": "3:09.14",
+        "pts": "208",
+        "round": "H",
+        "date": "24/05/26",
+        "meet": "City Of Sheffield SS No Frills Meet 2026"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "46.42",
+        "pts": "228",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "48.66",
+        "pts": "198",
+        "round": "F",
+        "date": "22/03/26",
+        "meet": "2026 CWSC's Future Stars Development Meet"
+      },
+      {
+        "time": "52.79",
+        "pts": "155",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      },
+      {
+        "time": "53.01",
+        "pts": "153",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "50 Breast|LC": [
+      {
+        "time": "48.84",
+        "pts": "212",
+        "round": "H",
+        "date": "24/05/26",
+        "meet": "City Of Sheffield SS No Frills Meet 2026"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "1:43.43",
+        "pts": "219",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:45.22",
+        "pts": "208",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      },
+      {
+        "time": "1:55.60",
+        "pts": "156",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:58.05",
+        "pts": "147",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "100 Breast|LC": [
+      {
+        "time": "1:47.70",
+        "pts": "211",
+        "round": "H",
+        "date": "24/05/26",
+        "meet": "City Of Sheffield SS No Frills Meet 2026"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:37.20",
+        "pts": "182",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      },
+      {
+        "time": "1:45.40",
+        "pts": "142",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:47.87",
+        "pts": "133",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "200 IM|SC": [
+      {
+        "time": "3:42.62",
+        "pts": "163",
+        "round": "F",
+        "date": "22/03/26",
+        "meet": "2026 CWSC's Future Stars Development Meet"
+      }
+    ]
+  },
+  "Annabelle McEvilly": {
+    "50 Back|SC": [
+      {
+        "time": "47.34",
+        "pts": "151",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:51.83",
+        "pts": "112",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "1:05.76",
+        "pts": "48",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "40.75",
+        "pts": "175",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:37.39",
+        "pts": "137",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:29.64",
+        "pts": "145",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "55.76",
+        "pts": "131",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ]
+  },
+  "Anya Kong": {
+    "50 Back|SC": [
+      {
+        "time": "47.85",
+        "pts": "146",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      },
+      {
+        "time": "47.87",
+        "pts": "146",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:41.96",
+        "pts": "148",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:49.21",
+        "pts": "121",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "52.17",
+        "pts": "96",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "42.03",
+        "pts": "160",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      },
+      {
+        "time": "42.23",
+        "pts": "157",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:38.10",
+        "pts": "134",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:49.24",
+        "pts": "97",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "53.05",
+        "pts": "152",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "55.63",
+        "pts": "132",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "1:57.87",
+        "pts": "148",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:47.51",
+        "pts": "134",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:53.59",
+        "pts": "114",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      }
+    ]
+  },
+  "Anya Mokashi": {
+    "50 Back|SC": [
+      {
+        "time": "50.15",
+        "pts": "127",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "51.09",
+        "pts": "120",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      },
+      {
+        "time": "51.74",
+        "pts": "115",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "55.08",
+        "pts": "96",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:46.38",
+        "pts": "130",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "1:46.72",
+        "pts": "129",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:51.37",
+        "pts": "114",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "1:52.45",
+        "pts": "110",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "200 Back|SC": [
+      {
+        "time": "3:34.11",
+        "pts": "167",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "49.95",
+        "pts": "110",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "50.79",
+        "pts": "104",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "53.69",
+        "pts": "88",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "53.92",
+        "pts": "87",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "1:02.48",
+        "pts": "56",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "41.80",
+        "pts": "162",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "42.43",
+        "pts": "155",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      },
+      {
+        "time": "46.39",
+        "pts": "119",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "51.11",
+        "pts": "89",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:32.78",
+        "pts": "158",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:36.99",
+        "pts": "139",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:23.24",
+        "pts": "159",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "54.62",
+        "pts": "140",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "56.50",
+        "pts": "126",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "57.65",
+        "pts": "119",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "59.31",
+        "pts": "109",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "1:59.25",
+        "pts": "143",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:59.87",
+        "pts": "140",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      },
+      {
+        "time": "2:04.59",
+        "pts": "125",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "2:06.83",
+        "pts": "118",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "2:13.72",
+        "pts": "101",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:45.36",
+        "pts": "143",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:46.99",
+        "pts": "136",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      },
+      {
+        "time": "2:07.42",
+        "pts": "80",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ]
+  },
+  "Thalia Christie": {
+    "50 Back|SC": [
+      {
+        "time": "50.42",
+        "pts": "125",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "52.56",
+        "pts": "110",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "58.29",
+        "pts": "81",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:48.85",
+        "pts": "122",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "1:50.86",
+        "pts": "115",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "2:00.13",
+        "pts": "90",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "2:05.94",
+        "pts": "78",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "200 Back|SC": [
+      {
+        "time": "3:48.76",
+        "pts": "137",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "49.80",
+        "pts": "111",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "51.13",
+        "pts": "102",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "53.26",
+        "pts": "90",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:12.42",
+        "pts": "36",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "42.75",
+        "pts": "152",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "46.59",
+        "pts": "117",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "53.87",
+        "pts": "76",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:36.40",
+        "pts": "141",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:40.52",
+        "pts": "124",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "1:49.01",
+        "pts": "97",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:54.62",
+        "pts": "84",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:23.53",
+        "pts": "159",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "3:32.03",
+        "pts": "140",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "3:48.93",
+        "pts": "111",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "59.22",
+        "pts": "109",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "59.33",
+        "pts": "109",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:03.59",
+        "pts": "88",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:05.14",
+        "pts": "123",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "2:10.70",
+        "pts": "108",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:49.73",
+        "pts": "126",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:54.51",
+        "pts": "111",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "2:03.38",
+        "pts": "89",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ]
+  },
+  "Caroline Weber": {
+    "50 Back|SC": [
+      {
+        "time": "54.16",
+        "pts": "101",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      },
+      {
+        "time": "55.27",
+        "pts": "95",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:51.59",
+        "pts": "113",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Fly|SC": [
+      {
+        "time": "2:28.65",
+        "pts": "44",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "48.24",
+        "pts": "105",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "50.73",
+        "pts": "91",
+        "round": "F",
+        "date": "19/04/26",
+        "meet": "2026 Camdenâ€™s Future Stars Spring Meet"
+      }
+    ]
+  },
+  "Allegra Saletti": {
+    "50 Back|SC": [
+      {
+        "time": "51.25",
+        "pts": "119",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "54.18",
+        "pts": "100",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "56.66",
+        "pts": "88",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:44.87",
+        "pts": "136",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:46.99",
+        "pts": "128",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "2:01.48",
+        "pts": "87",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "200 Back|SC": [
+      {
+        "time": "3:38.46",
+        "pts": "157",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "55.59",
+        "pts": "79",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "55.64",
+        "pts": "79",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "59.68",
+        "pts": "64",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "43.86",
+        "pts": "141",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "46.10",
+        "pts": "121",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "49.03",
+        "pts": "100",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:39.69",
+        "pts": "128",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:43.28",
+        "pts": "115",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "1:47.73",
+        "pts": "101",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "1:55.53",
+        "pts": "82",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:34.72",
+        "pts": "135",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "3:45.16",
+        "pts": "117",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "3:45.60",
+        "pts": "116",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "4:03.65",
+        "pts": "92",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "58.63",
+        "pts": "113",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "59.84",
+        "pts": "106",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "1:03.49",
+        "pts": "89",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:00.33",
+        "pts": "139",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "2:10.99",
+        "pts": "107",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:50.85",
+        "pts": "122",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:57.20",
+        "pts": "103",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ]
+  },
+  "Jasmine He": {
+    "50 Back|SC": [
+      {
+        "time": "50.38",
+        "pts": "125",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "55.50",
+        "pts": "93",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "1:00.86",
+        "pts": "71",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "1:02.90",
+        "pts": "55",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "39.74",
+        "pts": "189",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "47.86",
+        "pts": "108",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:38.97",
+        "pts": "130",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:42.20",
+        "pts": "118",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "1:55.33",
+        "pts": "82",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "53.95",
+        "pts": "145",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "57.41",
+        "pts": "120",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:01.16",
+        "pts": "136",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "2:15.13",
+        "pts": "98",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ]
+  },
+  "Arina Kucherenko": {
+    "50 Back|SC": [
+      {
+        "time": "57.32",
+        "pts": "85",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "57.93",
+        "pts": "82",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "1:00.00",
+        "pts": "63",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "45.68",
+        "pts": "124",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "49.78",
+        "pts": "96",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:47.35",
+        "pts": "102",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:48.13",
+        "pts": "100",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "4:10.29",
+        "pts": "85",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:01.64",
+        "pts": "97",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:04.60",
+        "pts": "84",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:10.76",
+        "pts": "108",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "2:05.20",
+        "pts": "85",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Aryanna Li": {
+    "50 Back|SC": [
+      {
+        "time": "1:01.75",
+        "pts": "68",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:04.25",
+        "pts": "60",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:58.64",
+        "pts": "94",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "2:11.57",
+        "pts": "69",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "51.23",
+        "pts": "88",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "58.07",
+        "pts": "60",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "58.79",
+        "pts": "58",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:58.83",
+        "pts": "75",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:00.79",
+        "pts": "101",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:15.08",
+        "pts": "98",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "2:17.86",
+        "pts": "92",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "2:26.79",
+        "pts": "76",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "2:02.87",
+        "pts": "90",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "2:16.43",
+        "pts": "65",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ],
+    "200 IM|SC": [
+      {
+        "time": "4:44.97",
+        "pts": "77",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ]
+  },
+  "Elaine Huang": {
+    "50 Free|SC": [
+      {
+        "time": "47.31",
+        "pts": "112",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:01.22",
+        "pts": "99",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ]
+  },
+  "Wilhelmina Given": {
+    "50 Free|SC": [
+      {
+        "time": "50.98",
+        "pts": "89",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:01.87",
+        "pts": "96",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ]
+  },
+  "Audrey Allan": {
+    "50 Back|SC": [
+      {
+        "time": "53.02",
+        "pts": "107",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "2:05.89",
+        "pts": "79",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "52.55",
+        "pts": "94",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "54.01",
+        "pts": "87",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "57.58",
+        "pts": "71",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:01.56",
+        "pts": "58",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "51.66",
+        "pts": "86",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:37.70",
+        "pts": "136",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "1:37.95",
+        "pts": "135",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "1:50.89",
+        "pts": "93",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:41.49",
+        "pts": "123",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:01.63",
+        "pts": "97",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "1:05.21",
+        "pts": "82",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "1:07.14",
+        "pts": "75",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:19.00",
+        "pts": "90",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "2:26.79",
+        "pts": "76",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "2:02.59",
+        "pts": "90",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "2:07.09",
+        "pts": "81",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "2:09.51",
+        "pts": "77",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ]
+  },
+  "Qiaoyi Zhang": {
+    "50 Free|SC": [
+      {
+        "time": "51.96",
+        "pts": "84",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "53.53",
+        "pts": "77",
+        "round": "F",
+        "date": "22/03/26",
+        "meet": "2026 CWSC's Future Stars Development Meet"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "2:00.36",
+        "pts": "72",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:05.67",
+        "pts": "80",
+        "round": "F",
+        "date": "22/03/26",
+        "meet": "2026 CWSC's Future Stars Development Meet"
+      },
+      {
+        "time": "1:07.94",
+        "pts": "72",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:21.99",
+        "pts": "84",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "2:23.13",
+        "pts": "82",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ]
+  },
+  "Charlotte Bao": {
+    "50 Back|SC": [
+      {
+        "time": "43.99",
+        "pts": "188",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:47.32",
+        "pts": "127",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "1:54.05",
+        "pts": "106",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:57.24",
+        "pts": "97",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "2:06.68",
+        "pts": "77",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "200 Back|SC": [
+      {
+        "time": "3:34.09",
+        "pts": "167",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "59.19",
+        "pts": "66",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "1:03.85",
+        "pts": "52",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "40.54",
+        "pts": "178",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:38.11",
+        "pts": "134",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "1:43.72",
+        "pts": "113",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "1:55.27",
+        "pts": "82",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:19.04",
+        "pts": "170",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "3:30.97",
+        "pts": "142",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "57.33",
+        "pts": "121",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "59.71",
+        "pts": "107",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:02.53",
+        "pts": "93",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:01.73",
+        "pts": "134",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      },
+      {
+        "time": "2:17.76",
+        "pts": "92",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:47.71",
+        "pts": "133",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Vittoria Pugnali": {
+    "50 Back|SC": [
+      {
+        "time": "50.46",
+        "pts": "125",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "2:01.07",
+        "pts": "88",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "45.11",
+        "pts": "149",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "41.73",
+        "pts": "163",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "52.20",
+        "pts": "160",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Thea Estraikh": {
+    "100 Back|SC": [
+      {
+        "time": "1:48.79",
+        "pts": "122",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "44.72",
+        "pts": "133",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:44.85",
+        "pts": "110",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "57.68",
+        "pts": "118",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      },
+      {
+        "time": "57.68",
+        "pts": "118",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Canran Cheng": {
+    "50 Back|SC": [
+      {
+        "time": "55.75",
+        "pts": "92",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "45.92",
+        "pts": "122",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "59.54",
+        "pts": "108",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Gisele Yuvanc": {
+    "50 Back|SC": [
+      {
+        "time": "55.69",
+        "pts": "92",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "57.18",
+        "pts": "73",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "46.79",
+        "pts": "116",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:44.80",
+        "pts": "110",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:05.15",
+        "pts": "123",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Lola Lecointre-Brown": {
+    "50 Back|SC": [
+      {
+        "time": "54.76",
+        "pts": "97",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "2:04.16",
+        "pts": "82",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "47.31",
+        "pts": "112",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:43.28",
+        "pts": "115",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:01.43",
+        "pts": "98",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:14.92",
+        "pts": "98",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Amaya Kuti": {
+    "50 Back|SC": [
+      {
+        "time": "52.25",
+        "pts": "112",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:53.84",
+        "pts": "106",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "1:01.17",
+        "pts": "59",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "47.72",
+        "pts": "109",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "2:06.71",
+        "pts": "62",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:10.27",
+        "pts": "109",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:58.51",
+        "pts": "100",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Alexandra Kee": {
+    "50 Back|SC": [
+      {
+        "time": "1:00.46",
+        "pts": "72",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "1:01.03",
+        "pts": "60",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "49.54",
+        "pts": "97",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:55.94",
+        "pts": "81",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:01.36",
+        "pts": "98",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:16.87",
+        "pts": "94",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Aaliyah Esposti": {
+    "50 Back|SC": [
+      {
+        "time": "59.35",
+        "pts": "76",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "49.80",
+        "pts": "96",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:19.14",
+        "pts": "90",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Zoe Feldman": {
+    "50 Back|SC": [
+      {
+        "time": "1:03.91",
+        "pts": "61",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "53.94",
+        "pts": "75",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:06.77",
+        "pts": "76",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Matilde Guffanti": {
+    "50 Free|SC": [
+      {
+        "time": "56.99",
+        "pts": "64",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:11.79",
+        "pts": "61",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:38.72",
+        "pts": "60",
+        "round": "F",
+        "date": "21/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Arielle Remmen": {
+    "50 Back|SC": [
+      {
+        "time": "51.06",
+        "pts": "120",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "48.29",
+        "pts": "121",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:37.10",
+        "pts": "138",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:48.64",
+        "pts": "130",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Saoirse Swinscoe": {
+    "100 Back|SC": [
+      {
+        "time": "2:02.36",
+        "pts": "86",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "59.80",
+        "pts": "64",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:54.40",
+        "pts": "84",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:04.17",
+        "pts": "86",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ]
+  },
+  "Clara Mizrachi": {
+    "50 Back|SC": [
+      {
+        "time": "1:04.33",
+        "pts": "60",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "1:06.90",
+        "pts": "45",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:57.91",
+        "pts": "77",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "2:30.49",
+        "pts": "49",
+        "round": "F",
+        "date": "20/06/26",
+        "meet": "Cheslea & Westminster SC 2026 Club Championships"
+      }
+    ]
+  },
+  "Kitty Kirkland": {
+    "100 Back|SC": [
+      {
+        "time": "2:10.36",
+        "pts": "71",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "2:08.07",
+        "pts": "60",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:07.67",
+        "pts": "73",
+        "round": "F",
+        "date": "10/05/26",
+        "meet": "Hackney Anaconda Future Stars 2026"
+      }
+    ]
+  },
+  "Elayna Talwar": {
+    "50 Back|SC": [
+      {
+        "time": "53.46",
+        "pts": "105",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "55.13",
+        "pts": "95",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "1:11.72",
+        "pts": "37",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:56.37",
+        "pts": "80",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      },
+      {
+        "time": "1:57.51",
+        "pts": "78",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:32.03",
+        "pts": "69",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ]
+  },
+  "Alessandra Csidei": {
+    "50 Back|SC": [
+      {
+        "time": "53.01",
+        "pts": "107",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      },
+      {
+        "time": "58.38",
+        "pts": "80",
+        "round": "F",
+        "date": "23/03/25",
+        "meet": "Chelsea & Westminster 2025 Future Stars Dev Meet"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "1:00.77",
+        "pts": "61",
+        "round": "F",
+        "date": "23/03/25",
+        "meet": "Chelsea & Westminster 2025 Future Stars Dev Meet"
+      }
+    ]
+  }
+}

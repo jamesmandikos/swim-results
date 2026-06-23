@@ -1,0 +1,22 @@
+{
+  "club": "Brompton SC",
+  "gender": "Female",
+  "year_of_birth": 2014,
+  "swimmers": [
+    { "name": "Madeleine Coppel-Hyams", "member_id": "1526115" },
+    { "name": "Bianca Sedda",           "member_id": "1526106" },
+    { "name": "Zeynep Kaplan",          "member_id": "1616474" },
+    { "name": "Tara Holzinger-Piotrovskaya", "member_id": "1763158" },
+    { "name": "Lauren Kang",            "member_id": "1508201" },
+    { "name": "Isabella Davies",        "member_id": "1673585" },
+    { "name": "Margot Mandikos",        "member_id": "1649626" },
+    { "name": "Vittoria Cipparrone",    "member_id": "1460085" },
+    { "name": "Elizabeth Luo",          "member_id": "1666533" },
+    { "name": "Annabel Jeffery",        "member_id": "1729859" },
+    { "name": "Lilian Mary Sampson",    "member_id": "1803236" },
+    { "name": "Ines Montero-Walshe",    "member_id": "1777268" },
+    { "name": "Victoria Melnikova",     "member_id": "1576996" },
+    { "name": "Cassie Mayne",           "member_id": "1590613" },
+    { "name": "Eva Freestone Vasquez",  "member_id": "1852252" }
+  ]
+}

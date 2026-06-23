@@ -1,0 +1,1227 @@
+{
+  "Davide Bonavota|50 Free|LC": {
+    "swimmer": "Davide Bonavota",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "32.73",
+    "time_secs": 32.73
+  },
+  "Davide Bonavota|100 Free|LC": {
+    "swimmer": "Davide Bonavota",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:13.40",
+    "time_secs": 73.4
+  },
+  "Davide Bonavota|200 Free|LC": {
+    "swimmer": "Davide Bonavota",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "2:41.79",
+    "time_secs": 161.79
+  },
+  "Davide Bonavota|50 Breast|LC": {
+    "swimmer": "Davide Bonavota",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "50.66",
+    "time_secs": 50.66
+  },
+  "Davide Bonavota|100 Breast|LC": {
+    "swimmer": "Davide Bonavota",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:47.20",
+    "time_secs": 107.2
+  },
+  "Davide Bonavota|50 Fly|LC": {
+    "swimmer": "Davide Bonavota",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "42.18",
+    "time_secs": 42.18
+  },
+  "Davide Bonavota|100 Fly|LC": {
+    "swimmer": "Davide Bonavota",
+    "event": "100 Fly",
+    "course": "LC",
+    "time_str": "1:42.43",
+    "time_secs": 102.43
+  },
+  "Davide Bonavota|50 Back|LC": {
+    "swimmer": "Davide Bonavota",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "41.41",
+    "time_secs": 41.41
+  },
+  "Davide Bonavota|100 Back|LC": {
+    "swimmer": "Davide Bonavota",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:30.08",
+    "time_secs": 90.08
+  },
+  "Davide Bonavota|200 Back|LC": {
+    "swimmer": "Davide Bonavota",
+    "event": "200 Back",
+    "course": "LC",
+    "time_str": "3:12.29",
+    "time_secs": 192.29
+  },
+  "Davide Bonavota|200 IM|LC": {
+    "swimmer": "Davide Bonavota",
+    "event": "200 IM",
+    "course": "LC",
+    "time_str": "3:17.15",
+    "time_secs": 197.15
+  },
+  "Davide Bonavota|50 Free|SC": {
+    "swimmer": "Davide Bonavota",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "31.14",
+    "time_secs": 31.14
+  },
+  "Davide Bonavota|100 Free|SC": {
+    "swimmer": "Davide Bonavota",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:12.37",
+    "time_secs": 72.37
+  },
+  "Davide Bonavota|200 Free|SC": {
+    "swimmer": "Davide Bonavota",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:38.48",
+    "time_secs": 158.48
+  },
+  "Davide Bonavota|50 Breast|SC": {
+    "swimmer": "Davide Bonavota",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "48.53",
+    "time_secs": 48.53
+  },
+  "Davide Bonavota|100 Breast|SC": {
+    "swimmer": "Davide Bonavota",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:48.42",
+    "time_secs": 108.42
+  },
+  "Davide Bonavota|50 Fly|SC": {
+    "swimmer": "Davide Bonavota",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "42.30",
+    "time_secs": 42.3
+  },
+  "Davide Bonavota|50 Back|SC": {
+    "swimmer": "Davide Bonavota",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "41.22",
+    "time_secs": 41.22
+  },
+  "Davide Bonavota|200 Back|SC": {
+    "swimmer": "Davide Bonavota",
+    "event": "200 Back",
+    "course": "SC",
+    "time_str": "3:13.15",
+    "time_secs": 193.15
+  },
+  "Davide Bonavota|200 IM|SC": {
+    "swimmer": "Davide Bonavota",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "3:02.61",
+    "time_secs": 182.61
+  },
+  "Davide Bonavota|100 IM|SC": {
+    "swimmer": "Davide Bonavota",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:25.57",
+    "time_secs": 85.57
+  },
+  "Otto De Jager|50 Free|LC": {
+    "swimmer": "Otto De Jager",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "33.93",
+    "time_secs": 33.93
+  },
+  "Otto De Jager|100 Free|LC": {
+    "swimmer": "Otto De Jager",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:16.60",
+    "time_secs": 76.6
+  },
+  "Otto De Jager|200 Free|LC": {
+    "swimmer": "Otto De Jager",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "2:47.38",
+    "time_secs": 167.38
+  },
+  "Otto De Jager|50 Breast|LC": {
+    "swimmer": "Otto De Jager",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "42.64",
+    "time_secs": 42.64
+  },
+  "Otto De Jager|100 Breast|LC": {
+    "swimmer": "Otto De Jager",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:31.75",
+    "time_secs": 91.75
+  },
+  "Otto De Jager|200 Breast|LC": {
+    "swimmer": "Otto De Jager",
+    "event": "200 Breast",
+    "course": "LC",
+    "time_str": "3:21.08",
+    "time_secs": 201.07999999999998
+  },
+  "Otto De Jager|50 Fly|LC": {
+    "swimmer": "Otto De Jager",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "36.04",
+    "time_secs": 36.04
+  },
+  "Otto De Jager|50 Back|LC": {
+    "swimmer": "Otto De Jager",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "37.20",
+    "time_secs": 37.2
+  },
+  "Otto De Jager|100 Back|LC": {
+    "swimmer": "Otto De Jager",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:29.03",
+    "time_secs": 89.03
+  },
+  "Otto De Jager|200 Back|LC": {
+    "swimmer": "Otto De Jager",
+    "event": "200 Back",
+    "course": "LC",
+    "time_str": "3:34.20",
+    "time_secs": 214.2
+  },
+  "Otto De Jager|200 IM|LC": {
+    "swimmer": "Otto De Jager",
+    "event": "200 IM",
+    "course": "LC",
+    "time_str": "2:59.56",
+    "time_secs": 179.56
+  },
+  "Otto De Jager|50 Free|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "32.86",
+    "time_secs": 32.86
+  },
+  "Otto De Jager|100 Free|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:13.72",
+    "time_secs": 73.72
+  },
+  "Otto De Jager|200 Free|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:43.60",
+    "time_secs": 163.6
+  },
+  "Otto De Jager|400 Free|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "400 Free",
+    "course": "SC",
+    "time_str": "6:53.65",
+    "time_secs": 413.65
+  },
+  "Otto De Jager|50 Breast|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "41.74",
+    "time_secs": 41.74
+  },
+  "Otto De Jager|100 Breast|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:35.63",
+    "time_secs": 95.63
+  },
+  "Otto De Jager|200 Breast|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "3:20.88",
+    "time_secs": 200.88
+  },
+  "Otto De Jager|50 Fly|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "36.17",
+    "time_secs": 36.17
+  },
+  "Otto De Jager|100 Fly|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "100 Fly",
+    "course": "SC",
+    "time_str": "1:28.66",
+    "time_secs": 88.66
+  },
+  "Otto De Jager|50 Back|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "37.91",
+    "time_secs": 37.91
+  },
+  "Otto De Jager|100 Back|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:23.99",
+    "time_secs": 83.99
+  },
+  "Otto De Jager|200 Back|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "200 Back",
+    "course": "SC",
+    "time_str": "2:58.32",
+    "time_secs": 178.32
+  },
+  "Otto De Jager|200 IM|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "2:58.50",
+    "time_secs": 178.5
+  },
+  "Otto De Jager|100 IM|SC": {
+    "swimmer": "Otto De Jager",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:20.53",
+    "time_secs": 80.53
+  },
+  "Erik Anderson-Eggers|50 Free|LC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "37.30",
+    "time_secs": 37.3
+  },
+  "Erik Anderson-Eggers|100 Free|LC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:18.24",
+    "time_secs": 78.24
+  },
+  "Erik Anderson-Eggers|200 Free|LC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "2:49.72",
+    "time_secs": 169.72
+  },
+  "Erik Anderson-Eggers|400 Free|LC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "400 Free",
+    "course": "LC",
+    "time_str": "5:45.33",
+    "time_secs": 345.33
+  },
+  "Erik Anderson-Eggers|50 Breast|LC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "43.96",
+    "time_secs": 43.96
+  },
+  "Erik Anderson-Eggers|100 Breast|LC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:35.32",
+    "time_secs": 95.32
+  },
+  "Erik Anderson-Eggers|200 Breast|LC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "200 Breast",
+    "course": "LC",
+    "time_str": "3:37.66",
+    "time_secs": 217.66
+  },
+  "Erik Anderson-Eggers|50 Fly|LC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "41.73",
+    "time_secs": 41.73
+  },
+  "Erik Anderson-Eggers|100 Fly|LC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "100 Fly",
+    "course": "LC",
+    "time_str": "1:35.81",
+    "time_secs": 95.81
+  },
+  "Erik Anderson-Eggers|50 Back|LC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "42.18",
+    "time_secs": 42.18
+  },
+  "Erik Anderson-Eggers|100 Back|LC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:32.14",
+    "time_secs": 92.14
+  },
+  "Erik Anderson-Eggers|200 Back|LC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "200 Back",
+    "course": "LC",
+    "time_str": "3:11.30",
+    "time_secs": 191.3
+  },
+  "Erik Anderson-Eggers|200 IM|LC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "200 IM",
+    "course": "LC",
+    "time_str": "3:12.19",
+    "time_secs": 192.19
+  },
+  "Erik Anderson-Eggers|50 Free|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "34.84",
+    "time_secs": 34.84
+  },
+  "Erik Anderson-Eggers|100 Free|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:21.33",
+    "time_secs": 81.33
+  },
+  "Erik Anderson-Eggers|200 Free|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:47.79",
+    "time_secs": 167.79
+  },
+  "Erik Anderson-Eggers|400 Free|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "400 Free",
+    "course": "SC",
+    "time_str": "5:54.18",
+    "time_secs": 354.18
+  },
+  "Erik Anderson-Eggers|50 Breast|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "43.34",
+    "time_secs": 43.34
+  },
+  "Erik Anderson-Eggers|100 Breast|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:39.41",
+    "time_secs": 99.41
+  },
+  "Erik Anderson-Eggers|200 Breast|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "3:31.19",
+    "time_secs": 211.19
+  },
+  "Erik Anderson-Eggers|50 Fly|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "40.39",
+    "time_secs": 40.39
+  },
+  "Erik Anderson-Eggers|100 Fly|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "100 Fly",
+    "course": "SC",
+    "time_str": "1:45.52",
+    "time_secs": 105.52000000000001
+  },
+  "Erik Anderson-Eggers|50 Back|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "40.33",
+    "time_secs": 40.33
+  },
+  "Erik Anderson-Eggers|100 Back|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:27.34",
+    "time_secs": 87.34
+  },
+  "Erik Anderson-Eggers|200 Back|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "200 Back",
+    "course": "SC",
+    "time_str": "3:12.71",
+    "time_secs": 192.71
+  },
+  "Erik Anderson-Eggers|200 IM|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "3:09.56",
+    "time_secs": 189.56
+  },
+  "Erik Anderson-Eggers|100 IM|SC": {
+    "swimmer": "Erik Anderson-Eggers",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:27.82",
+    "time_secs": 87.82
+  },
+  "Max Lawson-Liesching|50 Free|LC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "37.78",
+    "time_secs": 37.78
+  },
+  "Max Lawson-Liesching|100 Free|LC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:27.97",
+    "time_secs": 87.97
+  },
+  "Max Lawson-Liesching|50 Breast|LC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "49.56",
+    "time_secs": 49.56
+  },
+  "Max Lawson-Liesching|100 Breast|LC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:53.22",
+    "time_secs": 113.22
+  },
+  "Max Lawson-Liesching|50 Fly|LC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "42.94",
+    "time_secs": 42.94
+  },
+  "Max Lawson-Liesching|50 Back|LC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "42.55",
+    "time_secs": 42.55
+  },
+  "Max Lawson-Liesching|100 Back|LC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:33.04",
+    "time_secs": 93.03999999999999
+  },
+  "Max Lawson-Liesching|50 Free|SC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "36.60",
+    "time_secs": 36.6
+  },
+  "Max Lawson-Liesching|100 Free|SC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:37.59",
+    "time_secs": 97.59
+  },
+  "Max Lawson-Liesching|50 Breast|SC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "49.32",
+    "time_secs": 49.32
+  },
+  "Max Lawson-Liesching|100 Breast|SC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:49.07",
+    "time_secs": 109.07
+  },
+  "Max Lawson-Liesching|50 Fly|SC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "40.74",
+    "time_secs": 40.74
+  },
+  "Max Lawson-Liesching|50 Back|SC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "44.09",
+    "time_secs": 44.09
+  },
+  "Max Lawson-Liesching|100 IM|SC": {
+    "swimmer": "Max Lawson-Liesching",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:32.43",
+    "time_secs": 92.43
+  },
+  "David Nagy|50 Free|LC": {
+    "swimmer": "David Nagy",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "36.15",
+    "time_secs": 36.15
+  },
+  "David Nagy|100 Free|LC": {
+    "swimmer": "David Nagy",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:27.32",
+    "time_secs": 87.32
+  },
+  "David Nagy|50 Breast|LC": {
+    "swimmer": "David Nagy",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "48.87",
+    "time_secs": 48.87
+  },
+  "David Nagy|100 Breast|LC": {
+    "swimmer": "David Nagy",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:51.56",
+    "time_secs": 111.56
+  },
+  "David Nagy|50 Back|LC": {
+    "swimmer": "David Nagy",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "44.35",
+    "time_secs": 44.35
+  },
+  "David Nagy|50 Free|SC": {
+    "swimmer": "David Nagy",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "34.62",
+    "time_secs": 34.62
+  },
+  "David Nagy|100 Free|SC": {
+    "swimmer": "David Nagy",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:17.96",
+    "time_secs": 77.96000000000001
+  },
+  "David Nagy|200 Free|SC": {
+    "swimmer": "David Nagy",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:53.00",
+    "time_secs": 173.0
+  },
+  "David Nagy|50 Breast|SC": {
+    "swimmer": "David Nagy",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "43.29",
+    "time_secs": 43.29
+  },
+  "David Nagy|50 Back|SC": {
+    "swimmer": "David Nagy",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "40.82",
+    "time_secs": 40.82
+  },
+  "David Nagy|100 Back|SC": {
+    "swimmer": "David Nagy",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:30.79",
+    "time_secs": 90.78999999999999
+  },
+  "John Plackett|50 Free|LC": {
+    "swimmer": "John Plackett",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "41.13",
+    "time_secs": 41.13
+  },
+  "John Plackett|100 Free|LC": {
+    "swimmer": "John Plackett",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:30.71",
+    "time_secs": 90.71000000000001
+  },
+  "John Plackett|50 Back|LC": {
+    "swimmer": "John Plackett",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "51.00",
+    "time_secs": 51.0
+  },
+  "John Plackett|50 Free|SC": {
+    "swimmer": "John Plackett",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "37.88",
+    "time_secs": 37.88
+  },
+  "John Plackett|100 Free|SC": {
+    "swimmer": "John Plackett",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:36.90",
+    "time_secs": 96.9
+  },
+  "John Plackett|200 Free|SC": {
+    "swimmer": "John Plackett",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "3:03.46",
+    "time_secs": 183.46
+  },
+  "John Plackett|50 Fly|SC": {
+    "swimmer": "John Plackett",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "47.58",
+    "time_secs": 47.58
+  },
+  "John Plackett|50 Back|SC": {
+    "swimmer": "John Plackett",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "46.17",
+    "time_secs": 46.17
+  },
+  "Otto Saunders|50 Free|LC": {
+    "swimmer": "Otto Saunders",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "36.48",
+    "time_secs": 36.48
+  },
+  "Otto Saunders|50 Breast|LC": {
+    "swimmer": "Otto Saunders",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "39.86",
+    "time_secs": 39.86
+  },
+  "Otto Saunders|100 Breast|LC": {
+    "swimmer": "Otto Saunders",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:34.83",
+    "time_secs": 94.83
+  },
+  "Otto Saunders|200 Breast|LC": {
+    "swimmer": "Otto Saunders",
+    "event": "200 Breast",
+    "course": "LC",
+    "time_str": "3:24.19",
+    "time_secs": 204.19
+  },
+  "Otto Saunders|50 Back|LC": {
+    "swimmer": "Otto Saunders",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "37.85",
+    "time_secs": 37.85
+  },
+  "Otto Saunders|200 IM|LC": {
+    "swimmer": "Otto Saunders",
+    "event": "200 IM",
+    "course": "LC",
+    "time_str": "3:08.39",
+    "time_secs": 188.39
+  },
+  "Otto Saunders|50 Free|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "33.33",
+    "time_secs": 33.33
+  },
+  "Otto Saunders|100 Free|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:17.69",
+    "time_secs": 77.69
+  },
+  "Otto Saunders|200 Free|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "3:05.54",
+    "time_secs": 185.54
+  },
+  "Otto Saunders|400 Free|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "400 Free",
+    "course": "SC",
+    "time_str": "6:28.12",
+    "time_secs": 388.12
+  },
+  "Otto Saunders|50 Breast|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "39.75",
+    "time_secs": 39.75
+  },
+  "Otto Saunders|100 Breast|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:33.85",
+    "time_secs": 93.85
+  },
+  "Otto Saunders|200 Breast|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "3:17.13",
+    "time_secs": 197.13
+  },
+  "Otto Saunders|50 Fly|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "37.97",
+    "time_secs": 37.97
+  },
+  "Otto Saunders|100 Fly|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "100 Fly",
+    "course": "SC",
+    "time_str": "1:32.06",
+    "time_secs": 92.06
+  },
+  "Otto Saunders|200 Fly|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "200 Fly",
+    "course": "SC",
+    "time_str": "3:56.65",
+    "time_secs": 236.65
+  },
+  "Otto Saunders|50 Back|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "38.23",
+    "time_secs": 38.23
+  },
+  "Otto Saunders|100 Back|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:35.27",
+    "time_secs": 95.27000000000001
+  },
+  "Otto Saunders|200 IM|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "3:07.09",
+    "time_secs": 187.09
+  },
+  "Otto Saunders|400 IM|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "400 IM",
+    "course": "SC",
+    "time_str": "7:03.98",
+    "time_secs": 423.98
+  },
+  "Otto Saunders|100 IM|SC": {
+    "swimmer": "Otto Saunders",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:24.78",
+    "time_secs": 84.78
+  },
+  "Manfred Zheng|50 Free|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "30.79",
+    "time_secs": 30.79
+  },
+  "Manfred Zheng|100 Free|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:12.18",
+    "time_secs": 72.18
+  },
+  "Manfred Zheng|200 Free|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "2:20.28",
+    "time_secs": 140.28
+  },
+  "Manfred Zheng|400 Free|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "400 Free",
+    "course": "LC",
+    "time_str": "4:51.44",
+    "time_secs": 291.44
+  },
+  "Manfred Zheng|50 Breast|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "43.09",
+    "time_secs": 43.09
+  },
+  "Manfred Zheng|100 Breast|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:31.74",
+    "time_secs": 91.74
+  },
+  "Manfred Zheng|200 Breast|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "200 Breast",
+    "course": "LC",
+    "time_str": "3:11.87",
+    "time_secs": 191.87
+  },
+  "Manfred Zheng|50 Fly|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "32.27",
+    "time_secs": 32.27
+  },
+  "Manfred Zheng|100 Fly|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "100 Fly",
+    "course": "LC",
+    "time_str": "1:12.31",
+    "time_secs": 72.31
+  },
+  "Manfred Zheng|200 Fly|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "200 Fly",
+    "course": "LC",
+    "time_str": "2:37.85",
+    "time_secs": 157.85
+  },
+  "Manfred Zheng|50 Back|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "50 Back",
+    "course": "LC",
+    "time_str": "37.58",
+    "time_secs": 37.58
+  },
+  "Manfred Zheng|100 Back|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:22.41",
+    "time_secs": 82.41
+  },
+  "Manfred Zheng|200 Back|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "200 Back",
+    "course": "LC",
+    "time_str": "2:49.25",
+    "time_secs": 169.25
+  },
+  "Manfred Zheng|200 IM|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "200 IM",
+    "course": "LC",
+    "time_str": "2:38.33",
+    "time_secs": 158.32999999999998
+  },
+  "Manfred Zheng|400 IM|LC": {
+    "swimmer": "Manfred Zheng",
+    "event": "400 IM",
+    "course": "LC",
+    "time_str": "5:30.42",
+    "time_secs": 330.42
+  },
+  "Manfred Zheng|50 Free|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "30.29",
+    "time_secs": 30.29
+  },
+  "Manfred Zheng|100 Free|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:05.75",
+    "time_secs": 65.75
+  },
+  "Manfred Zheng|200 Free|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:20.46",
+    "time_secs": 140.46
+  },
+  "Manfred Zheng|400 Free|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "400 Free",
+    "course": "SC",
+    "time_str": "4:56.41",
+    "time_secs": 296.40999999999997
+  },
+  "Manfred Zheng|50 Breast|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "42.34",
+    "time_secs": 42.34
+  },
+  "Manfred Zheng|100 Breast|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:33.68",
+    "time_secs": 93.68
+  },
+  "Manfred Zheng|200 Breast|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "3:05.24",
+    "time_secs": 185.24
+  },
+  "Manfred Zheng|50 Fly|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "31.91",
+    "time_secs": 31.91
+  },
+  "Manfred Zheng|100 Fly|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "100 Fly",
+    "course": "SC",
+    "time_str": "1:20.12",
+    "time_secs": 80.12
+  },
+  "Manfred Zheng|200 Fly|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "200 Fly",
+    "course": "SC",
+    "time_str": "3:04.31",
+    "time_secs": 184.31
+  },
+  "Manfred Zheng|50 Back|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "38.76",
+    "time_secs": 38.76
+  },
+  "Manfred Zheng|200 Back|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "200 Back",
+    "course": "SC",
+    "time_str": "2:37.85",
+    "time_secs": 157.85
+  },
+  "Manfred Zheng|200 IM|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "200 IM",
+    "course": "SC",
+    "time_str": "2:39.52",
+    "time_secs": 159.52
+  },
+  "Manfred Zheng|400 IM|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "400 IM",
+    "course": "SC",
+    "time_str": "5:31.48",
+    "time_secs": 331.48
+  },
+  "Manfred Zheng|100 IM|SC": {
+    "swimmer": "Manfred Zheng",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:12.25",
+    "time_secs": 72.25
+  },
+  "Ada Akar|50 Free|LC": {
+    "swimmer": "Ada Akar",
+    "event": "50 Free",
+    "course": "LC",
+    "time_str": "34.77",
+    "time_secs": 34.77
+  },
+  "Ada Akar|100 Free|LC": {
+    "swimmer": "Ada Akar",
+    "event": "100 Free",
+    "course": "LC",
+    "time_str": "1:21.64",
+    "time_secs": 81.64
+  },
+  "Ada Akar|200 Free|LC": {
+    "swimmer": "Ada Akar",
+    "event": "200 Free",
+    "course": "LC",
+    "time_str": "2:54.44",
+    "time_secs": 174.44
+  },
+  "Ada Akar|50 Breast|LC": {
+    "swimmer": "Ada Akar",
+    "event": "50 Breast",
+    "course": "LC",
+    "time_str": "44.51",
+    "time_secs": 44.51
+  },
+  "Ada Akar|100 Breast|LC": {
+    "swimmer": "Ada Akar",
+    "event": "100 Breast",
+    "course": "LC",
+    "time_str": "1:36.10",
+    "time_secs": 96.1
+  },
+  "Ada Akar|200 Breast|LC": {
+    "swimmer": "Ada Akar",
+    "event": "200 Breast",
+    "course": "LC",
+    "time_str": "3:25.53",
+    "time_secs": 205.53
+  },
+  "Ada Akar|50 Fly|LC": {
+    "swimmer": "Ada Akar",
+    "event": "50 Fly",
+    "course": "LC",
+    "time_str": "36.49",
+    "time_secs": 36.49
+  },
+  "Ada Akar|100 Back|LC": {
+    "swimmer": "Ada Akar",
+    "event": "100 Back",
+    "course": "LC",
+    "time_str": "1:33.46",
+    "time_secs": 93.46000000000001
+  },
+  "Ada Akar|50 Free|SC": {
+    "swimmer": "Ada Akar",
+    "event": "50 Free",
+    "course": "SC",
+    "time_str": "33.92",
+    "time_secs": 33.92
+  },
+  "Ada Akar|100 Free|SC": {
+    "swimmer": "Ada Akar",
+    "event": "100 Free",
+    "course": "SC",
+    "time_str": "1:15.15",
+    "time_secs": 75.15
+  },
+  "Ada Akar|200 Free|SC": {
+    "swimmer": "Ada Akar",
+    "event": "200 Free",
+    "course": "SC",
+    "time_str": "2:49.00",
+    "time_secs": 169.0
+  },
+  "Ada Akar|50 Breast|SC": {
+    "swimmer": "Ada Akar",
+    "event": "50 Breast",
+    "course": "SC",
+    "time_str": "43.57",
+    "time_secs": 43.57
+  },
+  "Ada Akar|100 Breast|SC": {
+    "swimmer": "Ada Akar",
+    "event": "100 Breast",
+    "course": "SC",
+    "time_str": "1:36.24",
+    "time_secs": 96.24000000000001
+  },
+  "Ada Akar|200 Breast|SC": {
+    "swimmer": "Ada Akar",
+    "event": "200 Breast",
+    "course": "SC",
+    "time_str": "3:23.88",
+    "time_secs": 203.88
+  },
+  "Ada Akar|50 Fly|SC": {
+    "swimmer": "Ada Akar",
+    "event": "50 Fly",
+    "course": "SC",
+    "time_str": "38.28",
+    "time_secs": 38.28
+  },
+  "Ada Akar|50 Back|SC": {
+    "swimmer": "Ada Akar",
+    "event": "50 Back",
+    "course": "SC",
+    "time_str": "43.80",
+    "time_secs": 43.8
+  },
+  "Ada Akar|100 Back|SC": {
+    "swimmer": "Ada Akar",
+    "event": "100 Back",
+    "course": "SC",
+    "time_str": "1:32.38",
+    "time_secs": 92.38
+  },
+  "Ada Akar|100 IM|SC": {
+    "swimmer": "Ada Akar",
+    "event": "100 IM",
+    "course": "SC",
+    "time_str": "1:33.71",
+    "time_secs": 93.71000000000001
+  }
+}
