@@ -1,8 +1,2 @@
 [build]
-  publish = "docs"
-
-[[redirects]]
-  from = "/"
-  to = "/brompton_home.html"
-  status = 302
-  force = true
+  publish = "docs/brompton"

@@ -1,0 +1,14 @@
+{
+  "name": "CWSC Rankings",
+  "short_name": "CWSC",
+  "description": "Chelsea Westminster SC club swim rankings and qualifying times",
+  "start_url": "./cwsc.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fa",
+  "theme_color": "#1a3a5c",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

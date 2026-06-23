@@ -35,26 +35,27 @@ from pathlib import Path
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 
-GIT_ROOT  = Path("/Users/jamesmandikos/Documents/Claude Cowork")
-DOCS_DIR  = GIT_ROOT / "docs"
-SWIM_ROOT = GIT_ROOT / "Outputs" / "Swimming Results"
+GIT_ROOT          = Path("/Users/jamesmandikos/Documents/swim-results")
+BROMPTON_DOCS_DIR = GIT_ROOT / "docs" / "brompton"
+CWSC_DOCS_DIR     = GIT_ROOT / "docs" / "cwsc"
+SWIM_ROOT         = GIT_ROOT / "Outputs" / "Swimming Results"
 
 # (docs HTML,  xlsx,  qt_tab)
 SWIMMER_FILES = {
     "Margot Mandikos": (
-        DOCS_DIR  / "margot_club_rankings.html",
+        BROMPTON_DOCS_DIR / "bsc_u14_girls_rankings.html",
         SWIM_ROOT / "Margot" / "MargotSwimTimes.xlsx",
         "2027-Times",
     ),
     "Ava Mandikos": (
-        DOCS_DIR  / "ava_club_rankings.html",
+        CWSC_DOCS_DIR / "cwsc_u14_girls_rankings.html",
         SWIM_ROOT / "Ava"    / "AvaSwimTimes.xlsx",
         "2026-Times",
     ),
 }
 
 # Peers live in Margot's file
-PEER_FILE = DOCS_DIR / "margot_club_rankings.html"
+PEER_FILE = BROMPTON_DOCS_DIR / "bsc_u14_girls_rankings.html"
 
 # Manual swims files — persist times not yet on Swim England so regenerations don't lose them
 MANUAL_SWIMS_FILES = {
