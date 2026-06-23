@@ -1,2 +1,3 @@
-[build]
-  publish = "docs/brompton"
+# Publish directory is configured per-site in the Netlify dashboard:
+# brompton-sc-results.netlify.app → docs/brompton
+# cwsc-results.netlify.app        → docs/cwsc
