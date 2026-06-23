@@ -579,11 +579,13 @@ function showHistory(swimmerName,eventName,course){{
   }}
 
   document.getElementById('history-modal').style.display='flex';
+  var _hb=document.getElementById('home-btn');if(_hb)_hb.style.display='none';
 }}
 
 function closeModal(){{
   document.getElementById('history-modal').style.display='none';
   if(_chart){{_chart.destroy();_chart=null;}}
+  var _hb=document.getElementById('home-btn');if(_hb)_hb.style.display='';
 }}
 function filterChartPeriod(months,btn){{
   document.querySelectorAll('#chart-period-btns button').forEach(function(b){{
@@ -754,7 +756,6 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
     for stroke in stroke_names:
         thead_stroke_row += (
             f'<th colspan="3" class="stroke-header" data-stroke="{SLUG[stroke]}" '
-            f'data-tooltip="Qualifications ({QT_YEAR})" '
             f'style="padding:6px 4px;text-align:center;background:#2e75b6;border-left:1px solid rgba(255,255,255,.4)">'
             f'{stroke}</th>'
         )
@@ -831,7 +832,6 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
   td.event{{cursor:default;min-width:62px;text-align:center;vertical-align:top}}
   td.converted{{min-width:62px;text-align:center;color:#777;vertical-align:top}}
   .stroke-header{{position:relative}}
-  .stroke-header[data-tooltip]:hover::after{{content:attr(data-tooltip);position:absolute;top:calc(100% + 4px);left:50%;transform:translateX(-50%);background:#333;color:#fff;font-size:10px;font-weight:400;padding:3px 8px;border-radius:4px;white-space:nowrap;z-index:200;pointer-events:none}}
   .date{{color:#888;font-size:9px}}
   .settings{{background:white;border:1px solid #ddd;border-radius:6px;padding:12px 16px;margin-bottom:12px}}
   .settings-body{{display:flex;flex-wrap:wrap;gap:20px}}
@@ -848,9 +848,6 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
   }}
 </style>
 <script>
-function _stip(e,th){{var t=document.getElementById('stroke-tip');t.textContent=th.getAttribute('data-tooltip');t.style.left=(e.clientX+12)+'px';t.style.top=(e.clientY+16)+'px';t.style.display='block';}}
-function _smove(e){{var t=document.getElementById('stroke-tip');t.style.left=(e.clientX+12)+'px';t.style.top=(e.clientY+16)+'px';}}
-function _shide(){{document.getElementById('stroke-tip').style.display='none';}}
 (function(){{
   /* ── Sort ── */
   function cellValue(td,asc){{
@@ -990,9 +987,6 @@ function _shide(){{document.getElementById('stroke-tip').style.display='none';}}
     'free':['50-free','100-free','200-free','400-free','800-free'],
     'breast':['50-breast','100-breast','200-breast'],'im':['200-im','400-im']}};
 
-  window._stip=function(e,th){{var t=document.getElementById('stroke-tip');t.textContent=th.getAttribute('data-tooltip');t.style.left=(e.clientX+12)+'px';t.style.top=(e.clientY+16)+'px';t.style.display='block';}};
-  window._smove=function(e){{var t=document.getElementById('stroke-tip');t.style.left=(e.clientX+12)+'px';t.style.top=(e.clientY+16)+'px';}};
-  window._shide=function(){{document.getElementById('stroke-tip').style.display='none';}};
   window.addEventListener('DOMContentLoaded',function(){{
     /* Apply stroke/course prefs saved by brompton.html */
     try{{
@@ -1057,7 +1051,7 @@ function _shide(){{document.getElementById('stroke-tip').style.display='none';}}
 </script>
 </head>
 <body>
-<a href="brompton_home.html" style="position:fixed;top:12px;right:12px;z-index:9999;background:#1565C0;color:#fff;padding:7px 16px;border-radius:20px;text-decoration:none;font-size:12px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-family:-apple-system,sans-serif">← Home</a>
+<a id="home-btn" href="brompton_home.html" style="position:fixed;top:12px;right:12px;z-index:9999;background:#1565C0;color:#fff;padding:7px 16px;border-radius:20px;text-decoration:none;font-size:12px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-family:-apple-system,sans-serif">← Home</a>
 <h1>Brompton SC ⭐ {gender_label} {age}s ({yob}) — Club Rankings</h1>
 <div class="subtitle">Generated {run_ts} · {len(swimmers)} swimmers</div>
 
@@ -1099,7 +1093,6 @@ function _shide(){{document.getElementById('stroke-tip').style.display='none';}}
 </table>
 </div>
 <script>if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
-<div id="stroke-tip" style="display:none;position:fixed;background:#333;color:#fff;font-size:11px;padding:4px 10px;border-radius:4px;pointer-events:none;z-index:9999;white-space:nowrap"></div>
 {_history_modal_html(all_histories or {{}}, [s['name'] for s in swimmers])}
 </body>
 </html>"""
@@ -1211,7 +1204,6 @@ def build_combined_page(groups_data, run_time, all_histories=None):
     thead1 += '<th rowspan="2" style="padding:8px 4px;text-align:center;font-size:10px">Age</th>'
     for stroke in stroke_names:
         thead1 += (f'<th colspan="4" class="stroke-header" data-stroke="{SLUG[stroke]}" '
-                   f'data-tooltip="Qualifications ({QT_YEAR})" '
                    f'style="padding:6px 4px;text-align:center;background:#2e75b6;border-left:1px solid rgba(255,255,255,.4)">'
                    f'{stroke}</th>')
     thead1 += "</tr>"
@@ -1345,7 +1337,6 @@ def build_combined_page(groups_data, run_time, all_histories=None):
   td.converted{{min-width:62px;text-align:center;color:#777;vertical-align:top}}
   td.best-cell{{min-width:62px;text-align:center;background:#f8fff8}}
   .stroke-header{{position:relative}}
-  .stroke-header[data-tooltip]:hover::after{{content:attr(data-tooltip);position:absolute;top:calc(100% + 4px);left:50%;transform:translateX(-50%);background:#333;color:#fff;font-size:10px;font-weight:400;padding:3px 8px;border-radius:4px;white-space:nowrap;z-index:200;pointer-events:none}}
   .best-src{{color:#888;font-size:9px;font-style:italic}}
   .date{{color:#888;font-size:9px}}
   #status-bar{{margin-bottom:8px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}}
@@ -2093,7 +2084,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
 </div>
 <script>if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
 <script>if(!window.location.search)window.location.replace('./brompton_home.html');</script>
-<a href="brompton_home.html" style="position:fixed;top:12px;right:12px;z-index:9999;background:#1565C0;color:#fff;padding:7px 16px;border-radius:20px;text-decoration:none;font-size:12px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-family:-apple-system,sans-serif">← Home</a>
+<a id="home-btn" href="brompton_home.html" style="position:fixed;top:12px;right:12px;z-index:9999;background:#1565C0;color:#fff;padding:7px 16px;border-radius:20px;text-decoration:none;font-size:12px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-family:-apple-system,sans-serif">← Home</a>
 <div id="pb-modal" onclick="if(event.target===this)closePBModal()">
   <div id="pb-inner">
     <div class="pb-hdr">
@@ -2180,7 +2171,6 @@ window.closePBModal=function(){{
 document.addEventListener('keydown',function(e){{if(e.key==='Escape')closePBModal();}});
 }})();
 </script>
-<div id="stroke-tip" style="display:none;position:fixed;background:#333;color:#fff;font-size:11px;padding:4px 10px;border-radius:4px;pointer-events:none;z-index:9999;white-space:nowrap"></div>
 {_hist_modal}
 </body>
 </html>"""
