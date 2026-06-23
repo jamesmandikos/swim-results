@@ -266,7 +266,7 @@ function _shide(){document.getElementById('stroke-tip').style.display='none';}
 <body>
 <a href="brompton_home.html" style="position:fixed;top:12px;right:12px;z-index:9999;background:#1565C0;color:#fff;padding:7px 16px;border-radius:20px;text-decoration:none;font-size:12px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-family:-apple-system,sans-serif">← Home</a>
 <h1>Brompton SC ⭐ Female 14s (2012) — Club Rankings</h1>
-<div class="subtitle">Generated 23 June 2026 17:39 · 11 swimmers</div>
+<div class="subtitle">Generated 23 June 2026 17:52 · 11 swimmers</div>
 
 <div id="progress-bar">
   <span style="font-size:11px;color:#27ae60;font-weight:600">▲ Improvement since last run</span>
@@ -307,27 +307,330 @@ function _shide(){document.getElementById('stroke-tip').style.display='none';}
 </div>
 <script>if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
 <div id="stroke-tip" style="display:none;position:fixed;background:#333;color:#fff;font-size:11px;padding:4px 10px;border-radius:4px;pointer-events:none;z-index:9999;white-space:nowrap"></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 <script>
 var HISTORY={};
-window.showHistory=function(name,event,course){
-  var hist=(HISTORY[name]||{})[event+'|'+course]||[];
-  var modal=document.getElementById('hist-modal');
-  document.getElementById('hist-title').textContent=name+' — '+event+' '+course+' ('+hist.length+' swims)';
-  var rows=hist.length?hist.slice().reverse().map(function(s){
-    return '<tr><td style="padding:4px 8px;font-weight:600">'+s.time+'</td><td style="padding:4px 8px;color:#555">'+s.date+'</td><td style="padding:4px 8px;font-size:10px;color:#777">'+((s.meet||''))+'</td></tr>';
-  }).join(''):'<tr><td colspan="3" style="padding:16px;text-align:center;color:#888;font-style:italic">No history cached — run swimming_results.py --fetch-history</td></tr>';
-  document.getElementById('hist-tbody').innerHTML='<tr style="background:#f0f4f8"><th style="padding:4px 8px">Time</th><th style="padding:4px 8px">Date</th><th style="padding:4px 8px">Meet</th></tr>'+rows;
-  modal.style.display='flex';
-};
+var _chart=null;
+
+function parseSeconds(t){
+  if(!t)return null; t=t.trim();
+  return t.indexOf(':')>=0?parseFloat(t.split(':')[0])*60+parseFloat(t.split(':')[1]):parseFloat(t);
+}
+function formatTime(s){
+  if(s===null||isNaN(s))return '';
+  s=Math.round(s*100)/100;
+  if(s>=60){var m=Math.floor(s/60);var r=(s-m*60).toFixed(2).padStart(5,'0');return m+':'+r;}
+  return s.toFixed(2);
+}
+function parseDate(d){var p=d.split('/');return new Date('20'+p[2],p[1]-1,p[0]);}
+
+function _getQD(eventName,course,swimmerName){
+  if(typeof QT_DATA!=='undefined')return QT_DATA[eventName+'|'+course]||{};
+  if(typeof QT_ALL!=='undefined'){
+    var row=document.querySelector('[data-swimmer="'+swimmerName.replace(/"/g,'\"')+'"]');
+    if(row){var gc=row.dataset.gender,yob=row.dataset.yob;return QT_ALL[gc+'|'+yob+'|'+eventName+'|'+course]||{};}
+  }
+  return {};
+}
+
+function showHistory(swimmerName,eventName,course){
+  var swimmerHist=HISTORY[swimmerName]||{};
+  var scSwims=swimmerHist[eventName+'|SC']||[];
+  var lcSwims=swimmerHist[eventName+'|LC']||[];
+  var swims=course==='SC'?scSwims:lcSwims;
+  document.getElementById('modal-title').textContent=swimmerName+' — '+eventName+' '+course+' ('+swims.length+' swims)';
+
+  if(!HISTORY[swimmerName]){
+    document.getElementById('history-modal').style.display='flex';
+    document.getElementById('modal-table').innerHTML=
+      '<tr><td style="padding:20px;text-align:center;color:#888;font-style:italic">'
+      +'No history cached for '+swimmerName+'.<br>Run <strong>python3 swimming_results.py --fetch-history</strong> to load BSC swimmer histories.'
+      +'</td></tr>';
+    if(_chart){_chart.destroy();_chart=null;}
+    document.getElementById('chart-legend').innerHTML='';
+    return;
+  }
+
+  function sortedArr(arr){return arr.slice().sort(function(a,b){return parseDate(a.date)-parseDate(b.date);});}
+  var scArr=sortedArr(scSwims),lcArr=sortedArr(lcSwims);
+  function toPoints(arr){return arr.map(function(s){return{x:parseDate(s.date).toISOString(),y:parseSeconds(s.time)};}); }
+  var scPoints=toPoints(scArr),lcPoints=toPoints(lcArr);
+  var scVals=scArr.map(function(s){return parseSeconds(s.time);});
+  var lcVals=lcArr.map(function(s){return parseSeconds(s.time);});
+
+  var qd=_getQD(eventName,course,swimmerName);
+  var ctyQt=qd.county_qt||null,ctyCons=qd.county_cons||null;
+  var regQt=qd.region_qt||null,regCons=qd.region_cons||null;
+
+  var allVals=scVals.concat(lcVals).filter(function(v){return v!==null&&!isNaN(v);});
+  [ctyQt,ctyCons,regQt,regCons].forEach(function(v){if(v)allVals.push(v);});
+  var yMin=Math.min.apply(null,allVals),yMax=Math.max.apply(null,allVals)||1;
+  var range=yMax-yMin||1,rawStep=range/5;
+  var mag=Math.pow(10,Math.floor(Math.log10(rawStep)));
+  var step=[0.5,1,2,2.5,5,10,15,20,30,60].find(function(s){return s*mag>=rawStep;})*mag||rawStep;
+  var axMin=Math.floor(yMin/step)*step,axMax=Math.ceil(yMax/step)*step+step;
+
+  var allDates=[].concat(scArr.map(function(s){return parseDate(s.date);}).concat(lcArr.map(function(s){return parseDate(s.date);})));
+  var minD=allDates.length?new Date(Math.min.apply(null,allDates)-30*864e5):new Date(2025,0,1);
+  var maxD=allDates.length?new Date(Math.max.apply(null,allDates)+30*864e5):new Date(2027,0,1);
+  function refLinePoints(val){return [{x:minD.toISOString(),y:val},{x:maxD.toISOString(),y:val}];}
+
+  var datasets=[];
+  var swimPoints=course==='SC'?scPoints:lcPoints;
+  var swimColor=course==='SC'?'#2e75b6':'#27ae60';
+  var swimBg=course==='SC'?'rgba(46,117,182,0.08)':'rgba(39,174,96,0.08)';
+  if(swimPoints.length)datasets.push({label:course,data:swimPoints,borderColor:swimColor,backgroundColor:swimBg,pointRadius:5,pointHoverRadius:7,tension:0.3,fill:false});
+  if(ctyCons)datasets.push({label:'County Cons',data:refLinePoints(ctyCons),borderColor:'#e67e22',borderDash:[4,4],pointRadius:0,borderWidth:1.5});
+  if(ctyQt)  datasets.push({label:'County QT',  data:refLinePoints(ctyQt), borderColor:'#e74c3c',borderDash:[6,3],pointRadius:0,borderWidth:1.5});
+  if(regCons)datasets.push({label:'Regional Cons',data:refLinePoints(regCons),borderColor:'#16a085',borderDash:[4,4],pointRadius:0,borderWidth:1.5});
+  if(regQt)  datasets.push({label:'Regional QT', data:refLinePoints(regQt), borderColor:'#8e44ad',borderDash:[6,3],pointRadius:0,borderWidth:1.5});
+
+  if(_chart){_chart.destroy();_chart=null;}
+  var ctx=document.getElementById('history-chart').getContext('2d');
+  _chart=new Chart(ctx,{
+    type:'line',data:{datasets:datasets},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{label:function(c){return c.dataset.label+': '+formatTime(c.parsed.y);}}}
+      },
+      scales:{
+        y:{reverse:true,min:axMin,max:axMax,
+            ticks:{stepSize:step,callback:function(v){return formatTime(v);},font:{size:11}},
+            title:{display:true,text:'Time (faster ↑)',font:{size:11}}},
+        x:{type:'time',time:{unit:'month',displayFormats:{month:'MMM yy'}},ticks:{font:{size:10},maxRotation:45}}
+      }
+    }
+  });
+
+  var legendDiv=document.getElementById('chart-legend');
+  legendDiv.innerHTML='';
+  _chart.data.datasets.forEach(function(ds,i){
+    var colMap={'County Cons':[3,4],'County QT':[5,6],'Regional Cons':[7,8],'Regional QT':[9,10]};
+    if(!colMap[ds.label])return;
+    var label=document.createElement('label');
+    label.style.cssText='display:flex;align-items:center;gap:5px;cursor:pointer;user-select:none';
+    var cb=document.createElement('input');
+    cb.type='checkbox';cb.checked=true;
+    cb.addEventListener('change',function(){
+      _chart.setDatasetVisibility(i,cb.checked);
+      _chart.update();
+      svg.style.opacity=cb.checked?'1':'0.35';
+      var cols=colMap[ds.label];
+      if(cols){
+        var table=document.getElementById('modal-table');
+        if(table){table.querySelectorAll('tr').forEach(function(row){cols.forEach(function(ci){if(row.cells[ci])row.cells[ci].style.display=cb.checked?'':'none';});});}
+      }
+    });
+    var svgNS='http://www.w3.org/2000/svg';
+    var svg=document.createElementNS(svgNS,'svg');
+    svg.setAttribute('width','28');svg.setAttribute('height','10');
+    var line=document.createElementNS(svgNS,'line');
+    line.setAttribute('x1','0');line.setAttribute('y1','5');line.setAttribute('x2','28');line.setAttribute('y2','5');
+    line.setAttribute('stroke',ds.borderColor);line.setAttribute('stroke-width',ds.borderWidth||2);
+    if(ds.borderDash&&ds.borderDash.length)line.setAttribute('stroke-dasharray',ds.borderDash.join(','));
+    svg.appendChild(line);
+    label.appendChild(cb);label.appendChild(svg);label.appendChild(document.createTextNode(ds.label));
+    legendDiv.appendChild(label);
+  });
+
+  // Table — most recent first
+  var sorted=swims.slice().sort(function(a,b){return parseDate(b.date)-parseDate(a.date);});
+  var ctyConsFmt=formatTime(ctyCons)||'—',ctyQtFmt=formatTime(ctyQt)||'—';
+  var regConsFmt=formatTime(regCons)||'—',regQtFmt=formatTime(regQt)||'—';
+
+  function gapStr(swimSecs,refSecs){
+    if(!refSecs||!swimSecs)return '—';
+    var diff=Math.round((swimSecs-refSecs)*100)/100;
+    if(Math.abs(diff)<0.005)return '✓';
+    var sign=diff>0?'+':'-';
+    var abs=Math.abs(diff);
+    if(abs>=60){var m=Math.floor(abs/60);var s=(abs-m*60).toFixed(1);return sign+m+':'+s.padStart(4,'0');}
+    return sign+abs.toFixed(2)+'s';
+  }
+
+  var pbSecs=Math.min.apply(null,sorted.map(function(s){return parseSeconds(s.time)||Infinity;}).filter(isFinite));
+
+  var tbody='<thead><tr style="background:#1f4e79;color:white">'
+    +'<th style="padding:6px 8px;text-align:left">Date</th>'
+    +'<th style="padding:6px 8px;text-align:left">Meet</th>'
+    +'<th style="padding:6px 8px;text-align:center">Time</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#ffa94d">Cty Cons</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#ffa94d">Gap</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#ff6b6b">Cty QT</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#ff6b6b">Gap</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#63e6be">Reg Cons</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#63e6be">Gap</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#cc99ff">Reg QT</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#cc99ff">Gap</th>'
+    +'</tr></thead><tbody>';
+
+  sorted.forEach(function(s,i){
+    var secs=parseSeconds(s.time);
+    var isPB=secs&&Math.abs(secs-pbSecs)<0.005;
+    var bg=isPB?'#fffde7':(i%2===0?'#f9f9f9':'white');
+    function qualTd(fmt,ref){
+      var col=ref&&secs&&secs<=ref?'color:#27ae60;font-weight:600':'color:#888';
+      return '<td style="padding:5px 8px;text-align:center;'+col+'">'+fmt+'</td>';
+    }
+    function gapTd(ref){
+      var g=gapStr(secs,ref);
+      var col=g==='✓'?'color:#27ae60;font-weight:600':g.startsWith('-')?'color:#27ae60':g==='—'?'color:#ccc':'color:#e74c3c';
+      return '<td style="padding:4px 8px;text-align:center;font-size:10px;'+col+'">'+g+'</td>';
+    }
+    tbody+='<tr data-ts="'+parseDate(s.date).getTime()+'" style="background:'+bg+'">'
+      +'<td style="padding:5px 8px">'+s.date+'</td>'
+      +'<td style="padding:5px 8px;max-width:180px;overflow:hidden;text-overflow:ellipsis">'+(s.meet||'')+'</td>'
+      +'<td style="padding:5px 8px;text-align:center;font-weight:600">'+(isPB?'★ ':'')+s.time+'</td>'
+      +qualTd(ctyConsFmt,ctyCons)+gapTd(ctyCons)
+      +qualTd(ctyQtFmt,ctyQt)+gapTd(ctyQt)
+      +qualTd(regConsFmt,regCons)+gapTd(regCons)
+      +qualTd(regQtFmt,regQt)+gapTd(regQt)
+      +'</tr>';
+  });
+  document.getElementById('modal-table').innerHTML=tbody+'</tbody>';
+
+  // Qual gap summary (SC + LC rows)
+  var _qsEl=document.getElementById('modal-qual-summary');
+  if(_qsEl){
+    function _bestSwim(arr){
+      if(!arr.length)return null;
+      return arr.reduce(function(b,s){return(!b||parseSeconds(s.time)<parseSeconds(b.time))?s:b;});
+    }
+    var _scBest=_bestSwim(scArr),_lcBest=_bestSwim(lcArr);
+    var _scPb=_scBest?parseSeconds(_scBest.time):null;
+    var _lcPb=_lcBest?parseSeconds(_lcBest.time):null;
+    var _qdSC=_getQD(eventName,'SC',swimmerName);
+    var _qdLC=_getQD(eventName,'LC',swimmerName);
+
+    function _chip(lbl,std,pb){
+      if(!std)return '';
+      var g=gapStr(pb,std);
+      var ok=g==='✓'||(g!=='—'&&g.charAt(0)==='-');
+      var noPb=!pb;
+      var gc=noPb?'#bbb':ok?'#15803d':'#dc2626';
+      var bg=ok&&!noPb?'rgba(21,128,61,0.08)':'transparent';
+      return '<span style="display:inline-flex;align-items:center;gap:3px;padding:1px 6px;border-radius:4px;background:'+bg+'">'
+        +'<span style="font-size:10px;color:#888">'+lbl+'</span>'
+        +'<span style="font-size:11px;font-weight:700;color:'+gc+';font-variant-numeric:tabular-nums">'+g+'</span>'
+        +'</span>';
+    }
+    function _row(icon,label,accentBg,accentText,qd,best,pb){
+      var pbPart=best
+        ?'<span style="font-size:11px;font-weight:700;color:#1a3a5c;font-variant-numeric:tabular-nums;margin-right:2px">'+best.time+'</span>'
+         +'<span style="font-size:10px;color:#aaa;margin-right:8px">'+best.date+'</span>'
+        :'<span style="font-size:10px;color:#ccc;font-style:italic;margin-right:8px">no swims</span>';
+      var chips=_chip('Cty C',qd.county_cons||null,pb)
+        +_chip('Cty QT',qd.county_qt||null,pb)
+        +'<span style="color:#ddd;margin:0 2px">│</span>'
+        +_chip('Reg C',qd.region_cons||null,pb)
+        +_chip('Reg QT',qd.region_qt||null,pb);
+      return '<div style="display:flex;align-items:center;gap:6px;padding:4px 8px;border-radius:6px;'
+        +'background:'+accentBg+';border:1px solid '+accentText+'20;flex-wrap:wrap">'
+        +'<span style="font-size:10px;font-weight:700;color:'+accentText+';white-space:nowrap;min-width:70px">'+icon+' '+label+'</span>'
+        +'<span style="color:#e0e0e0;font-size:11px">│</span>'
+        +pbPart+chips+'</div>';
+    }
+    _qsEl.style.display='';
+    _qsEl.innerHTML=
+       _row('📏','Short Course','#eef4fb','#2e75b6',_qdSC,_scBest,_scPb)
+      +'<div style="height:4px"></div>'
+      +_row('🌊','Long Course','#edfaf3','#1e8449',_qdLC,_lcBest,_lcPb);
+  }
+
+  document.getElementById('history-modal').style.display='flex';
+}
+
+function closeModal(){
+  document.getElementById('history-modal').style.display='none';
+  if(_chart){_chart.destroy();_chart=null;}
+}
+function filterChartPeriod(months,btn){
+  document.querySelectorAll('#chart-period-btns button').forEach(function(b){
+    b.style.background=b===btn?'#1f4e79':'#f0f4f8';
+    b.style.color=b===btn?'white':'#444';
+    b.style.borderColor=b===btn?'#1f4e79':'#ccc';
+  });
+  if(!_chart)return;
+  var now=new Date();
+  if(months===null){
+    _chart.options.scales.x.min=undefined;_chart.options.scales.x.max=undefined;
+    _chart.options.scales.y.min=undefined;_chart.options.scales.y.max=undefined;
+  }else{
+    var cut=new Date(now.getFullYear(),now.getMonth()-months,now.getDate());
+    _chart.options.scales.x.min=cut.getTime();_chart.options.scales.x.max=now.getTime();
+    var cutTs=cut.getTime(),visVals=[];
+    _chart.data.datasets.forEach(function(ds){
+      if(!_chart.isDatasetVisible(_chart.data.datasets.indexOf(ds)))return;
+      ds.data.forEach(function(pt){var t=new Date(pt.x).getTime();if(t>=cutTs&&pt.y!=null)visVals.push(pt.y);});
+    });
+    if(visVals.length){
+      var yMin=Math.min.apply(null,visVals),yMax=Math.max.apply(null,visVals);
+      var pad=(yMax-yMin)||2;pad=Math.max(pad*0.15,0.5);
+      _chart.options.scales.y.min=Math.floor((yMin-pad)*10)/10;
+      _chart.options.scales.y.max=Math.ceil((yMax+pad)*10)/10;
+    }
+  }
+  _chart.update();
+  document.querySelectorAll('#modal-table tbody tr').forEach(function(row){
+    var ts=parseInt(row.dataset.ts,10);
+    row.style.display=(months!==null&&!isNaN(ts)&&ts<(months?new Date(now.getFullYear(),now.getMonth()-months,now.getDate()).getTime():0))?'none':'';
+  });
+}
+function toggleFullscreen(){
+  var el=document.getElementById('modal-inner');
+  var isMax=el.dataset.max==='1';
+  if(isMax){el.style.width='92vw';el.style.height='88vh';el.style.borderRadius='8px';el.dataset.max='0';}
+  else{el.style.width='100vw';el.style.height='100vh';el.style.borderRadius='0';el.dataset.max='1';}
+  if(_chart)_chart.resize();
+}
+var _modalDragStartedOnChild=false;
+['mousedown','touchstart','pointerdown'].forEach(function(ev){document.getElementById('history-modal').addEventListener(ev,function(e){_modalDragStartedOnChild=(e.target!==this);});});
+document.getElementById('history-modal').addEventListener('click',function(e){if(e.target===this&&!_modalDragStartedOnChild)closeModal();_modalDragStartedOnChild=false;});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
 </script>
-<div id="hist-modal" onclick="if(event.target===this)this.style.display='none'" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);z-index:2000;align-items:center;justify-content:center">
-  <div style="background:white;border-radius:8px;padding:20px;width:90vw;max-width:500px;max-height:80vh;display:flex;flex-direction:column;box-shadow:0 8px 32px rgba(0,0,0,.25)">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
-      <h3 id="hist-title" style="margin:0;font-size:14px;color:#1a3a5c;flex:1"></h3>
-      <button onclick="document.getElementById('hist-modal').style.display='none'" style="border:none;background:none;font-size:22px;cursor:pointer;color:#666;line-height:1">&times;</button>
+<style>
+@media(orientation:landscape) and (max-height:520px){
+  #modal-inner{height:96vh!important;padding:8px 14px!important;min-width:0!important;min-height:0!important}
+  #modal-body{flex-direction:row!important;gap:8px!important}
+  #modal-chart-canvas-wrap{min-height:140px!important}
+  #modal-table-wrap{min-height:0!important;flex:1.2!important}
+}
+</style>
+<div id="history-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;
+  background:rgba(0,0,0,.5);z-index:2000;align-items:center;justify-content:center;">
+  <div id="modal-inner" style="background:white;border-radius:8px;padding:20px 24px;
+    width:92vw;height:88vh;display:flex;flex-direction:column;
+    box-shadow:0 8px 32px rgba(0,0,0,.3);resize:both;overflow:auto;min-width:500px;min-height:400px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-shrink:0">
+      <h2 id="modal-title" style="margin:0;font-size:15px;color:#1a3a5c"></h2>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button onclick="toggleFullscreen()" title="Toggle fullscreen"
+          style="border:1px solid #ddd;background:#f9f9f9;font-size:13px;cursor:pointer;padding:2px 8px;border-radius:3px;color:#555">⤢</button>
+        <button onclick="closeModal()"
+          style="border:none;background:none;font-size:22px;cursor:pointer;color:#666;line-height:1">&times;</button>
+      </div>
     </div>
-    <div style="overflow-y:auto;flex:1">
-      <table style="width:100%;border-collapse:collapse;font-size:12px"><tbody id="hist-tbody"></tbody></table>
+    <div id="modal-qual-summary" style="margin-bottom:10px;flex-shrink:0"></div>
+    <div id="modal-body" style="flex:1;min-height:0;display:flex;flex-direction:column;gap:12px;overflow:hidden">
+      <div id="modal-chart-wrap" style="flex:2;min-height:0;display:flex;flex-direction:column">
+        <div id="modal-chart-canvas-wrap" style="position:relative;flex:1;min-height:280px;touch-action:none">
+          <canvas id="history-chart" style="touch-action:none;user-select:none"></canvas>
+        </div>
+        <div id="chart-legend" style="display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:8px;font-size:11px;flex-shrink:0"></div>
+        <div id="chart-period-btns" style="display:flex;gap:6px;margin-top:8px;flex-shrink:0">
+          <button onclick="filterChartPeriod(3,this)"   style="border:1px solid #ccc;border-radius:12px;font-size:11px;padding:3px 10px;cursor:pointer;background:#f0f4f8;color:#444;touch-action:manipulation">3M</button>
+          <button onclick="filterChartPeriod(6,this)"   style="border:1px solid #ccc;border-radius:12px;font-size:11px;padding:3px 10px;cursor:pointer;background:#f0f4f8;color:#444;touch-action:manipulation">6M</button>
+          <button onclick="filterChartPeriod(12,this)"  style="border:1px solid #ccc;border-radius:12px;font-size:11px;padding:3px 10px;cursor:pointer;background:#f0f4f8;color:#444;touch-action:manipulation">1Y</button>
+          <button onclick="filterChartPeriod(24,this)"  style="border:1px solid #ccc;border-radius:12px;font-size:11px;padding:3px 10px;cursor:pointer;background:#f0f4f8;color:#444;touch-action:manipulation">2Y</button>
+          <button onclick="filterChartPeriod(null,this)" style="border:1px solid #ccc;border-radius:12px;font-size:11px;padding:3px 10px;cursor:pointer;background:#1f4e79;color:white;border-color:#1f4e79;touch-action:manipulation">All</button>
+        </div>
+      </div>
+      <div id="modal-table-wrap" style="flex:1;overflow-y:auto;min-height:80px">
+        <table id="modal-table" style="width:100%;border-collapse:collapse;font-size:12px"></table>
+      </div>
     </div>
   </div>
 </div>

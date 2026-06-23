@@ -266,7 +266,7 @@ function _shide(){document.getElementById('stroke-tip').style.display='none';}
 <body>
 <a href="brompton_home.html" style="position:fixed;top:12px;right:12px;z-index:9999;background:#1565C0;color:#fff;padding:7px 16px;border-radius:20px;text-decoration:none;font-size:12px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-family:-apple-system,sans-serif">← Home</a>
 <h1>Brompton SC ⭐ Female 11s (2015) — Club Rankings</h1>
-<div class="subtitle">Generated 23 June 2026 17:39 · 9 swimmers</div>
+<div class="subtitle">Generated 23 June 2026 17:52 · 9 swimmers</div>
 
 <div id="progress-bar">
   <span style="font-size:11px;color:#27ae60;font-weight:600">▲ Improvement since last run</span>
@@ -307,27 +307,330 @@ function _shide(){document.getElementById('stroke-tip').style.display='none';}
 </div>
 <script>if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
 <div id="stroke-tip" style="display:none;position:fixed;background:#333;color:#fff;font-size:11px;padding:4px 10px;border-radius:4px;pointer-events:none;z-index:9999;white-space:nowrap"></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 <script>
 var HISTORY={"Philippa Safi-Bosson":{"50 Back|SC":[{"time":"43.03","pts":"201","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"43.10","pts":"200","round":"F","date":"24/01/26","meet":"Ealing Series Spring Invitational 2026"},{"time":"49.16","pts":"135","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"50.07","pts":"127","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"50.55","pts":"124","round":"F","date":"29/06/24","meet":"2024 Chelsea & Westminster SC Club Championships"}],"50 Back|LC":[{"time":"47.47","pts":"181","round":"F","date":"02/03/25","meet":"Bo Waltham Forest Gators Spring Gala 2025"}],"100 Back|SC":[{"time":"1:32.07","pts":"201","round":"F","date":"28/02/26","meet":"Ealing 2026 Regional Qualifier"}],"100 Back|LC":[{"time":"1:37.55","pts":"200","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"200 Back|SC":[{"time":"3:27.93","pts":"182","round":"F","date":"13/07/25","meet":"Ealing SC End of Season Summer Splash 2025"}],"50 Fly|SC":[{"time":"39.86","pts":"216","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"41.89","pts":"186","round":"F","date":"24/01/26","meet":"Ealing Series Spring Invitational 2026"},{"time":"45.91","pts":"141","round":"F","date":"13/07/25","meet":"Ealing SC End of Season Summer Splash 2025"},{"time":"51.47","pts":"100","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"}],"50 Fly|LC":[{"time":"45.94","pts":"150","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"50 Free|SC":[{"time":"34.27","pts":"295","round":"F","date":"18/04/26","meet":"Ealing Series Spring Invitational 2026"},{"time":"34.93","pts":"279","round":"F","date":"13/06/26","meet":"2026 West London National Arena Jr League"},{"time":"35.10","pts":"275","round":"F","date":"28/02/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"35.19","pts":"273","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"35.20","pts":"272","round":"F","date":"17/05/26","meet":"2026 West London National Arena Jr League"},{"time":"41.83","pts":"162","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"}],"50 Free|LC":[{"time":"38.42","pts":"232","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"100 Free|SC":[{"time":"1:22.98","pts":"222","round":"F","date":"24/01/26","meet":"Ealing Series Spring Invitational 2026"},{"time":"1:42.96","pts":"116","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"1:45.41","pts":"108","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"}],"100 Free|LC":[{"time":"1:33.47","pts":"169","round":"F","date":"02/03/25","meet":"Bo Waltham Forest Gators Spring Gala 2025"}],"50 Breast|SC":[{"time":"48.76","pts":"196","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"58.91","pts":"111","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"59.06","pts":"110","round":"F","date":"30/06/24","meet":"2024 Chelsea & Westminster SC Club Championships"}],"100 IM|SC":[{"time":"1:31.51","pts":"218","round":"F","date":"18/04/26","meet":"Ealing Series Spring Invitational 2026"},{"time":"1:31.65","pts":"217","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"1:55.94","pts":"107","round":"F","date":"29/06/24","meet":"2024 Chelsea & Westminster SC Club Championships"}],"200 IM|SC":[{"time":"3:35.87","pts":"178","round":"F","date":"13/07/25","meet":"Ealing SC End of Season Summer Splash 2025"}],"200 IM|LC":[{"time":"3:55.54","pts":"151","round":"F","date":"02/03/25","meet":"Bo Waltham Forest Gators Spring Gala 2025"}]},"Caroline Wang":{"50 Back|SC":[{"time":"39.38","pts":"262","round":"F","date":"13/06/26","meet":"2026 West London National Arena Jr League"},{"time":"39.48","pts":"260","round":"F","date":"17/05/26","meet":"2026 West London National Arena Jr League"},{"time":"39.81","pts":"254","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"42.79","pts":"204","round":"F","date":"08/12/24","meet":"Ealing SC 2024 XMAS County Qualifier Open 2024"},{"time":"43.20","pts":"199","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"45.05","pts":"175","round":"F","date":"06/10/24","meet":"Saxon Crown Autumn Showdown 2024"},{"time":"45.49","pts":"170","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"48.46","pts":"141","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"48.62","pts":"139","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"},{"time":"50.58","pts":"124","round":"F","date":"03/03/24","meet":"Ealing SC 2024 Regional Qualifier Open Meet"},{"time":"51.50","pts":"117","round":"F","date":"19/11/23","meet":"Brompton SC 2023 Winter Club Championships"},{"time":"54.53","pts":"99","round":"F","date":"25/06/23","meet":"Brompton SC Summer Club Championship Meet 2023"},{"time":"55.32","pts":"94","round":"F","date":"30/09/23","meet":"Ealing Autumn 2023 Lv4 Invite 2023"},{"time":"55.32","pts":"94","round":"F","date":"30/09/23","meet":"Ealing SC 2023 XMAS County Qualifier"}],"50 Back|LC":[{"time":"42.00","pts":"261","round":"H","date":"07/02/26","meet":"2026 Middlesex County Championships"},{"time":"42.69","pts":"249","round":"H","date":"08/02/25","meet":"2025 Middlesex County Championships"},{"time":"43.89","pts":"229","round":"F","date":"02/03/25","meet":"Bo Waltham Forest Gators Spring Gala 2025"},{"time":"44.29","pts":"223","round":"F","date":"22/03/25","meet":"Rushmoor Royals Spring L3 LC Open Meet 2025"},{"time":"48.14","pts":"173","round":"F","date":"09/06/24","meet":"Bo Waltham Gators Early Summer LAC Gala 2024"}],"100 Back|SC":[{"time":"1:27.57","pts":"234","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"1:33.06","pts":"195","round":"F","date":"08/03/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"1:36.73","pts":"174","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"1:41.35","pts":"151","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"1:43.31","pts":"142","round":"F","date":"02/03/24","meet":"Ealing SC 2024 Regional Qualifier Open Meet"}],"100 Back|LC":[{"time":"1:28.92","pts":"265","round":"H","date":"14/02/26","meet":"2026 Middlesex County Championships"}],"200 Back|SC":[{"time":"3:10.09","pts":"239","round":"F","date":"13/07/25","meet":"Ealing SC End of Season Summer Splash 2025"}],"200 Back|LC":[{"time":"3:10.28","pts":"271","round":"F","date":"15/02/26","meet":"2026 Middlesex County Championships"},{"time":"3:24.73","pts":"217","round":"F","date":"22/03/25","meet":"Rushmoor Royals Spring L3 LC Open Meet 2025"}],"50 Fly|SC":[{"time":"40.22","pts":"210","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"42.09","pts":"184","round":"F","date":"14/06/25","meet":"2025 West London National Arena Jr League R2"},{"time":"42.69","pts":"176","round":"F","date":"17/05/25","meet":"2025 West London National Arena Jr League R1"},{"time":"43.75","pts":"163","round":"F","date":"05/07/25","meet":"2025 West London National Arena Jr League R3"},{"time":"44.47","pts":"156","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"44.62","pts":"154","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"49.42","pts":"113","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"49.64","pts":"112","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"57.92","pts":"70","round":"F","date":"03/03/24","meet":"Ealing SC 2024 Regional Qualifier Open Meet"}],"50 Fly|LC":[{"time":"43.14","pts":"181","round":"H","date":"08/02/26","meet":"2026 Middlesex County Championships"},{"time":"43.38","pts":"178","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"},{"time":"52.96","pts":"98","round":"F","date":"09/06/24","meet":"Bo Waltham Gators Early Summer LAC Gala 2024"}],"50 Free|SC":[{"time":"34.85","pts":"281","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"34.88","pts":"280","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"34.96","pts":"278","round":"F","date":"28/02/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"36.05","pts":"253","round":"F","date":"12/07/25","meet":"Ealing SC End of Season Summer Splash 2025"},{"time":"36.06","pts":"253","round":"F","date":"10/05/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"37.92","pts":"218","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"39.54","pts":"192","round":"F","date":"06/10/24","meet":"Saxon Crown Autumn Showdown 2024"},{"time":"39.62","pts":"191","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"39.79","pts":"188","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"},{"time":"43.16","pts":"148","round":"F","date":"02/03/24","meet":"Ealing SC 2024 Regional Qualifier Open Meet"},{"time":"46.04","pts":"121","round":"F","date":"18/11/23","meet":"Brompton SC 2023 Winter Club Championships"},{"time":"47.09","pts":"113","round":"F","date":"25/06/23","meet":"Brompton SC Summer Club Championship Meet 2023"}],"50 Free|LC":[{"time":"35.37","pts":"297","round":"H","date":"07/02/26","meet":"2026 Middlesex County Championships"},{"time":"36.51","pts":"270","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"},{"time":"37.76","pts":"244","round":"F","date":"22/03/25","meet":"Rushmoor Royals Spring L3 LC Open Meet 2025"},{"time":"38.14","pts":"237","round":"F","date":"09/06/24","meet":"Bo Waltham Gators Early Summer LAC Gala 2024"}],"100 Free|SC":[{"time":"1:17.95","pts":"267","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"1:18.24","pts":"264","round":"F","date":"28/02/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"1:20.89","pts":"239","round":"F","date":"12/07/25","meet":"Ealing SC End of Season Summer Splash 2025"},{"time":"1:24.41","pts":"210","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"1:29.33","pts":"177","round":"F","date":"06/10/24","meet":"Saxon Crown Autumn Showdown 2024"},{"time":"1:33.06","pts":"157","round":"F","date":"02/03/24","meet":"Ealing SC 2024 Regional Qualifier Open Meet"},{"time":"1:33.86","pts":"153","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"}],"100 Free|LC":[{"time":"1:19.34","pts":"276","round":"H","date":"14/02/26","meet":"2026 Middlesex County Championships"},{"time":"1:25.78","pts":"219","round":"F","date":"02/03/25","meet":"Bo Waltham Forest Gators Spring Gala 2025"},{"time":"1:30.97","pts":"183","round":"F","date":"09/06/24","meet":"Bo Waltham Gators Early Summer LAC Gala 2024"}],"200 Free|SC":[{"time":"2:56.52","pts":"244","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"3:08.02","pts":"201","round":"F","date":"08/12/24","meet":"Ealing SC 2024 XMAS County Qualifier Open 2024"},{"time":"3:11.10","pts":"192","round":"F","date":"23/11/24","meet":"Brompton SC 2024 Winter Club Championships"}],"200 Free|LC":[{"time":"2:58.91","pts":"246","round":"F","date":"14/02/26","meet":"2026 Middlesex County Championships"},{"time":"3:01.56","pts":"236","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"},{"time":"3:03.61","pts":"228","round":"F","date":"22/03/25","meet":"Rushmoor Royals Spring L3 LC Open Meet 2025"}],"50 Breast|SC":[{"time":"44.24","pts":"263","round":"F","date":"17/05/26","meet":"2026 West London National Arena Jr League"},{"time":"44.69","pts":"255","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"45.19","pts":"247","round":"F","date":"13/06/26","meet":"2026 West London National Arena Jr League"},{"time":"46.22","pts":"231","round":"F","date":"28/02/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"46.56","pts":"226","round":"F","date":"14/06/25","meet":"2025 West London National Arena Jr League R2"},{"time":"46.63","pts":"225","round":"H","date":"20/09/25","meet":"National Arena Junior Swimming League Cup Final 25"},{"time":"47.13","pts":"218","round":"F","date":"17/05/25","meet":"2025 West London National Arena Jr League R1"},{"time":"47.79","pts":"209","round":"F","date":"05/07/25","meet":"2025 West London National Arena Jr League R3"},{"time":"49.33","pts":"190","round":"F","date":"08/03/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"50.90","pts":"173","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"51.49","pts":"167","round":"F","date":"06/10/24","meet":"Saxon Crown Autumn Showdown 2024"},{"time":"52.96","pts":"153","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"54.30","pts":"142","round":"F","date":"19/11/23","meet":"Brompton SC 2023 Winter Club Championships"},{"time":"54.62","pts":"140","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"},{"time":"55.23","pts":"135","round":"F","date":"02/03/24","meet":"Ealing SC 2024 Regional Qualifier Open Meet"},{"time":"57.66","pts":"119","round":"F","date":"30/09/23","meet":"Ealing Autumn 2023 Lv4 Invite 2023"},{"time":"57.66","pts":"119","round":"F","date":"30/09/23","meet":"Ealing SC 2023 XMAS County Qualifier"},{"time":"59.88","pts":"106","round":"F","date":"25/06/23","meet":"Brompton SC Summer Club Championship Meet 2023"}],"50 Breast|LC":[{"time":"44.85","pts":"274","round":"H","date":"08/02/26","meet":"2026 Middlesex County Championships"},{"time":"45.35","pts":"265","round":"F","date":"08/02/26","meet":"2026 Middlesex County Championships"},{"time":"49.47","pts":"204","round":"F","date":"02/03/25","meet":"Bo Waltham Forest Gators Spring Gala 2025"},{"time":"52.10","pts":"175","round":"F","date":"09/06/24","meet":"Bo Waltham Gators Early Summer LAC Gala 2024"}],"100 Breast|SC":[{"time":"1:44.68","pts":"211","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"1:45.27","pts":"207","round":"F","date":"10/05/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"1:48.55","pts":"189","round":"F","date":"08/12/24","meet":"Ealing SC 2024 XMAS County Qualifier Open 2024"},{"time":"1:51.48","pts":"175","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"1:59.45","pts":"142","round":"F","date":"03/03/24","meet":"Ealing SC 2024 Regional Qualifier Open Meet"}],"100 Breast|LC":[{"time":"1:43.59","pts":"237","round":"H","date":"15/02/26","meet":"2026 Middlesex County Championships"},{"time":"1:44.09","pts":"233","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"},{"time":"1:48.46","pts":"206","round":"F","date":"22/03/25","meet":"Rushmoor Royals Spring L3 LC Open Meet 2025"},{"time":"1:57.30","pts":"163","round":"F","date":"09/06/24","meet":"Bo Waltham Gators Early Summer LAC Gala 2024"}],"200 Breast|SC":[{"time":"3:37.05","pts":"227","round":"F","date":"28/02/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"3:39.03","pts":"221","round":"F","date":"12/07/25","meet":"Ealing SC End of Season Summer Splash 2025"}],"200 Breast|LC":[{"time":"3:37.52","pts":"252","round":"F","date":"08/02/26","meet":"2026 Middlesex County Championships"}],"100 IM|SC":[{"time":"1:34.07","pts":"201","round":"F","date":"10/05/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"1:39.43","pts":"170","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"1:41.61","pts":"159","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"1:43.89","pts":"149","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"},{"time":"1:47.62","pts":"134","round":"F","date":"02/03/24","meet":"Ealing SC 2024 Regional Qualifier Open Meet"},{"time":"1:49.57","pts":"127","round":"F","date":"18/11/23","meet":"Brompton SC 2023 Winter Club Championships"}],"200 IM|SC":[{"time":"3:14.58","pts":"244","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"3:18.29","pts":"230","round":"F","date":"13/07/25","meet":"Ealing SC End of Season Summer Splash 2025"},{"time":"3:31.27","pts":"190","round":"F","date":"23/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"3:34.59","pts":"182","round":"F","date":"06/10/24","meet":"Saxon Crown Autumn Showdown 2024"}],"200 IM|LC":[{"time":"3:13.86","pts":"272","round":"H","date":"07/02/26","meet":"2026 Middlesex County Championships"},{"time":"3:25.11","pts":"230","round":"F","date":"02/03/25","meet":"Bo Waltham Forest Gators Spring Gala 2025"}]},"Jinyou Yuan":{"50 Back|SC":[{"time":"38.01","pts":"292","round":"F","date":"13/06/26","meet":"2026 West London National Arena Jr League"},{"time":"41.29","pts":"228","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"43.33","pts":"197","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"43.90","pts":"189","round":"F","date":"14/06/25","meet":"2025 West London National Arena Jr League R2"},{"time":"43.95","pts":"189","round":"F","date":"17/05/25","meet":"2025 West London National Arena Jr League R1"},{"time":"45.65","pts":"168","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"45.71","pts":"168","round":"F","date":"08/12/24","meet":"Ealing SC 2024 XMAS County Qualifier Open 2024"},{"time":"45.75","pts":"167","round":"F","date":"05/07/25","meet":"2025 West London National Arena Jr League R3"},{"time":"45.93","pts":"165","round":"F","date":"06/10/24","meet":"Saxon Crown Autumn Showdown 2024"},{"time":"46.11","pts":"163","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"46.31","pts":"161","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"},{"time":"51.15","pts":"120","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"51.65","pts":"116","round":"F","date":"09/12/23","meet":"2023 Cheslsea & Westminster Dec Duel in the Pool"},{"time":"52.87","pts":"108","round":"F","date":"24/03/24","meet":"2024 Camden's Future Stars Development Meet"}],"50 Back|LC":[{"time":"42.64","pts":"249","round":"H","date":"07/02/26","meet":"2026 Middlesex County Championships"},{"time":"44.84","pts":"214","round":"F","date":"08/03/26","meet":"BWFSC Gators Spring Meet"},{"time":"48.07","pts":"174","round":"F","date":"09/06/24","meet":"Bo Waltham Gators Early Summer LAC Gala 2024"}],"100 Back|SC":[{"time":"1:39.73","pts":"158","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"1:41.36","pts":"151","round":"F","date":"08/03/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"1:44.29","pts":"138","round":"F","date":"06/10/24","meet":"Saxon Crown Autumn Showdown 2024"},{"time":"1:53.05","pts":"109","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"1:58.09","pts":"95","round":"F","date":"09/12/23","meet":"2023 Cheslsea & Westminster Dec Duel in the Pool"}],"100 Back|LC":[{"time":"1:34.88","pts":"218","round":"F","date":"08/03/26","meet":"BWFSC Gators Spring Meet"},{"time":"1:46.22","pts":"155","round":"F","date":"09/06/24","meet":"Bo Waltham Gators Early Summer LAC Gala 2024"}],"50 Fly|SC":[{"time":"49.07","pts":"116","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"52.20","pts":"96","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"},{"time":"55.85","pts":"78","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"56.13","pts":"77","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"58.23","pts":"69","round":"F","date":"09/12/23","meet":"2023 Cheslsea & Westminster Dec Duel in the Pool"},{"time":"58.94","pts":"67","round":"F","date":"24/03/24","meet":"2024 Camden's Future Stars Development Meet"}],"50 Fly|LC":[{"time":"50.25","pts":"114","round":"F","date":"09/06/24","meet":"Bo Waltham Gators Early Summer LAC Gala 2024"}],"50 Free|SC":[{"time":"34.10","pts":"300","round":"F","date":"13/06/26","meet":"2026 West London National Arena Jr League"},{"time":"34.20","pts":"297","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"35.12","pts":"274","round":"F","date":"17/05/26","meet":"2026 West London National Arena Jr League"},{"time":"35.56","pts":"264","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"36.14","pts":"252","round":"H","date":"20/09/25","meet":"National Arena Junior Swimming League Cup Final 25"},{"time":"36.92","pts":"236","round":"F","date":"17/05/25","meet":"2025 West London National Arena Jr League R1"},{"time":"37.04","pts":"234","round":"F","date":"14/06/25","meet":"2025 West London National Arena Jr League R2"},{"time":"37.80","pts":"220","round":"F","date":"05/07/25","meet":"2025 West London National Arena Jr League R3"},{"time":"38.43","pts":"209","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"40.62","pts":"177","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"},{"time":"40.63","pts":"177","round":"F","date":"06/10/24","meet":"Saxon Crown Autumn Showdown 2024"},{"time":"42.15","pts":"158","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"43.65","pts":"143","round":"F","date":"24/03/24","meet":"2024 Camden's Future Stars Development Meet"},{"time":"48.15","pts":"106","round":"F","date":"09/12/23","meet":"2023 Cheslsea & Westminster Dec Duel in the Pool"}],"50 Free|LC":[{"time":"34.81","pts":"312","round":"F","date":"08/03/26","meet":"BWFSC Gators Spring Meet"},{"time":"35.31","pts":"298","round":"H","date":"07/02/26","meet":"2026 Middlesex County Championships"},{"time":"41.98","pts":"177","round":"F","date":"09/06/24","meet":"Bo Waltham Gators Early Summer LAC Gala 2024"}],"100 Free|SC":[{"time":"1:22.05","pts":"229","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"1:28.33","pts":"184","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"1:28.47","pts":"183","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"1:35.03","pts":"147","round":"F","date":"06/10/24","meet":"Saxon Crown Autumn Showdown 2024"},{"time":"1:35.93","pts":"143","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"},{"time":"1:44.36","pts":"111","round":"F","date":"09/12/23","meet":"2023 Cheslsea & Westminster Dec Duel in the Pool"},{"time":"1:47.28","pts":"102","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"100 Free|LC":[{"time":"1:20.81","pts":"262","round":"F","date":"08/03/26","meet":"BWFSC Gators Spring Meet"},{"time":"1:41.70","pts":"131","round":"F","date":"09/06/24","meet":"Bo Waltham Gators Early Summer LAC Gala 2024"}],"200 Free|SC":[{"time":"3:18.84","pts":"170","round":"F","date":"08/12/24","meet":"Ealing SC 2024 XMAS County Qualifier Open 2024"},{"time":"3:28.61","pts":"147","round":"F","date":"24/03/24","meet":"2024 Camden's Future Stars Development Meet"}],"50 Breast|SC":[{"time":"47.63","pts":"211","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"53.17","pts":"151","round":"F","date":"08/03/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"56.92","pts":"123","round":"F","date":"06/10/24","meet":"Saxon Crown Autumn Showdown 2024"},{"time":"58.20","pts":"115","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"58.21","pts":"115","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"},{"time":"59.47","pts":"108","round":"F","date":"24/03/24","meet":"2024 Camden's Future Stars Development Meet"},{"time":"1:02.06","pts":"95","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"1:03.12","pts":"90","round":"F","date":"09/12/23","meet":"2023 Cheslsea & Westminster Dec Duel in the Pool"}],"100 Breast|SC":[{"time":"2:02.41","pts":"132","round":"F","date":"08/12/24","meet":"Ealing SC 2024 XMAS County Qualifier Open 2024"}],"100 IM|SC":[{"time":"1:28.38","pts":"242","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"1:45.72","pts":"141","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"1:50.02","pts":"125","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"},{"time":"1:52.96","pts":"116","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"1:56.09","pts":"106","round":"F","date":"09/12/23","meet":"2023 Cheslsea & Westminster Dec Duel in the Pool"}]},"Liv Wilder":{"50 Back|SC":[{"time":"39.14","pts":"267","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"42.39","pts":"210","round":"F","date":"01/03/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"45.08","pts":"175","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"45.93","pts":"165","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"}],"50 Back|LC":[{"time":"45.15","pts":"210","round":"H","date":"08/02/25","meet":"2025 Middlesex County Championships"},{"time":"47.25","pts":"183","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"100 Back|SC":[{"time":"1:40.30","pts":"156","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"1:47.28","pts":"127","round":"F","date":"08/03/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"1:52.22","pts":"111","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"50 Fly|SC":[{"time":"39.53","pts":"222","round":"F","date":"17/05/26","meet":"2026 West London National Arena Jr League"},{"time":"39.85","pts":"216","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"40.28","pts":"209","round":"F","date":"01/03/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"40.41","pts":"207","round":"F","date":"13/06/26","meet":"2026 West London National Arena Jr League"},{"time":"47.82","pts":"125","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"48.09","pts":"123","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"54.28","pts":"85","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"58.57","pts":"68","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"50 Fly|LC":[{"time":"47.12","pts":"139","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"100 Fly|SC":[{"time":"1:33.02","pts":"181","round":"F","date":"01/03/26","meet":"Ealing 2026 Regional Qualifier"}],"50 Free|SC":[{"time":"35.18","pts":"273","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"35.44","pts":"267","round":"F","date":"18/04/26","meet":"Ealing Series Spring Invitational 2026"},{"time":"37.58","pts":"224","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"38.12","pts":"214","round":"F","date":"29/11/25","meet":"Ealing SC Xmas County Qualifier 2025"},{"time":"39.15","pts":"198","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"42.00","pts":"160","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"}],"50 Free|LC":[{"time":"39.37","pts":"215","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"100 Free|SC":[{"time":"1:24.60","pts":"209","round":"F","date":"29/11/25","meet":"Ealing SC Xmas County Qualifier 2025"},{"time":"1:34.70","pts":"149","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"1:37.13","pts":"138","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"1:38.40","pts":"133","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"}],"100 Free|LC":[{"time":"1:21.23","pts":"257","round":"F","date":"14/03/26","meet":"Rushmoor Royals Spring L3 Long Course Open Meet"}],"50 Breast|SC":[{"time":"49.25","pts":"191","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"50.94","pts":"172","round":"F","date":"29/11/25","meet":"Ealing SC Xmas County Qualifier 2025"},{"time":"53.91","pts":"145","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"55.33","pts":"134","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"}],"50 Breast|LC":[{"time":"51.68","pts":"179","round":"F","date":"14/03/26","meet":"Rushmoor Royals Spring L3 Long Course Open Meet"},{"time":"56.96","pts":"134","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"100 Breast|SC":[{"time":"1:48.10","pts":"191","round":"F","date":"18/04/26","meet":"Ealing Series Spring Invitational 2026"},{"time":"1:49.61","pts":"184","round":"F","date":"01/03/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"1:53.98","pts":"163","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"2:08.27","pts":"114","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"100 Breast|LC":[{"time":"1:49.82","pts":"199","round":"F","date":"14/03/26","meet":"Rushmoor Royals Spring L3 Long Course Open Meet"}],"100 IM|SC":[{"time":"1:31.69","pts":"217","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"1:33.43","pts":"205","round":"F","date":"18/04/26","meet":"Ealing Series Spring Invitational 2026"},{"time":"1:42.03","pts":"157","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"1:44.82","pts":"145","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"1:52.82","pts":"116","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"200 IM|LC":[{"time":"3:28.36","pts":"219","round":"F","date":"14/03/26","meet":"Rushmoor Royals Spring L3 Long Course Open Meet"}]},"Ani Fortescue-Webb":{"50 Back|SC":[{"time":"41.58","pts":"223","round":"F","date":"01/03/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"41.85","pts":"219","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"41.87","pts":"218","round":"F","date":"17/05/25","meet":"2025 West London National Arena Jr League R1"},{"time":"41.98","pts":"217","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"42.54","pts":"208","round":"F","date":"14/06/25","meet":"2025 West London National Arena Jr League R2"},{"time":"43.22","pts":"198","round":"H","date":"20/09/25","meet":"National Arena Junior Swimming League Cup Final 25"},{"time":"43.54","pts":"194","round":"F","date":"05/07/25","meet":"2025 West London National Arena Jr League R3"},{"time":"44.38","pts":"183","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"45.26","pts":"173","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"}],"50 Fly|SC":[{"time":"39.30","pts":"226","round":"F","date":"13/06/26","meet":"2026 West London National Arena Jr League"},{"time":"39.69","pts":"219","round":"F","date":"17/05/26","meet":"2026 West London National Arena Jr League"},{"time":"39.97","pts":"214","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"40.97","pts":"199","round":"F","date":"01/03/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"47.15","pts":"130","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"}],"50 Free|SC":[{"time":"34.82","pts":"281","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"37.01","pts":"234","round":"F","date":"28/02/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"39.01","pts":"200","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"}],"100 Free|SC":[{"time":"1:34.79","pts":"148","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"}],"50 Breast|SC":[{"time":"44.29","pts":"262","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"44.61","pts":"257","round":"F","date":"17/05/26","meet":"2026 West London National Arena Jr League"},{"time":"44.70","pts":"255","round":"F","date":"13/06/26","meet":"2026 West London National Arena Jr League"},{"time":"45.61","pts":"240","round":"F","date":"28/02/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"48.60","pts":"198","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"49.29","pts":"190","round":"F","date":"05/07/25","meet":"2025 West London National Arena Jr League R3"},{"time":"49.59","pts":"187","round":"F","date":"17/05/25","meet":"2025 West London National Arena Jr League R1"},{"time":"49.73","pts":"185","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"49.87","pts":"184","round":"F","date":"14/06/25","meet":"2025 West London National Arena Jr League R2"},{"time":"50.19","pts":"180","round":"F","date":"08/03/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"}],"100 Breast|SC":[{"time":"1:41.06","pts":"234","round":"F","date":"01/03/26","meet":"Ealing 2026 Regional Qualifier"}],"100 IM|SC":[{"time":"1:29.20","pts":"235","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"}]},"Sarina Hasan":{"50 Back|SC":[{"time":"43.47","pts":"195","round":"F","date":"01/03/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"44.30","pts":"184","round":"F","date":"17/05/26","meet":"2026 West London National Arena Jr League"},{"time":"45.81","pts":"167","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"46.48","pts":"159","round":"F","date":"13/07/25","meet":"Ealing SC End of Season Summer Splash 2025"},{"time":"48.58","pts":"140","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"48.98","pts":"136","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"49.11","pts":"135","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"52.63","pts":"110","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"50 Back|LC":[{"time":"45.67","pts":"203","round":"F","date":"14/03/26","meet":"Rushmoor Royals Spring L3 Long Course Open Meet"},{"time":"47.34","pts":"182","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"100 Back|SC":[{"time":"1:38.55","pts":"164","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"1:41.41","pts":"151","round":"F","date":"29/11/25","meet":"Ealing SC Xmas County Qualifier 2025"}],"200 Back|SC":[{"time":"4:00.50","pts":"118","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"}],"50 Fly|SC":[{"time":"46.02","pts":"140","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"46.42","pts":"137","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"46.62","pts":"135","round":"F","date":"13/07/25","meet":"Ealing SC End of Season Summer Splash 2025"},{"time":"48.17","pts":"122","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"50.76","pts":"104","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"54.38","pts":"85","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"50 Fly|LC":[{"time":"44.68","pts":"163","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"50 Free|SC":[{"time":"38.92","pts":"201","round":"F","date":"18/04/26","meet":"Ealing Series Spring Invitational 2026"},{"time":"39.03","pts":"200","round":"F","date":"28/02/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"39.17","pts":"197","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"39.56","pts":"192","round":"F","date":"29/11/25","meet":"Ealing SC Xmas County Qualifier 2025"},{"time":"40.05","pts":"185","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"40.73","pts":"176","round":"F","date":"10/05/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"42.22","pts":"158","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"45.93","pts":"122","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"50 Free|LC":[{"time":"39.88","pts":"207","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"100 Free|SC":[{"time":"1:26.35","pts":"197","round":"F","date":"28/02/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"1:28.32","pts":"184","round":"F","date":"29/11/25","meet":"Ealing SC Xmas County Qualifier 2025"},{"time":"1:29.08","pts":"179","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"1:29.62","pts":"176","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"1:37.17","pts":"138","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"}],"100 Free|LC":[{"time":"1:27.49","pts":"206","round":"F","date":"14/03/26","meet":"Rushmoor Royals Spring L3 Long Course Open Meet"},{"time":"1:31.57","pts":"180","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"200 Free|SC":[{"time":"3:06.38","pts":"207","round":"F","date":"01/03/26","meet":"Ealing 2026 Regional Qualifier"}],"50 Breast|SC":[{"time":"48.09","pts":"205","round":"F","date":"28/02/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"51.77","pts":"164","round":"F","date":"29/11/25","meet":"Ealing SC Xmas County Qualifier 2025"},{"time":"52.41","pts":"158","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"53.68","pts":"147","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"54.18","pts":"143","round":"F","date":"08/03/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"58.44","pts":"114","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"}],"50 Breast|LC":[{"time":"50.65","pts":"190","round":"F","date":"14/03/26","meet":"Rushmoor Royals Spring L3 Long Course Open Meet"}],"100 Breast|SC":[{"time":"1:44.33","pts":"213","round":"F","date":"01/03/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"1:53.92","pts":"164","round":"F","date":"10/05/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"1:56.09","pts":"155","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"2:08.63","pts":"113","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"}],"100 Breast|LC":[{"time":"1:51.89","pts":"188","round":"F","date":"14/03/26","meet":"Rushmoor Royals Spring L3 Long Course Open Meet"}],"200 Breast|SC":[{"time":"3:45.15","pts":"203","round":"F","date":"28/02/26","meet":"Ealing 2026 Regional Qualifier"},{"time":"4:05.44","pts":"157","round":"F","date":"29/11/25","meet":"Ealing SC Xmas County Qualifier 2025"}],"100 IM|SC":[{"time":"1:38.89","pts":"173","round":"F","date":"18/04/26","meet":"Ealing Series Spring Invitational 2026"},{"time":"1:41.36","pts":"160","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"1:41.87","pts":"158","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"1:42.25","pts":"156","round":"F","date":"10/05/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"1:48.57","pts":"130","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"1:56.59","pts":"105","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"200 IM|SC":[{"time":"4:12.03","pts":"112","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"200 IM|LC":[{"time":"3:33.90","pts":"202","round":"F","date":"14/03/26","meet":"Rushmoor Royals Spring L3 Long Course Open Meet"}]},"Georgina Baring":{"50 Back|SC":[{"time":"53.21","pts":"106","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"}],"50 Fly|SC":[{"time":"54.40","pts":"85","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"57.47","pts":"72","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"57.83","pts":"70","round":"F","date":"24/01/26","meet":"Ealing Series Spring Invitational 2026"}],"50 Fly|LC":[{"time":"54.82","pts":"88","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"50 Free|SC":[{"time":"39.56","pts":"192","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"42.66","pts":"153","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"43.15","pts":"148","round":"F","date":"10/05/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"45.10","pts":"129","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"50.91","pts":"90","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"50 Free|LC":[{"time":"46.07","pts":"134","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"100 Free|SC":[{"time":"1:41.17","pts":"122","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"1:44.87","pts":"110","round":"F","date":"18/01/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"1:47.14","pts":"103","round":"F","date":"24/01/26","meet":"Ealing Series Spring Invitational 2026"},{"time":"1:49.82","pts":"95","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"1:53.93","pts":"85","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"50 Breast|SC":[{"time":"49.06","pts":"193","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"50.27","pts":"179","round":"F","date":"07/03/26","meet":"Ealing Series Spring Invitational 2026"},{"time":"51.38","pts":"168","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"52.29","pts":"159","round":"F","date":"28/09/25","meet":"Ealing Swimming Club Autumn L4 Invitational 2025"},{"time":"52.68","pts":"156","round":"F","date":"08/03/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"54.82","pts":"138","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"56.71","pts":"125","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"100 Breast|SC":[{"time":"1:47.26","pts":"196","round":"F","date":"04/10/25","meet":"Saxon Crown Autumn Showdown 2025"},{"time":"2:00.43","pts":"138","round":"F","date":"10/05/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"},{"time":"2:02.77","pts":"131","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"2:05.90","pts":"121","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"100 Breast|LC":[{"time":"2:00.36","pts":"151","round":"F","date":"22/06/25","meet":"Gators Summer Gala 2025"}],"200 Breast|SC":[{"time":"4:00.91","pts":"166","round":"F","date":"09/11/25","meet":"Brompton SC 2025 Winter Club Championships"},{"time":"4:04.00","pts":"160","round":"F","date":"04/10/25","meet":"Saxon Crown Autumn Showdown 2025"},{"time":"4:14.78","pts":"140","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"4:28.05","pts":"120","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"100 IM|SC":[{"time":"1:46.81","pts":"137","round":"F","date":"04/10/25","meet":"Saxon Crown Autumn Showdown 2025"},{"time":"1:55.05","pts":"109","round":"F","date":"10/05/25","meet":"Ealing Level 4 Spring Series 2025 Invitation"}]},"Leia Brenke":{"50 Back|SC":[{"time":"52.21","pts":"112","round":"F","date":"29/06/24","meet":"2024 Chelsea & Westminster SC Club Championships"},{"time":"54.30","pts":"100","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"100 Back|SC":[{"time":"1:52.81","pts":"109","round":"F","date":"23/11/24","meet":"2024 CWSC Development Competition"}],"50 Fly|SC":[{"time":"59.13","pts":"66","round":"F","date":"23/11/24","meet":"2024 CWSC Development Competition"},{"time":"59.98","pts":"63","round":"F","date":"29/06/24","meet":"2024 Chelsea & Westminster SC Club Championships"}],"50 Free|SC":[{"time":"44.63","pts":"133","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"44.81","pts":"132","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"46.28","pts":"120","round":"F","date":"30/06/24","meet":"2024 Chelsea & Westminster SC Club Championships"}],"100 Free|SC":[{"time":"1:41.79","pts":"120","round":"F","date":"07/12/24","meet":"Ealing SC 2024 XMAS County Qualifier Open 2024"},{"time":"1:42.87","pts":"116","round":"F","date":"29/06/24","meet":"2024 Chelsea & Westminster SC Club Championships"},{"time":"1:48.64","pts":"98","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"}],"200 Free|SC":[{"time":"3:48.98","pts":"111","round":"F","date":"23/11/24","meet":"2024 CWSC Development Competition"}],"50 Breast|SC":[{"time":"55.78","pts":"131","round":"F","date":"07/12/24","meet":"Ealing SC 2024 XMAS County Qualifier Open 2024"},{"time":"58.72","pts":"112","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"59.34","pts":"109","round":"F","date":"24/11/24","meet":"Brompton SC 2024 Winter Club Championships"},{"time":"59.50","pts":"108","round":"F","date":"23/11/24","meet":"2024 CWSC Development Competition"}],"100 Breast|SC":[{"time":"2:07.74","pts":"116","round":"F","date":"30/06/24","meet":"2024 Chelsea & Westminster SC Club Championships"}],"100 IM|SC":[{"time":"1:58.62","pts":"100","round":"F","date":"29/06/24","meet":"2024 Chelsea & Westminster SC Club Championships"}]},"Natalie Min":{"50 Back|SC":[{"time":"49.12","pts":"135","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"50.79","pts":"122","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"},{"time":"56.27","pts":"90","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"}],"50 Fly|SC":[{"time":"47.23","pts":"130","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"56.26","pts":"77","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"56.63","pts":"75","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"}],"50 Free|SC":[{"time":"41.86","pts":"162","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"45.53","pts":"126","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"46.74","pts":"116","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"}],"50 Breast|SC":[{"time":"55.38","pts":"134","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"},{"time":"1:02.60","pts":"93","round":"F","date":"23/06/24","meet":"2024 Brompton SC Summer Club Champs"},{"time":"1:05.68","pts":"80","round":"F","date":"07/07/24","meet":"Ealing SC 2024 End of Season Summer Invitational"}],"100 IM|SC":[{"time":"1:41.76","pts":"158","round":"F","date":"07/06/26","meet":"Brompton Swimming Club Summer Fun Meet"}]}};
-window.showHistory=function(name,event,course){
-  var hist=(HISTORY[name]||{})[event+'|'+course]||[];
-  var modal=document.getElementById('hist-modal');
-  document.getElementById('hist-title').textContent=name+' — '+event+' '+course+' ('+hist.length+' swims)';
-  var rows=hist.length?hist.slice().reverse().map(function(s){
-    return '<tr><td style="padding:4px 8px;font-weight:600">'+s.time+'</td><td style="padding:4px 8px;color:#555">'+s.date+'</td><td style="padding:4px 8px;font-size:10px;color:#777">'+((s.meet||''))+'</td></tr>';
-  }).join(''):'<tr><td colspan="3" style="padding:16px;text-align:center;color:#888;font-style:italic">No history cached — run swimming_results.py --fetch-history</td></tr>';
-  document.getElementById('hist-tbody').innerHTML='<tr style="background:#f0f4f8"><th style="padding:4px 8px">Time</th><th style="padding:4px 8px">Date</th><th style="padding:4px 8px">Meet</th></tr>'+rows;
-  modal.style.display='flex';
-};
+var _chart=null;
+
+function parseSeconds(t){
+  if(!t)return null; t=t.trim();
+  return t.indexOf(':')>=0?parseFloat(t.split(':')[0])*60+parseFloat(t.split(':')[1]):parseFloat(t);
+}
+function formatTime(s){
+  if(s===null||isNaN(s))return '';
+  s=Math.round(s*100)/100;
+  if(s>=60){var m=Math.floor(s/60);var r=(s-m*60).toFixed(2).padStart(5,'0');return m+':'+r;}
+  return s.toFixed(2);
+}
+function parseDate(d){var p=d.split('/');return new Date('20'+p[2],p[1]-1,p[0]);}
+
+function _getQD(eventName,course,swimmerName){
+  if(typeof QT_DATA!=='undefined')return QT_DATA[eventName+'|'+course]||{};
+  if(typeof QT_ALL!=='undefined'){
+    var row=document.querySelector('[data-swimmer="'+swimmerName.replace(/"/g,'\"')+'"]');
+    if(row){var gc=row.dataset.gender,yob=row.dataset.yob;return QT_ALL[gc+'|'+yob+'|'+eventName+'|'+course]||{};}
+  }
+  return {};
+}
+
+function showHistory(swimmerName,eventName,course){
+  var swimmerHist=HISTORY[swimmerName]||{};
+  var scSwims=swimmerHist[eventName+'|SC']||[];
+  var lcSwims=swimmerHist[eventName+'|LC']||[];
+  var swims=course==='SC'?scSwims:lcSwims;
+  document.getElementById('modal-title').textContent=swimmerName+' — '+eventName+' '+course+' ('+swims.length+' swims)';
+
+  if(!HISTORY[swimmerName]){
+    document.getElementById('history-modal').style.display='flex';
+    document.getElementById('modal-table').innerHTML=
+      '<tr><td style="padding:20px;text-align:center;color:#888;font-style:italic">'
+      +'No history cached for '+swimmerName+'.<br>Run <strong>python3 swimming_results.py --fetch-history</strong> to load BSC swimmer histories.'
+      +'</td></tr>';
+    if(_chart){_chart.destroy();_chart=null;}
+    document.getElementById('chart-legend').innerHTML='';
+    return;
+  }
+
+  function sortedArr(arr){return arr.slice().sort(function(a,b){return parseDate(a.date)-parseDate(b.date);});}
+  var scArr=sortedArr(scSwims),lcArr=sortedArr(lcSwims);
+  function toPoints(arr){return arr.map(function(s){return{x:parseDate(s.date).toISOString(),y:parseSeconds(s.time)};}); }
+  var scPoints=toPoints(scArr),lcPoints=toPoints(lcArr);
+  var scVals=scArr.map(function(s){return parseSeconds(s.time);});
+  var lcVals=lcArr.map(function(s){return parseSeconds(s.time);});
+
+  var qd=_getQD(eventName,course,swimmerName);
+  var ctyQt=qd.county_qt||null,ctyCons=qd.county_cons||null;
+  var regQt=qd.region_qt||null,regCons=qd.region_cons||null;
+
+  var allVals=scVals.concat(lcVals).filter(function(v){return v!==null&&!isNaN(v);});
+  [ctyQt,ctyCons,regQt,regCons].forEach(function(v){if(v)allVals.push(v);});
+  var yMin=Math.min.apply(null,allVals),yMax=Math.max.apply(null,allVals)||1;
+  var range=yMax-yMin||1,rawStep=range/5;
+  var mag=Math.pow(10,Math.floor(Math.log10(rawStep)));
+  var step=[0.5,1,2,2.5,5,10,15,20,30,60].find(function(s){return s*mag>=rawStep;})*mag||rawStep;
+  var axMin=Math.floor(yMin/step)*step,axMax=Math.ceil(yMax/step)*step+step;
+
+  var allDates=[].concat(scArr.map(function(s){return parseDate(s.date);}).concat(lcArr.map(function(s){return parseDate(s.date);})));
+  var minD=allDates.length?new Date(Math.min.apply(null,allDates)-30*864e5):new Date(2025,0,1);
+  var maxD=allDates.length?new Date(Math.max.apply(null,allDates)+30*864e5):new Date(2027,0,1);
+  function refLinePoints(val){return [{x:minD.toISOString(),y:val},{x:maxD.toISOString(),y:val}];}
+
+  var datasets=[];
+  var swimPoints=course==='SC'?scPoints:lcPoints;
+  var swimColor=course==='SC'?'#2e75b6':'#27ae60';
+  var swimBg=course==='SC'?'rgba(46,117,182,0.08)':'rgba(39,174,96,0.08)';
+  if(swimPoints.length)datasets.push({label:course,data:swimPoints,borderColor:swimColor,backgroundColor:swimBg,pointRadius:5,pointHoverRadius:7,tension:0.3,fill:false});
+  if(ctyCons)datasets.push({label:'County Cons',data:refLinePoints(ctyCons),borderColor:'#e67e22',borderDash:[4,4],pointRadius:0,borderWidth:1.5});
+  if(ctyQt)  datasets.push({label:'County QT',  data:refLinePoints(ctyQt), borderColor:'#e74c3c',borderDash:[6,3],pointRadius:0,borderWidth:1.5});
+  if(regCons)datasets.push({label:'Regional Cons',data:refLinePoints(regCons),borderColor:'#16a085',borderDash:[4,4],pointRadius:0,borderWidth:1.5});
+  if(regQt)  datasets.push({label:'Regional QT', data:refLinePoints(regQt), borderColor:'#8e44ad',borderDash:[6,3],pointRadius:0,borderWidth:1.5});
+
+  if(_chart){_chart.destroy();_chart=null;}
+  var ctx=document.getElementById('history-chart').getContext('2d');
+  _chart=new Chart(ctx,{
+    type:'line',data:{datasets:datasets},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{label:function(c){return c.dataset.label+': '+formatTime(c.parsed.y);}}}
+      },
+      scales:{
+        y:{reverse:true,min:axMin,max:axMax,
+            ticks:{stepSize:step,callback:function(v){return formatTime(v);},font:{size:11}},
+            title:{display:true,text:'Time (faster ↑)',font:{size:11}}},
+        x:{type:'time',time:{unit:'month',displayFormats:{month:'MMM yy'}},ticks:{font:{size:10},maxRotation:45}}
+      }
+    }
+  });
+
+  var legendDiv=document.getElementById('chart-legend');
+  legendDiv.innerHTML='';
+  _chart.data.datasets.forEach(function(ds,i){
+    var colMap={'County Cons':[3,4],'County QT':[5,6],'Regional Cons':[7,8],'Regional QT':[9,10]};
+    if(!colMap[ds.label])return;
+    var label=document.createElement('label');
+    label.style.cssText='display:flex;align-items:center;gap:5px;cursor:pointer;user-select:none';
+    var cb=document.createElement('input');
+    cb.type='checkbox';cb.checked=true;
+    cb.addEventListener('change',function(){
+      _chart.setDatasetVisibility(i,cb.checked);
+      _chart.update();
+      svg.style.opacity=cb.checked?'1':'0.35';
+      var cols=colMap[ds.label];
+      if(cols){
+        var table=document.getElementById('modal-table');
+        if(table){table.querySelectorAll('tr').forEach(function(row){cols.forEach(function(ci){if(row.cells[ci])row.cells[ci].style.display=cb.checked?'':'none';});});}
+      }
+    });
+    var svgNS='http://www.w3.org/2000/svg';
+    var svg=document.createElementNS(svgNS,'svg');
+    svg.setAttribute('width','28');svg.setAttribute('height','10');
+    var line=document.createElementNS(svgNS,'line');
+    line.setAttribute('x1','0');line.setAttribute('y1','5');line.setAttribute('x2','28');line.setAttribute('y2','5');
+    line.setAttribute('stroke',ds.borderColor);line.setAttribute('stroke-width',ds.borderWidth||2);
+    if(ds.borderDash&&ds.borderDash.length)line.setAttribute('stroke-dasharray',ds.borderDash.join(','));
+    svg.appendChild(line);
+    label.appendChild(cb);label.appendChild(svg);label.appendChild(document.createTextNode(ds.label));
+    legendDiv.appendChild(label);
+  });
+
+  // Table — most recent first
+  var sorted=swims.slice().sort(function(a,b){return parseDate(b.date)-parseDate(a.date);});
+  var ctyConsFmt=formatTime(ctyCons)||'—',ctyQtFmt=formatTime(ctyQt)||'—';
+  var regConsFmt=formatTime(regCons)||'—',regQtFmt=formatTime(regQt)||'—';
+
+  function gapStr(swimSecs,refSecs){
+    if(!refSecs||!swimSecs)return '—';
+    var diff=Math.round((swimSecs-refSecs)*100)/100;
+    if(Math.abs(diff)<0.005)return '✓';
+    var sign=diff>0?'+':'-';
+    var abs=Math.abs(diff);
+    if(abs>=60){var m=Math.floor(abs/60);var s=(abs-m*60).toFixed(1);return sign+m+':'+s.padStart(4,'0');}
+    return sign+abs.toFixed(2)+'s';
+  }
+
+  var pbSecs=Math.min.apply(null,sorted.map(function(s){return parseSeconds(s.time)||Infinity;}).filter(isFinite));
+
+  var tbody='<thead><tr style="background:#1f4e79;color:white">'
+    +'<th style="padding:6px 8px;text-align:left">Date</th>'
+    +'<th style="padding:6px 8px;text-align:left">Meet</th>'
+    +'<th style="padding:6px 8px;text-align:center">Time</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#ffa94d">Cty Cons</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#ffa94d">Gap</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#ff6b6b">Cty QT</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#ff6b6b">Gap</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#63e6be">Reg Cons</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#63e6be">Gap</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#cc99ff">Reg QT</th>'
+    +'<th style="padding:6px 8px;text-align:center;color:#cc99ff">Gap</th>'
+    +'</tr></thead><tbody>';
+
+  sorted.forEach(function(s,i){
+    var secs=parseSeconds(s.time);
+    var isPB=secs&&Math.abs(secs-pbSecs)<0.005;
+    var bg=isPB?'#fffde7':(i%2===0?'#f9f9f9':'white');
+    function qualTd(fmt,ref){
+      var col=ref&&secs&&secs<=ref?'color:#27ae60;font-weight:600':'color:#888';
+      return '<td style="padding:5px 8px;text-align:center;'+col+'">'+fmt+'</td>';
+    }
+    function gapTd(ref){
+      var g=gapStr(secs,ref);
+      var col=g==='✓'?'color:#27ae60;font-weight:600':g.startsWith('-')?'color:#27ae60':g==='—'?'color:#ccc':'color:#e74c3c';
+      return '<td style="padding:4px 8px;text-align:center;font-size:10px;'+col+'">'+g+'</td>';
+    }
+    tbody+='<tr data-ts="'+parseDate(s.date).getTime()+'" style="background:'+bg+'">'
+      +'<td style="padding:5px 8px">'+s.date+'</td>'
+      +'<td style="padding:5px 8px;max-width:180px;overflow:hidden;text-overflow:ellipsis">'+(s.meet||'')+'</td>'
+      +'<td style="padding:5px 8px;text-align:center;font-weight:600">'+(isPB?'★ ':'')+s.time+'</td>'
+      +qualTd(ctyConsFmt,ctyCons)+gapTd(ctyCons)
+      +qualTd(ctyQtFmt,ctyQt)+gapTd(ctyQt)
+      +qualTd(regConsFmt,regCons)+gapTd(regCons)
+      +qualTd(regQtFmt,regQt)+gapTd(regQt)
+      +'</tr>';
+  });
+  document.getElementById('modal-table').innerHTML=tbody+'</tbody>';
+
+  // Qual gap summary (SC + LC rows)
+  var _qsEl=document.getElementById('modal-qual-summary');
+  if(_qsEl){
+    function _bestSwim(arr){
+      if(!arr.length)return null;
+      return arr.reduce(function(b,s){return(!b||parseSeconds(s.time)<parseSeconds(b.time))?s:b;});
+    }
+    var _scBest=_bestSwim(scArr),_lcBest=_bestSwim(lcArr);
+    var _scPb=_scBest?parseSeconds(_scBest.time):null;
+    var _lcPb=_lcBest?parseSeconds(_lcBest.time):null;
+    var _qdSC=_getQD(eventName,'SC',swimmerName);
+    var _qdLC=_getQD(eventName,'LC',swimmerName);
+
+    function _chip(lbl,std,pb){
+      if(!std)return '';
+      var g=gapStr(pb,std);
+      var ok=g==='✓'||(g!=='—'&&g.charAt(0)==='-');
+      var noPb=!pb;
+      var gc=noPb?'#bbb':ok?'#15803d':'#dc2626';
+      var bg=ok&&!noPb?'rgba(21,128,61,0.08)':'transparent';
+      return '<span style="display:inline-flex;align-items:center;gap:3px;padding:1px 6px;border-radius:4px;background:'+bg+'">'
+        +'<span style="font-size:10px;color:#888">'+lbl+'</span>'
+        +'<span style="font-size:11px;font-weight:700;color:'+gc+';font-variant-numeric:tabular-nums">'+g+'</span>'
+        +'</span>';
+    }
+    function _row(icon,label,accentBg,accentText,qd,best,pb){
+      var pbPart=best
+        ?'<span style="font-size:11px;font-weight:700;color:#1a3a5c;font-variant-numeric:tabular-nums;margin-right:2px">'+best.time+'</span>'
+         +'<span style="font-size:10px;color:#aaa;margin-right:8px">'+best.date+'</span>'
+        :'<span style="font-size:10px;color:#ccc;font-style:italic;margin-right:8px">no swims</span>';
+      var chips=_chip('Cty C',qd.county_cons||null,pb)
+        +_chip('Cty QT',qd.county_qt||null,pb)
+        +'<span style="color:#ddd;margin:0 2px">│</span>'
+        +_chip('Reg C',qd.region_cons||null,pb)
+        +_chip('Reg QT',qd.region_qt||null,pb);
+      return '<div style="display:flex;align-items:center;gap:6px;padding:4px 8px;border-radius:6px;'
+        +'background:'+accentBg+';border:1px solid '+accentText+'20;flex-wrap:wrap">'
+        +'<span style="font-size:10px;font-weight:700;color:'+accentText+';white-space:nowrap;min-width:70px">'+icon+' '+label+'</span>'
+        +'<span style="color:#e0e0e0;font-size:11px">│</span>'
+        +pbPart+chips+'</div>';
+    }
+    _qsEl.style.display='';
+    _qsEl.innerHTML=
+       _row('📏','Short Course','#eef4fb','#2e75b6',_qdSC,_scBest,_scPb)
+      +'<div style="height:4px"></div>'
+      +_row('🌊','Long Course','#edfaf3','#1e8449',_qdLC,_lcBest,_lcPb);
+  }
+
+  document.getElementById('history-modal').style.display='flex';
+}
+
+function closeModal(){
+  document.getElementById('history-modal').style.display='none';
+  if(_chart){_chart.destroy();_chart=null;}
+}
+function filterChartPeriod(months,btn){
+  document.querySelectorAll('#chart-period-btns button').forEach(function(b){
+    b.style.background=b===btn?'#1f4e79':'#f0f4f8';
+    b.style.color=b===btn?'white':'#444';
+    b.style.borderColor=b===btn?'#1f4e79':'#ccc';
+  });
+  if(!_chart)return;
+  var now=new Date();
+  if(months===null){
+    _chart.options.scales.x.min=undefined;_chart.options.scales.x.max=undefined;
+    _chart.options.scales.y.min=undefined;_chart.options.scales.y.max=undefined;
+  }else{
+    var cut=new Date(now.getFullYear(),now.getMonth()-months,now.getDate());
+    _chart.options.scales.x.min=cut.getTime();_chart.options.scales.x.max=now.getTime();
+    var cutTs=cut.getTime(),visVals=[];
+    _chart.data.datasets.forEach(function(ds){
+      if(!_chart.isDatasetVisible(_chart.data.datasets.indexOf(ds)))return;
+      ds.data.forEach(function(pt){var t=new Date(pt.x).getTime();if(t>=cutTs&&pt.y!=null)visVals.push(pt.y);});
+    });
+    if(visVals.length){
+      var yMin=Math.min.apply(null,visVals),yMax=Math.max.apply(null,visVals);
+      var pad=(yMax-yMin)||2;pad=Math.max(pad*0.15,0.5);
+      _chart.options.scales.y.min=Math.floor((yMin-pad)*10)/10;
+      _chart.options.scales.y.max=Math.ceil((yMax+pad)*10)/10;
+    }
+  }
+  _chart.update();
+  document.querySelectorAll('#modal-table tbody tr').forEach(function(row){
+    var ts=parseInt(row.dataset.ts,10);
+    row.style.display=(months!==null&&!isNaN(ts)&&ts<(months?new Date(now.getFullYear(),now.getMonth()-months,now.getDate()).getTime():0))?'none':'';
+  });
+}
+function toggleFullscreen(){
+  var el=document.getElementById('modal-inner');
+  var isMax=el.dataset.max==='1';
+  if(isMax){el.style.width='92vw';el.style.height='88vh';el.style.borderRadius='8px';el.dataset.max='0';}
+  else{el.style.width='100vw';el.style.height='100vh';el.style.borderRadius='0';el.dataset.max='1';}
+  if(_chart)_chart.resize();
+}
+var _modalDragStartedOnChild=false;
+['mousedown','touchstart','pointerdown'].forEach(function(ev){document.getElementById('history-modal').addEventListener(ev,function(e){_modalDragStartedOnChild=(e.target!==this);});});
+document.getElementById('history-modal').addEventListener('click',function(e){if(e.target===this&&!_modalDragStartedOnChild)closeModal();_modalDragStartedOnChild=false;});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
 </script>
-<div id="hist-modal" onclick="if(event.target===this)this.style.display='none'" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);z-index:2000;align-items:center;justify-content:center">
-  <div style="background:white;border-radius:8px;padding:20px;width:90vw;max-width:500px;max-height:80vh;display:flex;flex-direction:column;box-shadow:0 8px 32px rgba(0,0,0,.25)">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
-      <h3 id="hist-title" style="margin:0;font-size:14px;color:#1a3a5c;flex:1"></h3>
-      <button onclick="document.getElementById('hist-modal').style.display='none'" style="border:none;background:none;font-size:22px;cursor:pointer;color:#666;line-height:1">&times;</button>
+<style>
+@media(orientation:landscape) and (max-height:520px){
+  #modal-inner{height:96vh!important;padding:8px 14px!important;min-width:0!important;min-height:0!important}
+  #modal-body{flex-direction:row!important;gap:8px!important}
+  #modal-chart-canvas-wrap{min-height:140px!important}
+  #modal-table-wrap{min-height:0!important;flex:1.2!important}
+}
+</style>
+<div id="history-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;
+  background:rgba(0,0,0,.5);z-index:2000;align-items:center;justify-content:center;">
+  <div id="modal-inner" style="background:white;border-radius:8px;padding:20px 24px;
+    width:92vw;height:88vh;display:flex;flex-direction:column;
+    box-shadow:0 8px 32px rgba(0,0,0,.3);resize:both;overflow:auto;min-width:500px;min-height:400px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-shrink:0">
+      <h2 id="modal-title" style="margin:0;font-size:15px;color:#1a3a5c"></h2>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button onclick="toggleFullscreen()" title="Toggle fullscreen"
+          style="border:1px solid #ddd;background:#f9f9f9;font-size:13px;cursor:pointer;padding:2px 8px;border-radius:3px;color:#555">⤢</button>
+        <button onclick="closeModal()"
+          style="border:none;background:none;font-size:22px;cursor:pointer;color:#666;line-height:1">&times;</button>
+      </div>
     </div>
-    <div style="overflow-y:auto;flex:1">
-      <table style="width:100%;border-collapse:collapse;font-size:12px"><tbody id="hist-tbody"></tbody></table>
+    <div id="modal-qual-summary" style="margin-bottom:10px;flex-shrink:0"></div>
+    <div id="modal-body" style="flex:1;min-height:0;display:flex;flex-direction:column;gap:12px;overflow:hidden">
+      <div id="modal-chart-wrap" style="flex:2;min-height:0;display:flex;flex-direction:column">
+        <div id="modal-chart-canvas-wrap" style="position:relative;flex:1;min-height:280px;touch-action:none">
+          <canvas id="history-chart" style="touch-action:none;user-select:none"></canvas>
+        </div>
+        <div id="chart-legend" style="display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:8px;font-size:11px;flex-shrink:0"></div>
+        <div id="chart-period-btns" style="display:flex;gap:6px;margin-top:8px;flex-shrink:0">
+          <button onclick="filterChartPeriod(3,this)"   style="border:1px solid #ccc;border-radius:12px;font-size:11px;padding:3px 10px;cursor:pointer;background:#f0f4f8;color:#444;touch-action:manipulation">3M</button>
+          <button onclick="filterChartPeriod(6,this)"   style="border:1px solid #ccc;border-radius:12px;font-size:11px;padding:3px 10px;cursor:pointer;background:#f0f4f8;color:#444;touch-action:manipulation">6M</button>
+          <button onclick="filterChartPeriod(12,this)"  style="border:1px solid #ccc;border-radius:12px;font-size:11px;padding:3px 10px;cursor:pointer;background:#f0f4f8;color:#444;touch-action:manipulation">1Y</button>
+          <button onclick="filterChartPeriod(24,this)"  style="border:1px solid #ccc;border-radius:12px;font-size:11px;padding:3px 10px;cursor:pointer;background:#f0f4f8;color:#444;touch-action:manipulation">2Y</button>
+          <button onclick="filterChartPeriod(null,this)" style="border:1px solid #ccc;border-radius:12px;font-size:11px;padding:3px 10px;cursor:pointer;background:#1f4e79;color:white;border-color:#1f4e79;touch-action:manipulation">All</button>
+        </div>
+      </div>
+      <div id="modal-table-wrap" style="flex:1;overflow-y:auto;min-height:80px">
+        <table id="modal-table" style="width:100%;border-collapse:collapse;font-size:12px"></table>
+      </div>
     </div>
   </div>
 </div>
