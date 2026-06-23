@@ -814,7 +814,6 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
   th,td{{padding:5px 6px;border:1px solid #e0e0e0}}
   td.name{{font-weight:600;min-width:140px;position:sticky;left:0;background:white;z-index:1}}
   td.center{{text-align:center}}
-  table:not(#modal-table) tr:hover td{{filter:brightness(.96)}}
   .col-hidden{{display:none!important}}
   .progress-arrow{{color:#27ae60;font-size:10px;font-weight:700}}
   .progress-arrow.hidden{{display:none}}
@@ -1315,7 +1314,6 @@ def build_combined_page(groups_data, run_time, all_histories=None):
   th,td{{padding:5px 6px;border:1px solid #e0e0e0}}
   td.name{{font-weight:600;min-width:140px;position:sticky;left:0;background:white;z-index:1}}
   td.center{{text-align:center}}
-  table:not(#modal-table) tr:hover td{{filter:brightness(.96)}}
   .col-hidden{{display:none!important}}
   .row-hidden{{display:none!important}}
   .row-focused td:not(.name){{background:rgba(255,220,0,0.12)!important}}
