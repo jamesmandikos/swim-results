@@ -498,6 +498,9 @@
 <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center"><span id="qual-title" style="font-size:12px;font-weight:700;color:#1a3a5c;margin-right:4px">Margot Qualification Status:</span><span id="qual-cc" style="background:#e8f5e9;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;cursor:default;opacity:1" title="50 Back (LC/SC), 50 Fly (LC/SC), 100 Fly (LC/SC), 200 Fly (LC/SC)">County C: 4</span><span id="qual-rq" style="background:#fce4ec;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;cursor:default;opacity:0.45" title="None">Regional Q: 0</span><span id="qual-rc" style="background:#fff3e0;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;cursor:default;opacity:0.45" title="None">Regional C: 0</span></div>
 <div id="progress-bar" style="margin-bottom:10px;display:flex;align-items:center;gap:12px"><span style="font-size:11px;color:#27ae60;font-weight:600">▲ New PBs since last run</span><button onclick="toggleArrows(this)" style="font-size:10px;padding:2px 10px;border:1px solid #ccc;border-radius:3px;background:#f9f9f9;cursor:pointer">Hide markers</button></div>
 
+<!-- SWIM-TAB-NAV-START -->
+<div id="tab-nav" style="display:flex;gap:0;margin-bottom:14px;border-bottom:2px solid #1f4e79"><button id="tab-rankings-btn" onclick="switchTab('rankings')" style="padding:8px 20px;background:#1f4e79;color:white;border:none;cursor:pointer;font-size:13px;font-weight:600;border-radius:4px 0 0 0;touch-action:manipulation">Rankings</button><button id="tab-galas-btn" onclick="switchTab('galas')" style="padding:8px 20px;background:#f0f4f8;color:#1f4e79;border:none;cursor:pointer;font-size:13px;font-weight:600;border-radius:0 4px 0 0;touch-action:manipulation">Galas</button></div>
+<!-- SWIM-TAB-NAV-END -->
 <div class="settings">
   <button class="settings-toggle" onclick="toggleSettings(this)">⚙️ Filter columns ▼</button>
   <div class="settings-body" id="settings-body">
@@ -515,6 +518,9 @@
     </div>
     <div class="settings-section"><h3>Age groups</h3><div class="checks"><label><input type="checkbox" onchange="toggleAgeGroup('2015',this.checked)"> 11-year-olds (born 2015)</label><label><input type="checkbox" checked onchange="toggleAgeGroup('2014',this.checked)"> 12-year-olds (born 2014)</label><label><input type="checkbox" onchange="toggleAgeGroup('2013',this.checked)"> 13-year-olds (born 2013)</label></div></div>
     <div class="settings-section"><h3>Swimmer</h3><select class="swimmer-select" onchange="filterSwimmer(this.value)" style="font-size:11px;padding:3px 6px;border:1px solid #ccc;border-radius:4px;cursor:pointer;touch-action:manipulation"><option value="">All swimmers</option><optgroup label="13-year-olds"><option value="Meryem Baltaci">Meryem Baltaci</option><option value="Sophia Schellaars">Sophia Schellaars</option><option value="Arabella Poole">Arabella Poole</option><option value="Giulia Agostini">Giulia Agostini</option><option value="Maya Kossoras">Maya Kossoras</option><option value="Phoenix Wakeling">Phoenix Wakeling</option><option value="Sophia Hill">Sophia Hill</option><option value="Amy Miller">Amy Miller</option><option value="Katherine Moore">Katherine Moore</option><option value="Liv Proudfoot">Liv Proudfoot</option><option value="Alice Bejot">Alice Bejot</option><option value="Anna Gergolet">Anna Gergolet</option><option value="Daphne Petropoulos">Daphne Petropoulos</option></optgroup><optgroup label="12-year-olds"><option value="Madeleine Coppel-Hyams">Madeleine Coppel-Hyams</option><option value="Bianca Sedda">Bianca Sedda</option><option value="Zeynep Kaplan">Zeynep Kaplan</option><option value="Lauren Kang">Lauren Kang</option><option value="Tara Holzinger-Piotrovskaya">Tara Holzinger-Piotrovskaya</option><option value="Isabella Davies">Isabella Davies</option><option value="Margot Mandikos">Margot Mandikos</option><option value="Vittoria Cipparrone">Vittoria Cipparrone</option><option value="Eva Freestone Vasquez">Eva Freestone Vasquez</option><option value="Victoria Melnikova">Victoria Melnikova</option><option value="Cassie Mayne">Cassie Mayne</option><option value="Annabel Jeffery">Annabel Jeffery</option><option value="Ines Montero-Walshe">Ines Montero-Walshe</option><option value="Elizabeth Luo">Elizabeth Luo</option><option value="Lilian Mary Sampson">Lilian Mary Sampson</option></optgroup><optgroup label="11-year-olds"><option value="Caroline Wang">Caroline Wang</option><option value="Sarina Hasan">Sarina Hasan</option><option value="Liv Wilder">Liv Wilder</option><option value="Philippa Safi-Bosson">Philippa Safi-Bosson</option><option value="Jinyou Yuan">Jinyou Yuan</option><option value="Georgina Baring">Georgina Baring</option><option value="Leia Brenke">Leia Brenke</option><option value="Ani Fortescue-Webb">Ani Fortescue-Webb</option><option value="Natalie Min">Natalie Min</option></optgroup></select></div>
+    <!-- SWIM-GALA-FILTER-START -->
+<div class="settings-section" id="gala-filter-section"><h3>Gala filter</h3><select id="gala-select" onchange="applyGalaFilter(this.value)" style="font-size:11px;padding:3px 6px;border:1px solid #ccc;border-radius:4px;cursor:pointer;touch-action:manipulation"><option value="">— All events —</option><option value="PNS End of Season 2026">PNS End of Season 2026 — 11 Jul 2026</option></select><div style="margin-top:5px"><button onclick="applyGalaFilter('');document.getElementById('gala-select').value=''" style="font-size:10px;padding:2px 8px;border:1px solid #ccc;border-radius:3px;background:#f9f9f9;cursor:pointer">Clear</button></div></div>
+<!-- SWIM-GALA-FILTER-END -->
     <div class="settings-section" style="justify-content:flex-end;align-self:flex-end;margin-left:auto">
       <button onclick="saveFilterDefaults(this)"
         style="font-size:11px;padding:4px 14px;border:1px solid #2e75b6;border-radius:12px;
@@ -1061,5 +1067,53 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closePBModal
 })();
 </script>
 <a href="brompton_home.html?from=personal" style="position:fixed;top:12px;right:12px;z-index:9999;background:#1565C0;color:#fff;padding:7px 16px;border-radius:20px;text-decoration:none;font-size:12px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-family:-apple-system,sans-serif">← Home</a>
+<!-- SWIM-BODY-INJECT-START -->
+<div id="galas-section" style="display:none;padding:8px 0"><div class="gala-card" style="background:white;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.1);padding:16px;margin-bottom:20px"><div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px"><h2 style="margin:0;font-size:15px;color:#1a3a5c">PNS End of Season 2026</h2><span style="font-size:12px;background:#2e75b6;color:white;padding:1px 8px;border-radius:10px;font-weight:600">LC</span><span style="font-size:12px;color:#555">11 Jul 2026</span><span style="font-size:12px"><span style="color:#27ae60;font-weight:600">in 18d</span></span></div>
+<div style="overflow-x:auto"><table style="border-collapse:collapse;width:100%"><thead><tr><th style="background:#1f4e79;color:white;font-size:11px;font-weight:600;padding:6px 10px;text-align:left;min-width:120px">Event</th><th style="background:#1f4e79;color:white;font-size:11px;font-weight:600;padding:6px 10px;min-width:130px">Margot<br><span style="font-weight:400;font-size:10px">Mandikos</span></th></tr></thead><tbody><tr><td style="font-weight:600;font-size:12px;padding:6px 10px;border:1px solid #eee;background:#f8f9fa;white-space:nowrap">100 Back</td><td style="background:#d4edda;text-align:center;padding:6px 8px;border:1px solid #eee;vertical-align:middle"><span style="font-size:9px;font-weight:700;color:#27ae60">SC</span> <span style="font-weight:700;font-size:12px">1:20.80</span><br><span style="font-size:9px;color:#999">28/02/26</span><hr style="margin:4px 0;border:0;border-top:1px solid #eee"><span style="font-size:9px;font-weight:700;color:#2e75b6">LC</span> <span style="font-weight:700;font-size:12px">1:23.25</span><br><span style="font-size:9px;color:#999">15/03/26</span></td></tr><tr><td style="font-weight:600;font-size:12px;padding:6px 10px;border:1px solid #eee;background:#f8f9fa;white-space:nowrap">50 Free</td><td style="background:#d4edda;text-align:center;padding:6px 8px;border:1px solid #eee;vertical-align:middle"><span style="font-size:9px;font-weight:700;color:#27ae60">SC</span> <span style="font-weight:700;font-size:12px">34.53</span><br><span style="font-size:9px;color:#999">28/02/26</span><hr style="margin:4px 0;border:0;border-top:1px solid #eee"><span style="font-size:9px;font-weight:700;color:#2e75b6">LC</span> <span style="font-weight:700;font-size:12px">34.82</span><br><span style="font-size:9px;color:#999">08/03/26</span></td></tr><tr><td style="font-weight:600;font-size:12px;padding:6px 10px;border:1px solid #eee;background:#f8f9fa;white-space:nowrap">200 IM</td><td style="background:#d4edda;text-align:center;padding:6px 8px;border:1px solid #eee;vertical-align:middle"><span style="font-size:9px;font-weight:700;color:#27ae60">SC</span> <span style="font-weight:700;font-size:12px">3:03.09</span><br><span style="font-size:9px;color:#999">30/11/25</span><hr style="margin:4px 0;border:0;border-top:1px solid #eee"><span style="font-size:9px;font-weight:700;color:#2e75b6">LC</span> <span style="font-weight:700;font-size:12px">3:07.48</span><br><span style="font-size:9px;color:#999">14/03/26</span></td></tr><tr><td style="font-weight:600;font-size:12px;padding:6px 10px;border:1px solid #eee;background:#f8f9fa;white-space:nowrap">400 Free</td><td style="background:#d4edda;text-align:center;padding:6px 8px;border:1px solid #eee;vertical-align:middle"><span style="font-size:9px;font-weight:700;color:#27ae60">SC</span> <span style="font-weight:700;font-size:12px">5:44.21</span><br><span style="font-size:9px;color:#999">09/11/25</span><hr style="margin:4px 0;border:0;border-top:1px solid #eee"><span style="font-size:9px;font-weight:700;color:#2e75b6">LC</span> <span style="font-weight:700;font-size:12px">6:12.73</span><br><span style="font-size:9px;color:#999">23/03/25</span></td></tr><tr><td style="font-weight:600;font-size:12px;padding:6px 10px;border:1px solid #eee;background:#f8f9fa;white-space:nowrap">50 Breast</td><td style="background:#d4edda;text-align:center;padding:6px 8px;border:1px solid #eee;vertical-align:middle"><span style="font-size:9px;font-weight:700;color:#27ae60">SC</span> <span style="font-weight:700;font-size:12px">47.14</span><br><span style="font-size:9px;color:#999">29/11/25</span><hr style="margin:4px 0;border:0;border-top:1px solid #eee"><span style="font-size:9px;font-weight:700;color:#2e75b6">LC</span> <span style="font-weight:700;font-size:12px">55.22</span><br><span style="font-size:9px;color:#999">09/06/24</span></td></tr><tr><td style="font-weight:600;font-size:12px;padding:6px 10px;border:1px solid #eee;background:#f8f9fa;white-space:nowrap">200 Back</td><td style="background:#d4edda;text-align:center;padding:6px 8px;border:1px solid #eee;vertical-align:middle"><span style="font-size:9px;font-weight:700;color:#27ae60">SC</span> <span style="font-weight:700;font-size:12px">2:53.92</span><br><span style="font-size:9px;color:#999">30/11/25</span><hr style="margin:4px 0;border:0;border-top:1px solid #eee"><span style="font-size:9px;font-weight:700;color:#2e75b6">LC</span> <span style="font-weight:700;font-size:12px">2:57.42</span><br><span style="font-size:9px;color:#999">15/02/26</span></td></tr></tbody></table></div></div></div>
+<script id='swim-tab-js'>
+window.switchTab=function(tab){
+  var isGalas=tab==='galas';
+  var gs=document.getElementById('galas-section');if(gs)gs.style.display=isGalas?'block':'none';
+  var s=document.querySelector('.settings');if(s)s.style.display=isGalas?'none':'';
+  var w=document.querySelector('.wrapper');if(w)w.style.display=isGalas?'none':'';
+  var rb=document.getElementById('tab-rankings-btn');
+  var gb=document.getElementById('tab-galas-btn');
+  if(rb){rb.style.background=isGalas?'#f0f4f8':'#1f4e79';rb.style.color=isGalas?'#1f4e79':'white';}
+  if(gb){gb.style.background=isGalas?'#1f4e79':'#f0f4f8';gb.style.color=isGalas?'white':'#1f4e79';}
+  try{localStorage.setItem('activeTab',tab);}catch(e){}
+};
+document.addEventListener('DOMContentLoaded',function(){
+  try{var t=localStorage.getItem('activeTab');if(t)switchTab(t);}catch(e){}
+});
+</script>
+<script id='gala-filter-js'>
+var GALAS_DATA=[{"name": "PNS End of Season 2026", "date": "2026-07-11", "date_end": "2026-07-12", "venue": "TBD", "course": "LC", "entries": {"Margot Mandikos": ["100 Back", "50 Free", "200 IM", "400 Free", "50 Breast", "200 Back"]}}];
+function _galaSlug(s){return s.toLowerCase().replace(/ /g,'-').replace(/→/g,'-');}
+function applyGalaFilter(galaName){
+  if(!galaName){
+    document.querySelectorAll('.stroke-cb').forEach(function(cb){cb.checked=true;});
+    document.querySelectorAll('.coltype-cb').forEach(function(cb){cb.checked=true;});
+  } else {
+    var gala=GALAS_DATA.find(function(g){return g.name===galaName;});
+    if(!gala)return;
+    var allEvs=[];
+    Object.values(gala.entries).forEach(function(evs){allEvs=allEvs.concat(evs);});
+    var evSlugs=allEvs.map(function(e){return _galaSlug(e);});
+    document.querySelectorAll('.stroke-cb').forEach(function(cb){
+      cb.checked=evSlugs.indexOf(cb.dataset.stroke)!==-1;
+    });
+    var c=gala.course;
+    document.querySelectorAll('.coltype-cb').forEach(function(cb){
+      var ct=cb.dataset.coltype;
+      if(c==='SC') cb.checked=(ct==='sc'||ct==='best');
+      else if(c==='LC') cb.checked=(ct==='lc'||ct==='best');
+      else cb.checked=true;
+    });
+  }
+  var _cb=document.querySelector('.stroke-cb');
+  if(_cb)_cb.dispatchEvent(new Event('change'));
+}
+</script>
+<!-- SWIM-BODY-INJECT-END -->
 </body>
 </html>
