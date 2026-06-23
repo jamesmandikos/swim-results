@@ -1,0 +1,2335 @@
+{
+  "Alexander Rich": {
+    "50 Back|SC": [
+      {
+        "time": "41.32",
+        "pts": "153",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "41.82",
+        "pts": "147",
+        "round": "F",
+        "date": "17/05/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "41.98",
+        "pts": "146",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "44.43",
+        "pts": "123",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "45.05",
+        "pts": "118",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "50.79",
+        "pts": "82",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "50.81",
+        "pts": "82",
+        "round": "F",
+        "date": "05/10/24",
+        "meet": "Saxon Crown Autumn Showdown 2024"
+      }
+    ],
+    "50 Back|LC": [
+      {
+        "time": "43.81",
+        "pts": "155",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      },
+      {
+        "time": "48.23",
+        "pts": "116",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      },
+      {
+        "time": "49.92",
+        "pts": "104",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:44.15",
+        "pts": "99",
+        "round": "F",
+        "date": "08/03/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "1:48.21",
+        "pts": "89",
+        "round": "F",
+        "date": "08/12/24",
+        "meet": "Ealing SC 2024 XMAS County Qualifier Open 2024"
+      },
+      {
+        "time": "1:48.23",
+        "pts": "89",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      }
+    ],
+    "100 Back|LC": [
+      {
+        "time": "1:47.73",
+        "pts": "109",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "200 Back|SC": [
+      {
+        "time": "3:43.02",
+        "pts": "106",
+        "round": "F",
+        "date": "12/07/25",
+        "meet": "Ealing SC End of Season Summer Splash 2025"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "43.05",
+        "pts": "121",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "44.03",
+        "pts": "113",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "45.66",
+        "pts": "101",
+        "round": "F",
+        "date": "05/07/25",
+        "meet": "2025 West London National Arena Jr League R3"
+      },
+      {
+        "time": "49.25",
+        "pts": "81",
+        "round": "F",
+        "date": "17/05/25",
+        "meet": "2025 West London National Arena Jr League R1"
+      },
+      {
+        "time": "49.84",
+        "pts": "78",
+        "round": "F",
+        "date": "14/06/25",
+        "meet": "2025 West London National Arena Jr League R2"
+      },
+      {
+        "time": "50.50",
+        "pts": "75",
+        "round": "F",
+        "date": "12/07/25",
+        "meet": "Ealing SC End of Season Summer Splash 2025"
+      },
+      {
+        "time": "54.33",
+        "pts": "60",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "54.71",
+        "pts": "59",
+        "round": "F",
+        "date": "18/01/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "50 Fly|LC": [
+      {
+        "time": "42.61",
+        "pts": "142",
+        "round": "F",
+        "date": "14/03/26",
+        "meet": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      },
+      {
+        "time": "53.91",
+        "pts": "70",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "100 Fly|SC": [
+      {
+        "time": "1:47.84",
+        "pts": "86",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "1:48.75",
+        "pts": "84",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "100 Fly|LC": [
+      {
+        "time": "1:38.31",
+        "pts": "127",
+        "round": "F",
+        "date": "15/03/26",
+        "meet": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      },
+      {
+        "time": "1:45.94",
+        "pts": "101",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "33.78",
+        "pts": "204",
+        "round": "F",
+        "date": "17/05/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "34.16",
+        "pts": "197",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "34.67",
+        "pts": "189",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "35.14",
+        "pts": "181",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "35.87",
+        "pts": "170",
+        "round": "F",
+        "date": "05/07/25",
+        "meet": "2025 West London National Arena Jr League R3"
+      },
+      {
+        "time": "36.17",
+        "pts": "166",
+        "round": "H",
+        "date": "20/09/25",
+        "meet": "National Arena Junior Swimming League Cup Final 25"
+      },
+      {
+        "time": "36.64",
+        "pts": "160",
+        "round": "F",
+        "date": "14/06/25",
+        "meet": "2025 West London National Arena Jr League R2"
+      },
+      {
+        "time": "37.74",
+        "pts": "146",
+        "round": "F",
+        "date": "17/05/25",
+        "meet": "2025 West London National Arena Jr League R1"
+      },
+      {
+        "time": "38.41",
+        "pts": "139",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "39.66",
+        "pts": "126",
+        "round": "F",
+        "date": "08/12/24",
+        "meet": "Ealing SC 2024 XMAS County Qualifier Open 2024"
+      },
+      {
+        "time": "39.93",
+        "pts": "123",
+        "round": "F",
+        "date": "05/10/24",
+        "meet": "Saxon Crown Autumn Showdown 2024"
+      }
+    ],
+    "50 Free|LC": [
+      {
+        "time": "33.74",
+        "pts": "238",
+        "round": "H",
+        "date": "08/02/26",
+        "meet": "2026 Middlesex County Championships"
+      },
+      {
+        "time": "34.41",
+        "pts": "224",
+        "round": "F",
+        "date": "14/03/26",
+        "meet": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      },
+      {
+        "time": "38.05",
+        "pts": "165",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:22.24",
+        "pts": "162",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "1:30.17",
+        "pts": "122",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "1:32.01",
+        "pts": "115",
+        "round": "F",
+        "date": "18/01/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "1:32.51",
+        "pts": "113",
+        "round": "F",
+        "date": "08/12/24",
+        "meet": "Ealing SC 2024 XMAS County Qualifier Open 2024"
+      }
+    ],
+    "100 Free|LC": [
+      {
+        "time": "1:18.61",
+        "pts": "205",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      },
+      {
+        "time": "1:25.50",
+        "pts": "159",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      },
+      {
+        "time": "1:28.26",
+        "pts": "145",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "200 Free|LC": [
+      {
+        "time": "2:58.27",
+        "pts": "187",
+        "round": "F",
+        "date": "14/03/26",
+        "meet": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "51.54",
+        "pts": "113",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "52.46",
+        "pts": "107",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "53.43",
+        "pts": "101",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "53.75",
+        "pts": "100",
+        "round": "F",
+        "date": "08/03/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "54.49",
+        "pts": "95",
+        "round": "F",
+        "date": "08/12/24",
+        "meet": "Ealing SC 2024 XMAS County Qualifier Open 2024"
+      }
+    ],
+    "50 Breast|LC": [
+      {
+        "time": "49.60",
+        "pts": "143",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      },
+      {
+        "time": "50.29",
+        "pts": "137",
+        "round": "F",
+        "date": "15/03/26",
+        "meet": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      },
+      {
+        "time": "53.28",
+        "pts": "115",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "1:48.59",
+        "pts": "131",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:45.10",
+        "pts": "103",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      }
+    ],
+    "200 IM|SC": [
+      {
+        "time": "3:19.83",
+        "pts": "161",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "3:32.12",
+        "pts": "135",
+        "round": "F",
+        "date": "12/07/25",
+        "meet": "Ealing SC End of Season Summer Splash 2025"
+      }
+    ],
+    "200 IM|LC": [
+      {
+        "time": "3:23.91",
+        "pts": "168",
+        "round": "F",
+        "date": "15/03/26",
+        "meet": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      },
+      {
+        "time": "3:39.31",
+        "pts": "135",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      }
+    ]
+  },
+  "Kimi Chen": {
+    "50 Back|SC": [
+      {
+        "time": "44.32",
+        "pts": "124",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "52.27",
+        "pts": "75",
+        "round": "F",
+        "date": "18/01/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "50 Back|LC": [
+      {
+        "time": "44.25",
+        "pts": "150",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:51.36",
+        "pts": "81",
+        "round": "F",
+        "date": "08/03/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "42.60",
+        "pts": "125",
+        "round": "F",
+        "date": "17/05/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "43.82",
+        "pts": "115",
+        "round": "F",
+        "date": "05/07/25",
+        "meet": "2025 West London National Arena Jr League R3"
+      },
+      {
+        "time": "44.00",
+        "pts": "113",
+        "round": "H",
+        "date": "20/09/25",
+        "meet": "National Arena Junior Swimming League Cup Final 25"
+      },
+      {
+        "time": "44.15",
+        "pts": "112",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "45.32",
+        "pts": "104",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "45.58",
+        "pts": "102",
+        "round": "F",
+        "date": "17/05/25",
+        "meet": "2025 West London National Arena Jr League R1"
+      },
+      {
+        "time": "47.21",
+        "pts": "92",
+        "round": "F",
+        "date": "14/06/25",
+        "meet": "2025 West London National Arena Jr League R2"
+      },
+      {
+        "time": "47.79",
+        "pts": "88",
+        "round": "F",
+        "date": "18/01/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "49.46",
+        "pts": "80",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "59.57",
+        "pts": "45",
+        "round": "F",
+        "date": "21/09/24",
+        "meet": "Kingston Royals Start of Season Invitational Meet"
+      }
+    ],
+    "50 Fly|LC": [
+      {
+        "time": "43.18",
+        "pts": "137",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      },
+      {
+        "time": "44.87",
+        "pts": "122",
+        "round": "H",
+        "date": "07/02/26",
+        "meet": "2026 Middlesex County Championships"
+      },
+      {
+        "time": "47.80",
+        "pts": "101",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      },
+      {
+        "time": "47.97",
+        "pts": "100",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "34.00",
+        "pts": "200",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "34.66",
+        "pts": "189",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "35.59",
+        "pts": "174",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "37.00",
+        "pts": "155",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "38.01",
+        "pts": "143",
+        "round": "F",
+        "date": "05/07/25",
+        "meet": "2025 West London National Arena Jr League R3"
+      },
+      {
+        "time": "38.65",
+        "pts": "136",
+        "round": "F",
+        "date": "14/06/25",
+        "meet": "2025 West London National Arena Jr League R2"
+      },
+      {
+        "time": "41.46",
+        "pts": "110",
+        "round": "F",
+        "date": "17/05/25",
+        "meet": "2025 West London National Arena Jr League R1"
+      },
+      {
+        "time": "41.92",
+        "pts": "106",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "43.79",
+        "pts": "93",
+        "round": "F",
+        "date": "21/09/24",
+        "meet": "Kingston Royals Start of Season Invitational Meet"
+      }
+    ],
+    "50 Free|LC": [
+      {
+        "time": "35.45",
+        "pts": "205",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      },
+      {
+        "time": "37.43",
+        "pts": "174",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      },
+      {
+        "time": "40.46",
+        "pts": "138",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:29.60",
+        "pts": "125",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "1:37.61",
+        "pts": "96",
+        "round": "F",
+        "date": "18/01/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "100 Free|LC": [
+      {
+        "time": "1:25.39",
+        "pts": "160",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "200 Free|LC": [
+      {
+        "time": "3:29.70",
+        "pts": "115",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "48.25",
+        "pts": "138",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "48.36",
+        "pts": "137",
+        "round": "F",
+        "date": "17/05/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "49.09",
+        "pts": "131",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "50.68",
+        "pts": "119",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "53.72",
+        "pts": "100",
+        "round": "F",
+        "date": "08/03/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "54.01",
+        "pts": "98",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "56.80",
+        "pts": "84",
+        "round": "F",
+        "date": "21/09/24",
+        "meet": "Kingston Royals Start of Season Invitational Meet"
+      }
+    ],
+    "50 Breast|LC": [
+      {
+        "time": "48.00",
+        "pts": "158",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      },
+      {
+        "time": "50.46",
+        "pts": "136",
+        "round": "H",
+        "date": "07/02/26",
+        "meet": "2026 Middlesex County Championships"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "1:49.51",
+        "pts": "128",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "100 Breast|LC": [
+      {
+        "time": "1:56.09",
+        "pts": "117",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      },
+      {
+        "time": "2:01.74",
+        "pts": "101",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:32.48",
+        "pts": "151",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "1:33.86",
+        "pts": "144",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ]
+  },
+  "Harry Xu": {
+    "50 Back|SC": [
+      {
+        "time": "45.79",
+        "pts": "112",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "48.06",
+        "pts": "97",
+        "round": "F",
+        "date": "07/12/25",
+        "meet": "NUEL SC Late County Qualifier Open Meet 2025"
+      },
+      {
+        "time": "48.09",
+        "pts": "97",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "51.20",
+        "pts": "80",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "50 Back|LC": [
+      {
+        "time": "48.49",
+        "pts": "114",
+        "round": "F",
+        "date": "21/02/26",
+        "meet": "Wycombe District SC Dual Award Level 3 Meet"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:46.41",
+        "pts": "93",
+        "round": "F",
+        "date": "11/10/25",
+        "meet": "NUEL SC Early County Qualifier Open Meet 2025"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "38.64",
+        "pts": "167",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "39.64",
+        "pts": "155",
+        "round": "F",
+        "date": "17/05/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "40.41",
+        "pts": "146",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "42.55",
+        "pts": "125",
+        "round": "F",
+        "date": "11/10/25",
+        "meet": "NUEL SC Early County Qualifier Open Meet 2025"
+      },
+      {
+        "time": "43.80",
+        "pts": "115",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "45.74",
+        "pts": "101",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "46.89",
+        "pts": "93",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      },
+      {
+        "time": "53.24",
+        "pts": "64",
+        "round": "F",
+        "date": "23/03/25",
+        "meet": "Chelsea & Westminster 2025 Future Stars Dev Meet"
+      }
+    ],
+    "50 Fly|LC": [
+      {
+        "time": "41.67",
+        "pts": "152",
+        "round": "F",
+        "date": "22/02/26",
+        "meet": "Wycombe District SC Dual Award Level 3 Meet"
+      }
+    ],
+    "100 Fly|SC": [
+      {
+        "time": "1:55.27",
+        "pts": "70",
+        "round": "F",
+        "date": "07/12/25",
+        "meet": "NUEL SC Late County Qualifier Open Meet 2025"
+      }
+    ],
+    "200 Fly|LC": [
+      {
+        "time": "3:58.61",
+        "pts": "98",
+        "round": "F",
+        "date": "21/02/26",
+        "meet": "Wycombe District SC Dual Award Level 3 Meet"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "37.39",
+        "pts": "150",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "37.74",
+        "pts": "146",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "38.23",
+        "pts": "141",
+        "round": "F",
+        "date": "17/05/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "38.75",
+        "pts": "135",
+        "round": "F",
+        "date": "06/12/25",
+        "meet": "NUEL SC Late County Qualifier Open Meet 2025"
+      },
+      {
+        "time": "38.88",
+        "pts": "134",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "39.97",
+        "pts": "123",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "40.72",
+        "pts": "116",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      },
+      {
+        "time": "41.19",
+        "pts": "112",
+        "round": "F",
+        "date": "11/10/25",
+        "meet": "NUEL SC Early County Qualifier Open Meet 2025"
+      },
+      {
+        "time": "44.51",
+        "pts": "89",
+        "round": "F",
+        "date": "23/03/25",
+        "meet": "Chelsea & Westminster 2025 Future Stars Dev Meet"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:31.77",
+        "pts": "116",
+        "round": "F",
+        "date": "12/10/25",
+        "meet": "NUEL SC Early County Qualifier Open Meet 2025"
+      },
+      {
+        "time": "1:35.04",
+        "pts": "105",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:04.67",
+        "pts": "152",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "3:09.95",
+        "pts": "139",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "3:13.58",
+        "pts": "132",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "3:16.17",
+        "pts": "127",
+        "round": "F",
+        "date": "11/10/25",
+        "meet": "NUEL SC Early County Qualifier Open Meet 2025"
+      },
+      {
+        "time": "3:21.15",
+        "pts": "117",
+        "round": "F",
+        "date": "06/12/25",
+        "meet": "NUEL SC Late County Qualifier Open Meet 2025"
+      }
+    ],
+    "200 Free|LC": [
+      {
+        "time": "3:21.16",
+        "pts": "130",
+        "round": "F",
+        "date": "21/02/26",
+        "meet": "Wycombe District SC Dual Award Level 3 Meet"
+      }
+    ],
+    "400 Free|LC": [
+      {
+        "time": "6:46.04",
+        "pts": "158",
+        "round": "F",
+        "date": "22/02/26",
+        "meet": "Wycombe District SC Dual Award Level 3 Meet"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "47.05",
+        "pts": "149",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "48.86",
+        "pts": "133",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "49.02",
+        "pts": "131",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "49.07",
+        "pts": "131",
+        "round": "F",
+        "date": "07/12/25",
+        "meet": "NUEL SC Late County Qualifier Open Meet 2025"
+      },
+      {
+        "time": "49.59",
+        "pts": "127",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "51.62",
+        "pts": "112",
+        "round": "F",
+        "date": "12/10/25",
+        "meet": "NUEL SC Early County Qualifier Open Meet 2025"
+      },
+      {
+        "time": "58.77",
+        "pts": "76",
+        "round": "F",
+        "date": "23/03/25",
+        "meet": "Chelsea & Westminster 2025 Future Stars Dev Meet"
+      }
+    ],
+    "50 Breast|LC": [
+      {
+        "time": "48.67",
+        "pts": "151",
+        "round": "H",
+        "date": "07/02/26",
+        "meet": "2026 Middlesex County Championships"
+      },
+      {
+        "time": "50.68",
+        "pts": "134",
+        "round": "F",
+        "date": "22/02/26",
+        "meet": "Wycombe District SC Dual Award Level 3 Meet"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "1:44.92",
+        "pts": "146",
+        "round": "F",
+        "date": "06/12/25",
+        "meet": "NUEL SC Late County Qualifier Open Meet 2025"
+      },
+      {
+        "time": "1:46.24",
+        "pts": "140",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:46.79",
+        "pts": "138",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:49.63",
+        "pts": "128",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "1:52.78",
+        "pts": "117",
+        "round": "F",
+        "date": "11/10/25",
+        "meet": "NUEL SC Early County Qualifier Open Meet 2025"
+      },
+      {
+        "time": "1:58.62",
+        "pts": "101",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "100 Breast|LC": [
+      {
+        "time": "1:48.15",
+        "pts": "145",
+        "round": "F",
+        "date": "21/02/26",
+        "meet": "Wycombe District SC Dual Award Level 3 Meet"
+      },
+      {
+        "time": "1:48.69",
+        "pts": "143",
+        "round": "H",
+        "date": "14/02/26",
+        "meet": "2026 Middlesex County Championships"
+      }
+    ],
+    "200 Breast|SC": [
+      {
+        "time": "3:57.66",
+        "pts": "129",
+        "round": "F",
+        "date": "11/10/25",
+        "meet": "NUEL SC Early County Qualifier Open Meet 2025"
+      },
+      {
+        "time": "4:00.43",
+        "pts": "124",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      }
+    ],
+    "200 Breast|LC": [
+      {
+        "time": "3:50.64",
+        "pts": "161",
+        "round": "F",
+        "date": "22/02/26",
+        "meet": "Wycombe District SC Dual Award Level 3 Meet"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:29.02",
+        "pts": "169",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "1:31.13",
+        "pts": "158",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:39.24",
+        "pts": "122",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "1:40.45",
+        "pts": "118",
+        "round": "F",
+        "date": "12/10/25",
+        "meet": "NUEL SC Early County Qualifier Open Meet 2025"
+      },
+      {
+        "time": "1:41.52",
+        "pts": "114",
+        "round": "F",
+        "date": "07/12/25",
+        "meet": "NUEL SC Late County Qualifier Open Meet 2025"
+      },
+      {
+        "time": "1:41.89",
+        "pts": "113",
+        "round": "F",
+        "date": "21/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "200 IM|SC": [
+      {
+        "time": "3:50.23",
+        "pts": "105",
+        "round": "F",
+        "date": "23/03/25",
+        "meet": "Chelsea & Westminster 2025 Future Stars Dev Meet"
+      }
+    ],
+    "200 IM|LC": [
+      {
+        "time": "3:30.62",
+        "pts": "153",
+        "round": "F",
+        "date": "22/02/26",
+        "meet": "Wycombe District SC Dual Award Level 3 Meet"
+      }
+    ]
+  },
+  "Skeat Francois": {
+    "50 Fly|SC": [
+      {
+        "time": "1:07.29",
+        "pts": "31",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "39.30",
+        "pts": "129",
+        "round": "F",
+        "date": "01/03/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "40.01",
+        "pts": "123",
+        "round": "F",
+        "date": "30/11/25",
+        "meet": "Ealing SC Xmas County Qualifier 2025"
+      },
+      {
+        "time": "40.88",
+        "pts": "115",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "41.29",
+        "pts": "111",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "41.82",
+        "pts": "107",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "44.47",
+        "pts": "89",
+        "round": "F",
+        "date": "13/07/25",
+        "meet": "Ealing SC End of Season Summer Splash 2025"
+      },
+      {
+        "time": "44.92",
+        "pts": "86",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "50 Free|LC": [
+      {
+        "time": "43.30",
+        "pts": "112",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      },
+      {
+        "time": "47.46",
+        "pts": "85",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:39.47",
+        "pts": "91",
+        "round": "F",
+        "date": "18/01/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "100 Free|LC": [
+      {
+        "time": "1:53.84",
+        "pts": "67",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "51.62",
+        "pts": "112",
+        "round": "F",
+        "date": "01/03/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "52.70",
+        "pts": "106",
+        "round": "F",
+        "date": "30/11/25",
+        "meet": "Ealing SC Xmas County Qualifier 2025"
+      },
+      {
+        "time": "53.85",
+        "pts": "99",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "54.18",
+        "pts": "97",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "54.71",
+        "pts": "94",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "55.37",
+        "pts": "91",
+        "round": "F",
+        "date": "13/07/25",
+        "meet": "Ealing SC End of Season Summer Splash 2025"
+      },
+      {
+        "time": "1:16.01",
+        "pts": "35",
+        "round": "F",
+        "date": "08/03/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "50 Breast|LC": [
+      {
+        "time": "56.87",
+        "pts": "95",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      }
+    ]
+  },
+  "Oscar Woodhouse": {
+    "50 Back|SC": [
+      {
+        "time": "43.83",
+        "pts": "128",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "44.37",
+        "pts": "123",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "50.39",
+        "pts": "84",
+        "round": "F",
+        "date": "18/01/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "44.37",
+        "pts": "110",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "47.43",
+        "pts": "90",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "59.11",
+        "pts": "46",
+        "round": "F",
+        "date": "07/07/24",
+        "meet": "Ealing SC 2024 End of Season Summer Invitational"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "43.18",
+        "pts": "97",
+        "round": "F",
+        "date": "07/07/24",
+        "meet": "Ealing SC 2024 End of Season Summer Invitational"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:25.33",
+        "pts": "145",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:42.86",
+        "pts": "109",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ]
+  },
+  "Alessandro Montesi": {
+    "50 Back|SC": [
+      {
+        "time": "42.49",
+        "pts": "140",
+        "round": "F",
+        "date": "17/05/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "42.63",
+        "pts": "139",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "44.29",
+        "pts": "124",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "44.37",
+        "pts": "123",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "44.74",
+        "pts": "120",
+        "round": "F",
+        "date": "29/11/25",
+        "meet": "Ealing SC Xmas County Qualifier 2025"
+      },
+      {
+        "time": "46.46",
+        "pts": "107",
+        "round": "F",
+        "date": "17/05/25",
+        "meet": "2025 West London National Arena Jr League R1"
+      },
+      {
+        "time": "46.51",
+        "pts": "107",
+        "round": "F",
+        "date": "05/07/25",
+        "meet": "2025 West London National Arena Jr League R3"
+      },
+      {
+        "time": "46.53",
+        "pts": "107",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "47.43",
+        "pts": "101",
+        "round": "F",
+        "date": "14/06/25",
+        "meet": "2025 West London National Arena Jr League R2"
+      },
+      {
+        "time": "47.87",
+        "pts": "98",
+        "round": "F",
+        "date": "12/07/25",
+        "meet": "Ealing SC End of Season Summer Splash 2025"
+      },
+      {
+        "time": "49.80",
+        "pts": "87",
+        "round": "F",
+        "date": "23/03/25",
+        "meet": "Chelsea & Westminster 2025 Future Stars Dev Meet"
+      },
+      {
+        "time": "52.40",
+        "pts": "75",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "2024 CWSC Development Competition"
+      }
+    ],
+    "50 Back|LC": [
+      {
+        "time": "51.72",
+        "pts": "94",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:40.34",
+        "pts": "111",
+        "round": "F",
+        "date": "13/07/25",
+        "meet": "Ealing SC End of Season Summer Splash 2025"
+      },
+      {
+        "time": "1:41.47",
+        "pts": "108",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "1:48.01",
+        "pts": "89",
+        "round": "F",
+        "date": "08/03/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "40.13",
+        "pts": "149",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "40.43",
+        "pts": "146",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "46.98",
+        "pts": "93",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "52.66",
+        "pts": "66",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "53.56",
+        "pts": "63",
+        "round": "F",
+        "date": "23/03/25",
+        "meet": "Chelsea & Westminster 2025 Future Stars Dev Meet"
+      },
+      {
+        "time": "1:01.80",
+        "pts": "41",
+        "round": "F",
+        "date": "11/05/25",
+        "meet": "Camden Future Stars Spring Meet 2025"
+      }
+    ],
+    "50 Fly|LC": [
+      {
+        "time": "45.29",
+        "pts": "118",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      },
+      {
+        "time": "45.77",
+        "pts": "115",
+        "round": "F",
+        "date": "14/03/26",
+        "meet": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      },
+      {
+        "time": "52.79",
+        "pts": "75",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "35.97",
+        "pts": "169",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "38.16",
+        "pts": "141",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "38.54",
+        "pts": "137",
+        "round": "F",
+        "date": "30/11/25",
+        "meet": "Ealing SC Xmas County Qualifier 2025"
+      },
+      {
+        "time": "39.17",
+        "pts": "131",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "39.66",
+        "pts": "126",
+        "round": "F",
+        "date": "13/07/25",
+        "meet": "Ealing SC End of Season Summer Splash 2025"
+      },
+      {
+        "time": "41.02",
+        "pts": "114",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "41.07",
+        "pts": "113",
+        "round": "F",
+        "date": "23/03/25",
+        "meet": "Chelsea & Westminster 2025 Future Stars Dev Meet"
+      },
+      {
+        "time": "48.29",
+        "pts": "69",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "2024 CWSC Development Competition"
+      }
+    ],
+    "50 Free|LC": [
+      {
+        "time": "38.35",
+        "pts": "162",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      },
+      {
+        "time": "38.79",
+        "pts": "156",
+        "round": "F",
+        "date": "14/03/26",
+        "meet": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      },
+      {
+        "time": "39.98",
+        "pts": "143",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      },
+      {
+        "time": "40.32",
+        "pts": "139",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:26.69",
+        "pts": "138",
+        "round": "F",
+        "date": "30/11/25",
+        "meet": "Ealing SC Xmas County Qualifier 2025"
+      },
+      {
+        "time": "1:27.24",
+        "pts": "135",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:31.81",
+        "pts": "116",
+        "round": "F",
+        "date": "13/07/25",
+        "meet": "Ealing SC End of Season Summer Splash 2025"
+      },
+      {
+        "time": "1:32.17",
+        "pts": "115",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "1:34.58",
+        "pts": "106",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "1:55.84",
+        "pts": "57",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "2024 CWSC Development Competition"
+      }
+    ],
+    "100 Free|LC": [
+      {
+        "time": "1:39.71",
+        "pts": "100",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:10.61",
+        "pts": "138",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "200 Free|LC": [
+      {
+        "time": "3:08.20",
+        "pts": "159",
+        "round": "F",
+        "date": "14/03/26",
+        "meet": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "48.37",
+        "pts": "137",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "49.00",
+        "pts": "132",
+        "round": "F",
+        "date": "17/05/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "49.17",
+        "pts": "130",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "50.19",
+        "pts": "122",
+        "round": "F",
+        "date": "30/11/25",
+        "meet": "Ealing SC Xmas County Qualifier 2025"
+      },
+      {
+        "time": "51.09",
+        "pts": "116",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "53.03",
+        "pts": "104",
+        "round": "F",
+        "date": "05/07/25",
+        "meet": "2025 West London National Arena Jr League R3"
+      },
+      {
+        "time": "53.22",
+        "pts": "103",
+        "round": "F",
+        "date": "14/06/25",
+        "meet": "2025 West London National Arena Jr League R2"
+      },
+      {
+        "time": "53.42",
+        "pts": "101",
+        "round": "F",
+        "date": "13/07/25",
+        "meet": "Ealing SC End of Season Summer Splash 2025"
+      },
+      {
+        "time": "53.43",
+        "pts": "101",
+        "round": "F",
+        "date": "17/05/25",
+        "meet": "2025 West London National Arena Jr League R1"
+      },
+      {
+        "time": "53.89",
+        "pts": "99",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "53.95",
+        "pts": "98",
+        "round": "F",
+        "date": "11/05/25",
+        "meet": "Camden Future Stars Spring Meet 2025"
+      },
+      {
+        "time": "54.84",
+        "pts": "94",
+        "round": "F",
+        "date": "08/03/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "54.93",
+        "pts": "93",
+        "round": "F",
+        "date": "23/03/25",
+        "meet": "Chelsea & Westminster 2025 Future Stars Dev Meet"
+      },
+      {
+        "time": "55.62",
+        "pts": "90",
+        "round": "F",
+        "date": "23/11/24",
+        "meet": "2024 CWSC Development Competition"
+      }
+    ],
+    "50 Breast|LC": [
+      {
+        "time": "48.75",
+        "pts": "150",
+        "round": "H",
+        "date": "07/02/26",
+        "meet": "2026 Middlesex County Championships"
+      },
+      {
+        "time": "51.82",
+        "pts": "125",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      },
+      {
+        "time": "54.63",
+        "pts": "107",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "1:50.24",
+        "pts": "126",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:50.47",
+        "pts": "125",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "1:52.10",
+        "pts": "119",
+        "round": "F",
+        "date": "29/11/25",
+        "meet": "Ealing SC Xmas County Qualifier 2025"
+      },
+      {
+        "time": "1:58.12",
+        "pts": "102",
+        "round": "F",
+        "date": "12/07/25",
+        "meet": "Ealing SC End of Season Summer Splash 2025"
+      },
+      {
+        "time": "1:58.18",
+        "pts": "102",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "2:01.82",
+        "pts": "93",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "2024 CWSC Development Competition"
+      }
+    ],
+    "100 Breast|LC": [
+      {
+        "time": "1:55.15",
+        "pts": "120",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      },
+      {
+        "time": "1:59.89",
+        "pts": "106",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      },
+      {
+        "time": "2:00.15",
+        "pts": "106",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      }
+    ],
+    "200 Breast|SC": [
+      {
+        "time": "3:56.41",
+        "pts": "131",
+        "round": "F",
+        "date": "30/11/25",
+        "meet": "Ealing SC Xmas County Qualifier 2025"
+      }
+    ],
+    "200 Breast|LC": [
+      {
+        "time": "3:48.10",
+        "pts": "166",
+        "round": "F",
+        "date": "07/02/26",
+        "meet": "2026 Middlesex County Championships"
+      },
+      {
+        "time": "3:59.00",
+        "pts": "144",
+        "round": "F",
+        "date": "14/03/26",
+        "meet": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:28.56",
+        "pts": "172",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "1:35.25",
+        "pts": "138",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:39.78",
+        "pts": "120",
+        "round": "F",
+        "date": "13/07/25",
+        "meet": "Ealing SC End of Season Summer Splash 2025"
+      },
+      {
+        "time": "1:44.30",
+        "pts": "105",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "1:48.12",
+        "pts": "94",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "200 IM|SC": [
+      {
+        "time": "3:50.40",
+        "pts": "105",
+        "round": "F",
+        "date": "23/03/25",
+        "meet": "Chelsea & Westminster 2025 Future Stars Dev Meet"
+      }
+    ]
+  },
+  "Milo Li": {
+    "50 Back|SC": [
+      {
+        "time": "55.50",
+        "pts": "63",
+        "round": "F",
+        "date": "18/01/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:51.26",
+        "pts": "81",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      }
+    ],
+    "100 Back|LC": [
+      {
+        "time": "1:55.09",
+        "pts": "90",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "53.64",
+        "pts": "62",
+        "round": "F",
+        "date": "18/01/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "58.84",
+        "pts": "47",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      }
+    ],
+    "50 Fly|LC": [
+      {
+        "time": "54.49",
+        "pts": "68",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "45.10",
+        "pts": "85",
+        "round": "F",
+        "date": "13/07/25",
+        "meet": "Ealing SC End of Season Summer Splash 2025"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:39.87",
+        "pts": "90",
+        "round": "F",
+        "date": "08/12/24",
+        "meet": "Ealing SC 2024 XMAS County Qualifier Open 2024"
+      },
+      {
+        "time": "1:41.52",
+        "pts": "86",
+        "round": "F",
+        "date": "18/01/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "100 Free|LC": [
+      {
+        "time": "1:41.34",
+        "pts": "95",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:56.32",
+        "pts": "72",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "3:57.76",
+        "pts": "71",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "58.94",
+        "pts": "75",
+        "round": "F",
+        "date": "08/12/24",
+        "meet": "Ealing SC 2024 XMAS County Qualifier Open 2024"
+      },
+      {
+        "time": "1:00.00",
+        "pts": "71",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "50 Breast|LC": [
+      {
+        "time": "55.69",
+        "pts": "101",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:06.27",
+        "pts": "83",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "2:09.95",
+        "pts": "76",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      }
+    ]
+  }
+}

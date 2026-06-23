@@ -1,0 +1,14 @@
+{
+  "name": "BSC U14 Girls Rankings",
+  "short_name": "BSC Rankings",
+  "description": "Brompton SC U14 girls personal bests and qualifying times",
+  "start_url": "./bsc_u14_girls_rankings.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fa",
+  "theme_color": "#1a3a5c",
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

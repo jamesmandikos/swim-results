@@ -1417,7 +1417,7 @@ def _compute_swimmer_quals(rows, default_quals, age_group_quals=None):
 def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
                html_path=None, title=None, peer_histories=None,
                peer_rows_by_yob=None, age_group_quals=None,
-               home_url=None):
+               home_url=None, manifest="manifest.json"):
     print("\nBuilding HTML report...")
 
     # Combine main group with all peer age groups
@@ -1829,7 +1829,7 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title or "Brompton SC Club Rankings — Female 2014"}</title>
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="{manifest}">
 <link rel="apple-touch-icon" href="icon-192.png">
 <style>
   *{{box-sizing:border-box}}
@@ -2932,7 +2932,8 @@ def main():
                prev_bests=prev_bests, peer_histories=all_peer_histories,
                peer_rows_by_yob=margot_peer_rows_by_yob,
                age_group_quals=age_group_quals,
-               html_path=HTML_PATH, home_url="brompton_home.html?from=personal")
+               html_path=HTML_PATH, home_url="brompton_home.html?from=personal",
+               manifest="bsc_manifest.json")
 
 
     # ── Ava ───────────────────────────────────────────────────────────────────
@@ -3006,7 +3007,8 @@ def main():
                title="Chelsea &amp; Westminster SC — Female 2017 — Personal Bests",
                peer_histories=all_ava_peer_histories,
                peer_rows_by_yob=ava_peer_rows_by_yob,
-               home_url="cwsc.html")
+               home_url="cwsc.html",
+               manifest="cwsc_u14_manifest.json")
 
     # ── Inject Galas tab — separate per page ─────────────────────────────────
     def _bests_lookup(group):
@@ -3160,10 +3162,10 @@ def main():
 
 
     # Ensure icon/manifest tags survive galas injection on both pages
-    _icon_tags = '\n<link rel="manifest" href="manifest.json">\n<link rel="apple-touch-icon" href="icon-192.png">'
-    for _hp in [HTML_PATH, AVA_HTML_PATH]:
+    for _hp, _mf in [(HTML_PATH, "bsc_manifest.json"), (AVA_HTML_PATH, "cwsc_u14_manifest.json")]:
         _ht = _hp.read_text(encoding="utf-8")
         if 'apple-touch-icon' not in _ht:
+            _icon_tags = f'\n<link rel="manifest" href="{_mf}">\n<link rel="apple-touch-icon" href="icon-192.png">'
             _ht = _ht.replace('</title>', '</title>' + _icon_tags, 1)
             _hp.write_text(_ht, encoding="utf-8")
 
