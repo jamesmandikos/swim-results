@@ -499,7 +499,7 @@
 </head>
 <body>
 <h1 id="page-h1">Chelsea &amp; Westminster SC — Female 2017 — Personal Bests<span id="page-swimmer-name"></span></h1>
-<p class="meta">Last updated: 23/06/2026 16:15 &nbsp;|&nbsp;
+<p class="meta">Last updated: 23/06/2026 17:08 &nbsp;|&nbsp;
   <span style="background:#d4edda;padding:1px 6px;border-radius:3px">1st</span>
   <span style="background:#fff3cd;padding:1px 6px;border-radius:3px">2nd</span>
   <span style="background:#fde8d8;padding:1px 6px;border-radius:3px">3rd</span>
@@ -630,7 +630,7 @@ function showHistory(swimmerName,eventName,course){
     document.getElementById('history-modal').style.display='flex';
     document.getElementById('modal-table').innerHTML=
       '<tr><td style="padding:20px;text-align:center;color:#888;font-style:italic">'
-      +'No history cached for '+swimmerName+'.<br>Run <strong>python3 swimming_results.py --refresh</strong> after a meet to load peer histories.'
+      +'No history cached for '+swimmerName+'.<br>Run <strong>python3 swimming_results.py --fetch-history</strong> to load histories for all BSC swimmers.'
       +'</td></tr>';
     if(_chart){_chart.destroy();_chart=null;}
     document.getElementById('chart-legend').innerHTML='';

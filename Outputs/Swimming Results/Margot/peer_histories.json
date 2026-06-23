@@ -6438,6 +6438,13 @@
     ],
     "50 Free|SC": [
       {
+        "time": "31.90",
+        "pts": "366",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
         "time": "32.56",
         "pts": "344",
         "round": "F",
@@ -12092,6 +12099,410 @@
         "round": "F",
         "date": "07/06/26",
         "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ]
+  },
+  "Cassandra Mayne": {
+    "50 Back|SC": [
+      {
+        "time": "42.85",
+        "pts": "204",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "46.58",
+        "pts": "158",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "46.92",
+        "pts": "155",
+        "round": "F",
+        "date": "18/01/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "50.53",
+        "pts": "124",
+        "round": "H",
+        "date": "19/11/23",
+        "meet": "Brompton SC 2023 Winter Club Championships"
+      },
+      {
+        "time": "56.06",
+        "pts": "91",
+        "round": "F",
+        "date": "25/06/23",
+        "meet": "Brompton SC Summer Club Championship Meet 2023"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "42.19",
+        "pts": "182",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "45.91",
+        "pts": "141",
+        "round": "F",
+        "date": "18/01/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "49.57",
+        "pts": "112",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "49.85",
+        "pts": "110",
+        "round": "F",
+        "date": "23/06/24",
+        "meet": "2024 Brompton SC Summer Club Champs"
+      },
+      {
+        "time": "1:02.56",
+        "pts": "56",
+        "round": "F",
+        "date": "25/06/23",
+        "meet": "Brompton SC Summer Club Championship Meet 2023"
+      }
+    ],
+    "50 Fly|LC": [
+      {
+        "time": "45.38",
+        "pts": "156",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "34.97",
+        "pts": "278",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "37.82",
+        "pts": "219",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "40.27",
+        "pts": "182",
+        "round": "F",
+        "date": "23/06/24",
+        "meet": "2024 Brompton SC Summer Club Champs"
+      },
+      {
+        "time": "44.00",
+        "pts": "139",
+        "round": "F",
+        "date": "25/06/23",
+        "meet": "Brompton SC Summer Club Championship Meet 2023"
+      }
+    ],
+    "50 Free|LC": [
+      {
+        "time": "37.23",
+        "pts": "255",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:20.38",
+        "pts": "244",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "1:30.13",
+        "pts": "173",
+        "round": "F",
+        "date": "18/01/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "1:33.63",
+        "pts": "154",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      }
+    ],
+    "100 Free|LC": [
+      {
+        "time": "1:23.87",
+        "pts": "234",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "400 Free|SC": [
+      {
+        "time": "6:08.88",
+        "pts": "243",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "48.03",
+        "pts": "206",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "52.41",
+        "pts": "158",
+        "round": "F",
+        "date": "23/06/24",
+        "meet": "2024 Brompton SC Summer Club Champs"
+      },
+      {
+        "time": "54.50",
+        "pts": "141",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "1:05.04",
+        "pts": "82",
+        "round": "F",
+        "date": "25/06/23",
+        "meet": "Brompton SC Summer Club Championship Meet 2023"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "1:51.09",
+        "pts": "176",
+        "round": "F",
+        "date": "05/10/24",
+        "meet": "Saxon Crown Autumn Showdown 2024"
+      },
+      {
+        "time": "1:54.55",
+        "pts": "161",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "2:03.06",
+        "pts": "130",
+        "round": "F",
+        "date": "23/06/24",
+        "meet": "2024 Brompton SC Summer Club Champs"
+      }
+    ],
+    "100 Breast|LC": [
+      {
+        "time": "1:56.47",
+        "pts": "166",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "200 Breast|SC": [
+      {
+        "time": "3:52.89",
+        "pts": "184",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "3:56.81",
+        "pts": "175",
+        "round": "F",
+        "date": "23/06/24",
+        "meet": "2024 Brompton SC Summer Club Champs"
+      },
+      {
+        "time": "3:59.28",
+        "pts": "169",
+        "round": "F",
+        "date": "05/10/24",
+        "meet": "Saxon Crown Autumn Showdown 2024"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:26.64",
+        "pts": "257",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "1:39.81",
+        "pts": "168",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      },
+      {
+        "time": "1:41.99",
+        "pts": "157",
+        "round": "F",
+        "date": "05/10/24",
+        "meet": "Saxon Crown Autumn Showdown 2024"
+      },
+      {
+        "time": "1:43.22",
+        "pts": "152",
+        "round": "F",
+        "date": "23/06/24",
+        "meet": "2024 Brompton SC Summer Club Champs"
+      },
+      {
+        "time": "1:55.16",
+        "pts": "109",
+        "round": "F",
+        "date": "25/06/23",
+        "meet": "Brompton SC Summer Club Championship Meet 2023"
+      }
+    ],
+    "200 IM|SC": [
+      {
+        "time": "3:25.63",
+        "pts": "206",
+        "round": "F",
+        "date": "23/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      }
+    ],
+    "200 IM|LC": [
+      {
+        "time": "3:23.07",
+        "pts": "237",
+        "round": "H",
+        "date": "08/02/25",
+        "meet": "2025 Middlesex County Championships"
+      },
+      {
+        "time": "3:29.82",
+        "pts": "215",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ]
+  },
+  "Chloe Dib": {
+    "100 Back|LC": [
+      {
+        "time": "1:43.26",
+        "pts": "169",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "42.68",
+        "pts": "153",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "50 Free|LC": [
+      {
+        "time": "39.71",
+        "pts": "210",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      }
+    ],
+    "50 Breast|LC": [
+      {
+        "time": "50.93",
+        "pts": "187",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      }
+    ],
+    "100 Breast|LC": [
+      {
+        "time": "1:47.66",
+        "pts": "211",
+        "round": "F",
+        "date": "02/03/25",
+        "meet": "Bo Waltham Forest Gators Spring Gala 2025"
+      },
+      {
+        "time": "1:47.83",
+        "pts": "210",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      }
+    ]
+  },
+  "Taicia Bejenar": {
+    "50 Back|LC": [
+      {
+        "time": "44.67",
+        "pts": "217",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "39.86",
+        "pts": "187",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "51.40",
+        "pts": "168",
+        "round": "F",
+        "date": "24/11/24",
+        "meet": "Brompton SC 2024 Winter Club Championships"
+      }
+    ],
+    "50 Breast|LC": [
+      {
+        "time": "49.80",
+        "pts": "200",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Gators Summer Gala 2025"
       }
     ]
   }

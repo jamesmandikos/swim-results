@@ -1,0 +1,1726 @@
+{
+  "Leah Tarancon-Rusadze": {
+    "50 Back|SC": [
+      {
+        "time": "41.87",
+        "pts": "218",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "41.92",
+        "pts": "218",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:30.92",
+        "pts": "209",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "38.22",
+        "pts": "245",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "38.53",
+        "pts": "239",
+        "round": "F",
+        "date": "01/03/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "38.64",
+        "pts": "237",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "39.02",
+        "pts": "230",
+        "round": "F",
+        "date": "17/05/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "43.44",
+        "pts": "167",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "43.54",
+        "pts": "166",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "35.20",
+        "pts": "272",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "35.83",
+        "pts": "258",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "36.12",
+        "pts": "252",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "37.66",
+        "pts": "222",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:20.71",
+        "pts": "241",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "1:20.87",
+        "pts": "239",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:25.69",
+        "pts": "201",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "40.19",
+        "pts": "351",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "40.71",
+        "pts": "338",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "41.17",
+        "pts": "327",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "41.47",
+        "pts": "320",
+        "round": "F",
+        "date": "17/05/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "44.22",
+        "pts": "264",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "44.48",
+        "pts": "259",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "51.59",
+        "pts": "166",
+        "round": "F",
+        "date": "08/03/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "1:39.66",
+        "pts": "244",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "1:42.68",
+        "pts": "224",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "1:43.42",
+        "pts": "219",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:24.17",
+        "pts": "280",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "1:33.68",
+        "pts": "203",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "1:44.62",
+        "pts": "146",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "200 IM|SC": [
+      {
+        "time": "3:08.74",
+        "pts": "267",
+        "round": "F",
+        "date": "01/03/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      }
+    ]
+  },
+  "Maya Sidhu": {
+    "50 Back|SC": [
+      {
+        "time": "44.78",
+        "pts": "178",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "44.89",
+        "pts": "177",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "44.91",
+        "pts": "177",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "45.14",
+        "pts": "174",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "45.17",
+        "pts": "174",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:35.43",
+        "pts": "181",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "1:36.31",
+        "pts": "176",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:38.54",
+        "pts": "164",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "200 Back|SC": [
+      {
+        "time": "3:21.93",
+        "pts": "199",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "42.13",
+        "pts": "183",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "42.27",
+        "pts": "181",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "42.37",
+        "pts": "180",
+        "round": "F",
+        "date": "17/05/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "42.43",
+        "pts": "179",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "44.67",
+        "pts": "153",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "45.48",
+        "pts": "145",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "37.09",
+        "pts": "233",
+        "round": "F",
+        "date": "13/06/26",
+        "meet": "2026 West London National Arena Jr League"
+      },
+      {
+        "time": "37.60",
+        "pts": "223",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "38.54",
+        "pts": "207",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "39.28",
+        "pts": "196",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "40.95",
+        "pts": "173",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:25.86",
+        "pts": "200",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:29.88",
+        "pts": "174",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:06.38",
+        "pts": "207",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "3:09.01",
+        "pts": "198",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "49.99",
+        "pts": "182",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "51.55",
+        "pts": "166",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "56.47",
+        "pts": "126",
+        "round": "F",
+        "date": "08/03/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:02.68",
+        "pts": "131",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:32.89",
+        "pts": "208",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "1:40.63",
+        "pts": "164",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "1:48.10",
+        "pts": "132",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ]
+  },
+  "Anna Bachurina": {
+    "50 Back|SC": [
+      {
+        "time": "45.61",
+        "pts": "169",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "44.71",
+        "pts": "153",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "38.85",
+        "pts": "202",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "39.26",
+        "pts": "196",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:37.71",
+        "pts": "130",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "54.00",
+        "pts": "145",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "55.64",
+        "pts": "132",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:42.25",
+        "pts": "156",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ]
+  },
+  "Yiyun Hao": {
+    "50 Back|SC": [
+      {
+        "time": "48.00",
+        "pts": "145",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "46.04",
+        "pts": "140",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "38.98",
+        "pts": "200",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "54.79",
+        "pts": "138",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:40.81",
+        "pts": "163",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ]
+  },
+  "Victoria Burak": {
+    "50 Back|SC": [
+      {
+        "time": "50.29",
+        "pts": "126",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "50.74",
+        "pts": "122",
+        "round": "F",
+        "date": "01/03/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "52.05",
+        "pts": "113",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "52.89",
+        "pts": "108",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:06.59",
+        "pts": "54",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:47.56",
+        "pts": "126",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:52.12",
+        "pts": "111",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "1:56.15",
+        "pts": "100",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "1:07.19",
+        "pts": "45",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:07.48",
+        "pts": "44",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "41.23",
+        "pts": "169",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "43.22",
+        "pts": "147",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "43.39",
+        "pts": "145",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "45.25",
+        "pts": "128",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "46.06",
+        "pts": "121",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "46.42",
+        "pts": "118",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "50 Free|LC": [
+      {
+        "time": "40.36",
+        "pts": "200",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:37.02",
+        "pts": "138",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:41.63",
+        "pts": "120",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:45.75",
+        "pts": "107",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "100 Free|LC": [
+      {
+        "time": "1:36.21",
+        "pts": "155",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:29.15",
+        "pts": "146",
+        "round": "F",
+        "date": "01/03/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "3:41.61",
+        "pts": "123",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "3:44.20",
+        "pts": "119",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      }
+    ],
+    "200 Free|LC": [
+      {
+        "time": "3:25.35",
+        "pts": "163",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "55.05",
+        "pts": "136",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "56.69",
+        "pts": "125",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "58.85",
+        "pts": "112",
+        "round": "F",
+        "date": "22/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "1:01.48",
+        "pts": "98",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "1:01.52",
+        "pts": "98",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "50 Breast|LC": [
+      {
+        "time": "55.21",
+        "pts": "147",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:01.07",
+        "pts": "136",
+        "round": "F",
+        "date": "01/03/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "2:03.05",
+        "pts": "130",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "2:05.98",
+        "pts": "121",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "2:06.33",
+        "pts": "120",
+        "round": "F",
+        "date": "14/12/25",
+        "meet": "2025 CWSC December Duel in the Pool"
+      },
+      {
+        "time": "2:10.67",
+        "pts": "108",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "100 Breast|LC": [
+      {
+        "time": "1:57.20",
+        "pts": "163",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:47.28",
+        "pts": "135",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "1:49.65",
+        "pts": "126",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "2:00.17",
+        "pts": "96",
+        "round": "F",
+        "date": "23/11/25",
+        "meet": "2025 Chelsea & Westminster Development Competition"
+      },
+      {
+        "time": "2:09.10",
+        "pts": "77",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ]
+  },
+  "Victoria Khabibullina": {
+    "50 Back|SC": [
+      {
+        "time": "46.37",
+        "pts": "161",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "47.05",
+        "pts": "154",
+        "round": "F",
+        "date": "01/03/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "49.46",
+        "pts": "132",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "50.39",
+        "pts": "125",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "53.93",
+        "pts": "102",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "50 Back|LC": [
+      {
+        "time": "49.20",
+        "pts": "162",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:45.87",
+        "pts": "132",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:49.42",
+        "pts": "120",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "1:49.50",
+        "pts": "120",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "1:57.19",
+        "pts": "97",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "100 Back|LC": [
+      {
+        "time": "1:46.84",
+        "pts": "152",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "200 Back|SC": [
+      {
+        "time": "3:41.65",
+        "pts": "151",
+        "round": "F",
+        "date": "01/03/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "51.21",
+        "pts": "102",
+        "round": "F",
+        "date": "01/03/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "53.39",
+        "pts": "90",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "57.34",
+        "pts": "72",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      }
+    ],
+    "50 Fly|LC": [
+      {
+        "time": "52.79",
+        "pts": "99",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "41.44",
+        "pts": "167",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "42.86",
+        "pts": "151",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "43.46",
+        "pts": "144",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "44.28",
+        "pts": "137",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "50 Free|LC": [
+      {
+        "time": "41.82",
+        "pts": "179",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:39.70",
+        "pts": "128",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "1:42.50",
+        "pts": "117",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "1:43.28",
+        "pts": "115",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:45.80",
+        "pts": "107",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      }
+    ],
+    "100 Free|LC": [
+      {
+        "time": "1:40.95",
+        "pts": "134",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "200 Free|SC": [
+      {
+        "time": "3:31.81",
+        "pts": "141",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "200 Free|LC": [
+      {
+        "time": "3:36.15",
+        "pts": "139",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:00.31",
+        "pts": "104",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:00.90",
+        "pts": "101",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "1:02.09",
+        "pts": "95",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "1:02.24",
+        "pts": "94",
+        "round": "F",
+        "date": "28/02/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      }
+    ],
+    "50 Breast|LC": [
+      {
+        "time": "1:02.54",
+        "pts": "101",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:46.13",
+        "pts": "140",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "1:58.25",
+        "pts": "101",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      }
+    ],
+    "200 IM|SC": [
+      {
+        "time": "3:56.26",
+        "pts": "136",
+        "round": "F",
+        "date": "01/03/26",
+        "meet": "Ealing 2026 Regional Qualifier"
+      },
+      {
+        "time": "3:57.86",
+        "pts": "133",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      }
+    ]
+  },
+  "Mila Coppel-Hyams": {
+    "50 Back|SC": [
+      {
+        "time": "50.36",
+        "pts": "125",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "53.41",
+        "pts": "105",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "53.12",
+        "pts": "91",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "55.15",
+        "pts": "81",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "41.46",
+        "pts": "166",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "43.44",
+        "pts": "145",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:36.14",
+        "pts": "142",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "1:02.01",
+        "pts": "95",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:45.31",
+        "pts": "143",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "1:51.57",
+        "pts": "120",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ]
+  },
+  "Lavin Kaplan": {
+    "50 Back|SC": [
+      {
+        "time": "49.16",
+        "pts": "135",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "50.17",
+        "pts": "127",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "52.69",
+        "pts": "109",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "53.03",
+        "pts": "107",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "58.36",
+        "pts": "80",
+        "round": "F",
+        "date": "21/09/24",
+        "meet": "Wandsworth SC Club Champs 2024"
+      },
+      {
+        "time": "1:11.43",
+        "pts": "44",
+        "round": "F",
+        "date": "24/09/23",
+        "meet": "Wandsworth SC & Barnes SC Club Championship 2023"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:55.64",
+        "pts": "101",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "46.74",
+        "pts": "134",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "52.12",
+        "pts": "96",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "57.56",
+        "pts": "71",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "58.90",
+        "pts": "67",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      }
+    ],
+    "100 Fly|SC": [
+      {
+        "time": "2:05.19",
+        "pts": "74",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "42.02",
+        "pts": "160",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "42.82",
+        "pts": "151",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "44.35",
+        "pts": "136",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "45.19",
+        "pts": "128",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "46.58",
+        "pts": "117",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "46.66",
+        "pts": "117",
+        "round": "F",
+        "date": "15/06/25",
+        "meet": "Bromley SC Junior Invitational Meet June 2025"
+      },
+      {
+        "time": "53.61",
+        "pts": "77",
+        "round": "F",
+        "date": "21/09/24",
+        "meet": "Wandsworth SC Club Champs 2024"
+      },
+      {
+        "time": "58.74",
+        "pts": "58",
+        "round": "F",
+        "date": "24/09/23",
+        "meet": "Wandsworth SC & Barnes SC Club Championship 2023"
+      }
+    ],
+    "100 Free|SC": [
+      {
+        "time": "1:37.88",
+        "pts": "135",
+        "round": "F",
+        "date": "24/01/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:47.53",
+        "pts": "102",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      }
+    ],
+    "100 Free|LC": [
+      {
+        "time": "1:40.38",
+        "pts": "136",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "50.41",
+        "pts": "178",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "57.28",
+        "pts": "121",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "1:00.82",
+        "pts": "101",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "1:09.63",
+        "pts": "67",
+        "round": "F",
+        "date": "21/09/24",
+        "meet": "Wandsworth SC Club Champs 2024"
+      },
+      {
+        "time": "1:22.41",
+        "pts": "40",
+        "round": "F",
+        "date": "24/09/23",
+        "meet": "Wandsworth SC & Barnes SC Club Championship 2023"
+      }
+    ],
+    "50 Breast|LC": [
+      {
+        "time": "54.67",
+        "pts": "151",
+        "round": "F",
+        "date": "08/03/26",
+        "meet": "BWFSC Gators Spring Meet"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "1:56.69",
+        "pts": "152",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "2:09.06",
+        "pts": "112",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      },
+      {
+        "time": "2:10.80",
+        "pts": "108",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:37.65",
+        "pts": "179",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "1:45.29",
+        "pts": "143",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "1:56.91",
+        "pts": "104",
+        "round": "F",
+        "date": "10/05/25",
+        "meet": "Ealing Level 4 Spring Series 2025 Invitation"
+      }
+    ]
+  },
+  "Jessica Song": {
+    "50 Back|SC": [
+      {
+        "time": "50.56",
+        "pts": "124",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "52.84",
+        "pts": "108",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:57.88",
+        "pts": "96",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "1:58.76",
+        "pts": "94",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "44.68",
+        "pts": "133",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "45.10",
+        "pts": "129",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "46.97",
+        "pts": "114",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "49.12",
+        "pts": "100",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "55.51",
+        "pts": "69",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "57.61",
+        "pts": "119",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "58.42",
+        "pts": "114",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      },
+      {
+        "time": "1:00.36",
+        "pts": "103",
+        "round": "F",
+        "date": "28/09/25",
+        "meet": "Ealing Swimming Club Autumn L4 Invitational 2025"
+      },
+      {
+        "time": "1:07.53",
+        "pts": "74",
+        "round": "F",
+        "date": "22/06/25",
+        "meet": "Cheslea & Westminster SC 2025 Club Championships"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:04.20",
+        "pts": "126",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "2:08.45",
+        "pts": "114",
+        "round": "F",
+        "date": "09/11/25",
+        "meet": "Brompton SC 2025 Winter Club Championships"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:54.08",
+        "pts": "112",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ]
+  },
+  "Yiting Hao": {
+    "50 Back|SC": [
+      {
+        "time": "52.27",
+        "pts": "112",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "50 Fly|SC": [
+      {
+        "time": "49.61",
+        "pts": "112",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "45.82",
+        "pts": "123",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "58.44",
+        "pts": "114",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:49.99",
+        "pts": "125",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ]
+  }
+}

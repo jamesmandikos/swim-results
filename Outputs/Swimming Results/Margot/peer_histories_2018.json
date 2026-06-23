@@ -1,0 +1,158 @@
+{
+  "Amelia Beckham": {
+    "50 Back|SC": [
+      {
+        "time": "49.92",
+        "pts": "129",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "100 Back|SC": [
+      {
+        "time": "1:44.75",
+        "pts": "137",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "40.15",
+        "pts": "183",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "54.37",
+        "pts": "142",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "55.32",
+        "pts": "134",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:41.68",
+        "pts": "159",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ]
+  },
+  "Audrey Li": {
+    "50 Free|SC": [
+      {
+        "time": "42.68",
+        "pts": "153",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "42.88",
+        "pts": "150",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "53.68",
+        "pts": "147",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "58.40",
+        "pts": "114",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ]
+  },
+  "Theodora Safi-Bosson": {
+    "50 Fly|SC": [
+      {
+        "time": "49.74",
+        "pts": "111",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "50 Free|SC": [
+      {
+        "time": "43.15",
+        "pts": "148",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "43.21",
+        "pts": "147",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "50 Breast|SC": [
+      {
+        "time": "57.13",
+        "pts": "122",
+        "round": "F",
+        "date": "07/03/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      },
+      {
+        "time": "57.74",
+        "pts": "118",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      }
+    ],
+    "100 Breast|SC": [
+      {
+        "time": "2:08.54",
+        "pts": "114",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ],
+    "100 IM|SC": [
+      {
+        "time": "1:48.01",
+        "pts": "132",
+        "round": "F",
+        "date": "07/06/26",
+        "meet": "Brompton Swimming Club Summer Fun Meet"
+      },
+      {
+        "time": "1:52.83",
+        "pts": "116",
+        "round": "F",
+        "date": "18/04/26",
+        "meet": "Ealing Series Spring Invitational 2026"
+      }
+    ]
+  }
+}
