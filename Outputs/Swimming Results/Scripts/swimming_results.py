@@ -2190,7 +2190,7 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
     if(typeof updateGaps==='function') updateGaps();
   }};
 
-  var _STORAGE_KEY='swim_filter_defaults';
+  var _STORAGE_KEY='swim_filter_defaults_{primary_yob}';
 
   window.saveFilterDefaults=function(btn){{
     var state={{}};
@@ -3153,14 +3153,7 @@ def main():
         print(f"  → Galas tab injected into {html_path.name}")
 
 
-    all_galas = load_galas()
-    if all_galas:
-        _margot_names = {s["name"] for s in list(swimmers) + _all_margot_peer_swimmers}
-        _ava_names    = {s["name"] for s in list(ava_swimmers) + _all_ava_peer_swimmers}
-        _margot_galas = [g for g in all_galas if any(n in _margot_names for n in g.get("entries", {}))]
-        _ava_galas    = [g for g in all_galas if any(n in _ava_names    for n in g.get("entries", {}))]
-        _inject_galas(HTML_PATH,     _margot_galas, _bests_lookup(list(swimmers) + _all_margot_peer_swimmers))
-        _inject_galas(AVA_HTML_PATH, _ava_galas,    _bests_lookup(list(ava_swimmers) + _all_ava_peer_swimmers))
+    # Galas tab has been removed from both U14 personal pages — do not re-inject
 
 
     # Ensure icon/manifest tags survive galas injection on both pages
