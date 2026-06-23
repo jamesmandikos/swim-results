@@ -35,7 +35,7 @@ from pathlib import Path
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 
-GIT_ROOT          = Path("/Users/jamesmandikos/Documents/swim-results")
+GIT_ROOT          = Path("/Users/jamesmandikos/Documents/Claude Cowork/swim-results")
 BROMPTON_DOCS_DIR = GIT_ROOT / "docs" / "brompton"
 CWSC_DOCS_DIR     = GIT_ROOT / "docs" / "cwsc"
 SWIM_ROOT         = GIT_ROOT / "Outputs" / "Swimming Results"
