@@ -35,6 +35,15 @@ RATE_DELAY = 3
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
 
+STROKE_CODES = {
+    "50 Free":"1","100 Free":"2","200 Free":"3","400 Free":"4",
+    "800 Free":"5","1500 Free":"6",
+    "50 Breast":"7","100 Breast":"8","200 Breast":"9",
+    "50 Fly":"10","100 Fly":"11","200 Fly":"12",
+    "50 Back":"13","100 Back":"14","200 Back":"15",
+    "100 IM":"18","200 IM":"16","400 IM":"17",
+}
+
 # ── Event definitions ─────────────────────────────────────────────────────────
 # Ordered for display: SC | LC | LC→SC per stroke
 EVENTS = [
@@ -139,21 +148,59 @@ def fmt_time(secs):
     return f"{secs:.2f}"
 
 # ── Fetch ─────────────────────────────────────────────────────────────────────
-def curl_get(url):
+def curl_get(url, referer=None):
     with tempfile.NamedTemporaryFile(suffix=".html", delete=False) as f:
         tmp = f.name
     try:
-        subprocess.run(
-            ["curl","-s","--max-time","30","--compressed",
-             "-H",f"User-Agent: {UA}",
-             "-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-             "-H","Accept-Language: en-GB,en;q=0.9",
-             "-o", tmp, url],
-            check=False)
+        cmd = ["curl","-s","--max-time","30","--compressed",
+               "-H",f"User-Agent: {UA}",
+               "-H","Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+               "-H","Accept-Language: en-GB,en;q=0.9"]
+        if referer:
+            cmd += ["-H", f"Referer: {referer}"]
+        cmd += ["-o", tmp, url]
+        subprocess.run(cmd, check=False)
         with open(tmp, encoding="utf-8", errors="replace") as f:
             return BeautifulSoup(f.read(), "html.parser")
     finally:
         os.unlink(tmp)
+
+
+def fetch_swimmer_history(member_id, name, bests):
+    """Fetch full time history for one swimmer. Returns {event|course: [{time,pts,round,date,meet}]}."""
+    hist = {}
+    seen = set()
+    stroke_names = list(dict.fromkeys(n for n, c in EVENTS if c != "LC→SC"))
+    for short_name in stroke_names:
+        for course in ("SC", "LC"):
+            if (short_name, course) in seen:
+                continue
+            seen.add((short_name, course))
+            if bests and not bests.get((short_name, course)):
+                continue
+            stroke_code = STROKE_CODES.get(short_name)
+            if not stroke_code:
+                continue
+            pool = "S" if course == "SC" else "L"
+            url = (
+                f"https://www.swimmingresults.org/individualbest/personal_best_time_date.php"
+                f"?tiref={member_id}&mode=A&tstroke={stroke_code}&tcourse={pool}"
+                f"&Pool={pool}&Stroke={stroke_code}"
+            )
+            soup = curl_get(url, referer="https://www.swimmingresults.org/individualbest/")
+            table = soup.find("table", id="rankTable")
+            rows = []
+            if table:
+                for row in table.find_all("tr")[1:]:
+                    cells = [td.get_text(strip=True) for td in row.find_all("td")]
+                    if len(cells) >= 4:
+                        rows.append({
+                            "time": cells[0], "pts": cells[1],
+                            "round": cells[2], "date": cells[3],
+                            "meet": cells[4] if len(cells) > 4 else "",
+                        })
+            hist[f"{short_name}|{course}"] = rows
+    return hist
 
 def fetch_swimmer_bests(member_id, name):
     url = (f"https://www.swimmingresults.org/individualbest/personal_best.php"
@@ -217,20 +264,15 @@ def get_prev(group_key, swimmer_name):
 
 # ── History helpers ───────────────────────────────────────────────────────────
 def load_all_histories():
-    """Load swim histories cached by swimming_results.py --fetch-history."""
-    hist_files = [
-        MARGOT_DIR / "peer_histories.json",       # female 2014
-        MARGOT_DIR / "peer_histories_2013.json",
-        MARGOT_DIR / "peer_histories_2015.json",
-        MARGOT_DIR / "peer_histories_2016.json",
-        MARGOT_DIR / "peer_histories_2017.json",
-        MARGOT_DIR / "peer_histories_2018.json",
-    ]
+    """Load all cached swim histories from MARGOT_DIR."""
     merged = {}
-    for path in hist_files:
-        if path.exists():
-            merged.update(json.loads(path.read_text()))
+    for path in sorted(MARGOT_DIR.glob("peer_histories*.json")):
+        merged.update(json.loads(path.read_text()))
     return merged
+
+
+def hist_cache_path(group_key):
+    return MARGOT_DIR / f"peer_histories_{group_key}.json"
 
 # ── Qual helpers ──────────────────────────────────────────────────────────────
 def qual_ind_spans(secs, qt_d):
@@ -2090,6 +2132,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--refresh", action="store_true",
                         help="Re-fetch all PBs from swimmingresults.org")
+    parser.add_argument("--fetch-history", action="store_true",
+                        help="Fetch full swim histories for all Brompton swimmers")
     parser.add_argument("--group", default=None,
                         help="Run only this group key (e.g. f_2014)")
     args = parser.parse_args()
@@ -2142,6 +2186,23 @@ def main():
                 sname: {(k.split("|")[0], k.split("|")[1]): v for k,v in bests.items()}
                 for sname, bests in cache_data.items()
             }
+
+        # Fetch history if requested
+        if args.fetch_history:
+            cache = hist_cache_path(group_key)
+            existing = json.loads(cache.read_text()) if cache.exists() else {}
+            print(f"  Fetching histories ({len(swimmers)} swimmers)...")
+            for i, s in enumerate(swimmers, 1):
+                sname = s["name"]
+                print(f"  [{i}/{len(swimmers)}] {sname}...")
+                hist = fetch_swimmer_history(s["member_id"], sname, all_bests.get(sname, {}))
+                existing[sname] = hist
+                n = sum(len(v) for v in hist.values())
+                print(f"    → {n} swims")
+                time.sleep(RATE_DELAY)
+            cache.write_text(json.dumps(existing, indent=2))
+            print(f"  Saved → {cache.name}")
+            all_histories.update(existing)
 
         # Build QT data for this group
         qt_data = build_qt_data(qt_all, gender_code, yob)
