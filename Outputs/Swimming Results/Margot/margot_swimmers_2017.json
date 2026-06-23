@@ -1,0 +1,44 @@
+{
+  "swimmers": [
+    {
+      "name": "Leah Tarancon-Rusadze",
+      "member_id": "1805741"
+    },
+    {
+      "name": "Maya Sidhu",
+      "member_id": "1647650"
+    },
+    {
+      "name": "Anna Bachurina",
+      "member_id": "1847002"
+    },
+    {
+      "name": "Yiyun Hao",
+      "member_id": "1762364"
+    },
+    {
+      "name": "Victoria Burak",
+      "member_id": "1811235"
+    },
+    {
+      "name": "Victoria Khabibullina",
+      "member_id": "1818639"
+    },
+    {
+      "name": "Mila Coppel-Hyams",
+      "member_id": "1743773"
+    },
+    {
+      "name": "Lavin Kaplan",
+      "member_id": "1697109"
+    },
+    {
+      "name": "Jessica Song",
+      "member_id": "1663833"
+    },
+    {
+      "name": "Yiting Hao",
+      "member_id": "1762368"
+    }
+  ]
+}

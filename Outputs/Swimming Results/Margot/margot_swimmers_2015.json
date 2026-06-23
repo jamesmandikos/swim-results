@@ -3,14 +3,57 @@
   "gender": "Female",
   "year_of_birth": 2015,
   "swimmers": [
-    { "name": "Philippa Safi-Bosson",  "member_id": "1631494" },
-    { "name": "Caroline Wang",         "member_id": "1522561" },
-    { "name": "Jinyou Yuan",           "member_id": "1632145" },
-    { "name": "Liv Wilder",            "member_id": "1606494" },
-    { "name": "Ani Fortescue-Webb",    "member_id": "1779380" },
-    { "name": "Sarina Hasan",          "member_id": "1588832" },
-    { "name": "Georgina Baring",       "member_id": "1625164" },
-    { "name": "Leia Brenke",           "member_id": "1658099" },
-    { "name": "Natalie Min",           "member_id": "1632140" }
+    {
+      "name": "Philippa Safi-Bosson",
+      "member_id": "1631494"
+    },
+    {
+      "name": "Caroline Wang",
+      "member_id": "1522561"
+    },
+    {
+      "name": "Jinyou Yuan",
+      "member_id": "1632145"
+    },
+    {
+      "name": "Liv Wilder",
+      "member_id": "1606494"
+    },
+    {
+      "name": "Ani Fortescue-Webb",
+      "member_id": "1779380"
+    },
+    {
+      "name": "Sarina Hasan",
+      "member_id": "1588832"
+    },
+    {
+      "name": "Georgina Baring",
+      "member_id": "1625164"
+    },
+    {
+      "name": "Leia Brenke",
+      "member_id": "1658099"
+    },
+    {
+      "name": "Natalie Min",
+      "member_id": "1632140"
+    },
+    {
+      "name": "Anabelle Fortescue-Webb",
+      "member_id": "1779380"
+    },
+    {
+      "name": "Livia Wilder",
+      "member_id": "1606494"
+    },
+    {
+      "name": "Zihan Min",
+      "member_id": "1632140"
+    },
+    {
+      "name": "Audrey Reis",
+      "member_id": "1777250"
+    }
   ]
 }

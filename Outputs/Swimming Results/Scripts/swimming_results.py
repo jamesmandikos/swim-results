@@ -50,6 +50,18 @@ AVA_CONFIG_2016_PATH     = AVA_DIR    / "ava_swimmers_2016.json"
 AVA_PEER_HIST_2016_PATH  = AVA_DIR    / "ava_peer_histories_2016.json"
 AVA_CONFIG_2018_PATH     = AVA_DIR    / "ava_swimmers_2018.json"
 AVA_PEER_HIST_2018_PATH  = AVA_DIR    / "ava_peer_histories_2018.json"
+CONFIG_2016_PATH         = MARGOT_DIR / "margot_swimmers_2016.json"
+CONFIG_2017_PATH         = MARGOT_DIR / "margot_swimmers_2017.json"
+CONFIG_2018_PATH         = MARGOT_DIR / "margot_swimmers_2018.json"
+PEER_HIST_2016_PATH      = MARGOT_DIR / "peer_histories_2016.json"
+PEER_HIST_2017_PATH      = MARGOT_DIR / "peer_histories_2017.json"
+PEER_HIST_2018_PATH      = MARGOT_DIR / "peer_histories_2018.json"
+AVA_CONFIG_2013_PATH     = AVA_DIR    / "ava_swimmers_2013.json"
+AVA_CONFIG_2014_PATH     = AVA_DIR    / "ava_swimmers_2014.json"
+AVA_CONFIG_2015_PATH     = AVA_DIR    / "ava_swimmers_2015.json"
+AVA_PEER_HIST_2013_PATH  = AVA_DIR    / "ava_peer_histories_2013.json"
+AVA_PEER_HIST_2014_PATH  = AVA_DIR    / "ava_peer_histories_2014.json"
+AVA_PEER_HIST_2015_PATH  = AVA_DIR    / "ava_peer_histories_2015.json"
 
 MARGOT_NAME  = "Margot Mandikos"
 MARGOT_ID    = "1649626"
@@ -1404,12 +1416,14 @@ def _compute_swimmer_quals(rows, default_quals, age_group_quals=None):
 
 def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
                html_path=None, title=None, peer_histories=None,
-               peer_rows_13=None, peer_rows_15=None, age_group_quals=None,
+               peer_rows_by_yob=None, age_group_quals=None,
                home_url=None):
     print("\nBuilding HTML report...")
 
-    # Combine main group with optional peer age groups
-    all_rows = list(rows) + list(peer_rows_13 or []) + list(peer_rows_15 or [])
+    # Combine main group with all peer age groups
+    all_rows = list(rows)
+    for _pr in (peer_rows_by_yob or {}).values():
+        all_rows += list(_pr)
 
     # Primary YOB: the year of birth of the highlighted (is_margot) swimmer
     primary_yob = next(
@@ -1759,22 +1773,27 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
         return f"{age}-year-olds"
     _yob_labels = {yob: _age_label(yob) for yob in range(2010, 2020)}
 
+    # Build age group checkboxes — ages 8-9 (YOBs 2017+2018) share one checkbox
+    _GROUPED_YOBS = (2017, 2018)
+    _row_yobs = sorted(set(r.get("year_of_birth") for r in all_rows if r.get("year_of_birth")))
+    _cy = datetime.now().year
     age_group_parts = []
-    if peer_rows_15:
-        peer15_yob = peer_rows_15[0].get("year_of_birth", 2015) if peer_rows_15 else 2015
+    _handled_young = False
+    for _yob in _row_yobs:
+        if _yob in _GROUPED_YOBS:
+            if not _handled_young:
+                _checked = "checked " if primary_yob in _GROUPED_YOBS else ""
+                age_group_parts.append(
+                    f'<label><input type="checkbox" {_checked}onchange="toggleAgeGroup(\'2017\',this.checked);toggleAgeGroup(\'2018\',this.checked)"> '
+                    f'Ages 8–9 (born 2017–2018)</label>'
+                )
+                _handled_young = True
+            continue
+        _checked = "checked " if _yob == primary_yob else ""
+        _age = _cy - _yob
         age_group_parts.append(
-            f'<label><input type="checkbox" onchange="toggleAgeGroup(\'{peer15_yob}\',this.checked)"> '
-            f'{_yob_labels.get(peer15_yob, str(peer15_yob))} (born {peer15_yob})</label>'
-        )
-    age_group_parts.append(
-        f'<label><input type="checkbox" checked onchange="toggleAgeGroup(\'{primary_yob}\',this.checked)"> '
-        f'{_yob_labels.get(primary_yob, str(primary_yob))} (born {primary_yob})</label>'
-    )
-    if peer_rows_13:
-        peer13_yob = peer_rows_13[0].get("year_of_birth", 2013) if peer_rows_13 else 2013
-        age_group_parts.append(
-            f'<label><input type="checkbox" onchange="toggleAgeGroup(\'{peer13_yob}\',this.checked)"> '
-            f'{_yob_labels.get(peer13_yob, str(peer13_yob))} (born {peer13_yob})</label>'
+            f'<label><input type="checkbox" {_checked}onchange="toggleAgeGroup(\'{_yob}\',this.checked)"> '
+            f'Age {_age} (born {_yob})</label>'
         )
     age_group_section = (
         '<div class="settings-section"><h3>Age groups</h3>'
@@ -1810,6 +1829,8 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title or "Brompton SC Club Rankings — Female 2014"}</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
 <style>
   *{{box-sizing:border-box}}
   body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;background:#f5f5f5;margin:0;padding:16px;color:#333}}
@@ -2176,8 +2197,8 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
     document.querySelectorAll('.stroke-cb').forEach(function(cb){{state['s_'+cb.dataset.stroke]=cb.checked;}});
     document.querySelectorAll('.coltype-cb').forEach(function(cb){{state['c_'+cb.dataset.coltype]=cb.checked;}});
     document.querySelectorAll('input[onchange*="toggleAgeGroup"]').forEach(function(cb){{
-      var m=cb.getAttribute('onchange').match(/'(\d+)'/);
-      if(m) state['a_'+m[1]]=cb.checked;
+      var ms=cb.getAttribute('onchange').match(/'(\d+)'/g);
+      if(ms) ms.forEach(function(m){{state['a_'+m.replace(/'/g,'')]=cb.checked;}});
     }});
     var sw=document.querySelector('.swimmer-select');
     if(sw) state['swimmer']=sw.value;
@@ -2220,6 +2241,13 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
 
   window.addEventListener('DOMContentLoaded',function(){{
     loadFilterDefaults();
+    // Hide rows for any age group whose checkbox starts unchecked
+    document.querySelectorAll('input[onchange*="toggleAgeGroup"]').forEach(function(cb){{
+      if(!cb.checked){{
+        var ms=cb.getAttribute('onchange').match(/'(\d+)'/g);
+        if(ms) ms.forEach(function(m){{toggleAgeGroup(m.replace(/'/g,''),false);}});
+      }}
+    }});
     rerank();
     if(typeof updateGaps==='function') updateGaps();
     // Collapse filter panel by default on mobile
@@ -2865,38 +2893,41 @@ def main():
         else:
             print(f"\nNo peer history cache found — run with --refresh after a meet")
 
-    print(f"\nFetching Brompton SC 13yo PBs...")
-    swimmers_13 = fetch_peer_swimmers(CONFIG_2013_PATH, 2013)
-    print(f"\nFetching Brompton SC 11yo PBs...")
-    swimmers_11 = fetch_peer_swimmers(CONFIG_2015_PATH, 2015)
-
-    # Fetch or load histories for 13yo and 11yo groups
-    if refresh:
-        print(f"\nFetching 13yo swim histories...")
-        peer_histories_13 = fetch_peer_histories(swimmers_13, PEER_HIST_2013_PATH, "")
-        print(f"\nFetching 11yo swim histories...")
-        peer_histories_15 = fetch_peer_histories(swimmers_11, PEER_HIST_2015_PATH, "")
-    else:
-        peer_histories_13 = load_peer_histories(PEER_HIST_2013_PATH)
-        peer_histories_15 = load_peer_histories(PEER_HIST_2015_PATH)
-        if peer_histories_13:
-            print(f"\nLoaded cached 13yo histories ({len(peer_histories_13)} swimmers)")
-        if peer_histories_15:
-            print(f"\nLoaded cached 11yo histories ({len(peer_histories_15)} swimmers)")
-
-    # Merge all peer histories into one dict for build_html
-    all_peer_histories = {**(peer_histories or {}), **(peer_histories_13 or {}), **(peer_histories_15 or {})}
-
-    peer_rows_13    = build_peer_rows(swimmers_13)
-    peer_rows_15    = build_peer_rows(swimmers_11)
-    age_group_quals = {
-        2013: read_age_group_quals(2013),
-        2015: read_age_group_quals(2015),
-    }
+    # Fetch all BSC peer age groups (2013–2018 except primary 2014)
+    _bsc_peers = [
+        (2013, CONFIG_2013_PATH, PEER_HIST_2013_PATH),
+        (2015, CONFIG_2015_PATH, PEER_HIST_2015_PATH),
+        (2016, CONFIG_2016_PATH, PEER_HIST_2016_PATH),
+        (2017, CONFIG_2017_PATH, PEER_HIST_2017_PATH),
+        (2018, CONFIG_2018_PATH, PEER_HIST_2018_PATH),
+    ]
+    margot_peer_rows_by_yob = {}
+    all_peer_histories = {**(peer_histories or {})}
+    age_group_quals = {}
+    _all_margot_peer_swimmers = []
+    for _yob, _cfg, _hist in _bsc_peers:
+        if not _cfg.exists():
+            continue
+        print(f"\nFetching BSC {2026 - _yob}yo ({_yob}) PBs...")
+        _sws = fetch_peer_swimmers(_cfg, _yob)
+        if refresh:
+            print(f"\nFetching BSC {2026 - _yob}yo histories...")
+            _ph = fetch_peer_histories(_sws, _hist, "")
+        else:
+            _ph = load_peer_histories(_hist) or {}
+            if _ph:
+                print(f"\nLoaded cached {2026 - _yob}yo histories ({len(_ph)} swimmers)")
+        margot_peer_rows_by_yob[_yob] = build_peer_rows(_sws)
+        _all_margot_peer_swimmers += list(_sws)
+        all_peer_histories.update(_ph or {})
+        if _yob in (2013, 2015):  # only these have dedicated spreadsheet qual tabs
+            _aq = read_age_group_quals(_yob)
+            if _aq:
+                age_group_quals[_yob] = _aq
 
     build_html(rows, run_time, history=history, quals=quals,
                prev_bests=prev_bests, peer_histories=all_peer_histories,
-               peer_rows_13=peer_rows_13, peer_rows_15=peer_rows_15,
+               peer_rows_by_yob=margot_peer_rows_by_yob,
                age_group_quals=age_group_quals,
                html_path=HTML_PATH, home_url="brompton_home.html?from=personal")
 
@@ -2937,35 +2968,32 @@ def main():
         if ava_peer_histories:
             print(f"\nLoaded cached Ava peer histories ({len(ava_peer_histories)} swimmers)")
 
-    # ── Ava 2016 and 2018 age groups ─────────────────────────────────────────
-    ava_swimmers_2016, ava_swimmers_2018 = [], []
-    ava_peer_histories_2016, ava_peer_histories_2018 = {}, {}
-
-    if AVA_CONFIG_2016_PATH.exists():
-        print(f"\nFetching CWSC 10yo (2016) PBs...")
-        ava_swimmers_2016 = fetch_peer_swimmers(AVA_CONFIG_2016_PATH, 2016)
+    # ── Ava peer age groups (2013–2018 except primary 2017) ──────────────────
+    _cwsc_peers = [
+        (2013, AVA_CONFIG_2013_PATH, AVA_PEER_HIST_2013_PATH),
+        (2014, AVA_CONFIG_2014_PATH, AVA_PEER_HIST_2014_PATH),
+        (2015, AVA_CONFIG_2015_PATH, AVA_PEER_HIST_2015_PATH),
+        (2016, AVA_CONFIG_2016_PATH, AVA_PEER_HIST_2016_PATH),
+        (2018, AVA_CONFIG_2018_PATH, AVA_PEER_HIST_2018_PATH),
+    ]
+    ava_peer_rows_by_yob = {}
+    all_ava_peer_histories = {**(ava_peer_histories or {})}
+    _all_ava_peer_swimmers = []
+    for _yob, _cfg, _hist in _cwsc_peers:
+        if not _cfg.exists():
+            continue
+        print(f"\nFetching CWSC {2026 - _yob}yo ({_yob}) PBs...")
+        _sws = fetch_peer_swimmers(_cfg, _yob)
         if refresh:
-            print(f"\nFetching CWSC 10yo histories...")
-            ava_peer_histories_2016 = fetch_peer_histories(ava_swimmers_2016, AVA_PEER_HIST_2016_PATH, "")
+            print(f"\nFetching CWSC {2026 - _yob}yo histories...")
+            _ph = fetch_peer_histories(_sws, _hist, "")
         else:
-            ava_peer_histories_2016 = load_peer_histories(AVA_PEER_HIST_2016_PATH) or {}
-            if ava_peer_histories_2016:
-                print(f"\nLoaded cached 10yo histories ({len(ava_peer_histories_2016)} swimmers)")
-
-    if AVA_CONFIG_2018_PATH.exists():
-        print(f"\nFetching CWSC 8yo (2018) PBs...")
-        ava_swimmers_2018 = fetch_peer_swimmers(AVA_CONFIG_2018_PATH, 2018)
-        if refresh:
-            print(f"\nFetching CWSC 8yo histories...")
-            ava_peer_histories_2018 = fetch_peer_histories(ava_swimmers_2018, AVA_PEER_HIST_2018_PATH, "")
-        else:
-            ava_peer_histories_2018 = load_peer_histories(AVA_PEER_HIST_2018_PATH) or {}
-            if ava_peer_histories_2018:
-                print(f"\nLoaded cached 8yo histories ({len(ava_peer_histories_2018)} swimmers)")
-
-    all_ava_peer_histories = {**(ava_peer_histories or {}), **ava_peer_histories_2016, **ava_peer_histories_2018}
-    ava_rows_2016 = build_peer_rows(ava_swimmers_2016)
-    ava_rows_2018 = build_peer_rows(ava_swimmers_2018)
+            _ph = load_peer_histories(_hist) or {}
+            if _ph:
+                print(f"\nLoaded cached {2026 - _yob}yo histories ({len(_ph)} swimmers)")
+        ava_peer_rows_by_yob[_yob] = build_peer_rows(_sws)
+        _all_ava_peer_swimmers += list(_sws)
+        all_ava_peer_histories.update(_ph or {})
 
     build_ava_xlsx(ava_swimmers)
     ava_quals = read_ava_quals()
@@ -2974,7 +3002,7 @@ def main():
                html_path=AVA_HTML_PATH,
                title="Chelsea &amp; Westminster SC — Female 2017 — Personal Bests",
                peer_histories=all_ava_peer_histories,
-               peer_rows_13=ava_rows_2016, peer_rows_15=ava_rows_2018,
+               peer_rows_by_yob=ava_peer_rows_by_yob,
                home_url="cwsc.html")
 
     # ── Inject Galas tab — separate per page ─────────────────────────────────
@@ -3127,13 +3155,21 @@ def main():
 
     all_galas = load_galas()
     if all_galas:
-        _margot_names = {s["name"] for s in list(swimmers) + list(swimmers_13) + list(swimmers_11)}
-        _ava_names    = {s["name"] for s in list(ava_swimmers) + list(ava_swimmers_2016) + list(ava_swimmers_2018)}
+        _margot_names = {s["name"] for s in list(swimmers) + _all_margot_peer_swimmers}
+        _ava_names    = {s["name"] for s in list(ava_swimmers) + _all_ava_peer_swimmers}
         _margot_galas = [g for g in all_galas if any(n in _margot_names for n in g.get("entries", {}))]
         _ava_galas    = [g for g in all_galas if any(n in _ava_names    for n in g.get("entries", {}))]
-        _inject_galas(HTML_PATH,     _margot_galas, _bests_lookup(list(swimmers) + list(swimmers_13) + list(swimmers_11)))
-        _inject_galas(AVA_HTML_PATH, _ava_galas,    _bests_lookup(list(ava_swimmers) + list(ava_swimmers_2016) + list(ava_swimmers_2018)))
+        _inject_galas(HTML_PATH,     _margot_galas, _bests_lookup(list(swimmers) + _all_margot_peer_swimmers))
+        _inject_galas(AVA_HTML_PATH, _ava_galas,    _bests_lookup(list(ava_swimmers) + _all_ava_peer_swimmers))
 
+
+    # Ensure icon/manifest tags survive galas injection on both pages
+    _icon_tags = '\n<link rel="manifest" href="manifest.json">\n<link rel="apple-touch-icon" href="icon-192.png">'
+    for _hp in [HTML_PATH, AVA_HTML_PATH]:
+        _ht = _hp.read_text(encoding="utf-8")
+        if 'apple-touch-icon' not in _ht:
+            _ht = _ht.replace('</title>', '</title>' + _icon_tags, 1)
+            _hp.write_text(_ht, encoding="utf-8")
 
     print(f"\nDone.")
     print(f"  Spreadsheet  : {XLSX_PATH.name}")
