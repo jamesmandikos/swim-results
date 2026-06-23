@@ -804,6 +804,7 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#1a3a5c">
 <style>
+  *{{-webkit-tap-highlight-color:transparent}}
   body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:12px;margin:0;padding:16px;background:#f5f7fa}}
   h1{{font-size:16px;color:#1a3a5c;margin:0 0 4px}}
   .subtitle{{font-size:11px;color:#888;margin-bottom:12px}}
@@ -1274,7 +1275,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#1a3a5c">
 <style>
-  *{{box-sizing:border-box}}
+  *{{box-sizing:border-box;-webkit-tap-highlight-color:transparent}}
   body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:12px;margin:0;padding:12px 16px;background:#f5f7fa}}
   h1{{font-size:16px;color:#1a3a5c;margin:0 0 2px}}
   .subtitle{{font-size:11px;color:#888;margin-bottom:10px}}
