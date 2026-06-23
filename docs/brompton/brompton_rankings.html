@@ -36,10 +36,6 @@
               border-radius:20px;background:white;font-size:11px;cursor:pointer;transition:all .12s;user-select:none;position:relative}
   .fam-pill:has(input:checked){border-color:#1565C0;background:#e8f0fe;color:#1565C0;font-weight:600}
   .fam-pill input{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;border:0;}
-  /* Tooltip */
-  #tip{position:fixed;z-index:9999;background:#1a2a3a;color:#fff;border-radius:7px;
-        padding:7px 11px;font-size:11px;line-height:1.6;pointer-events:none;
-        max-width:200px;box-shadow:0 3px 12px rgba(0,0,0,.4);display:none;white-space:nowrap}
   /* Quick-select links */
   .qs{font-size:10px;color:#1565C0;cursor:pointer;text-decoration:underline;padding:2px 4px}
   /* Table */
@@ -356,93 +352,6 @@
     document.querySelectorAll('.progress-arrow,.gap-next,.qual-ind').forEach(function(el){el.classList.toggle('hidden',hidden);});
     btn.textContent=hidden?'Show markers':'Hide markers';
   };
-  /* ── Tooltip ── */
-  (function(){
-    var tip=document.createElement('div');tip.id='tip';
-    window.addEventListener('DOMContentLoaded',function(){document.body.appendChild(tip);});
-    var _touch=('ontouchstart' in window);
-    var _cur=null;
-
-    function pos(el){
-      tip.style.left='-9999px';tip.style.top='0';tip.style.display='block';
-      var r=el.getBoundingClientRect(),tw=tip.offsetWidth,th=tip.offsetHeight;
-      var x=r.left+r.width/2-tw/2;
-      var y=r.top-th-7;
-      if(x<4)x=4;if(x+tw>window.innerWidth-4)x=window.innerWidth-4-tw;
-      if(y<4)y=r.bottom+7;
-      tip.style.left=x+'px';tip.style.top=y+'px';
-    }
-
-    function meetHtml(el){
-      return '<span style="color:#aaa;font-size:10px">Meet</span><br><strong>'+el.dataset.meet+'</strong>';
-    }
-
-    function gapHtml(el){
-      var td=el.closest('td');if(!td)return null;
-      var ct=td.dataset.coltype;if(ct==='lc-sc'||ct==='best')return null;
-      var tr=td.closest('tr');
-      var stroke=(_STROKE_NAMES&&_STROKE_NAMES[td.dataset.stroke])||td.dataset.stroke;
-      var course=ct==='sc'?'SC':'LC';
-      var gc=tr.dataset.gender||'F',yob=tr.dataset.yob||'';
-      var qd=(typeof QT_ALL!=='undefined'&&QT_ALL[gc+'|'+yob+'|'+stroke+'|'+course])||{};
-      var secs=parseFloat(td.dataset.secs);if(!secs||isNaN(secs))return null;
-      var stds=[
-        {l:'RQ',fn:'Regional Qualified',  v:qd.region_qt},
-        {l:'RC',fn:'Regional Considered', v:qd.region_cons},
-        {l:'CQ',fn:'County Qualified',    v:qd.county_qt},
-        {l:'CC',fn:'County Considered',   v:qd.county_cons},
-      ];
-      var rows=stds.filter(function(s){return s.v;}).map(function(s){
-        var done=secs<=s.v;
-        var diff=secs-s.v;
-        var col=done?'#27ae60':(diff<1?'#f39c12':'#e74c3c');
-        var gap=done?'✓':'-'+diff.toFixed(2)+'s';
-        var wt=done?'700':'400';
-        return '<div style="display:flex;justify-content:space-between;gap:10px;line-height:1.6">'
-          +'<span style="color:'+col+';font-weight:'+wt+'">'
-          +s.l+' <span style="font-size:9px;font-weight:400;opacity:.8">('+s.fn+')</span></span>'
-          +'<span style="color:'+col+';font-weight:'+wt+'">'+gap+'</span></div>';
-      });
-      if(!rows.length)return null;
-      return '<div style="font-size:10px;color:#aaa;margin-bottom:4px">'+stroke+' '+course+'</div>'+rows.join('');
-    }
-
-    function show(html,el){tip.innerHTML=html;pos(el);}
-    function hide(){tip.style.display='none';_cur=null;}
-
-    if(_touch){
-      document.addEventListener('click',function(e){
-        var td=e.target.closest('td[data-stroke][data-coltype]');
-        if(!td){hide();return;}
-        if(_cur===td){hide();return;}
-        var parts=[];
-        var dateSp=td.querySelector('.date[data-meet]');
-        if(dateSp&&dateSp.dataset.meet){parts.push(meetHtml(dateSp));}
-        var ct=td.dataset.coltype;
-        if(ct!=='lc-sc'&&ct!=='best'){var h=gapHtml(td);if(h) parts.push(h);}
-        if(!parts.length){hide();return;}
-        show(parts.join('<hr style="border:none;border-top:1px solid #444;margin:6px 0">'),td);_cur=td;
-      });
-    }else{
-      document.addEventListener('mouseover',function(e){
-        if(e.target.closest('#tip'))return;
-        var td=e.target.closest('td[data-stroke][data-coltype]');
-        if(!td){hide();return;}
-        if(_cur===td)return;
-        var parts=[];
-        var dateSp=td.querySelector('.date[data-meet]');
-        if(dateSp&&dateSp.dataset.meet){parts.push(meetHtml(dateSp));}
-        var ct=td.dataset.coltype;
-        if(ct!=='lc-sc'&&ct!=='best'){var h=gapHtml(td);if(h) parts.push(h);}
-        if(!parts.length){hide();return;}
-        show(parts.join('<hr style="border:none;border-top:1px solid #444;margin:6px 0">'),td);_cur=td;
-      });
-      document.addEventListener('mouseout',function(e){
-        if(!e.relatedTarget||(!e.relatedTarget.closest('td[data-stroke]')&&!e.relatedTarget.closest('#tip'))){hide();}
-      });
-    }
-  })();
-
   var _initSticky;
   window.toggleFilters=function(){
     var rows=document.getElementById('filter-rows');
@@ -745,7 +654,7 @@
 </head>
 <body>
 <h1>Brompton SC — Club Rankings</h1>
-<div class="subtitle">Generated 23 June 2026 23:38 · 172 swimmers &nbsp;·&nbsp; <a href="https://www.swimmingresults.org/12months/" target="_blank" style="color:#aaa;font-size:10px;text-decoration:none">Times via Swim England</a></div>
+<div class="subtitle">Generated 23 June 2026 23:46 · 172 swimmers &nbsp;·&nbsp; <a href="https://www.swimmingresults.org/12months/" target="_blank" style="color:#aaa;font-size:10px;text-decoration:none">Times via Swim England</a></div>
 
 <div class="filter-bar">
   <button id="filter-toggle" onclick="toggleFilters()" style="font-weight:600;font-size:12px;color:#1a3a5c;cursor:pointer;background:none;border:none;padding:0;display:flex;align-items:center;gap:6px;touch-action:manipulation;-webkit-tap-highlight-color:transparent">⚙️ Filter columns ▼</button>
