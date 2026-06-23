@@ -1075,7 +1075,7 @@ function showHistory(swimmerName,eventName,course){{
     document.getElementById('history-modal').style.display='flex';
     document.getElementById('modal-table').innerHTML=
       '<tr><td style="padding:20px;text-align:center;color:#888;font-style:italic">'
-      +'No history cached for '+swimmerName+'.<br>Run <strong>python3 swimming_results.py --refresh</strong> after a meet to load peer histories.'
+      +'No history cached for '+swimmerName+'.<br>Run <strong>python3 swimming_results.py --fetch-history</strong> to load histories for all BSC swimmers.'
       +'</td></tr>';
     if(_chart){{_chart.destroy();_chart=null;}}
     document.getElementById('chart-legend').innerHTML='';
@@ -2826,11 +2826,13 @@ def build_galas_html(galas, all_bests):
 
 def main():
     import sys
-    refresh = "--refresh" in sys.argv  # pass --refresh after a meet for full history update
+    refresh      = "--refresh" in sys.argv       # legacy: refreshes all histories (BSC + Ava)
+    fetch_history = "--fetch-history" in sys.argv # BSC only: fetch/update all BSC swimmer histories
 
     run_time = datetime.now().strftime("%d/%m/%Y %H:%M")
     print(f"Swimming Results — {run_time}")
-    print(f"Mode: {'FULL REFRESH (peer histories)' if refresh else 'standard (using cached peer histories)'}")
+    _mode = "FETCH HISTORY (all BSC swimmers)" if fetch_history else ("FULL REFRESH" if refresh else "standard (using cached peer histories)")
+    print(f"Mode: {_mode}")
     print("=" * 50)
 
     # ── Margot — always first ─────────────────────────────────────────────────
@@ -2883,16 +2885,16 @@ def main():
     update_pbs(swimmers)
     save_current_bests(swimmers)
 
-    # Peer histories — fetch fresh on --refresh, otherwise load cache
-    if refresh:
-        print(f"\nFetching peer histories for all Margot's club swimmers...")
+    # Peer histories — fetch on --fetch-history or --refresh, otherwise load cache
+    if refresh or fetch_history:
+        print(f"\nFetching histories for all BSC 2014 swimmers...")
         peer_histories = fetch_peer_histories(swimmers, PEER_HISTORY_PATH, MARGOT_NAME)
     else:
         peer_histories = load_peer_histories(PEER_HISTORY_PATH)
         if peer_histories:
             print(f"\nLoaded cached peer histories ({len(peer_histories)} swimmers)")
         else:
-            print(f"\nNo peer history cache found — run with --refresh after a meet")
+            print(f"\nNo peer history cache — run with --fetch-history to populate")
 
     # Fetch all BSC peer age groups (2013–2018 except primary 2014)
     _bsc_peers = [
@@ -2911,7 +2913,7 @@ def main():
             continue
         print(f"\nFetching BSC {2026 - _yob}yo ({_yob}) PBs...")
         _sws = fetch_peer_swimmers(_cfg, _yob)
-        if refresh:
+        if refresh or fetch_history:
             print(f"\nFetching BSC {2026 - _yob}yo histories...")
             _ph = fetch_peer_histories(_sws, _hist, "")
         else:
@@ -3170,8 +3172,8 @@ def main():
     print(f"  HTML report  : {HTML_PATH.name}")
     print(f"  Ava report   : {AVA_HTML_PATH.name}")
     print(f"  Ava workbook : {AVA_XLSX_PATH.name}")
-    if refresh:
-        print(f"  Peer histories cached for next run")
+    if refresh or fetch_history:
+        print(f"  BSC histories cached for next run")
 
 
 if __name__ == "__main__":
