@@ -187,12 +187,18 @@ var PERSONAL_PAGES = {
 var _fromPersonal = new URLSearchParams(window.location.search).get('from') === 'personal';
 
 function _swimmerUrl(name, gender, yob){
-  if(_fromPersonal && PERSONAL_PAGES[name]) return PERSONAL_PAGES[name];
+  if(PERSONAL_PAGES[name]){
+    var su=''; try{su=localStorage.getItem('bsc_swimmer_url')||'';}catch(e){}
+    if(_fromPersonal || su===PERSONAL_PAGES[name]) return PERSONAL_PAGES[name];
+  }
   return 'brompton_rankings.html?swimmer='+encodeURIComponent(name)+'&gender='+gender+'&yob='+yob;
 }
 
 function _rankingsUrl(name, gender, yob){
-  if(_fromPersonal && PERSONAL_PAGES[name]) return PERSONAL_PAGES[name];
+  if(PERSONAL_PAGES[name]){
+    var su=''; try{su=localStorage.getItem('bsc_swimmer_url')||'';}catch(e){}
+    if(_fromPersonal || su===PERSONAL_PAGES[name]) return PERSONAL_PAGES[name];
+  }
   return 'brompton_rankings.html?focus='+encodeURIComponent(name)+'&gender='+gender+'&yob='+yob;
 }
 
@@ -205,7 +211,9 @@ function init(){
   // Don't show a welcome-back for CWSC swimmers — their pages share bsc_swimmer
   var CWSC_URLS = ['cwsc_u14_girls_rankings.html'];
   if(CWSC_URLS.indexOf(savedUrl) !== -1) return;
-  if(name && gender && yob){
+  // Show welcome-back if we have name+gender+yob, OR if saved URL matches a personal page
+  var hasPersonalMatch = name && PERSONAL_PAGES[name] && savedUrl === PERSONAL_PAGES[name];
+  if(name && (hasPersonalMatch || (gender && yob))){
     var first = name.split(' ')[0];
     document.getElementById('wb-name').textContent = first;
     document.getElementById('wb-btn').textContent = 'View ' + first + '\u2019s Results \u2192';
