@@ -29,6 +29,7 @@ QT_FILE        = REF_DIR / "qt_all_2026.json"
 QT_YEAR        = 2027   # qualification season — update once new times are published
 CONFIG_DIR     = BROMPTON_DIR / "config"
 PREV_DIR       = BROMPTON_DIR / "previous_bests"
+MARGOT_DIR     = OUTPUTS_DIR / "Margot"
 
 RATE_DELAY = 3
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -214,6 +215,23 @@ def get_prev(group_key, swimmer_name):
             result[(val["event"], val["course"])] = val
     return result
 
+# ── History helpers ───────────────────────────────────────────────────────────
+def load_all_histories():
+    """Load swim histories cached by swimming_results.py --fetch-history."""
+    hist_files = [
+        MARGOT_DIR / "peer_histories.json",       # female 2014
+        MARGOT_DIR / "peer_histories_2013.json",
+        MARGOT_DIR / "peer_histories_2015.json",
+        MARGOT_DIR / "peer_histories_2016.json",
+        MARGOT_DIR / "peer_histories_2017.json",
+        MARGOT_DIR / "peer_histories_2018.json",
+    ]
+    merged = {}
+    for path in hist_files:
+        if path.exists():
+            merged.update(json.loads(path.read_text()))
+    return merged
+
 # ── Qual helpers ──────────────────────────────────────────────────────────────
 def qual_ind_spans(secs, qt_d):
     """Show badge only where THIS course's time meets the standard."""
@@ -247,7 +265,7 @@ def next_qual_span(secs, qt_d):
 # ── HTML cell builder ─────────────────────────────────────────────────────────
 RANK_COLORS = {"rank-1":"#d4edda","rank-2":"#fff3cd","rank-3":"#fde8d8"}
 
-def build_cell(event, course, bests, prev_bests_swimmer, qt_d, is_lc_sc=False):
+def build_cell(event, course, bests, prev_bests_swimmer, qt_d, is_lc_sc=False, swimmer_name=""):
     """Build a single <td> element. Returns HTML string."""
     if is_lc_sc:
         lc_data = bests.get((event, "LC"))
@@ -287,8 +305,12 @@ def build_cell(event, course, bests, prev_bests_swimmer, qt_d, is_lc_sc=False):
     qual_html = qual_ind_spans(secs, qt_d)
     gap_html  = next_qual_span(secs, qt_d)
 
+    _click = ""
+    if swimmer_name:
+        _safe = swimmer_name.replace("'", "\\'")
+        _click = f'onclick="showHistory(\'{_safe}\',\'{event}\',\'{course}\')" style="cursor:pointer" '
     return (f'<td class="event" data-stroke="{slug}" data-coltype="{coltype}" '
-            f'data-secs="{secs:.3f}">'
+            f'{_click}data-secs="{secs:.3f}">'
             f'<span class="time">{time_str}</span>'
             f'{arrow_html}'
             f'<br><span class="date" data-meet="{meet_str}">{date_str}</span>'
@@ -318,8 +340,38 @@ def build_best_cell(event, bests):
         f'<br><span class="best-src">{source}</span></td>'
     )
 
+def _history_modal_html(all_histories, swimmer_names):
+    """Return the HISTORY script block + modal HTML to embed in a page."""
+    import json as _j
+    hist_data = {name: all_histories[name] for name in swimmer_names if name in all_histories}
+    history_json = _j.dumps(hist_data, separators=(',', ':'))
+    return f"""<script>
+var HISTORY={history_json};
+window.showHistory=function(name,event,course){{
+  var hist=(HISTORY[name]||{{}})[event+'|'+course]||[];
+  var modal=document.getElementById('hist-modal');
+  document.getElementById('hist-title').textContent=name+' — '+event+' '+course+' ('+hist.length+' swims)';
+  var rows=hist.length?hist.slice().reverse().map(function(s){{
+    return '<tr><td style="padding:4px 8px;font-weight:600">'+s.time+'</td><td style="padding:4px 8px;color:#555">'+s.date+'</td><td style="padding:4px 8px;font-size:10px;color:#777">'+((s.meet||''))+'</td></tr>';
+  }}).join(''):'<tr><td colspan="3" style="padding:16px;text-align:center;color:#888;font-style:italic">No history cached — run swimming_results.py --fetch-history</td></tr>';
+  document.getElementById('hist-tbody').innerHTML='<tr style="background:#f0f4f8"><th style="padding:4px 8px">Time</th><th style="padding:4px 8px">Date</th><th style="padding:4px 8px">Meet</th></tr>'+rows;
+  modal.style.display='flex';
+}};
+</script>
+<div id="hist-modal" onclick="if(event.target===this)this.style.display='none'" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);z-index:2000;align-items:center;justify-content:center">
+  <div style="background:white;border-radius:8px;padding:20px;width:90vw;max-width:500px;max-height:80vh;display:flex;flex-direction:column;box-shadow:0 8px 32px rgba(0,0,0,.25)">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <h3 id="hist-title" style="margin:0;font-size:14px;color:#1a3a5c;flex:1"></h3>
+      <button onclick="document.getElementById('hist-modal').style.display='none'" style="border:none;background:none;font-size:22px;cursor:pointer;color:#666;line-height:1">&times;</button>
+    </div>
+    <div style="overflow-y:auto;flex:1">
+      <table style="width:100%;border-collapse:collapse;font-size:12px"><tbody id="hist-tbody"></tbody></table>
+    </div>
+  </div>
+</div>"""
+
 # ── HTML page builder ─────────────────────────────────────────────────────────
-def build_page(config, all_bests, group_key, qt_data, run_time):
+def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=None):
     gender    = config["gender"]     # "Female" or "Male"
     yob       = config["year_of_birth"]
     swimmers  = config["swimmers"]
@@ -380,7 +432,8 @@ def build_page(config, all_bests, group_key, qt_data, run_time):
                     cell = cell.replace('class="converted"', f'class="converted {rank_cls}"', 1) if rank_cls else cell
                 else:
                     cell = build_cell(stroke, course, bests, prev,
-                                      qt_data.get(f"{stroke}|{course}", {}))
+                                      qt_data.get(f"{stroke}|{course}", {}),
+                                      swimmer_name=sname)
                     if rank_cls:
                         cell = cell.replace('class="event"', f'class="event {rank_cls}"', 1)
                 cells.append(cell)
@@ -433,6 +486,7 @@ def build_page(config, all_bests, group_key, qt_data, run_time):
     gender_label = gender
     title = f"Brompton SC — {gender_label} {age}s ({yob}) — Club Rankings"
     run_ts = run_time.strftime("%-d %B %Y %H:%M")
+    _hist_modal = _history_modal_html(all_histories or {}, [s["name"] for s in swimmers])
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -743,13 +797,14 @@ function _shide(){{document.getElementById('stroke-tip').style.display='none';}}
 </div>
 <script>if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
 <div id="stroke-tip" style="display:none;position:fixed;background:#333;color:#fff;font-size:11px;padding:4px 10px;border-radius:4px;pointer-events:none;z-index:9999;white-space:nowrap"></div>
+{_history_modal_html(all_histories or {{}}, [s['name'] for s in swimmers])}
 </body>
 </html>"""
 
     return html
 
 # ── Combined single-page builder ──────────────────────────────────────────────
-def build_combined_page(groups_data, run_time):
+def build_combined_page(groups_data, run_time, all_histories=None):
     """Single HTML with all Brompton swimmers; JS filters for gender/age/stroke/course."""
     run_ts  = run_time.strftime("%-d %B %Y %H:%M")
     total   = sum(len(g["config"]["swimmers"]) for g in groups_data)
@@ -829,7 +884,8 @@ def build_combined_page(groups_data, run_time):
                             cell = cell.replace('class="converted"', f'class="converted {rank_cls}"', 1)
                     else:
                         cell = build_cell(stroke, course, bests, prev,
-                                          qt_data.get(f"{stroke}|{course}", {}))
+                                          qt_data.get(f"{stroke}|{course}", {}),
+                                          swimmer_name=sname)
                         if rank_cls:
                             cell = cell.replace('class="event"', f'class="event {rank_cls}"', 1)
                     cells.append(cell)
@@ -910,6 +966,7 @@ def build_combined_page(groups_data, run_time):
 
     all_swimmer_names = sorted(set(s["name"] for g in groups_data for s in g["config"]["swimmers"]))
     swimmer_datalist_html = "".join(f'<option value="{n}">' for n in all_swimmer_names)
+    _hist_modal = _history_modal_html(all_histories or {}, all_swimmer_names)
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -1821,6 +1878,7 @@ document.addEventListener('keydown',function(e){{if(e.key==='Escape')closePBModa
 }})();
 </script>
 <div id="stroke-tip" style="display:none;position:fixed;background:#333;color:#fff;font-size:11px;padding:4px 10px;border-radius:4px;pointer-events:none;z-index:9999;white-space:nowrap"></div>
+{_hist_modal}
 </body>
 </html>"""
     return html
@@ -1837,6 +1895,8 @@ def main():
 
     qt_all = json.loads(QT_FILE.read_text())
     run_time = datetime.now()
+    all_histories = load_all_histories()
+    print(f"Loaded histories for {len(all_histories)} swimmers")
 
     # Find all config files
     config_files = sorted(CONFIG_DIR.glob("brompton_*.json"))
@@ -1886,7 +1946,7 @@ def main():
         qt_data = build_qt_data(qt_all, gender_code, yob)
 
         # Generate HTML
-        html = build_page(config, all_bests, group_key, qt_data, run_time)
+        html = build_page(config, all_bests, group_key, qt_data, run_time, all_histories=all_histories)
 
         # Write to docs/
         out_name = f"brompton_{group_key}.html"
@@ -1901,7 +1961,7 @@ def main():
 
     # Build combined single-page (only when processing all groups)
     if not args.group:
-        combined_html = build_combined_page(groups_data_list, run_time)
+        combined_html = build_combined_page(groups_data_list, run_time, all_histories=all_histories)
         home_docs  = DOCS_DIR  / "brompton_rankings.html"
         home_docs.write_text(combined_html, encoding="utf-8")
         print(f"\n→ Combined page: {home_docs} ({home_docs.stat().st_size//1024}KB)")
