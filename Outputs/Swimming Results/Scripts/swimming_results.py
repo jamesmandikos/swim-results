@@ -2103,8 +2103,8 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
   function ageGroupChecked(yob){{
     var result=true;
     document.querySelectorAll('input[onchange*="toggleAgeGroup"]').forEach(function(cb){{
-      var m=cb.getAttribute('onchange').match(/'(\d+)'/);
-      if(m&&m[1]===String(yob)) result=cb.checked;
+      var ms=cb.getAttribute('onchange').match(/'(\d+)'/g);
+      if(ms&&ms.some(function(m){{return m.replace(/'/g,'')===String(yob);}})) result=cb.checked;
     }});
     return result;
   }}
@@ -2224,7 +2224,8 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
       var m=cb.getAttribute('onchange').match(/'(\d+)'/);
       if(m&&'a_'+m[1] in state){{
         cb.checked=state['a_'+m[1]];
-        toggleAgeGroup(m[1],cb.checked);
+        var ms=cb.getAttribute('onchange').match(/'(\d+)'/g);
+        if(ms) ms.forEach(function(yobStr){{toggleAgeGroup(yobStr.replace(/'/g,''),cb.checked);}});
       }}
     }});
     var sw=document.querySelector('.swimmer-select');
