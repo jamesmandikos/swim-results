@@ -2988,7 +2988,7 @@ def main():
             continue
         print(f"\nFetching CWSC {2026 - _yob}yo ({_yob}) PBs...")
         _sws = fetch_peer_swimmers(_cfg, _yob)
-        if refresh:
+        if refresh or not _hist.exists():
             print(f"\nFetching CWSC {2026 - _yob}yo histories...")
             _ph = fetch_peer_histories(_sws, _hist, "")
         else:
@@ -3004,7 +3004,7 @@ def main():
     build_html(ava_rows, run_time,
                history=ava_history, quals=ava_quals, prev_bests=None,
                html_path=AVA_HTML_PATH,
-               title="Chelsea &amp; Westminster SC — Female 2017 — Personal Bests",
+               title="CWSC — Swim Result Tracker",
                peer_histories=all_ava_peer_histories,
                peer_rows_by_yob=ava_peer_rows_by_yob,
                home_url="cwsc.html",
