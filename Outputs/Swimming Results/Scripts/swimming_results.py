@@ -2265,6 +2265,7 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
     var open=body.style.display!=='none';
     body.style.display=open?'none':'flex';
     btn.textContent=open?'⚙️ Filter columns ▶':'⚙️ Filter columns ▼';
+    setTimeout(function(){{if(typeof _initSticky==='function')_initSticky();}},0);
   }};
 
   window.addEventListener('DOMContentLoaded',function(){{

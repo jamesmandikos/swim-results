@@ -78,6 +78,12 @@ SITE_EVENT_MAP = {
 
 SLUG = {name: name.lower().replace(" ","-") for name,_ in EVENTS}
 
+def _fam_slug(ev): return ev.split()[-1].lower()
+def _dist_key(ev):
+    d = int(ev.split()[0])
+    return "50m" if d == 50 else ("100m" if d == 100 else "200mp")
+_DIST_LABEL = {"50m": "50m", "100m": "100m", "200mp": "200m+"}
+
 LC_SC_FACTORS = {
     "50 Free":0.96,"100 Free":0.97,"200 Free":0.97,"400 Free":0.97,
     "800 Free":0.975,"1500 Free":0.975,
@@ -319,11 +325,11 @@ def build_cell(event, course, bests, swimmer_hist, qt_d, is_lc_sc=False, swimmer
     if is_lc_sc:
         lc_data = bests.get((event, "LC"))
         if not lc_data or not lc_data.get("converted"):
-            return f'<td class="converted" data-stroke="{SLUG[event]}" data-coltype="lc-sc" data-secs="">—</td>'
+            return f'<td class="converted" data-stroke="{SLUG[event]}" data-family="{_fam_slug(event)}" data-dist="{_dist_key(event)}" data-coltype="lc-sc" data-secs="">—</td>'
         conv_secs = to_secs(lc_data["converted"])
         conv_fmt  = lc_data["converted"]
         lc_meet   = _html.escape(lc_data.get("meet_str", ""))
-        return (f'<td class="converted" data-stroke="{SLUG[event]}" '
+        return (f'<td class="converted" data-stroke="{SLUG[event]}" data-family="{_fam_slug(event)}" data-dist="{_dist_key(event)}" '
                 f'data-coltype="lc-sc" data-secs="{conv_secs or ""}">'
                 f'<span class="time">{conv_fmt}</span><br>'
                 f'<span class="date" data-meet="{lc_meet}">{lc_data["date_str"]}</span></td>')
@@ -332,7 +338,7 @@ def build_cell(event, course, bests, swimmer_hist, qt_d, is_lc_sc=False, swimmer
     coltype = course.lower()
     slug = SLUG[event]
     if not data:
-        return (f'<td class="event" data-stroke="{slug}" data-coltype="{coltype}" '
+        return (f'<td class="event" data-stroke="{slug}" data-family="{_fam_slug(event)}" data-dist="{_dist_key(event)}" data-coltype="{coltype}" '
                 f'data-secs="" data-empty="1">—</td>')
 
     secs = data["time_secs"]
@@ -370,7 +376,7 @@ def build_cell(event, course, bests, swimmer_hist, qt_d, is_lc_sc=False, swimmer
     if swimmer_name:
         _safe = swimmer_name.replace("'", "\\'")
         _click = f'onclick="showHistory(\'{_safe}\',\'{event}\',\'{course}\')" style="cursor:pointer" '
-    return (f'<td class="event" data-stroke="{slug}" data-coltype="{coltype}" '
+    return (f'<td class="event" data-stroke="{slug}" data-family="{_fam_slug(event)}" data-dist="{_dist_key(event)}" data-coltype="{coltype}" '
             f'{_click}data-secs="{secs:.3f}">'
             f'<span class="time">{time_str}</span>'
             f'{arrow_html}'
@@ -392,11 +398,11 @@ def build_best_cell(event, bests):
         if conv_secs:
             candidates.append((conv_secs, lc_data["converted"], "LC→SC"))
     if not candidates:
-        return (f'<td class="event best-cell" data-stroke="{slug}" '
+        return (f'<td class="event best-cell" data-stroke="{slug}" data-family="{_fam_slug(event)}" data-dist="{_dist_key(event)}" '
                 f'data-coltype="best" data-secs="" data-empty="1">—</td>')
     best_secs, best_time, source = min(candidates, key=lambda x: x[0])
     return (
-        f'<td class="event best-cell" data-stroke="{slug}" data-coltype="best" data-secs="{best_secs:.3f}">'
+        f'<td class="event best-cell" data-stroke="{slug}" data-family="{_fam_slug(event)}" data-dist="{_dist_key(event)}" data-coltype="best" data-secs="{best_secs:.3f}">'
         f'<span class="time">{best_time}</span>'
         f'<br><span class="best-src">{source}</span></td>'
     )
@@ -745,6 +751,17 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
     age       = 2026 - yob
 
     stroke_names = list(dict.fromkeys(n for n,c in EVENTS if c != "LC→SC"))
+    _families_list = list(dict.fromkeys(_fam_slug(n) for n,c in EVENTS if c != "LC→SC"))
+    _family_labels = {_fam_slug(n): n.split()[-1] for n,c in EVENTS if c != "LC→SC"}
+    family_checks = "".join(
+        f'<label><input type="checkbox" class="family-cb" data-family="{f}" checked> {_family_labels[f]}</label>'
+        for f in _families_list
+    )
+    dist_checks = "".join(
+        f'<label><input type="checkbox" class="dist-cb" data-dist="{d}" checked> {_DIST_LABEL[d]}</label>'
+        for d in ["50m", "100m", "200mp"]
+        if any(_dist_key(n) == d for n,c in EVENTS if c != "LC→SC")
+    )
 
     # Build column headers
     col_headers = []
@@ -816,7 +833,7 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
     thead_stroke_row += '<th rowspan="2" style="padding:8px 4px;text-align:center;font-size:10px">YOB</th>'
     for stroke in stroke_names:
         thead_stroke_row += (
-            f'<th colspan="3" class="stroke-header" data-stroke="{SLUG[stroke]}" '
+            f'<th colspan="3" class="stroke-header" data-stroke="{SLUG[stroke]}" data-family="{_fam_slug(stroke)}" data-dist="{_dist_key(stroke)}" '
             f'style="padding:6px 4px;text-align:center;background:#2e75b6;border-left:1px solid rgba(255,255,255,.4)">'
             f'{stroke}</th>'
         )
@@ -831,7 +848,7 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
             crs_extra = "background:#34495e;color:#ccc;" if course == "LC→SC" else ""
             thead_course_row += (
                 f'<th class="coltype-header course-{coltype}" data-coltype="{coltype}" '
-                f'data-stroke="{SLUG[stroke]}" '
+                f'data-stroke="{SLUG[stroke]}" data-family="{_fam_slug(stroke)}" data-dist="{_dist_key(stroke)}" '
                 f'style="padding:4px 6px;text-align:center;font-size:10px;cursor:pointer;{border_extra}{crs_extra}" '
                 f'onclick="sortBy(this)">{course}</th>'
             )
@@ -963,20 +980,29 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
   }}
 
   /* ── Column visibility ── */
-  var _strokes={{}},_coltypes={{}};
   function applyFilters(){{
     var table=document.querySelector('table');if(!table)return;
-    var allThs=Array.from(table.querySelectorAll('thead th[data-stroke]'));
-    allThs.forEach(function(th){{
-      var s=th.dataset.stroke,c=th.dataset.coltype;
-      var hidden=!_strokes[s]||!_coltypes[c]||(_hideEmpty&&th.dataset.empty==='1');
+    var families={{}},dists={{}},coltypes={{}};
+    document.querySelectorAll('.family-cb').forEach(function(cb){{families[cb.dataset.family]=cb.checked;}});
+    document.querySelectorAll('.dist-cb').forEach(function(cb){{dists[cb.dataset.dist]=cb.checked;}});
+    document.querySelectorAll('.coltype-cb').forEach(function(cb){{coltypes[cb.value]=cb.checked;}});
+    table.querySelectorAll('thead th[data-family][data-dist][data-coltype]').forEach(function(th){{
+      var f=th.dataset.family,d=th.dataset.dist,c=th.dataset.coltype;
+      var hidden=!families[f]||!dists[d]||!coltypes[c]||(_hideEmpty&&th.dataset.empty==='1');
       th.classList.toggle('col-hidden',hidden);
     }});
-    var tds=Array.from(table.querySelectorAll('tbody td[data-stroke]'));
-    tds.forEach(function(td){{
-      var s=td.dataset.stroke,c=td.dataset.coltype;
-      var hidden=!_strokes[s]||!_coltypes[c]||(_hideEmpty&&td.dataset.empty==='1');
+    table.querySelectorAll('tbody td[data-family][data-dist]').forEach(function(td){{
+      var f=td.dataset.family,d=td.dataset.dist,c=td.dataset.coltype;
+      var hidden=!families[f]||!dists[d]||!coltypes[c]||(_hideEmpty&&td.dataset.empty==='1');
       td.classList.toggle('col-hidden',hidden);
+    }});
+    table.querySelectorAll('th.stroke-header').forEach(function(th){{
+      var f=th.dataset.family,d=th.dataset.dist;
+      if(!families[f]||!dists[d]){{th.classList.add('col-hidden');return;}}
+      var children=Array.from(table.querySelectorAll('th[data-family="'+f+'"][data-dist="'+d+'"][data-coltype]'));
+      var visible=children.filter(function(c){{return !c.classList.contains('col-hidden');}});
+      th.classList.toggle('col-hidden',visible.length===0);
+      if(visible.length>0) th.setAttribute('colspan',visible.length);
     }});
     rerank();
     if(typeof updateGaps==='function') updateGaps();
@@ -998,8 +1024,6 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
   }};
 
   function loadFilterDefaults(){{
-    document.querySelectorAll('.stroke-cb').forEach(function(cb){{_strokes[cb.value]=cb.checked;}});
-    document.querySelectorAll('.coltype-cb').forEach(function(cb){{_coltypes[cb.value]=cb.checked;}});
     applyFilters();
   }}
 
@@ -1044,18 +1068,15 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
     setTimeout(function(){{if(_initSticky)_initSticky();}},0);
   }};
 
-  var _FAMILY_MAP={{'back':['50-back','100-back','200-back'],'fly':['50-fly','100-fly','200-fly'],
-    'free':['50-free','100-free','200-free','400-free','800-free'],
-    'breast':['50-breast','100-breast','200-breast'],'im':['200-im','400-im']}};
+  /* _FAMILY_MAP removed — family-cb maps directly via data-family */
 
   window.addEventListener('DOMContentLoaded',function(){{
     /* Apply stroke/course prefs saved by brompton.html */
     try{{
       var prefs=JSON.parse(localStorage.getItem('brompton_prefs')||'{{}}');
       if(prefs.families&&prefs.families.length){{
-        document.querySelectorAll('.stroke-cb').forEach(function(cb){{
-          var fam=Object.keys(_FAMILY_MAP).find(function(f){{return _FAMILY_MAP[f].indexOf(cb.value)>=0;}});
-          if(fam) cb.checked=prefs.families.indexOf(fam)>=0;
+        document.querySelectorAll('.family-cb').forEach(function(cb){{
+          cb.checked=prefs.families.indexOf(cb.dataset.family)>=0;
         }});
       }}
       if(prefs.courses&&prefs.courses.length){{
@@ -1067,11 +1088,8 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
     loadFilterDefaults();
     rerank();
     if(typeof updateGaps==='function') updateGaps();
-    document.querySelectorAll('.stroke-cb').forEach(function(cb){{
-      cb.addEventListener('change',function(){{_strokes[cb.value]=cb.checked;applyFilters();}});
-    }});
-    document.querySelectorAll('.coltype-cb').forEach(function(cb){{
-      cb.addEventListener('change',function(){{_coltypes[cb.value]=cb.checked;applyFilters();}});
+    document.querySelectorAll('.family-cb,.dist-cb,.coltype-cb').forEach(function(cb){{
+      cb.addEventListener('change',applyFilters);
     }});
     document.querySelectorAll('.select-btns button').forEach(function(btn){{
       btn.addEventListener('click',function(){{
@@ -1127,9 +1145,11 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
     <div class="settings-section">
       <h3>Strokes</h3>
       <div class="select-btns"><button data-val="all">All</button><button data-val="none">None</button></div>
-      <div class="cb-grid">
-        {''.join(f'<label><input type="checkbox" class="stroke-cb" value="{SLUG[s]}" checked> {s}</label>' for s in stroke_names)}
-      </div>
+      <div class="cb-grid">{family_checks}</div>
+    </div>
+    <div class="settings-section">
+      <h3>Distances</h3>
+      <div class="cb-grid">{dist_checks}</div>
     </div>
     <div class="settings-section">
       <h3>Course</h3>
