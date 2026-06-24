@@ -370,7 +370,7 @@
         if(!matches) show=false;
       }
       if(_pbFilterActive&&show){
-        if(!row.querySelectorAll('td:not(.col-hidden) .progress-arrow:not(.hidden)').length) show=false;
+        if(row.dataset.hasPb!=='1') show=false;
       }
       if(!show) row.classList.add('row-hidden');
     });
@@ -647,6 +647,10 @@
   };
 
   window.addEventListener('DOMContentLoaded',function(){
+    // Tag rows that have at least one PB improvement marker
+    document.querySelectorAll('tbody tr').forEach(function(row){
+      if(row.querySelector('.progress-arrow')) row.dataset.hasPb='1';
+    });
     document.querySelectorAll('.age-cb').forEach(function(cb){
       cb.addEventListener('change',applyRowFilters);
     });
@@ -711,7 +715,7 @@
 </head>
 <body>
 <h1>Brompton SC — Club Rankings</h1>
-<div class="subtitle">Generated 24 June 2026 11:47 · 172 swimmers &nbsp;·&nbsp; <a href="https://www.swimmingresults.org/12months/" target="_blank" style="color:#aaa;font-size:10px;text-decoration:none">Times via Swim England</a></div>
+<div class="subtitle">Generated 24 June 2026 11:55 · 172 swimmers &nbsp;·&nbsp; <a href="https://www.swimmingresults.org/12months/" target="_blank" style="color:#aaa;font-size:10px;text-decoration:none">Times via Swim England</a></div>
 
 <div class="filter-bar">
   <button id="filter-toggle" onclick="toggleFilters()" style="font-weight:600;font-size:12px;color:#1a3a5c;cursor:pointer;background:none;border:none;padding:0;display:flex;align-items:center;gap:6px;touch-action:manipulation;-webkit-tap-highlight-color:transparent">⚙️ Filter columns ▼</button>
