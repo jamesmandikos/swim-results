@@ -2333,7 +2333,7 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
     var _w=document.querySelector('.wrapper');
     var _tr1=document.querySelector('thead tr:first-child');
     var _tr2=document.querySelector('thead tr:nth-child(2)');
-    function _initSticky(){{
+    _initSticky=function(){{
       if(_w){{
         _w.style.overflowY='auto';
         var top=_w.getBoundingClientRect().top;
