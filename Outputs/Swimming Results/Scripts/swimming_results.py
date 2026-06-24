@@ -629,22 +629,37 @@ def read_ava_quals():
 
 def read_age_group_quals(year_of_birth):
     """
-    Read county/regional qualifying times from the multi-age-group reference tabs
-    for a specific birth year. Returns dict keyed by (event, course).
+    Read county/regional qualifying times for a given birth year.
+    Uses 2027 as the championship year (next season — same basis as Brompton app).
+    Returns dict keyed by (event, course), or empty dict if age is out of range.
     """
     import datetime as _dt
 
-    COUNTY_AGE_GROUPS = ["10+11", "12", "13", "14", "15", "16", "17+"]
-    COUNTY_YOB_MAP    = {2015: "10+11", 2014: "12", 2013: "13"}
-    REGIONAL_YOB_MAP  = {2015: "11 yrs", 2014: "12 yrs", 2013: "13 yrs"}
-    REGIONAL_EV_MAP   = {
-        "50m Fr": "50 Free",    "100m Fr": "100 Free",  "200m Fr": "200 Free",
-        "400m Fr": "400 Free",  "800m Fr": "800 Free",  "1500m Fr": "1500 Free",
-        "50m Br": "50 Breast",  "100m Br": "100 Breast","200m Br": "200 Breast",
-        "50m Fly": "50 Fly",    "100m Fly": "100 Fly",  "200m Fly": "200 Fly",
-        "50m Ba": "50 Back",    "100m Ba": "100 Back",  "200m Ba": "200 Back",
-        "200m IM": "200 IM",    "400m IM": "400 IM",
-    }
+    CHAMP_YEAR = 2027
+    age = CHAMP_YEAR - year_of_birth
+
+    # County age bands (Middlesex County Championships)
+    # Sheet cols: "10+11"(gi=0), "12"(gi=1), "13"(gi=2), "14"(gi=3), "15"(gi=4), "16"(gi=5), "17+"(gi=6)
+    COUNTY_BANDS = ["10+11", "12", "13", "14", "15", "16", "17+"]
+    if age >= 17:          county_band = "17+"
+    elif age == 16:        county_band = "16"
+    elif age == 15:        county_band = "15"
+    elif age == 14:        county_band = "14"
+    elif age == 13:        county_band = "13"
+    elif age == 12:        county_band = "12"
+    elif age in (10, 11):  county_band = "10+11"
+    else:                  county_band = None  # too young for county
+
+    # Regional age bands (SE London Summer Championships — LC only)
+    # Sheet row 3 labels: "11-12", "13", "14", "15", "16", "17", "18+"
+    if age >= 18:          reg_band = "18+"
+    elif age == 17:        reg_band = "17"
+    elif age == 16:        reg_band = "16"
+    elif age == 15:        reg_band = "15"
+    elif age == 14:        reg_band = "14"
+    elif age == 13:        reg_band = "13"
+    elif age in (11, 12):  reg_band = "11-12"
+    else:                  reg_band = None  # too young for regional
 
     def _secs(val):
         if val is None: return None
@@ -656,51 +671,46 @@ def read_age_group_quals(year_of_birth):
     wb = openpyxl.load_workbook(XLSX_PATH, data_only=True)
 
     # ── County Times ─────────────────────────────────────────────────────────
-    county_age = COUNTY_YOB_MAP.get(year_of_birth, "12")
-    gi         = COUNTY_AGE_GROUPS.index(county_age)
-    lc_qt_col  = 2 + gi * 2   # 1-indexed openpyxl column
-    lc_con_col = 3 + gi * 2
-    sc_qt_col  = 16 + gi * 2
-    sc_con_col = 17 + gi * 2
-
     county_data = {}
-    cws = wb["County Times 2026"]
-    for row in cws.iter_rows(min_row=5, max_row=cws.max_row, values_only=False):
-        ev_name = row[0].value
-        if not ev_name: continue
-        r = row[0].row
-        county_data[str(ev_name).strip()] = {
-            "LC": (_secs(cws.cell(r, lc_qt_col).value),  _secs(cws.cell(r, lc_con_col).value)),
-            "SC": (_secs(cws.cell(r, sc_qt_col).value),  _secs(cws.cell(r, sc_con_col).value)),
-        }
+    if county_band:
+        gi         = COUNTY_BANDS.index(county_band)
+        lc_qt_col  = 2 + gi * 2   # 1-indexed openpyxl column
+        lc_con_col = 3 + gi * 2
+        sc_qt_col  = 16 + gi * 2
+        sc_con_col = 17 + gi * 2
+        cws = wb["County Times 2026"]
+        for row in cws.iter_rows(min_row=5, max_row=cws.max_row, values_only=False):
+            ev_name = row[0].value
+            if not ev_name: continue
+            r = row[0].row
+            county_data[str(ev_name).strip()] = {
+                "LC": (_secs(cws.cell(r, lc_qt_col).value),  _secs(cws.cell(r, lc_con_col).value)),
+                "SC": (_secs(cws.cell(r, sc_qt_col).value),  _secs(cws.cell(r, sc_con_col).value)),
+            }
 
     # ── Regional Times ────────────────────────────────────────────────────────
-    reg_age = REGIONAL_YOB_MAP.get(year_of_birth, "12 yrs")
-    rws     = wb["Regional Times 2026"]
-    ev_hdr  = [c.value for c in list(rws.iter_rows(min_row=2, max_row=2))[0]]
-    sub_hdr = [c.value for c in list(rws.iter_rows(min_row=3, max_row=3))[0]]
-
-    ev_col_map = {}
-    cur_ev = None
-    for ci, val in enumerate(ev_hdr):
-        if val and val != "Age":
-            cur_ev = val
-        if cur_ev and ci > 0 and sub_hdr[ci] in ("SC QT", "SC Cons", "LC QT", "LC Cons"):
-            ev_col_map.setdefault(cur_ev, {})[sub_hdr[ci]] = ci
-
+    # Sheet structure: row 3 = age band labels, row 4 = QT/Con, rows 5+ = events in col A.
+    # Regional championships are LC only — no SC columns.
     reg_data = {}
-    for row in rws.iter_rows(min_row=4, max_row=rws.max_row, values_only=True):
-        if row[0] and str(row[0]).strip() == reg_age:
-            for ev_abbr, cols in ev_col_map.items():
-                script_ev = REGIONAL_EV_MAP.get(ev_abbr)
-                if not script_ev: continue
-                reg_data[script_ev] = {
-                    "SC": (_secs(row[cols["SC QT"]])   if "SC QT"   in cols else None,
-                           _secs(row[cols["SC Cons"]]) if "SC Cons" in cols else None),
-                    "LC": (_secs(row[cols["LC QT"]])   if "LC QT"   in cols else None,
-                           _secs(row[cols["LC Cons"]]) if "LC Cons" in cols else None),
+    if reg_band:
+        rws      = wb["Regional Times 2026"]
+        band_row = [c.value for c in list(rws.iter_rows(min_row=3, max_row=3))[0]]
+        # Find the QT column for this age band (band label is at the QT col; Con is at QT+1)
+        lc_qt_col = lc_con_col = None
+        for ci, val in enumerate(band_row):
+            if str(val or "").strip() == reg_band:
+                lc_qt_col  = ci + 1   # openpyxl 1-indexed
+                lc_con_col = ci + 2
+                break
+        if lc_qt_col:
+            for row in rws.iter_rows(min_row=5, max_row=rws.max_row, values_only=False):
+                ev_name = row[0].value
+                if not ev_name: continue
+                r = row[0].row
+                reg_data[str(ev_name).strip()] = {
+                    "LC": (_secs(rws.cell(r, lc_qt_col).value), _secs(rws.cell(r, lc_con_col).value)),
+                    "SC": (None, None),
                 }
-            break
 
     # ── Combine ───────────────────────────────────────────────────────────────
     result = {}
@@ -1434,6 +1444,12 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
     # Unique stroke names in order
     stroke_names = list(dict.fromkeys(name for name, _ in EVENTS))
 
+    def _fam_slug(ev_name): return slug(ev_name.split()[-1])
+    def _dist_key(ev_name):
+        d = int(ev_name.split()[0])
+        return "50m" if d == 50 else ("100m" if d == 100 else "200mp")
+    _DIST_LABEL = {"50m": "50m", "100m": "100m", "200mp": "200m+"}
+
     stroke_groups = []
     i = 0
     while i < len(EVENTS):
@@ -1536,7 +1552,7 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
     ) if has_arrows else ""
 
     stroke_hdr = "".join(
-        f'<th colspan="{span + 1}" class="stroke-header" data-stroke="{slug(name)}">{name}</th>'
+        f'<th colspan="{span + 1}" class="stroke-header" data-stroke="{slug(name)}" data-family="{_fam_slug(name)}" data-dist="{_dist_key(name)}">{name}</th>'
         for name, span in stroke_groups
     )
 
@@ -1553,14 +1569,14 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
         empty_attr = ' data-empty="1"' if (slug(name), slug(course)) in empty_col_keys else ''
         course_hdr_parts.append(
             f'<th class="{"conv-header" if course == "LC→SC" else "course-header"}" '
-            f'data-col="{3+j+_col_offset}" data-stroke="{slug(name)}" data-coltype="{slug(course)}"'
+            f'data-col="{3+j+_col_offset}" data-stroke="{slug(name)}" data-family="{_fam_slug(name)}" data-dist="{_dist_key(name)}" data-coltype="{slug(course)}"'
             f'{empty_attr} onclick="sortTable(this)">{course}</th>'
         )
         if course == "LC→SC":
             _col_offset += 1
             course_hdr_parts.append(
                 f'<th class="best-header" '
-                f'data-col="{3+j+_col_offset}" data-stroke="{slug(name)}" data-coltype="best"'
+                f'data-col="{3+j+_col_offset}" data-stroke="{slug(name)}" data-family="{_fam_slug(name)}" data-dist="{_dist_key(name)}" data-coltype="best"'
                 f' onclick="sortTable(this)">Best</th>'
             )
     course_hdr = "".join(course_hdr_parts)
@@ -1624,7 +1640,7 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
         for short_name, course in EVENTS:
             ev  = swimmer["events"].get((short_name, course))
             _empty_attr = ' data-empty="1"' if (slug(short_name), slug(course)) in empty_col_keys else ''
-            da  = f'data-stroke="{slug(short_name)}" data-coltype="{slug(course)}"{_empty_attr}'
+            da  = f'data-stroke="{slug(short_name)}" data-family="{_fam_slug(short_name)}" data-dist="{_dist_key(short_name)}" data-coltype="{slug(course)}"{_empty_attr}'
             onclick_attr = ""
             progress_arrow = ""
             swimmer_name   = swimmer["name"]
@@ -1722,7 +1738,7 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
                 _conv_ev = swimmer["events"].get((short_name, "LC→SC"))
                 _sc_s   = time_to_seconds(_sc_ev["time_str"])   if (_sc_ev   and _sc_ev.get("time_str"))   else None
                 _conv_s = time_to_seconds(_conv_ev["time_str"]) if (_conv_ev and _conv_ev.get("time_str")) else None
-                _da_b = f'data-stroke="{slug(short_name)}" data-coltype="best"'
+                _da_b = f'data-stroke="{slug(short_name)}" data-family="{_fam_slug(short_name)}" data-dist="{_dist_key(short_name)}" data-coltype="best"'
                 if _sc_s is not None or _conv_s is not None:
                     if _sc_s is not None and (_conv_s is None or _sc_s <= _conv_s):
                         _bt, _bsrc, _bs, _bd = _sc_ev["time_str"], "SC", _sc_s, _sc_ev.get("date_str","")
@@ -1748,9 +1764,16 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
         )
 
     # Settings panel — stroke checkboxes + column-type checkboxes + age group toggles
-    stroke_checks = "".join(
-        f'<label><input type="checkbox" class="stroke-cb" data-stroke="{slug(s)}" checked> {s}</label>'
-        for s in stroke_names
+    _families = list(dict.fromkeys(_fam_slug(n) for n, _ in EVENTS))
+    _family_labels = {_fam_slug(n): n.split()[-1] for n, _ in EVENTS}
+    family_checks = "".join(
+        f'<label><input type="checkbox" class="family-cb" data-family="{f}" checked> {_family_labels[f]}</label>'
+        for f in _families
+    )
+    dist_checks = "".join(
+        f'<label><input type="checkbox" class="dist-cb" data-dist="{d}" checked> {_DIST_LABEL[d]}</label>'
+        for d in ["50m", "100m", "200mp"]
+        if any(_dist_key(n) == d for n, _ in EVENTS)
     )
     coltype_checks = "".join(
         f'<label><input type="checkbox" class="coltype-cb" data-coltype="{slug(c)}" checked> {c}</label>'
@@ -1999,29 +2022,29 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
 
   function applyFilters(){{
     var table=document.querySelector('table');
-    // Collect active strokes and coltypes
-    var strokes={{}},coltypes={{}};
-    document.querySelectorAll('.stroke-cb').forEach(function(cb){{strokes[cb.dataset.stroke]=cb.checked;}});
+    // Collect active families, distances, and coltypes
+    var families={{}},dists={{}},coltypes={{}};
+    document.querySelectorAll('.family-cb').forEach(function(cb){{families[cb.dataset.family]=cb.checked;}});
+    document.querySelectorAll('.dist-cb').forEach(function(cb){{dists[cb.dataset.dist]=cb.checked;}});
     document.querySelectorAll('.coltype-cb').forEach(function(cb){{coltypes[cb.dataset.coltype]=cb.checked;}});
 
     // Show/hide course headers (row 2) and body cells
-    table.querySelectorAll('th[data-stroke][data-coltype]').forEach(function(th){{
-      var s=th.dataset.stroke,c=th.dataset.coltype;
-      var hidden=!strokes[s]||!coltypes[c]||(_hideEmpty&&th.dataset.empty==='1');
+    table.querySelectorAll('th[data-family][data-dist][data-coltype]').forEach(function(th){{
+      var f=th.dataset.family,d=th.dataset.dist,c=th.dataset.coltype;
+      var hidden=!families[f]||!dists[d]||!coltypes[c]||(_hideEmpty&&th.dataset.empty==='1');
       th.classList.toggle('col-hidden',hidden);
     }});
-    table.querySelectorAll('td[data-stroke]').forEach(function(td){{
-      var s=td.dataset.stroke,c=td.dataset.coltype;
-      var hidden=!strokes[s]||!coltypes[c]||(_hideEmpty&&td.dataset.empty==='1');
+    table.querySelectorAll('td[data-family][data-dist]').forEach(function(td){{
+      var f=td.dataset.family,d=td.dataset.dist,c=td.dataset.coltype;
+      var hidden=!families[f]||!dists[d]||!coltypes[c]||(_hideEmpty&&td.dataset.empty==='1');
       td.classList.toggle('col-hidden',hidden);
     }});
 
-    // Show/hide stroke group headers (row 1) — hide only if ALL child headers are hidden
-    // Also update colspan to match the number of visible children
-    table.querySelectorAll('th[data-stroke]:not([data-coltype])').forEach(function(th){{
-      var s=th.dataset.stroke;
-      if(!strokes[s]){{ th.classList.add('col-hidden'); return; }}
-      var children=Array.from(table.querySelectorAll('th[data-stroke="'+s+'"][data-coltype]'));
+    // Show/hide stroke group headers (row 1) — hide when family or dist unchecked or all children hidden
+    table.querySelectorAll('th.stroke-header').forEach(function(th){{
+      var f=th.dataset.family,d=th.dataset.dist;
+      if(!families[f]||!dists[d]){{ th.classList.add('col-hidden'); return; }}
+      var children=Array.from(table.querySelectorAll('th[data-family="'+f+'"][data-dist="'+d+'"][data-coltype]'));
       var visible=children.filter(function(c){{return !c.classList.contains('col-hidden');}});
       th.classList.toggle('col-hidden',visible.length===0);
       if(visible.length>0) th.setAttribute('colspan',visible.length);
@@ -2194,7 +2217,8 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
 
   window.saveFilterDefaults=function(btn){{
     var state={{}};
-    document.querySelectorAll('.stroke-cb').forEach(function(cb){{state['s_'+cb.dataset.stroke]=cb.checked;}});
+    document.querySelectorAll('.family-cb').forEach(function(cb){{state['f_'+cb.dataset.family]=cb.checked;}});
+    document.querySelectorAll('.dist-cb').forEach(function(cb){{state['d_'+cb.dataset.dist]=cb.checked;}});
     document.querySelectorAll('.coltype-cb').forEach(function(cb){{state['c_'+cb.dataset.coltype]=cb.checked;}});
     document.querySelectorAll('input[onchange*="toggleAgeGroup"]').forEach(function(cb){{
       var ms=cb.getAttribute('onchange').match(/'(\d+)'/g);
@@ -2214,8 +2238,11 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
     try{{raw=localStorage.getItem(_STORAGE_KEY);}}catch(e){{return;}}
     if(!raw) return;
     var state=JSON.parse(raw);
-    document.querySelectorAll('.stroke-cb').forEach(function(cb){{
-      if('s_'+cb.dataset.stroke in state) cb.checked=state['s_'+cb.dataset.stroke];
+    document.querySelectorAll('.family-cb').forEach(function(cb){{
+      if('f_'+cb.dataset.family in state) cb.checked=state['f_'+cb.dataset.family];
+    }});
+    document.querySelectorAll('.dist-cb').forEach(function(cb){{
+      if('d_'+cb.dataset.dist in state) cb.checked=state['d_'+cb.dataset.dist];
     }});
     document.querySelectorAll('.coltype-cb').forEach(function(cb){{
       if('c_'+cb.dataset.coltype in state) cb.checked=state['c_'+cb.dataset.coltype];
@@ -2264,7 +2291,7 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
       var _sw=document.querySelector('.swimmer-select');
       if(_sw){{_sw.value=_urlSwimmer;filterSwimmer(_urlSwimmer);}}
     }}
-    document.querySelectorAll('.stroke-cb,.coltype-cb').forEach(function(cb){{
+    document.querySelectorAll('.family-cb,.dist-cb,.coltype-cb').forEach(function(cb){{
       cb.addEventListener('change',applyFilters);
     }});
     // Select all / none helpers
@@ -2337,12 +2364,16 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
   <button class="settings-toggle" onclick="toggleSettings(this)">⚙️ Filter columns ▼</button>
   <div class="settings-body" id="settings-body">
     <div class="settings-section">
-      <h3>Strokes &amp; distances</h3>
-      <div class="checks">{stroke_checks}</div>
+      <h3>Strokes</h3>
+      <div class="checks">{family_checks}</div>
       <div class="select-btns">
         <button data-val="all">All</button>
         <button data-val="none">None</button>
       </div>
+    </div>
+    <div class="settings-section">
+      <h3>Distances</h3>
+      <div class="checks">{dist_checks}</div>
     </div>
     <div class="settings-section">
       <h3>Column type</h3>
@@ -2923,10 +2954,9 @@ def main():
         margot_peer_rows_by_yob[_yob] = build_peer_rows(_sws)
         _all_margot_peer_swimmers += list(_sws)
         all_peer_histories.update(_ph or {})
-        if _yob in (2013, 2015):  # only these have dedicated spreadsheet qual tabs
-            _aq = read_age_group_quals(_yob)
-            if _aq:
-                age_group_quals[_yob] = _aq
+        _aq = read_age_group_quals(_yob)
+        if _aq:
+            age_group_quals[_yob] = _aq
 
     build_html(rows, run_time, history=history, quals=quals,
                prev_bests=prev_bests, peer_histories=all_peer_histories,
@@ -2982,6 +3012,7 @@ def main():
     ]
     ava_peer_rows_by_yob = {}
     all_ava_peer_histories = {**(ava_peer_histories or {})}
+    ava_age_group_quals = {}
     _all_ava_peer_swimmers = []
     for _yob, _cfg, _hist in _cwsc_peers:
         if not _cfg.exists():
@@ -2998,15 +3029,19 @@ def main():
         ava_peer_rows_by_yob[_yob] = build_peer_rows(_sws)
         _all_ava_peer_swimmers += list(_sws)
         all_ava_peer_histories.update(_ph or {})
+        _aq = read_age_group_quals(_yob)
+        if _aq:
+            ava_age_group_quals[_yob] = _aq
 
     build_ava_xlsx(ava_swimmers)
     ava_quals = read_ava_quals()
     build_html(ava_rows, run_time,
                history=ava_history, quals=ava_quals, prev_bests=None,
                html_path=AVA_HTML_PATH,
-               title="CWSC — Swim Result Tracker",
+               title="CWSC — Swim Results Tracker",
                peer_histories=all_ava_peer_histories,
                peer_rows_by_yob=ava_peer_rows_by_yob,
+               age_group_quals=ava_age_group_quals,
                home_url="cwsc.html",
                manifest="cwsc_u14_manifest.json")
 
@@ -3099,7 +3134,7 @@ def main():
             "function _galaSlug(s){return s.toLowerCase().replace(/ /g,'-').replace(/→/g,'-');}\n"
             "function applyGalaFilter(galaName){\n"
             "  if(!galaName){\n"
-            "    document.querySelectorAll('.stroke-cb').forEach(function(cb){cb.checked=true;});\n"
+            "    document.querySelectorAll('.family-cb,.dist-cb').forEach(function(cb){cb.checked=true;});\n"
             "    document.querySelectorAll('.coltype-cb').forEach(function(cb){cb.checked=true;});\n"
             "  } else {\n"
             "    var gala=GALAS_DATA.find(function(g){return g.name===galaName;});\n"
@@ -3107,8 +3142,17 @@ def main():
             "    var allEvs=[];\n"
             "    Object.values(gala.entries).forEach(function(evs){allEvs=allEvs.concat(evs);});\n"
             "    var evSlugs=allEvs.map(function(e){return _galaSlug(e);});\n"
-            "    document.querySelectorAll('.stroke-cb').forEach(function(cb){\n"
-            "      cb.checked=evSlugs.indexOf(cb.dataset.stroke)!==-1;\n"
+            "    var activeFamilies={},activeDists={};\n"
+            "    evSlugs.forEach(function(s){\n"
+            "      var parts=s.split('-'),dist=parseInt(parts[0]),fam=parts.slice(1).join('-');\n"
+            "      activeFamilies[fam]=true;\n"
+            "      activeDists[dist<=50?'50m':(dist<=100?'100m':'200mp')]=true;\n"
+            "    });\n"
+            "    document.querySelectorAll('.family-cb').forEach(function(cb){\n"
+            "      cb.checked=!!activeFamilies[cb.dataset.family];\n"
+            "    });\n"
+            "    document.querySelectorAll('.dist-cb').forEach(function(cb){\n"
+            "      cb.checked=!!activeDists[cb.dataset.dist];\n"
             "    });\n"
             "    var c=gala.course;\n"
             "    document.querySelectorAll('.coltype-cb').forEach(function(cb){\n"
@@ -3118,7 +3162,7 @@ def main():
             "      else cb.checked=true;\n"
             "    });\n"
             "  }\n"
-            "  var _cb=document.querySelector('.stroke-cb');\n"
+            "  var _cb=document.querySelector('.family-cb');\n"
             "  if(_cb)_cb.dispatchEvent(new Event('change'));\n"
             "}\n"
             "</script>"
