@@ -1436,12 +1436,6 @@ def build_combined_page(groups_data, run_time, all_histories=None):
   .arena-rank-2{{background:#856404;color:white}}
   .arena-rank-3{{background:#d35400;color:white}}
   .arena-rank-4{{background:#7f8c8d;color:white}}
-  .arena-rank-5{{background:#bdc3c7;color:#555}}
-  .arena-rank-6{{background:#bdc3c7;color:#555}}
-  .arena-rank-7{{background:#bdc3c7;color:#555}}
-  .arena-rank-8{{background:#bdc3c7;color:#555}}
-  .arena-team-label{{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#888;margin:6px 0 3px;padding-top:5px;border-top:1px solid #eee}}
-  .arena-team-label:first-child{{border-top:none;margin-top:0;padding-top:0}}
   /* Performance filters */
   .perf-toggle{{display:inline-flex;align-items:center;gap:4px;font-size:11px;cursor:pointer;color:#2e4057}}
   .perf-radio{{display:inline-flex;align-items:center;gap:2px;font-size:11px;cursor:pointer;padding:2px 6px;border:1px solid #ddd;border-radius:10px;margin:0 1px}}
@@ -1776,8 +1770,8 @@ def build_combined_page(groups_data, run_time, all_histories=None):
     if(!checkedYobs.length){{alert('No age groups selected.');return;}}
     var genders=_selGender==='both'?['F','M']:[_selGender];
 
-    // Helper: top 8 for a slug from an array of rows
-    function getTop8(rows,slug){{
+    // Helper: top 4 for a slug from an array of rows
+    function getTop4(rows,slug){{
       var cands=[];
       rows.forEach(function(row){{
         var tdSC=row.querySelector('td[data-stroke="'+slug+'"][data-coltype="sc"]');
@@ -1799,26 +1793,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
         cands.push({{name:row.querySelector('td.name').textContent.trim(),secs:bestSecs,time:bestTime,source:source,date:bestDate}});
       }});
       cands.sort(function(a,b){{return a.secs-b.secs;}});
-      return cands.slice(0,8);
-    }}
-
-    // Helper: render one team section within a card
-    function renderTeam(swimmers,offset){{
-      var html='';
-      swimmers.forEach(function(sw,i){{
-        var rank=offset+i+1;
-        var srcClass=sw.source==='SC'?'arena-src-sc':'arena-src-lcsc';
-        html+='<div class="arena-swimmer">';
-        html+='<div class="arena-rank arena-rank-'+rank+'">'+rank+'</div>';
-        html+='<div class="arena-swimmer-detail">';
-        html+='<div class="arena-name">'+sw.name+'</div>';
-        html+='<div class="arena-swimmer-meta">';
-        html+='<span class="arena-time">'+sw.time+'</span>';
-        html+='<span class="arena-src-badge '+srcClass+'">'+sw.source+'</span>';
-        if(sw.date) html+='<span class="arena-date">'+sw.date+'</span>';
-        html+='</div></div></div>';
-      }});
-      return html;
+      return cands.slice(0,4);
     }}
 
     // Helper: render event cards for a set of rows
@@ -1828,21 +1803,25 @@ def build_combined_page(groups_data, run_time, all_histories=None):
         if(!visibleFamKeys[fam.key]||fam.key==='im') return;
         fam.slugs.forEach(function(slug){{
           if(slug.indexOf('50-')!==0||!existingSlugs[slug]) return;
-          var top8=getTop8(rows,slug);
-          var aTeam=top8.slice(0,4);
-          var bTeam=top8.slice(4);
+          var top4=getTop4(rows,slug);
           var strokeName=(_STROKE_NAMES&&_STROKE_NAMES[slug])||slug;
           html+='<div class="arena-event-card">';
           html+='<div class="arena-event-name">'+strokeName+'</div>';
-          if(!aTeam.length){{
+          if(!top4.length){{
             html+='<div class="arena-empty">No times recorded</div>';
           }}else{{
-            html+='<div class="arena-team-label">A Team</div>';
-            html+=renderTeam(aTeam,0);
-            if(bTeam.length){{
-              html+='<div class="arena-team-label">B Team</div>';
-              html+=renderTeam(bTeam,4);
-            }}
+            top4.forEach(function(sw,i){{
+              var srcClass=sw.source==='SC'?'arena-src-sc':'arena-src-lcsc';
+              html+='<div class="arena-swimmer">';
+              html+='<div class="arena-rank arena-rank-'+(i+1)+'">'+(i+1)+'</div>';
+              html+='<div class="arena-swimmer-detail">';
+              html+='<div class="arena-name">'+sw.name+'</div>';
+              html+='<div class="arena-swimmer-meta">';
+              html+='<span class="arena-time">'+sw.time+'</span>';
+              html+='<span class="arena-src-badge '+srcClass+'">'+sw.source+'</span>';
+              if(sw.date) html+='<span class="arena-date">'+sw.date+'</span>';
+              html+='</div></div></div>';
+            }});
           }}
           html+='</div>';
         }});
@@ -2115,7 +2094,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
 <div id="status-bar">
   <span id="swimmer-count"></span>
   <button class="action-btn" id="markers-btn" onclick="toggleArrows(this)">Hide markers</button>
-  <button class="action-btn" onclick="showArenaSelection()" style="background:#1565C0;color:white;border-color:#1565C0;font-weight:600">Arena Predictor</button>
+  <button class="action-btn" onclick="showArenaSelection()" style="background:#1565C0;color:white;border-color:#1565C0;font-weight:600">Arena Shortlist</button>
   <a href="brompton_help.html" target="_blank" style="font-size:10px;color:#1565C0;text-decoration:none;border:1px solid #1565C0;border-radius:3px;padding:3px 8px">? Help</a>
 </div>
 
@@ -2131,7 +2110,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
   <div id="arena-inner">
     <div class="arena-hdr">
       <div>
-        <div class="arena-title">Arena Predictor</div>
+        <div class="arena-title">Arena Shortlist</div>
         <div id="arena-subtitle" class="arena-subtitle"></div>
       </div>
       <button class="arena-close" onclick="closeArena()" title="Close">&#x2715;</button>
