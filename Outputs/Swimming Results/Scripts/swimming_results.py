@@ -1871,7 +1871,7 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
   .select-btns button{{font-size:10px;padding:2px 8px;border:1px solid #ccc;border-radius:3px;background:#f9f9f9;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}}
   .select-btns button:hover{{background:#eee}}
   /* Table */
-  .wrapper{{overflow-x:auto}}
+  .wrapper{{overflow-x:auto;background:white}}
   table{{border-collapse:collapse;white-space:nowrap;background:white;box-shadow:0 1px 4px rgba(0,0,0,.1)}}
   th,td{{border:1px solid #ddd;padding:5px 8px;text-align:center;vertical-align:middle}}
   th.stroke-header{{background:#2e75b6;color:white;font-size:11px;font-weight:600;padding:6px 4px;position:sticky;top:0;z-index:4}}
@@ -2337,7 +2337,9 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
       if(_w){{
         _w.style.overflowY='auto';
         var top=_w.getBoundingClientRect().top;
-        _w.style.maxHeight=(window.innerHeight-top-8)+'px';
+        var avail=(window.innerHeight-top-8)+'px';
+        _w.style.maxHeight=avail;
+        _w.style.minHeight=avail;
       }}
       if(_tr1&&_tr2){{
         var h=_tr1.getBoundingClientRect().height||_tr1.offsetHeight;
