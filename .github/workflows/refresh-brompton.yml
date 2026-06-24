@@ -1,0 +1,48 @@
+name: Refresh Brompton Results
+
+on:
+  schedule:
+    # Monday 22:00 UTC — SE typically publish gala results on Mondays
+    # 22:00 UTC = 22:00 GMT (winter) / 23:00 BST (summer)
+    - cron: '0 22 * * 1'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual refresh (optional)'
+        required: false
+        default: 'Manual trigger'
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install beautifulsoup4
+
+      - name: Refresh Brompton PBs and regenerate pages
+        run: |
+          cd "Outputs/Swimming Results/Brompton"
+          python3 brompton_results.py --refresh
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/brompton/ "Outputs/Swimming Results/Brompton/"
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-refresh Brompton results $(date +'%-d %b %Y')"
+            git push
+          fi

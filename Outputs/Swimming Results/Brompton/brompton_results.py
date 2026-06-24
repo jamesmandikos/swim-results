@@ -991,10 +991,49 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
     applyFilters();
   }};
 
+  /* ── Performance Filters ── */
+  var _nearStdActive=false,_nearStd='CC',_nearStdWindow=2.0,_pbFilterActive=false;
+  function applyPerformanceFilters(){{
+    if(!_nearStdActive&&!_pbFilterActive) return;
+    document.querySelectorAll('tbody tr:not(.row-hidden)').forEach(function(row){{
+      var show=true;
+      if(_nearStdActive&&show){{
+        var target='→ '+_nearStd;
+        var spans=Array.from(row.querySelectorAll('td:not(.col-hidden) .gap-next'));
+        var matches=spans.some(function(sp){{
+          var t=sp.textContent;if(t.indexOf(target)===-1) return false;
+          var m=t.match(/([\d.]+)s/);return m&&parseFloat(m[1])<=_nearStdWindow;
+        }});
+        if(!matches) show=false;
+      }}
+      if(_pbFilterActive&&show){{
+        var arrows=row.querySelectorAll('td:not(.col-hidden) .progress-arrow:not(.hidden)');
+        if(!arrows.length) show=false;
+      }}
+      if(!show) row.classList.add('row-hidden');
+    }});
+    updateCount();rerank();
+  }}
+  window.onNearStdToggle=function(cb){{
+    _nearStdActive=cb.checked;
+    var ctrl=document.getElementById('near-std-controls');
+    if(ctrl) ctrl.style.display=_nearStdActive?'inline-flex':'none';
+    applyRowFilters();
+  }};
+  window.onNearStdSlider=function(inp){{
+    _nearStdWindow=parseFloat(inp.value);
+    var lbl=document.getElementById('near-std-val');
+    if(lbl) lbl.textContent=_nearStdWindow.toFixed(1)+'s';
+    if(_nearStdActive) applyRowFilters();
+  }};
+  window.onNearStdRadio=function(val){{_nearStd=val;if(_nearStdActive) applyRowFilters();}};
+  window.onPbFilterToggle=function(cb){{_pbFilterActive=cb.checked;applyRowFilters();}};
+
   window.toggleArrows=function(btn){{
     var hidden=btn.textContent==='Hide markers';
     document.querySelectorAll('.progress-arrow,.gap-next,.qual-ind').forEach(function(el){{el.classList.toggle('hidden',hidden);}});
     btn.textContent=hidden?'Show markers':'Hide markers';
+    if(_pbFilterActive||_nearStdActive) applyRowFilters();
   }};
 
   function loadFilterDefaults(){{
@@ -1436,6 +1475,17 @@ def build_combined_page(groups_data, run_time, all_histories=None):
   .arena-rank-2{{background:#856404;color:white}}
   .arena-rank-3{{background:#d35400;color:white}}
   .arena-rank-4{{background:#7f8c8d;color:white}}
+  .arena-rank-5{{background:#bdc3c7;color:#555}}
+  .arena-rank-6{{background:#bdc3c7;color:#555}}
+  .arena-rank-7{{background:#bdc3c7;color:#555}}
+  .arena-rank-8{{background:#bdc3c7;color:#555}}
+  .arena-team-label{{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#888;margin:6px 0 3px;padding-top:5px;border-top:1px solid #eee}}
+  .arena-team-label:first-child{{border-top:none;margin-top:0;padding-top:0}}
+  /* Performance filters */
+  .perf-toggle{{display:inline-flex;align-items:center;gap:4px;font-size:11px;cursor:pointer;color:#2e4057}}
+  .perf-radio{{display:inline-flex;align-items:center;gap:2px;font-size:11px;cursor:pointer;padding:2px 6px;border:1px solid #ddd;border-radius:10px;margin:0 1px}}
+  .perf-radio:has(input:checked){{border-color:#1565C0;background:#e8f0fe;color:#1565C0;font-weight:600}}
+  #near-std-slider{{accent-color:#1565C0;vertical-align:middle}}
   .arena-swimmer-detail{{flex:1;min-width:0}}
   .arena-name{{font-size:11px;font-weight:600;color:#1a3a5c;word-break:break-word;line-height:1.3}}
   .arena-swimmer-meta{{display:flex;align-items:center;gap:4px;margin-top:2px;flex-wrap:wrap}}
@@ -1672,11 +1722,13 @@ def build_combined_page(groups_data, run_time, all_histories=None):
         td.appendChild(sp);
       }});
     }});
+    applyPerformanceFilters();
   }};
   window.toggleArrows=function(btn){{
     var hidden=btn.textContent==='Hide markers';
     document.querySelectorAll('.progress-arrow,.gap-next,.qual-ind').forEach(function(el){{el.classList.toggle('hidden',hidden);}});
     btn.textContent=hidden?'Show markers':'Hide markers';
+    if(_pbFilterActive||_nearStdActive) applyRowFilters();
   }};
   var _initSticky;
   window.toggleFilters=function(){{
@@ -1726,8 +1778,8 @@ def build_combined_page(groups_data, run_time, all_histories=None):
     if(!checkedYobs.length){{alert('No age groups selected.');return;}}
     var genders=_selGender==='both'?['F','M']:[_selGender];
 
-    // Helper: top 4 for a slug from an array of rows
-    function getTop4(rows,slug){{
+    // Helper: top 8 for a slug from an array of rows
+    function getTop8(rows,slug){{
       var cands=[];
       rows.forEach(function(row){{
         var tdSC=row.querySelector('td[data-stroke="'+slug+'"][data-coltype="sc"]');
@@ -1749,7 +1801,26 @@ def build_combined_page(groups_data, run_time, all_histories=None):
         cands.push({{name:row.querySelector('td.name').textContent.trim(),secs:bestSecs,time:bestTime,source:source,date:bestDate}});
       }});
       cands.sort(function(a,b){{return a.secs-b.secs;}});
-      return cands.slice(0,4);
+      return cands.slice(0,8);
+    }}
+
+    // Helper: render one team section within a card
+    function renderTeam(swimmers,offset){{
+      var html='';
+      swimmers.forEach(function(sw,i){{
+        var rank=offset+i+1;
+        var srcClass=sw.source==='SC'?'arena-src-sc':'arena-src-lcsc';
+        html+='<div class="arena-swimmer">';
+        html+='<div class="arena-rank arena-rank-'+rank+'">'+rank+'</div>';
+        html+='<div class="arena-swimmer-detail">';
+        html+='<div class="arena-name">'+sw.name+'</div>';
+        html+='<div class="arena-swimmer-meta">';
+        html+='<span class="arena-time">'+sw.time+'</span>';
+        html+='<span class="arena-src-badge '+srcClass+'">'+sw.source+'</span>';
+        if(sw.date) html+='<span class="arena-date">'+sw.date+'</span>';
+        html+='</div></div></div>';
+      }});
+      return html;
     }}
 
     // Helper: render event cards for a set of rows
@@ -1759,25 +1830,21 @@ def build_combined_page(groups_data, run_time, all_histories=None):
         if(!visibleFamKeys[fam.key]||fam.key==='im') return;
         fam.slugs.forEach(function(slug){{
           if(slug.indexOf('50-')!==0||!existingSlugs[slug]) return;
-          var top4=getTop4(rows,slug);
+          var top8=getTop8(rows,slug);
+          var aTeam=top8.slice(0,4);
+          var bTeam=top8.slice(4);
           var strokeName=(_STROKE_NAMES&&_STROKE_NAMES[slug])||slug;
           html+='<div class="arena-event-card">';
           html+='<div class="arena-event-name">'+strokeName+'</div>';
-          if(!top4.length){{
+          if(!aTeam.length){{
             html+='<div class="arena-empty">No times recorded</div>';
           }}else{{
-            top4.forEach(function(sw,i){{
-              var srcClass=sw.source==='SC'?'arena-src-sc':'arena-src-lcsc';
-              html+='<div class="arena-swimmer">';
-              html+='<div class="arena-rank arena-rank-'+(i+1)+'">'+(i+1)+'</div>';
-              html+='<div class="arena-swimmer-detail">';
-              html+='<div class="arena-name">'+sw.name+'</div>';
-              html+='<div class="arena-swimmer-meta">';
-              html+='<span class="arena-time">'+sw.time+'</span>';
-              html+='<span class="arena-src-badge '+srcClass+'">'+sw.source+'</span>';
-              if(sw.date) html+='<span class="arena-date">'+sw.date+'</span>';
-              html+='</div></div></div>';
-            }});
+            html+='<div class="arena-team-label">A Team</div>';
+            html+=renderTeam(aTeam,0);
+            if(bTeam.length){{
+              html+='<div class="arena-team-label">B Team</div>';
+              html+=renderTeam(bTeam,4);
+            }}
           }}
           html+='</div>';
         }});
@@ -2028,6 +2095,20 @@ def build_combined_page(groups_data, run_time, all_histories=None):
       <button id="swimmer-clear" onclick="clearSwimmer()"
               style="display:none;padding:3px 10px;border:1px solid #ccc;border-radius:20px;font-size:11px;background:#f9f9f9;cursor:pointer;color:#555">✕ Clear</button>
     </div>
+    <div class="filter-row" id="perf-filter-row">
+      <span class="filter-label">Performance</span>
+      <label class="perf-toggle"><input type="checkbox" id="near-std-cb" onchange="onNearStdToggle(this)"> Near next standard</label>
+      <span id="near-std-controls" style="display:none;align-items:center;gap:5px;flex-wrap:wrap">
+        <label class="perf-radio"><input type="radio" name="near-std" value="CC" checked onchange="onNearStdRadio('CC')"> CC</label>
+        <label class="perf-radio"><input type="radio" name="near-std" value="CQ" onchange="onNearStdRadio('CQ')"> CQ</label>
+        <label class="perf-radio"><input type="radio" name="near-std" value="RC" onchange="onNearStdRadio('RC')"> RC</label>
+        <label class="perf-radio"><input type="radio" name="near-std" value="RQ" onchange="onNearStdRadio('RQ')"> RQ</label>
+        <span style="font-size:10px;color:#555;margin-left:4px">within</span>
+        <input type="range" id="near-std-slider" min="0.5" max="5" step="0.5" value="2" oninput="onNearStdSlider(this)">
+        <span id="near-std-val" style="font-size:10px;font-weight:700;color:#1565C0;min-width:28px">2.0s</span>
+      </span>
+      <label class="perf-toggle" style="margin-left:12px"><input type="checkbox" id="pb-filter-cb" onchange="onPbFilterToggle(this)"> PB at most recent meet</label>
+    </div>
   </div>
 </div>
 
@@ -2035,7 +2116,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
 <div id="status-bar">
   <span id="swimmer-count"></span>
   <button class="action-btn" id="markers-btn" onclick="toggleArrows(this)">Hide markers</button>
-  <button class="action-btn" onclick="showArenaSelection()" style="background:#1565C0;color:white;border-color:#1565C0;font-weight:600">Arena Shortlist</button>
+  <button class="action-btn" onclick="showArenaSelection()" style="background:#1565C0;color:white;border-color:#1565C0;font-weight:600">Arena Predictor</button>
   <a href="brompton_help.html" target="_blank" style="font-size:10px;color:#1565C0;text-decoration:none;border:1px solid #1565C0;border-radius:3px;padding:3px 8px">? Help</a>
 </div>
 
@@ -2051,7 +2132,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
   <div id="arena-inner">
     <div class="arena-hdr">
       <div>
-        <div class="arena-title">Arena Shortlist</div>
+        <div class="arena-title">Arena Predictor</div>
         <div id="arena-subtitle" class="arena-subtitle"></div>
       </div>
       <button class="arena-close" onclick="closeArena()" title="Close">&#x2715;</button>

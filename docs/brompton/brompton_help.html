@@ -137,17 +137,34 @@
 </ul>
 <p>Ranking is recalculated any time filters change or a column is sorted.</p>
 
-<h2>Arena Shortlist</h2>
-<p>The <strong>Arena Shortlist</strong> button (in the status bar) generates a shortlist of the four fastest swimmers for every 50m event, based on the selected age and gender filters.</p>
+<h2>Performance Filters</h2>
+<p>The <strong>Performance</strong> filter row (in the filter panel) contains two additional filters for coaches:</p>
+
+<div class="card">
+  <div class="card-title">Near Next Standard</div>
+  <p>Tick <strong>Near next standard</strong> to show only swimmers who are within a chosen time of their next qualifying standard. Set the target standard (CC, CQ, RC, or RQ) and the time window (0.5–5 seconds) using the slider. The table updates immediately to show only swimmers with at least one visible event within that margin of the chosen standard.</p>
+  <p>Useful for identifying who to focus training on before an upcoming championship — for example, "show me everyone within 2 seconds of a County Qualifier".</p>
+</div>
+
+<div class="card">
+  <div class="card-title">PB at Most Recent Meet</div>
+  <p>Tick <strong>PB at most recent meet</strong> to show only swimmers who set a personal best at their last recorded competition. This uses the same logic as the ▲ improvement markers — a swimmer appears if their most recent recorded swim equals their current PB.</p>
+  <p>Useful immediately after a gala to quickly see who improved.</p>
+</div>
+
+<p>Both performance filters work on top of the existing gender, age, and stroke filters. Clear them by unticking the checkboxes.</p>
+
+<h2>Arena Predictor</h2>
+<p>The <strong>Arena Predictor</strong> button (in the status bar) generates A Team and B Team selections for every 50m sprint event, based on the selected age and gender filters.</p>
 <p>To use it:</p>
 <ol>
   <li>Set your gender and age filters to the group you want to select from.</li>
-  <li>Click <strong>Arena Shortlist</strong>.</li>
-  <li>The panel shows up to 4 swimmers for each 50m event (50 Back, 50 Free, 50 Fly, 50 Breast), ranked fastest to slowest and grouped by age. The faster of SC and LC→SC is used automatically, with the source shown.</li>
+  <li>Click <strong>Arena Predictor</strong>.</li>
+  <li>The panel shows up to 8 swimmers for each 50m event (50 Back, 50 Free, 50 Fly, 50 Breast), split into <strong>A Team</strong> (ranks 1–4) and <strong>B Team</strong> (ranks 5–8). The faster of SC and LC→SC is used automatically, with the source shown.</li>
   <li>Click <strong>Print</strong> to send to your printer or save as PDF.</li>
 </ol>
-<div class="note">Only 50m events are included in the shortlist — IM and distance events are excluded as Arena races cover sprints only. The shortlist always shows all swimmers for the selected age groups regardless of any active swimmer name filter.</div>
-<div class="note"><strong>The Arena Shortlist does not constitute Arena team selection.</strong> It is a data-driven reference tool based on recorded PBs only. Final selection is at the coach's discretion and may take into account factors such as recent form, training performance, entry limits, relay considerations, and other criteria not reflected in the rankings.</div>
+<div class="note">Only 50m events are included — IM and distance events are excluded as Arena races cover sprints only. The predictor always shows all swimmers for the selected age groups regardless of any active swimmer name filter.</div>
+<div class="note"><strong>The Arena Predictor does not constitute Arena team selection.</strong> It is a data-driven reference tool based on recorded PBs only. Final selection is at the coach's discretion and may take into account factors such as recent form, training performance, entry limits, relay considerations, and other criteria not reflected in the rankings.</div>
 
 <h2>Sorting</h2>
 <p>Click any course sub-header (e.g. <strong>SC</strong> under 50 Back) to sort all visible rows by that event time, fastest first. Click again to reverse. The <strong>Posn</strong> column always reflects the current sort order.</p>
