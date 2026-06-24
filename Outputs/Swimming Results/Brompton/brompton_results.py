@@ -307,7 +307,14 @@ def next_qual_span(secs, qt_d):
 # ── HTML cell builder ─────────────────────────────────────────────────────────
 RANK_COLORS = {"rank-1":"#d4edda","rank-2":"#fff3cd","rank-3":"#fde8d8"}
 
-def build_cell(event, course, bests, prev_bests_swimmer, qt_d, is_lc_sc=False, swimmer_name=""):
+def _sort_date(swim):
+    try:
+        p = swim["date"].split("/")
+        return (int("20" + p[2]), int(p[1]), int(p[0]))
+    except:
+        return (0, 0, 0)
+
+def build_cell(event, course, bests, swimmer_hist, qt_d, is_lc_sc=False, swimmer_name=""):
     """Build a single <td> element. Returns HTML string."""
     if is_lc_sc:
         lc_data = bests.get((event, "LC"))
@@ -333,16 +340,28 @@ def build_cell(event, course, bests, prev_bests_swimmer, qt_d, is_lc_sc=False, s
     date_str = data["date_str"]
     meet_str = _html.escape(data.get("meet_str", ""))
 
-    # Progress arrow: compare vs prev PB
-    prev = prev_bests_swimmer.get((event, course))
+    # Progress arrow: show ▲ if most recent recorded swim in this event IS the current PB.
+    # Delta = improvement vs the previous best before that swim.
     arrow_html = ""
-    if prev:
-        prev_secs = prev.get("time_secs") or to_secs(prev.get("time_str"))
-        if prev_secs and secs and secs < prev_secs:
-            delta = prev_secs - secs
-            arrow_html = (f'<span class="progress-arrow" title="PB improved"> ▲'
-                          f'<span style="font-size:9px;font-weight:normal;opacity:0.75"> -{delta:.2f}s</span>'
-                          f'</span>')
+    if swimmer_hist and secs:
+        event_hist = swimmer_hist.get(f"{event}|{course}", [])
+        if event_hist:
+            swims_sorted = sorted(event_hist, key=_sort_date)
+            most_recent = swims_sorted[-1]
+            mr_secs = to_secs(most_recent["time"])
+            if mr_secs and abs(mr_secs - secs) < 0.01:
+                prev_pb = None
+                for sw in swims_sorted[:-1]:
+                    s_val = to_secs(sw["time"])
+                    if s_val and (prev_pb is None or s_val < prev_pb):
+                        prev_pb = s_val
+                if prev_pb and prev_pb > secs:
+                    delta = prev_pb - secs
+                    arrow_html = (f'<span class="progress-arrow" title="PB set at most recent meet">'
+                                  f' ▲<span style="font-size:9px;font-weight:normal;opacity:0.75"> -{delta:.2f}s</span>'
+                                  f'</span>')
+                else:
+                    arrow_html = '<span class="progress-arrow" title="PB set at most recent meet"> ▲</span>'
 
     qual_html = qual_ind_spans(secs, qt_d)
     gap_html  = next_qual_span(secs, qt_d)
@@ -759,7 +778,7 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
     for s in swimmers:
         sname = s["name"]
         bests = all_bests.get(sname, {})
-        prev  = get_prev(group_key, sname)
+        swimmer_hist = (all_histories or {}).get(sname, {})
 
         # Best time for first event to pre-sort (optional; just build row)
         _safe_sname = sname.replace("'", "\\'")
@@ -774,11 +793,11 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
                 r = rank_map.get((stroke,course),{}).get(sname)
                 rank_cls = f"rank-{r}" if r and r <= 3 else ""
                 if course == "LC→SC":
-                    cell = build_cell(stroke, course, bests, prev, {}, is_lc_sc=True)
+                    cell = build_cell(stroke, course, bests, swimmer_hist, {}, is_lc_sc=True)
                     # inject rank class
                     cell = cell.replace('class="converted"', f'class="converted {rank_cls}"', 1) if rank_cls else cell
                 else:
-                    cell = build_cell(stroke, course, bests, prev,
+                    cell = build_cell(stroke, course, bests, swimmer_hist,
                                       qt_data.get(f"{stroke}|{course}", {}),
                                       swimmer_name=sname)
                     if rank_cls:
@@ -1098,7 +1117,7 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
 <div class="subtitle">Generated {run_ts} · {len(swimmers)} swimmers</div>
 
 <div id="progress-bar">
-  <span style="font-size:11px;color:#27ae60;font-weight:600">▲ Improvement since last run</span>
+  <span style="font-size:11px;color:#27ae60;font-weight:600">▲ PB at most recent meet</span>
   <button onclick="toggleArrows(this)" style="font-size:10px;padding:2px 10px;border:1px solid #ccc;border-radius:3px;background:#f9f9f9;cursor:pointer">Hide markers</button>
 </div>
 
@@ -1205,7 +1224,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
         for s in swimmers:
             sname = s["name"]
             bests = all_bests.get(sname, {})
-            prev  = get_prev(gkey, sname)
+            swimmer_hist = (all_histories or {}).get(sname, {})
             _safe_sname = sname.replace("'", "\\'")
             cells = [
                 f'<td class="name" onclick="showPBSummary(\'{_safe_sname}\')" style="cursor:pointer" title="View {sname}\'s PB summary">{sname}</td>',
@@ -1217,11 +1236,11 @@ def build_combined_page(groups_data, run_time, all_histories=None):
                     r = rank_map.get((stroke,course),{}).get(sname)
                     rank_cls = f"rank-{r}" if r and r <= 3 else ""
                     if course == "LC→SC":
-                        cell = build_cell(stroke, course, bests, prev, {}, is_lc_sc=True)
+                        cell = build_cell(stroke, course, bests, swimmer_hist, {}, is_lc_sc=True)
                         if rank_cls:
                             cell = cell.replace('class="converted"', f'class="converted {rank_cls}"', 1)
                     else:
-                        cell = build_cell(stroke, course, bests, prev,
+                        cell = build_cell(stroke, course, bests, swimmer_hist,
                                           qt_data.get(f"{stroke}|{course}", {}),
                                           swimmer_name=sname)
                         if rank_cls:
@@ -2178,7 +2197,7 @@ def main():
                 for sname, bests in all_bests.items()
             }
             cache_path.write_text(json.dumps(cache_data, indent=2))
-            save_prev_bests(group_key, all_bests)
+            # prev_bests snapshot no longer used — arrow derived from history
         else:
             print("  Using cached PBs (run with --refresh to update)")
             cache_data = json.loads(cache_path.read_text())

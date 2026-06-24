@@ -121,8 +121,9 @@
 <div class="note">History data is cached from swimmingresults.org. Swimmers in all age groups (2009–2017, both genders) have full history data. If a swimmer's history appears empty, they may have no times recorded on swimmingresults.org yet.</div>
 
 <h2>Improvement Markers</h2>
-<p>A <span class="arrow-ex">▲ -0.45s</span> marker appears when a swimmer's current PB is faster than the time recorded during the previous data refresh. This makes recent improvements easy to spot at a glance.</p>
-<div class="note">Improvement markers reflect progress since the last time the data was fetched from swimmingresults.org, not since a specific meet.</div>
+<p>A <span class="arrow-ex">▲ -0.45s</span> marker appears when a swimmer's most recent recorded swim in that event is their current PB — meaning they set a personal best at their last time competing in that event. The delta shows how much faster they went compared to their previous best.</p>
+<p>The marker clears automatically when the swimmer next competes in that event, regardless of outcome. If they go faster, the marker reappears with an updated delta. If they go slower, it stays off until they PB again.</p>
+<div class="note">Improvement markers are derived from recorded swim history. A swimmer with no history on swimmingresults.org will not show ▲ markers even if their current PB is recent.</div>
 
 <h2>Meet Name</h2>
 <p>Each time cell shows the date the PB was set. To see the meet name, tap the cell to open the <strong>History Chart</strong> — the swims table lists every recorded time alongside its date and meet name.</p>

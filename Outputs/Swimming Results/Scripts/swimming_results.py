@@ -1528,7 +1528,7 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
     ))
     progress_bar_html = (
         '<div id="progress-bar" style="margin-bottom:10px;display:flex;align-items:center;gap:12px">'
-        '<span style="font-size:11px;color:#27ae60;font-weight:600">▲ New PBs since last run</span>'
+        '<span style="font-size:11px;color:#27ae60;font-weight:600">▲ PB at most recent meet</span>'
         '<button onclick="toggleArrows(this)" '
         'style="font-size:10px;padding:2px 10px;border:1px solid #ccc;border-radius:3px;'
         'background:#f9f9f9;cursor:pointer">Hide markers</button>'
