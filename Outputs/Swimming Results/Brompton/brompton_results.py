@@ -1901,7 +1901,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
       var sRow=Array.from(document.querySelectorAll('tbody tr')).find(function(r){{return (r.dataset.swimmer||'')===_selSwimmer;}});
       if(sRow){{
         var yob=sRow.dataset.yob;
-        if(yob){{var cb=document.querySelector('.age-cb[value="'+yob+'"]');if(cb&&!cb.checked)cb.checked=true;}}
+        if(yob){{document.querySelectorAll('.age-cb').forEach(function(cb){{cb.checked=cb.value===yob;}});}}
         var rowGender=sRow.dataset.gender;
         if(rowGender&&_selGender!=='both'&&_selGender!==rowGender){{
           _selGender=rowGender;
