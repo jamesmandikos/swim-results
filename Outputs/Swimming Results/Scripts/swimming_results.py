@@ -1705,16 +1705,16 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
                     _ql = _sw_qual_lists.get(swimmer["name"], {})
                     if cq == "Q":
                         _tip = "County QT: " + (", ".join(_ql.get("CQ", [])) or "none")
-                        parts.append(f'<span class="qi-q" title="{_tip}">CQ</span>')
+                        parts.append(f'<span class="qi-q" title="{_tip}">✓ CQ</span>')
                     elif cq == "C":
                         _tip = "County Cons: " + (", ".join(_ql.get("CC", [])) or "none")
-                        parts.append(f'<span class="qi-c" title="{_tip}">CC</span>')
+                        parts.append(f'<span class="qi-c" title="{_tip}">✓ CC</span>')
                     if rq == "Q":
                         _tip = "Regional QT: " + (", ".join(_ql.get("RQ", [])) or "none")
-                        parts.append(f'<span class="qi-rq" title="{_tip}">RQ</span>')
+                        parts.append(f'<span class="qi-rq" title="{_tip}">✓ RQ</span>')
                     elif rq == "C":
                         _tip = "Regional Cons: " + (", ".join(_ql.get("RC", [])) or "none")
-                        parts.append(f'<span class="qi-rc" title="{_tip}">RC</span>')
+                        parts.append(f'<span class="qi-rc" title="{_tip}">✓ RC</span>')
                     if parts:
                         qual_ind = (
                             '<span class="qual-ind">'
@@ -1914,9 +1914,9 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
   .qual-ind{{display:block;margin-top:2px;font-size:9px;line-height:1.2}}
   .qual-ind.hidden{{display:none}}
   .qi-q{{color:#27ae60;font-weight:700}}
-  .qi-c{{color:#e67e22;font-weight:600}}
-  .qi-rq{{color:#2980b9;font-weight:700}}
-  .qi-rc{{color:#8e44ad;font-weight:600}}
+  .qi-c{{color:#27ae60;font-weight:600}}
+  .qi-rq{{color:#27ae60;font-weight:700}}
+  .qi-rc{{color:#27ae60;font-weight:600}}
   .qi-sep{{color:#ccc;margin:0 3px}}
   /* ── PB Summary modal ── */
   #pb-modal{{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:10000;
@@ -2056,10 +2056,10 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
   var _STROKE_NAMES={stroke_names_js};
   function _nextQual(secs,qd){{
     var cc=qd.county_cons,cq=qd.county_qt,rc=qd.region_cons,rq=qd.region_qt;
-    if(rq&&secs<=rq) return null;
-    if(rc&&secs<=rc) return rq?{{label:'RQ',gap:secs-rq,color:'#8e44ad'}}:null;
-    if(cq&&secs<=cq) return rc?{{label:'RC',gap:secs-rc,color:'#16a085'}}:null;
-    if(cc&&secs<=cc) return cq?{{label:'CQ',gap:secs-cq,color:'#e67e22'}}:null;
+    if(rq&&secs<=rq) return {{label:'RQ',achieved:true,color:'#27ae60'}};
+    if(rc&&secs<=rc) return rq?{{label:'RQ',gap:secs-rq,color:'#8e44ad'}}:{{label:'RC',achieved:true,color:'#27ae60'}};
+    if(cq&&secs<=cq) return rc?{{label:'RC',gap:secs-rc,color:'#16a085'}}:{{label:'CQ',achieved:true,color:'#27ae60'}};
+    if(cc&&secs<=cc) return cq?{{label:'CQ',gap:secs-cq,color:'#e67e22'}}:{{label:'CC',achieved:true,color:'#27ae60'}};
     return cc?{{label:'CC',gap:secs-cc,color:'#e67e22'}}:null;
   }}
   window.updateGaps=function(){{
@@ -2076,7 +2076,7 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
         var sp=document.createElement('span');
         sp.className='gap-next'+(gapsHidden?' hidden':'');
         sp.style.color=info.color;
-        sp.textContent='-'+Math.abs(info.gap).toFixed(2)+'s → '+info.label;
+        sp.textContent=info.achieved?'✓ '+info.label:'-'+Math.abs(info.gap).toFixed(2)+'s → '+info.label;
         td.appendChild(sp);
       }});
     }});
