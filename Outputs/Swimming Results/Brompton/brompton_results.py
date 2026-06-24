@@ -1284,7 +1284,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
     thead1 += '<th rowspan="2" style="padding:8px 4px;text-align:center;font-size:10px">Posn</th>'
     thead1 += '<th rowspan="2" style="padding:8px 4px;text-align:center;font-size:10px">Age</th>'
     for stroke in stroke_names:
-        thead1 += (f'<th colspan="4" class="stroke-header" data-stroke="{SLUG[stroke]}" '
+        thead1 += (f'<th colspan="4" class="stroke-header" data-stroke="{SLUG[stroke]}" data-dist="{_dist_key(stroke)}" '
                    f'style="padding:6px 4px;text-align:center;background:#2e75b6;border-left:1px solid rgba(255,255,255,.4)">'
                    f'{stroke}</th>')
     thead1 += "</tr>"
@@ -1301,7 +1301,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
             else:
                 crs_extra = ""
             thead2 += (f'<th class="coltype-header course-{coltype}" data-coltype="{coltype}" '
-                       f'data-stroke="{SLUG[stroke]}" '
+                       f'data-stroke="{SLUG[stroke]}" data-dist="{_dist_key(stroke)}" '
                        f'style="padding:4px 6px;text-align:center;font-size:10px;cursor:pointer;{border_extra}{crs_extra}" '
                        f'onclick="sortBy(this)">{course}</th>')
     thead2 += "</tr>"
@@ -1331,6 +1331,10 @@ def build_combined_page(groups_data, run_time, all_histories=None):
     stroke_fam_html = "".join(
         f'<label class="fam-pill"><input type="checkbox" class="fam-cb" value="{s}" checked> {l}</label>'
         for s, l in [("back","Back"),("free","Free"),("fly","Fly"),("breast","Breast"),("im","IM")]
+    )
+    dist_fam_html = "".join(
+        f'<label class="fam-pill"><input type="checkbox" class="dist-cb" value="{d}" checked> {_DIST_LABEL[d]}</label>'
+        for d in ["50m", "100m", "200mp"]
     )
     course_fam_html = (
         '<label class="fam-pill"><input type="checkbox" class="crs-cb" value="sc" checked> SC</label>'
@@ -1650,19 +1654,21 @@ def build_combined_page(groups_data, run_time, all_histories=None):
     document.querySelectorAll('.fam-cb').forEach(function(cb){{
       (_FAMILY_MAP[cb.value]||[]).forEach(function(slug){{famOn[slug]=cb.checked;}});
     }});
+    var distOn={{}};
+    document.querySelectorAll('.dist-cb').forEach(function(cb){{distOn[cb.value]=cb.checked;}});
     var crsOn={{}};
     document.querySelectorAll('.crs-cb').forEach(function(cb){{crsOn[cb.value]=cb.checked;}});
     var visibleCrs=Object.keys(crsOn).filter(function(c){{return crsOn[c];}}).length||1;
     document.querySelectorAll('thead th[data-stroke]').forEach(function(th){{
       if(th.dataset.coltype){{
-        th.classList.toggle('col-hidden',!famOn[th.dataset.stroke]||!crsOn[th.dataset.coltype]);
+        th.classList.toggle('col-hidden',!famOn[th.dataset.stroke]||!distOn[th.dataset.dist]||!crsOn[th.dataset.coltype]);
       }}else{{
-        th.classList.toggle('col-hidden',!famOn[th.dataset.stroke]);
+        th.classList.toggle('col-hidden',!famOn[th.dataset.stroke]||!distOn[th.dataset.dist]);
         if(!th.classList.contains('col-hidden')) th.colSpan=visibleCrs;
       }}
     }});
     document.querySelectorAll('tbody td[data-stroke]').forEach(function(td){{
-      td.classList.toggle('col-hidden',!famOn[td.dataset.stroke]||!crsOn[td.dataset.coltype]);
+      td.classList.toggle('col-hidden',!famOn[td.dataset.stroke]||!distOn[td.dataset.dist]||!crsOn[td.dataset.coltype]);
     }});
     rerank();
     if(typeof updateGaps==='function') updateGaps();
@@ -1987,7 +1993,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
     document.querySelectorAll('.age-cb').forEach(function(cb){{
       cb.addEventListener('change',applyRowFilters);
     }});
-    document.querySelectorAll('.fam-cb,.crs-cb').forEach(function(cb){{
+    document.querySelectorAll('.fam-cb,.dist-cb,.crs-cb').forEach(function(cb){{
       cb.addEventListener('change',applyColFilters);
     }});
     /* Read URL params: ?gender=F&yob=2014&swimmer=Name&focus=Name */
@@ -2068,6 +2074,10 @@ def build_combined_page(groups_data, run_time, all_histories=None):
     <div class="filter-row">
       <span class="filter-label">Strokes</span>
       {stroke_fam_html}
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">Distances</span>
+      {dist_fam_html}
     </div>
     <div class="filter-row">
       <span class="filter-label">Course</span>

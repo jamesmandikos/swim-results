@@ -1856,7 +1856,8 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
 <link rel="apple-touch-icon" href="icon-192.png">
 <style>
   *{{box-sizing:border-box}}
-  body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;background:#f5f5f5;margin:0;padding:16px;color:#333}}
+  html{{height:100%}}
+  body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;background:#f5f5f5;margin:0;padding:16px;color:#333;height:100%;display:flex;flex-direction:column}}
   h1{{font-size:18px;font-weight:600;margin:0 0 4px;color:#1a3a5c}}
   .meta{{font-size:11px;color:#888;margin-bottom:12px}}
   /* Settings panel */
@@ -1871,7 +1872,7 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
   .select-btns button{{font-size:10px;padding:2px 8px;border:1px solid #ccc;border-radius:3px;background:#f9f9f9;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}}
   .select-btns button:hover{{background:#eee}}
   /* Table */
-  .wrapper{{overflow-x:auto;background:white}}
+  .wrapper{{overflow-x:auto;overflow-y:auto;flex:1;min-height:0;background:white}}
   table{{border-collapse:collapse;white-space:nowrap;background:white;box-shadow:0 1px 4px rgba(0,0,0,.1)}}
   th,td{{border:1px solid #ddd;padding:5px 8px;text-align:center;vertical-align:middle}}
   th.stroke-header{{background:#2e75b6;color:white;font-size:11px;font-weight:600;padding:6px 4px;position:sticky;top:0;z-index:4}}
@@ -2334,13 +2335,6 @@ def build_html(rows, run_time, history=None, quals=None, prev_bests=None,
     var _tr1=document.querySelector('thead tr:first-child');
     var _tr2=document.querySelector('thead tr:nth-child(2)');
     function _initSticky(){{
-      if(_w){{
-        _w.style.overflowY='auto';
-        var top=_w.getBoundingClientRect().top;
-        var avail=(window.innerHeight-top-8)+'px';
-        _w.style.maxHeight=avail;
-        _w.style.minHeight=avail;
-      }}
       if(_tr1&&_tr2){{
         var h=_tr1.getBoundingClientRect().height||_tr1.offsetHeight;
         Array.from(_tr2.querySelectorAll('th')).forEach(function(th){{th.style.top=h+'px';}});
