@@ -187,10 +187,6 @@ var PERSONAL_PAGES = {
 var _fromPersonal = new URLSearchParams(window.location.search).get('from') === 'personal';
 
 function _swimmerUrl(name, gender, yob){
-  if(PERSONAL_PAGES[name]){
-    var su=''; try{su=localStorage.getItem('bsc_swimmer_url')||'';}catch(e){}
-    if(_fromPersonal || su===PERSONAL_PAGES[name]) return PERSONAL_PAGES[name];
-  }
   return 'brompton_rankings.html?swimmer='+encodeURIComponent(name)+'&gender='+gender+'&yob='+yob;
 }
 
