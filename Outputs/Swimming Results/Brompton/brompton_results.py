@@ -1696,7 +1696,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
         if(!matches) show=false;
       }}
       if(_pbFilterActive&&show){{
-        if(row.dataset.hasPb!=='1') show=false;
+        if(!row.querySelector('td:not(.col-hidden) .progress-arrow')) show=false;
       }}
       if(!show) row.classList.add('row-hidden');
     }});
@@ -1973,10 +1973,6 @@ def build_combined_page(groups_data, run_time, all_histories=None):
   }};
 
   window.addEventListener('DOMContentLoaded',function(){{
-    // Tag rows that have at least one PB improvement marker
-    document.querySelectorAll('tbody tr').forEach(function(row){{
-      if(row.querySelector('.progress-arrow')) row.dataset.hasPb='1';
-    }});
     document.querySelectorAll('.age-cb').forEach(function(cb){{
       cb.addEventListener('change',applyRowFilters);
     }});
