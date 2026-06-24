@@ -359,11 +359,48 @@
     });
     applyPerformanceFilters();
   };
+  /* ── Performance Filters ── */
+  var _nearStd='none',_nearStdWindow=2.0,_pbFilterActive=false;
+  function applyPerformanceFilters(){
+    var nearActive=_nearStd!=='none';
+    if(!nearActive&&!_pbFilterActive) return;
+    document.querySelectorAll('tbody tr:not(.row-hidden)').forEach(function(row){
+      var show=true;
+      if(nearActive&&show){
+        var target='→ '+_nearStd;
+        var spans=Array.from(row.querySelectorAll('td:not(.col-hidden) .gap-next:not(.hidden)'));
+        var matches=spans.some(function(sp){
+          var t=sp.textContent;if(t.indexOf(target)===-1) return false;
+          var digits=t.match(/[\d.]+/);return digits&&parseFloat(digits[0])<=_nearStdWindow;
+        });
+        if(!matches) show=false;
+      }
+      if(_pbFilterActive&&show){
+        if(!row.querySelectorAll('td:not(.col-hidden) .progress-arrow:not(.hidden)').length) show=false;
+      }
+      if(!show) row.classList.add('row-hidden');
+    });
+    updateCount();rerank();
+  }
+  window.onNearStdRadio=function(val){
+    _nearStd=val;
+    var sl=document.getElementById('near-std-slider-wrap');
+    if(sl) sl.style.visibility=val==='none'?'hidden':'visible';
+    applyRowFilters();
+  };
+  window.onNearStdSlider=function(inp){
+    _nearStdWindow=parseFloat(inp.value);
+    var lbl=document.getElementById('near-std-val');
+    if(lbl) lbl.textContent=_nearStdWindow.toFixed(1)+'s';
+    if(_nearStd!=='none') applyRowFilters();
+  };
+  window.onPbFilterToggle=function(cb){_pbFilterActive=cb.checked;applyRowFilters();};
+
   window.toggleArrows=function(btn){
     var hidden=btn.textContent==='Hide markers';
     document.querySelectorAll('.progress-arrow,.gap-next,.qual-ind').forEach(function(el){el.classList.toggle('hidden',hidden);});
     btn.textContent=hidden?'Show markers':'Hide markers';
-    if(_pbFilterActive||_nearStdActive) applyRowFilters();
+    if(_nearStd!=='none'||_pbFilterActive) applyRowFilters();
   };
   var _initSticky;
   window.toggleFilters=function(){
@@ -695,7 +732,7 @@
 </head>
 <body>
 <h1>Brompton SC — Club Rankings</h1>
-<div class="subtitle">Generated 24 June 2026 10:50 · 172 swimmers &nbsp;·&nbsp; <a href="https://www.swimmingresults.org/12months/" target="_blank" style="color:#aaa;font-size:10px;text-decoration:none">Times via Swim England</a></div>
+<div class="subtitle">Generated 24 June 2026 11:45 · 172 swimmers &nbsp;·&nbsp; <a href="https://www.swimmingresults.org/12months/" target="_blank" style="color:#aaa;font-size:10px;text-decoration:none">Times via Swim England</a></div>
 
 <div class="filter-bar">
   <button id="filter-toggle" onclick="toggleFilters()" style="font-weight:600;font-size:12px;color:#1a3a5c;cursor:pointer;background:none;border:none;padding:0;display:flex;align-items:center;gap:6px;touch-action:manipulation;-webkit-tap-highlight-color:transparent">⚙️ Filter columns ▼</button>
@@ -732,17 +769,18 @@
     </div>
     <div class="filter-row" id="perf-filter-row">
       <span class="filter-label">Performance</span>
-      <label class="perf-toggle"><input type="checkbox" id="near-std-cb" onchange="onNearStdToggle(this)"> Near next standard</label>
-      <span id="near-std-controls" style="display:none;align-items:center;gap:5px;flex-wrap:wrap">
-        <label class="perf-radio"><input type="radio" name="near-std" value="CC" checked onchange="onNearStdRadio('CC')"> CC</label>
-        <label class="perf-radio"><input type="radio" name="near-std" value="CQ" onchange="onNearStdRadio('CQ')"> CQ</label>
-        <label class="perf-radio"><input type="radio" name="near-std" value="RC" onchange="onNearStdRadio('RC')"> RC</label>
-        <label class="perf-radio"><input type="radio" name="near-std" value="RQ" onchange="onNearStdRadio('RQ')"> RQ</label>
-        <span style="font-size:10px;color:#555;margin-left:4px">within</span>
-        <input type="range" id="near-std-slider" min="0.5" max="5" step="0.5" value="2" oninput="onNearStdSlider(this)">
+      <span style="font-size:10px;color:#888;margin-right:4px">Near standard:</span>
+      <label class="perf-radio"><input type="radio" name="near-std" value="none" checked onchange="onNearStdRadio('none')"> —</label>
+      <label class="perf-radio"><input type="radio" name="near-std" value="CC" onchange="onNearStdRadio('CC')"> CC</label>
+      <label class="perf-radio"><input type="radio" name="near-std" value="CQ" onchange="onNearStdRadio('CQ')"> CQ</label>
+      <label class="perf-radio"><input type="radio" name="near-std" value="RC" onchange="onNearStdRadio('RC')"> RC</label>
+      <label class="perf-radio"><input type="radio" name="near-std" value="RQ" onchange="onNearStdRadio('RQ')"> RQ</label>
+      <span id="near-std-slider-wrap" style="display:inline-flex;align-items:center;gap:5px;margin-left:8px;visibility:hidden">
+        <span style="font-size:10px;color:#555">within</span>
+        <input type="range" id="near-std-slider" min="0.5" max="5" step="0.5" value="2" oninput="onNearStdSlider(this)" style="width:80px;accent-color:#1565C0">
         <span id="near-std-val" style="font-size:10px;font-weight:700;color:#1565C0;min-width:28px">2.0s</span>
       </span>
-      <label class="perf-toggle" style="margin-left:12px"><input type="checkbox" id="pb-filter-cb" onchange="onPbFilterToggle(this)"> PB at most recent meet</label>
+      <label class="perf-toggle" style="margin-left:16px"><input type="checkbox" id="pb-filter-cb" onchange="onPbFilterToggle(this)"> ▲ PB at most recent meet</label>
     </div>
   </div>
 </div>

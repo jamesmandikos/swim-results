@@ -136,49 +136,10 @@
     applyFilters();
   };
 
-  /* ── Performance Filters ── */
-  var _nearStdActive=false,_nearStd='CC',_nearStdWindow=2.0,_pbFilterActive=false;
-  function applyPerformanceFilters(){
-    if(!_nearStdActive&&!_pbFilterActive) return;
-    document.querySelectorAll('tbody tr:not(.row-hidden)').forEach(function(row){
-      var show=true;
-      if(_nearStdActive&&show){
-        var target='→ '+_nearStd;
-        var spans=Array.from(row.querySelectorAll('td:not(.col-hidden) .gap-next'));
-        var matches=spans.some(function(sp){
-          var t=sp.textContent;if(t.indexOf(target)===-1) return false;
-          var m=t.match(/([\d.]+)s/);return m&&parseFloat(m[1])<=_nearStdWindow;
-        });
-        if(!matches) show=false;
-      }
-      if(_pbFilterActive&&show){
-        var arrows=row.querySelectorAll('td:not(.col-hidden) .progress-arrow:not(.hidden)');
-        if(!arrows.length) show=false;
-      }
-      if(!show) row.classList.add('row-hidden');
-    });
-    updateCount();rerank();
-  }
-  window.onNearStdToggle=function(cb){
-    _nearStdActive=cb.checked;
-    var ctrl=document.getElementById('near-std-controls');
-    if(ctrl) ctrl.style.display=_nearStdActive?'inline-flex':'none';
-    applyRowFilters();
-  };
-  window.onNearStdSlider=function(inp){
-    _nearStdWindow=parseFloat(inp.value);
-    var lbl=document.getElementById('near-std-val');
-    if(lbl) lbl.textContent=_nearStdWindow.toFixed(1)+'s';
-    if(_nearStdActive) applyRowFilters();
-  };
-  window.onNearStdRadio=function(val){_nearStd=val;if(_nearStdActive) applyRowFilters();};
-  window.onPbFilterToggle=function(cb){_pbFilterActive=cb.checked;applyRowFilters();};
-
   window.toggleArrows=function(btn){
     var hidden=btn.textContent==='Hide markers';
     document.querySelectorAll('.progress-arrow,.gap-next,.qual-ind').forEach(function(el){el.classList.toggle('hidden',hidden);});
     btn.textContent=hidden?'Show markers':'Hide markers';
-    if(_pbFilterActive||_nearStdActive) applyRowFilters();
   };
 
   function loadFilterDefaults(){
@@ -298,7 +259,7 @@
 <body>
 <a id="home-btn" href="brompton_home.html" style="position:fixed;top:12px;right:12px;z-index:9999;background:#1565C0;color:#fff;padding:7px 16px;border-radius:20px;text-decoration:none;font-size:12px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-family:-apple-system,sans-serif">← Home</a>
 <h1>Brompton SC ⭐ Female 11s (2015) — Club Rankings</h1>
-<div class="subtitle">Generated 24 June 2026 10:50 · 9 swimmers</div>
+<div class="subtitle">Generated 24 June 2026 11:45 · 9 swimmers</div>
 
 <div id="progress-bar">
   <span style="font-size:11px;color:#27ae60;font-weight:600">▲ PB at most recent meet</span>
