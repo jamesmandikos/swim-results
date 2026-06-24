@@ -195,10 +195,6 @@ function _swimmerUrl(name, gender, yob){
 }
 
 function _rankingsUrl(name, gender, yob){
-  if(PERSONAL_PAGES[name]){
-    var su=''; try{su=localStorage.getItem('bsc_swimmer_url')||'';}catch(e){}
-    if(_fromPersonal || su===PERSONAL_PAGES[name]) return PERSONAL_PAGES[name];
-  }
   return 'brompton_rankings.html?focus='+encodeURIComponent(name)+'&gender='+gender+'&yob='+yob;
 }
 
