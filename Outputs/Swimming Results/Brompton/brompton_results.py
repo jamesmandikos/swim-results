@@ -1897,6 +1897,19 @@ def build_combined_page(groups_data, run_time, all_histories=None):
     if(btn) btn.style.display=_selSwimmer?'inline-block':'none';
     var h1=document.querySelector('h1');
     if(h1) h1.textContent=_selSwimmer?'Brompton SC — '+_selSwimmer:'Brompton SC — Club Rankings';
+    if(_selSwimmer){{
+      var sRow=Array.from(document.querySelectorAll('tbody tr')).find(function(r){{return (r.dataset.swimmer||'')===_selSwimmer;}});
+      if(sRow){{
+        var yob=sRow.dataset.yob;
+        if(yob){{var cb=document.querySelector('.age-cb[value="'+yob+'"]');if(cb&&!cb.checked)cb.checked=true;}}
+        var rowGender=sRow.dataset.gender;
+        if(rowGender&&_selGender!=='both'&&_selGender!==rowGender){{
+          _selGender=rowGender;
+          ['F','M','both'].forEach(function(x){{var b=document.getElementById('gbtn-'+x);if(b)b.classList.toggle('active',x===_selGender);}});
+          updatePillCounts();
+        }}
+      }}
+    }}
     applyRowFilters();
   }};
   window.clearSwimmer=function(){{
