@@ -2064,8 +2064,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
               style="display:none;padding:3px 10px;border:1px solid #ccc;border-radius:20px;font-size:11px;background:#f9f9f9;cursor:pointer;color:#555">✕ Clear</button>
     </div>
     <div class="filter-row" id="perf-filter-row">
-      <span class="filter-label">Performance</span>
-      <span style="font-size:10px;color:#888;margin-right:4px">Near standard:</span>
+      <span class="filter-label">Near Qualification</span>
       <label class="perf-radio"><input type="radio" name="near-std" value="none" checked onchange="onNearStdRadio('none')"> —</label>
       <label class="perf-radio"><input type="radio" name="near-std" value="CC" onchange="onNearStdRadio('CC')"> CC</label>
       <label class="perf-radio"><input type="radio" name="near-std" value="CQ" onchange="onNearStdRadio('CQ')"> CQ</label>
