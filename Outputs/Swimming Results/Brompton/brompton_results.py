@@ -2349,6 +2349,38 @@ def main():
         home_docs.write_text(combined_html, encoding="utf-8")
         print(f"\n→ Combined page: {home_docs} ({home_docs.stat().st_size//1024}KB)")
 
+        # Regenerate swimmer dropdown in brompton_home.html from full swimmer list
+        _home_path = DOCS_DIR / "brompton_home.html"
+        if _home_path.exists():
+            _GENDER_LABEL = {"F": "Female", "M": "Male"}
+            _age_labels = {str(y): str(run_time.year + 1 - y) for y in range(2009, 2018)}
+            _opts = ['        <option value="">Select your name…</option>']
+            for _gd in ("F", "M"):
+                for _yb in range(2017, 2008, -1):
+                    _key = f"{'f' if _gd=='F' else 'm'}_{_yb}"
+                    _grp = next((g for g in groups_data_list if g["group_key"] == _key), None)
+                    if not _grp:
+                        continue
+                    _names = sorted(_grp["all_bests"].keys())
+                    if not _names:
+                        continue
+                    _age = _age_labels.get(str(_yb), "?")
+                    _opts.append(f'        <optgroup label="{_GENDER_LABEL[_gd]} — Born {_yb} (age {_age})">')
+                    for _nm in _names:
+                        _nm_esc = _nm.replace('"', '&quot;')
+                        _opts.append(f'          <option value="{_nm_esc}" data-gender="{_gd}" data-yob="{_yb}">{_nm_esc}</option>')
+                    _opts.append('        </optgroup>')
+            _select_html = "\n".join(_opts)
+            import re as _re
+            _home_src = _home_path.read_text(encoding="utf-8")
+            _home_src = _re.sub(
+                r'(<select[^>]*id="swimmer-sel"[^>]*>).*?(</select>)',
+                lambda m: m.group(1) + "\n" + _select_html + "\n      " + m.group(2),
+                _home_src, flags=_re.DOTALL
+            )
+            _home_path.write_text(_home_src, encoding="utf-8")
+            print(f"→ Home page dropdown updated ({sum(1 for g in groups_data_list for _ in g['all_bests'])} swimmers)")
+
     print("\nDone.")
 
 if __name__ == "__main__":
