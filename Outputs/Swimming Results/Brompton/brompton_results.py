@@ -288,10 +288,10 @@ def qual_ind_spans(secs, qt_d):
     rq = qt_d.get("region_qt"); rc = qt_d.get("region_cons")
     cq = qt_d.get("county_qt"); cc = qt_d.get("county_cons")
     spans = []
-    if rq and secs <= rq:   spans.append('<span class="qi-rq">RQ</span>')
-    elif rc and secs <= rc:  spans.append('<span class="qi-rc">RC</span>')
-    if cq and secs <= cq:   spans.append('<span class="qi-q">CQ</span>')
-    elif cc and secs <= cc:  spans.append('<span class="qi-c">CC</span>')
+    if rq and secs <= rq:   spans.append('<span class="qi-rq">✓ RQ</span>')
+    elif rc and secs <= rc:  spans.append('<span class="qi-rc">✓ RC</span>')
+    if cq and secs <= cq:   spans.append('<span class="qi-q">✓ CQ</span>')
+    elif cc and secs <= cc:  spans.append('<span class="qi-c">✓ CC</span>')
     return f'<span class="qual-ind">{" ".join(spans)}</span>' if spans else ""
 
 def next_qual_span(secs, qt_d):
@@ -300,13 +300,15 @@ def next_qual_span(secs, qt_d):
         return ""
     rq = qt_d.get("region_qt"); rc = qt_d.get("region_cons")
     cq = qt_d.get("county_qt"); cc = qt_d.get("county_cons")
-    if rq and secs <= rq: return ""
-    if rc and secs <= rc: info = (secs-rq, "RQ","#8e44ad") if rq else None
-    elif cq and secs <= cq: info = (secs-rc, "RC","#16a085") if rc else None
-    elif cc and secs <= cc: info = (secs-cq, "CQ","#e67e22") if cq else None
+    if rq and secs <= rq: return f'<span class="gap-next" style="color:#27ae60">✓ RQ</span>'
+    if rc and secs <= rc: info = (secs-rq, "RQ","#8e44ad") if rq else ("achieved","RC","#27ae60")
+    elif cq and secs <= cq: info = (secs-rc, "RC","#16a085") if rc else ("achieved","CQ","#27ae60")
+    elif cc and secs <= cc: info = (secs-cq, "CQ","#e67e22") if cq else ("achieved","CC","#27ae60")
     else: info = (secs-cc, "CC","#e67e22") if cc else None
     if not info: return ""
     gap, label, color = info
+    if gap == "achieved":
+        return f'<span class="gap-next" style="color:{color}">✓ {label}</span>'
     return (f'<span class="gap-next" style="color:{color}">'
             f'-{gap:.2f}s → {label}</span>')
 
@@ -899,9 +901,9 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
   .qual-ind{{display:block;margin-top:2px;font-size:9px;line-height:1.2}}
   .qual-ind.hidden{{display:none}}
   .qi-q{{color:#27ae60;font-weight:700}}
-  .qi-c{{color:#e67e22;font-weight:600}}
-  .qi-rq{{color:#2980b9;font-weight:700}}
-  .qi-rc{{color:#8e44ad;font-weight:600}}
+  .qi-c{{color:#27ae60;font-weight:600}}
+  .qi-rq{{color:#27ae60;font-weight:700}}
+  .qi-rc{{color:#27ae60;font-weight:600}}
   .gap-next{{font-size:9px;display:block;margin-top:1px;line-height:1.2;font-weight:600}}
   .gap-next.hidden{{display:none}}
   .rank-1 .time{{color:#27ae60;font-weight:700}}
@@ -1031,10 +1033,10 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
   var _STROKE_NAMES={{{','.join(f'"{SLUG[n]}":"{n}"' for n in dict.fromkeys(n for n,c in EVENTS if c!="LC→SC"))}}};
   function _nextQual(secs,qd){{
     var cc=qd.county_cons,cq=qd.county_qt,rc=qd.region_cons,rq=qd.region_qt;
-    if(rq&&secs<=rq) return null;
-    if(rc&&secs<=rc) return rq?{{label:'RQ',gap:secs-rq,color:'#8e44ad'}}:null;
-    if(cq&&secs<=cq) return rc?{{label:'RC',gap:secs-rc,color:'#16a085'}}:null;
-    if(cc&&secs<=cc) return cq?{{label:'CQ',gap:secs-cq,color:'#e67e22'}}:null;
+    if(rq&&secs<=rq) return {{label:'RQ',achieved:true,color:'#27ae60'}};
+    if(rc&&secs<=rc) return rq?{{label:'RQ',gap:secs-rq,color:'#8e44ad'}}:{{label:'RC',achieved:true,color:'#27ae60'}};
+    if(cq&&secs<=cq) return rc?{{label:'RC',gap:secs-rc,color:'#16a085'}}:{{label:'CQ',achieved:true,color:'#27ae60'}};
+    if(cc&&secs<=cc) return cq?{{label:'CQ',gap:secs-cq,color:'#e67e22'}}:{{label:'CC',achieved:true,color:'#27ae60'}};
     return cc?{{label:'CC',gap:secs-cc,color:'#e67e22'}}:null;
   }}
   window._nextQual=_nextQual;
@@ -1052,7 +1054,7 @@ def build_page(config, all_bests, group_key, qt_data, run_time, all_histories=No
         var sp=document.createElement('span');
         sp.className='gap-next'+(gapsHidden?' hidden':'');
         sp.style.color=info.color;
-        sp.textContent='-'+info.gap.toFixed(2)+'s → '+info.label;
+        sp.textContent=info.achieved?'✓ '+info.label:'-'+info.gap.toFixed(2)+'s → '+info.label;
         td.appendChild(sp);
       }});
     }});
@@ -1405,9 +1407,9 @@ def build_combined_page(groups_data, run_time, all_histories=None):
   .qual-ind{{display:block;margin-top:2px;font-size:9px;line-height:1.2}}
   .qual-ind.hidden{{display:none}}
   .qi-q{{color:#27ae60;font-weight:700}}
-  .qi-c{{color:#e67e22;font-weight:600}}
-  .qi-rq{{color:#2980b9;font-weight:700}}
-  .qi-rc{{color:#8e44ad;font-weight:600}}
+  .qi-c{{color:#27ae60;font-weight:600}}
+  .qi-rq{{color:#27ae60;font-weight:700}}
+  .qi-rc{{color:#27ae60;font-weight:600}}
   .gap-next{{font-size:9px;display:block;margin-top:1px;line-height:1.2;font-weight:600}}
   .gap-next.hidden{{display:none}}
   .rank-1 .time{{color:#27ae60;font-weight:700}}
@@ -1677,10 +1679,10 @@ def build_combined_page(groups_data, run_time, all_histories=None):
   /* ── Gaps ── */
   var _STROKE_NAMES={{{stroke_names_js}}};
   function _nextQual(secs,qd){{
-    if(qd.region_qt&&secs<=qd.region_qt) return null;
-    if(qd.region_cons&&secs<=qd.region_cons) return qd.region_qt?{{label:'RQ',gap:secs-qd.region_qt,color:'#8e44ad'}}:null;
-    if(qd.county_qt&&secs<=qd.county_qt) return qd.region_cons?{{label:'RC',gap:secs-qd.region_cons,color:'#16a085'}}:null;
-    if(qd.county_cons&&secs<=qd.county_cons) return qd.county_qt?{{label:'CQ',gap:secs-qd.county_qt,color:'#e67e22'}}:null;
+    if(qd.region_qt&&secs<=qd.region_qt) return {{label:'RQ',achieved:true,color:'#27ae60'}};
+    if(qd.region_cons&&secs<=qd.region_cons) return qd.region_qt?{{label:'RQ',gap:secs-qd.region_qt,color:'#8e44ad'}}:{{label:'RC',achieved:true,color:'#27ae60'}};
+    if(qd.county_qt&&secs<=qd.county_qt) return qd.region_cons?{{label:'RC',gap:secs-qd.region_cons,color:'#16a085'}}:{{label:'CQ',achieved:true,color:'#27ae60'}};
+    if(qd.county_cons&&secs<=qd.county_cons) return qd.county_qt?{{label:'CQ',gap:secs-qd.county_qt,color:'#e67e22'}}:{{label:'CC',achieved:true,color:'#27ae60'}};
     return qd.county_cons?{{label:'CC',gap:secs-qd.county_cons,color:'#e67e22'}}:null;
   }}
   window.updateGaps=function(){{
@@ -1699,7 +1701,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
         var sp=document.createElement('span');
         sp.className='gap-next'+(gapsHidden?' hidden':'');
         sp.style.color=info.color;
-        sp.textContent='-'+info.gap.toFixed(2)+'s → '+info.label;
+        sp.textContent=info.achieved?'✓ '+info.label:'-'+info.gap.toFixed(2)+'s → '+info.label;
         td.appendChild(sp);
       }});
     }});
