@@ -90,21 +90,25 @@
 <p>Each stroke has up to four columns (SC, LC, LC→SC, Best). Columns can be sorted by clicking the header — click again to reverse. The <strong>Posn</strong> column updates to show rank among visible swimmers.</p>
 
 <h2>Qualification Indicators (2027)</h2>
-<p>Where a time meets a qualification standard, one or more coloured badges appear below the time:</p>
+<p>Where a time meets a qualification standard, one or more coloured badges appear below the time. A <strong>✓</strong> prefix confirms the standard has been achieved:</p>
 
 <table class="ref">
   <tr><th>Badge</th><th>Meaning</th></tr>
-  <tr><td><span class="ind ind-rq">RQ</span></td><td>Regional Qualifier — meets the Regional Championships qualifying time</td></tr>
-  <tr><td><span class="ind ind-rc">RC</span></td><td>Regional Consideration — meets the Regional Championship consideration standard</td></tr>
-  <tr><td><span class="ind ind-cq">CQ</span></td><td>County Qualifier — meets the County Championships qualifying time</td></tr>
-  <tr><td><span class="ind ind-cc">CC</span></td><td>County Consideration — meets the County Championship consideration standard</td></tr>
+  <tr><td><span class="ind ind-rq">✓ RQ</span></td><td>Regional Qualifier — meets the Regional Championships qualifying time</td></tr>
+  <tr><td><span class="ind ind-rc">✓ RC</span></td><td>Regional Consideration — meets the Regional Championship consideration standard</td></tr>
+  <tr><td><span class="ind ind-cq">✓ CQ</span></td><td>County Qualifier — meets the County Championships qualifying time</td></tr>
+  <tr><td><span class="ind ind-cc">✓ CC</span></td><td>County Consideration — meets the County Championship consideration standard</td></tr>
 </table>
 
 <p style="margin-top:10px">Standards are age-group specific (based on year of birth) and reflect the qualification age for the <strong>2027 championships</strong> — i.e. how old each swimmer will be when competing next season. Qualification is assessed against times swum in 2026.</p>
 <div class="note">Qualification times shown are the current published standards. Times for the 2027 season will be updated here once new standards are published by Middlesex County and London Region.</div>
 
 <h2>Gap to Next Standard</h2>
-<p>If a swimmer has not yet reached their next qualifying standard, a label like <span class="gap-ex">-1.95s → CQ</span> appears below the date. This shows exactly how much faster they would need to swim to hit that standard. When they reach it, the label disappears and the badge appears instead.</p>
+<p>Below the date in each cell, a label shows where a swimmer stands relative to their next qualification target:</p>
+<ul>
+  <li><span class="gap-ex">-1.95s → CQ</span> — the swimmer needs to swim 1.95s faster to reach County Qualifier. The gap is shown in orange, becoming purple/teal for higher standards.</li>
+  <li><span class="arrow-ex">✓ CC</span> — the swimmer has achieved County Consideration in this event. Their next target (CQ) is then shown as the gap label.</li>
+</ul>
 <p>To see the full breakdown of all four standards for that event, tap the time cell to open the <strong>History Chart</strong> — the qual gap summary is shown at the top of the popup for both SC and LC.</p>
 <p>These labels can be hidden with the <strong>Hide markers</strong> button in the status bar.</p>
 
@@ -142,12 +146,16 @@
 
 <div class="card">
   <div class="card-title">Near Qualification</div>
-  <p>Select a target standard (CC, CQ, RC, or RQ) using the radio buttons. The table immediately narrows to swimmers who have at least one visible event within the chosen time window of that standard. Use the slider (0.5–5 seconds) to tighten or widen the margin.</p>
+  <p>Select a target standard (CC, CQ, RC, or RQ) using the radio buttons. The table narrows to show two groups of swimmers:</p>
+  <ul>
+    <li><strong>Approaching</strong> — at least one visible event is within the chosen time window of that standard (use the slider, 0.5–5 seconds, to tighten or widen the margin)</li>
+    <li><strong>Achieved</strong> — at least one visible event already meets that standard (shown with a <span class="arrow-ex">✓</span> badge). These swimmers are always included regardless of the slider setting.</li>
+  </ul>
   <p>Select <strong>—</strong> to clear the filter and return to the full view.</p>
-  <p>Useful for identifying who to focus training on before an upcoming championship — for example, "show me everyone within 2 seconds of a County Qualifier".</p>
+  <p>Useful for identifying who to focus training on before an upcoming championship — for example, "show me everyone within 2 seconds of County Consideration, including those who have already achieved it".</p>
 </div>
 
-<p>The Near Qualification filter works on top of the existing gender, age, and stroke filters.</p>
+<p>The Near Qualification filter works on top of the existing gender, age, stroke, and course filters. A swimmer only needs to match in <em>one</em> visible event column to appear.</p>
 
 <h2>Arena Predictor</h2>
 <p>The <strong>Arena Predictor</strong> button (in the status bar) generates A Team and B Team selections for every 50m sprint event, based on the selected age and gender filters.</p>
