@@ -1709,13 +1709,20 @@ def build_combined_page(groups_data, run_time, all_histories=None):
   }};
   /* ── Performance Filters ── */
   var _nearStd='none',_nearStdWindow=2.0;
+  var _QUAL_ORDER=['CC','CQ','RC','RQ'];
   function applyPerformanceFilters(){{
     if(_nearStd==='none') return;
+    var nearIdx=_QUAL_ORDER.indexOf(_nearStd);
+    var target='→ '+_nearStd;
     document.querySelectorAll('tbody tr:not(.row-hidden)').forEach(function(row){{
-      var target='→ '+_nearStd;
       var spans=Array.from(row.querySelectorAll('td:not(.col-hidden) .gap-next:not(.hidden)'));
       var matches=spans.some(function(sp){{
-        var t=sp.textContent;if(t.indexOf(target)===-1) return false;
+        var t=sp.textContent.trim();
+        // Achieved this standard or better (e.g. ✓ CQ satisfies Near CC)
+        var achIdx=_QUAL_ORDER.findIndex(function(q){{return t==='✓ '+q;}});
+        if(achIdx>=nearIdx) return true;
+        // Within threshold of this standard
+        if(t.indexOf(target)===-1) return false;
         var digits=t.match(/[\d.]+/);return digits&&parseFloat(digits[0])<=_nearStdWindow;
       }});
       if(!matches) row.classList.add('row-hidden');

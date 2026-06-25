@@ -357,13 +357,20 @@
   };
   /* ── Performance Filters ── */
   var _nearStd='none',_nearStdWindow=2.0;
+  var _QUAL_ORDER=['CC','CQ','RC','RQ'];
   function applyPerformanceFilters(){
     if(_nearStd==='none') return;
+    var nearIdx=_QUAL_ORDER.indexOf(_nearStd);
+    var target='→ '+_nearStd;
     document.querySelectorAll('tbody tr:not(.row-hidden)').forEach(function(row){
-      var target='→ '+_nearStd;
       var spans=Array.from(row.querySelectorAll('td:not(.col-hidden) .gap-next:not(.hidden)'));
       var matches=spans.some(function(sp){
-        var t=sp.textContent;if(t.indexOf(target)===-1) return false;
+        var t=sp.textContent.trim();
+        // Achieved this standard or better (e.g. ✓ CQ satisfies Near CC)
+        var achIdx=_QUAL_ORDER.findIndex(function(q){return t==='✓ '+q;});
+        if(achIdx>=nearIdx) return true;
+        // Within threshold of this standard
+        if(t.indexOf(target)===-1) return false;
         var digits=t.match(/[\d.]+/);return digits&&parseFloat(digits[0])<=_nearStdWindow;
       });
       if(!matches) row.classList.add('row-hidden');
@@ -704,7 +711,7 @@
 </head>
 <body>
 <h1>Brompton SC — Club Rankings</h1>
-<div class="subtitle">Generated 25 June 2026 07:43 · 172 swimmers &nbsp;·&nbsp; <a href="https://www.swimmingresults.org/12months/" target="_blank" style="color:#aaa;font-size:10px;text-decoration:none">Times via Swim England</a></div>
+<div class="subtitle">Generated 25 June 2026 09:07 · 172 swimmers &nbsp;·&nbsp; <a href="https://www.swimmingresults.org/12months/" target="_blank" style="color:#aaa;font-size:10px;text-decoration:none">Times via Swim England</a></div>
 
 <div class="filter-bar">
   <button id="filter-toggle" onclick="toggleFilters()" style="font-weight:600;font-size:12px;color:#1a3a5c;cursor:pointer;background:none;border:none;padding:0;display:flex;align-items:center;gap:6px;touch-action:manipulation;-webkit-tap-highlight-color:transparent">⚙️ Filter columns ▼</button>
