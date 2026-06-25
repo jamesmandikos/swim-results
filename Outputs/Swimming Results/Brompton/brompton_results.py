@@ -1710,17 +1710,20 @@ def build_combined_page(groups_data, run_time, all_histories=None):
   /* ── Performance Filters ── */
   var _nearStd='none',_nearStdWindow=2.0;
   var _QUAL_ORDER=['CC','CQ','RC','RQ'];
+  var _QUAL_BADGE={{'CC':'qi-c','CQ':'qi-q','RC':'qi-rc','RQ':'qi-rq'}};
   function applyPerformanceFilters(){{
     if(_nearStd==='none') return;
-    var nearIdx=_QUAL_ORDER.indexOf(_nearStd);
     var target='→ '+_nearStd;
+    var badgeCls=_QUAL_BADGE[_nearStd]||'';
     document.querySelectorAll('tbody tr:not(.row-hidden)').forEach(function(row){{
-      var spans=Array.from(row.querySelectorAll('td:not(.col-hidden) .gap-next:not(.hidden)'));
-      var matches=spans.some(function(sp){{
+      var cells=Array.from(row.querySelectorAll('td:not(.col-hidden)'));
+      var matches=cells.some(function(td){{
+        // Swimmer has achieved this standard in this event (badge present)
+        if(badgeCls&&td.querySelector('.'+badgeCls)) return true;
+        // Swimmer is within threshold of this standard
+        var sp=td.querySelector('.gap-next:not(.hidden)');
+        if(!sp) return false;
         var t=sp.textContent.trim();
-        // Achieved exactly this standard (shown as ✓ CC when CC is the top available standard)
-        if(t==='✓ '+_nearStd) return true;
-        // Within threshold of this standard
         if(t.indexOf(target)===-1) return false;
         var digits=t.match(/[\d.]+/);return digits&&parseFloat(digits[0])<=_nearStdWindow;
       }});
