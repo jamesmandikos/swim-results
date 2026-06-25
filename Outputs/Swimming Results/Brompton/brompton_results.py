@@ -1718,11 +1718,7 @@ def build_combined_page(groups_data, run_time, all_histories=None):
       var spans=Array.from(row.querySelectorAll('td:not(.col-hidden) .gap-next:not(.hidden)'));
       var matches=spans.some(function(sp){{
         var t=sp.textContent.trim();
-        // Find which standard this span points to (→ CQ or ✓ CQ)
-        var pointsToIdx=_QUAL_ORDER.findIndex(function(q){{return t.indexOf('→ '+q)!==-1||t==='✓ '+q;}});
-        // Pointing to a HIGHER standard means swimmer has already achieved the selected one
-        if(pointsToIdx>nearIdx) return true;
-        // Achieved exactly this standard (✓ CC when CC is the top available)
+        // Achieved exactly this standard (shown as ✓ CC when CC is the top available standard)
         if(t==='✓ '+_nearStd) return true;
         // Within threshold of this standard
         if(t.indexOf(target)===-1) return false;
