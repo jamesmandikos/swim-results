@@ -78,10 +78,10 @@
       "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
     },
     "50 Free|SC": {
-      "time_str": "31.14",
-      "time_secs": 31.14,
-      "date_str": "17/05/26",
-      "converted": "31.80",
+      "time_str": "30.98",
+      "time_secs": 30.98,
+      "date_str": "13/06/26",
+      "converted": "31.60",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Free|SC": {
@@ -290,11 +290,11 @@
       "meet_str": "Ealing SC Xmas County Qualifier 2025"
     },
     "50 Back|SC": {
-      "time_str": "37.91",
-      "time_secs": 37.91,
-      "date_str": "06/12/25",
-      "converted": "38.40",
-      "meet_str": "National Arena Swimming League - London 2025 R3"
+      "time_str": "37.50",
+      "time_secs": 37.5,
+      "date_str": "13/06/26",
+      "converted": "38.00",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Back|SC": {
       "time_str": "1:23.99",
@@ -1009,10 +1009,10 @@
       "meet_str": "SE London Summer Championships 2026"
     },
     "50 Free|SC": {
-      "time_str": "30.29",
-      "time_secs": 30.29,
-      "date_str": "17/05/26",
-      "converted": "31.00",
+      "time_str": "29.44",
+      "time_secs": 29.44,
+      "date_str": "13/06/26",
+      "converted": "30.10",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Free|SC": {
@@ -1058,10 +1058,10 @@
       "meet_str": "Saxon Crown Autumn Showdown 2025"
     },
     "50 Fly|SC": {
-      "time_str": "31.91",
-      "time_secs": 31.91,
-      "date_str": "17/05/26",
-      "converted": "32.50",
+      "time_str": "31.75",
+      "time_secs": 31.75,
+      "date_str": "13/06/26",
+      "converted": "32.30",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Fly|SC": {

@@ -1147,11 +1147,11 @@
       "meet_str": "2026 Middlesex County Championships"
     },
     "50 Breast|LC": {
-      "time_str": "34.21",
-      "time_secs": 34.21,
-      "date_str": "07/02/26",
+      "time_str": "34.19",
+      "time_secs": 34.19,
+      "date_str": "20/06/26",
       "converted": "33.30",
-      "meet_str": "Trofeo Ciudat de Palma C. N Voltor 2026"
+      "meet_str": "6to Control Federativo"
     },
     "100 Breast|LC": {
       "time_str": "1:14.95",
@@ -1175,11 +1175,11 @@
       "meet_str": "2026 Middlesex County Championships"
     },
     "200 IM|LC": {
-      "time_str": "2:31.57",
-      "time_secs": 151.57,
-      "date_str": "26/04/26",
-      "converted": "2:28.90",
-      "meet_str": "SE London Summer Championships 2026"
+      "time_str": "2:31.38",
+      "time_secs": 151.38,
+      "date_str": "20/06/26",
+      "converted": "2:28.80",
+      "meet_str": "6to Control Federativo"
     },
     "50 Free|SC": {
       "time_str": "28.74",

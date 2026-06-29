@@ -120,10 +120,10 @@
       "meet_str": "Brompton SC 2025 Winter Club Championships"
     },
     "50 Back|SC": {
-      "time_str": "39.27",
-      "time_secs": 39.27,
-      "date_str": "17/05/26",
-      "converted": "39.80",
+      "time_str": "38.78",
+      "time_secs": 38.78,
+      "date_str": "13/06/26",
+      "converted": "39.30",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Back|SC": {
@@ -726,11 +726,11 @@
       "meet_str": "2025 Chelsea & Westminster Development Competition"
     },
     "200 Free|SC": {
-      "time_str": "4:05.37",
-      "time_secs": 245.37,
-      "date_str": "14/12/25",
-      "converted": "4:06.80",
-      "meet_str": "2025 CWSC December Duel in the Pool"
+      "time_str": "4:01.30",
+      "time_secs": 241.3,
+      "date_str": "20/06/26",
+      "converted": "4:02.70",
+      "meet_str": "Cheslea & Westminster SC 2026 Club Championships"
     },
     "50 Breast|SC": {
       "time_str": "1:00.36",
@@ -747,11 +747,11 @@
       "meet_str": "2025 Chelsea & Westminster Development Competition"
     },
     "50 Fly|SC": {
-      "time_str": "1:05.30",
-      "time_secs": 65.3,
-      "date_str": "22/03/26",
-      "converted": "1:05.60",
-      "meet_str": "2026 CWSC's Future Stars Development Meet"
+      "time_str": "58.31",
+      "time_secs": 58.31,
+      "date_str": "20/06/26",
+      "converted": "58.60",
+      "meet_str": "Cheslea & Westminster SC 2026 Club Championships"
     },
     "50 Back|SC": {
       "time_str": "57.74",
@@ -759,6 +759,13 @@
       "date_str": "22/03/26",
       "converted": "58.10",
       "meet_str": "2026 CWSC's Future Stars Development Meet"
+    },
+    "100 IM|SC": {
+      "time_str": "2:00.98",
+      "time_secs": 120.98,
+      "date_str": "20/06/26",
+      "converted": "2:01.00",
+      "meet_str": "Cheslea & Westminster SC 2026 Club Championships"
     }
   }
 }

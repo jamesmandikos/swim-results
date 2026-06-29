@@ -15,11 +15,11 @@
       "meet_str": "Ealing 2026 Regional Qualifier"
     },
     "50 Breast|SC": {
-      "time_str": "40.71",
-      "time_secs": 40.71,
-      "date_str": "28/02/26",
-      "converted": "41.50",
-      "meet_str": "Ealing 2026 Regional Qualifier"
+      "time_str": "40.19",
+      "time_secs": 40.19,
+      "date_str": "13/06/26",
+      "converted": "41.00",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Breast|SC": {
       "time_str": "1:39.66",
@@ -29,11 +29,11 @@
       "meet_str": "Ealing Swimming Club Autumn L4 Invitational 2025"
     },
     "50 Fly|SC": {
-      "time_str": "38.53",
-      "time_secs": 38.53,
-      "date_str": "01/03/26",
-      "converted": "39.00",
-      "meet_str": "Ealing 2026 Regional Qualifier"
+      "time_str": "38.22",
+      "time_secs": 38.22,
+      "date_str": "13/06/26",
+      "converted": "38.70",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "50 Back|SC": {
       "time_str": "41.87",
@@ -498,11 +498,11 @@
   },
   "Maya Sidhu": {
     "50 Free|SC": {
-      "time_str": "37.60",
-      "time_secs": 37.6,
-      "date_str": "07/06/26",
-      "converted": "38.20",
-      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+      "time_str": "37.09",
+      "time_secs": 37.09,
+      "date_str": "13/06/26",
+      "converted": "37.70",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Free|SC": {
       "time_str": "1:25.86",
@@ -540,11 +540,11 @@
       "meet_str": "Brompton Swimming Club Summer Fun Meet"
     },
     "50 Back|SC": {
-      "time_str": "44.89",
-      "time_secs": 44.89,
-      "date_str": "09/11/25",
-      "converted": "45.30",
-      "meet_str": "Brompton SC 2025 Winter Club Championships"
+      "time_str": "44.78",
+      "time_secs": 44.78,
+      "date_str": "13/06/26",
+      "converted": "45.20",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Back|SC": {
       "time_str": "1:35.43",

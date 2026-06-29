@@ -36,10 +36,10 @@
       "meet_str": "BWFSC Gators Spring Meet"
     },
     "50 Free|SC": {
-      "time_str": "36.30",
-      "time_secs": 36.3,
-      "date_str": "17/05/26",
-      "converted": "36.90",
+      "time_str": "36.12",
+      "time_secs": 36.12,
+      "date_str": "13/06/26",
+      "converted": "36.70",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Free|SC": {
@@ -164,11 +164,11 @@
       "meet_str": "Ealing SC Xmas County Qualifier 2025"
     },
     "50 Fly|SC": {
-      "time_str": "40.60",
-      "time_secs": 40.6,
-      "date_str": "24/01/26",
-      "converted": "41.10",
-      "meet_str": "Ealing Series Spring Invitational 2026"
+      "time_str": "40.44",
+      "time_secs": 40.44,
+      "date_str": "13/06/26",
+      "converted": "40.90",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Fly|SC": {
       "time_str": "1:39.23",
@@ -278,9 +278,9 @@
       "meet_str": "Ealing Series Spring Invitational 2026"
     },
     "50 Breast|SC": {
-      "time_str": "46.70",
-      "time_secs": 46.7,
-      "date_str": "17/05/26",
+      "time_str": "46.68",
+      "time_secs": 46.68,
+      "date_str": "13/06/26",
       "converted": "47.40",
       "meet_str": "2026 West London National Arena Jr League"
     },
@@ -292,11 +292,11 @@
       "meet_str": "Ealing Series Spring Invitational 2026"
     },
     "50 Fly|SC": {
-      "time_str": "42.01",
-      "time_secs": 42.01,
-      "date_str": "24/01/26",
-      "converted": "42.50",
-      "meet_str": "Ealing Series Spring Invitational 2026"
+      "time_str": "41.40",
+      "time_secs": 41.4,
+      "date_str": "13/06/26",
+      "converted": "41.90",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "50 Back|SC": {
       "time_str": "43.03",
@@ -357,11 +357,11 @@
       "meet_str": "BWFSC Gators Spring Meet"
     },
     "50 Free|SC": {
-      "time_str": "38.89",
-      "time_secs": 38.89,
-      "date_str": "01/03/26",
-      "converted": "39.40",
-      "meet_str": "Ealing 2026 Regional Qualifier"
+      "time_str": "37.80",
+      "time_secs": 37.8,
+      "date_str": "13/06/26",
+      "converted": "38.40",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Free|SC": {
       "time_str": "1:28.14",
