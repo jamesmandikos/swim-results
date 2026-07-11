@@ -1,4 +1,4 @@
-const CACHE = 'brompton-v5';
+const CACHE = 'brompton-v6';
 const STATIC = ['./icon-192.png', './icon-512.png', './manifest.json'];
 const HTML_NAMES = ['brompton_home.html', 'brompton_rankings.html', 'bsc_u14_girls_rankings.html', 'cwsc_u14_girls_rankings.html', 'index.html'];
 

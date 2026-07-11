@@ -1,4 +1,4 @@
-const CACHE = 'cwsc-v1';
+const CACHE = 'cwsc-v2';
 const STATIC = ['./icon-192.png', './icon-512.png', './manifest.json'];
 const HTML_NAMES = ['cwsc.html', 'cwsc_u14_girls_rankings.html'];
 
