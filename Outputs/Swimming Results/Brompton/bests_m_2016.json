@@ -164,10 +164,10 @@
       "meet_str": "Ealing SC Xmas County Qualifier 2025"
     },
     "50 Fly|SC": {
-      "time_str": "40.44",
-      "time_secs": 40.44,
-      "date_str": "13/06/26",
-      "converted": "40.90",
+      "time_str": "40.30",
+      "time_secs": 40.3,
+      "date_str": "04/07/26",
+      "converted": "40.80",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Fly|SC": {
@@ -278,10 +278,10 @@
       "meet_str": "Ealing Series Spring Invitational 2026"
     },
     "50 Breast|SC": {
-      "time_str": "46.68",
-      "time_secs": 46.68,
-      "date_str": "13/06/26",
-      "converted": "47.40",
+      "time_str": "45.13",
+      "time_secs": 45.13,
+      "date_str": "04/07/26",
+      "converted": "45.80",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Breast|SC": {
@@ -392,10 +392,10 @@
       "meet_str": "Ealing 2026 Regional Qualifier"
     },
     "50 Back|SC": {
-      "time_str": "43.88",
-      "time_secs": 43.88,
-      "date_str": "17/05/26",
-      "converted": "44.30",
+      "time_str": "43.48",
+      "time_secs": 43.48,
+      "date_str": "04/07/26",
+      "converted": "43.90",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Back|SC": {
@@ -436,11 +436,11 @@
       "meet_str": "BWFSC Gators Spring Meet"
     },
     "50 Free|SC": {
-      "time_str": "38.97",
-      "time_secs": 38.97,
-      "date_str": "18/04/26",
-      "converted": "39.50",
-      "meet_str": "Ealing Series Spring Invitational 2026"
+      "time_str": "37.26",
+      "time_secs": 37.26,
+      "date_str": "04/07/26",
+      "converted": "37.80",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Free|SC": {
       "time_str": "1:30.78",

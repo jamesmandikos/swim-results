@@ -206,9 +206,9 @@
       "meet_str": "Brompton SC 2025 Winter Club Championships"
     },
     "50 Breast|SC": {
-      "time_str": "44.24",
-      "time_secs": 44.24,
-      "date_str": "17/05/26",
+      "time_str": "44.18",
+      "time_secs": 44.18,
+      "date_str": "04/07/26",
       "converted": "44.90",
       "meet_str": "2026 West London National Arena Jr League"
     },
@@ -234,10 +234,10 @@
       "meet_str": "Brompton Swimming Club Summer Fun Meet"
     },
     "50 Back|SC": {
-      "time_str": "39.38",
-      "time_secs": 39.38,
-      "date_str": "13/06/26",
-      "converted": "39.90",
+      "time_str": "38.35",
+      "time_secs": 38.35,
+      "date_str": "04/07/26",
+      "converted": "38.90",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Back|SC": {
@@ -306,10 +306,10 @@
       "meet_str": "BWFSC Gators Spring Meet"
     },
     "50 Free|SC": {
-      "time_str": "34.10",
-      "time_secs": 34.1,
-      "date_str": "13/06/26",
-      "converted": "34.70",
+      "time_str": "33.45",
+      "time_secs": 33.45,
+      "date_str": "04/07/26",
+      "converted": "34.10",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Free|SC": {
@@ -513,9 +513,9 @@
       "meet_str": "Ealing 2026 Regional Qualifier"
     },
     "50 Fly|SC": {
-      "time_str": "39.30",
-      "time_secs": 39.3,
-      "date_str": "13/06/26",
+      "time_str": "39.27",
+      "time_secs": 39.27,
+      "date_str": "04/07/26",
       "converted": "39.80",
       "meet_str": "2026 West London National Arena Jr League"
     },

@@ -519,11 +519,11 @@
       "meet_str": "Ealing Series Spring Invitational 2026"
     },
     "50 Breast|SC": {
-      "time_str": "49.99",
-      "time_secs": 49.99,
-      "date_str": "07/06/26",
-      "converted": "50.60",
-      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+      "time_str": "49.62",
+      "time_secs": 49.62,
+      "date_str": "04/07/26",
+      "converted": "50.30",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Breast|SC": {
       "time_str": "2:02.68",
@@ -533,11 +533,11 @@
       "meet_str": "Ealing Level 4 Spring Series 2025 Invitation"
     },
     "50 Fly|SC": {
-      "time_str": "42.13",
-      "time_secs": 42.13,
-      "date_str": "07/06/26",
-      "converted": "42.60",
-      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+      "time_str": "40.54",
+      "time_secs": 40.54,
+      "date_str": "04/07/26",
+      "converted": "41.00",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "50 Back|SC": {
       "time_str": "44.78",
