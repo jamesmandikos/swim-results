@@ -209,6 +209,27 @@
     }
   },
   "Mila Coppel-Hyams": {
+    "50 Free|LC": {
+      "time_str": "42.49",
+      "time_secs": 42.49,
+      "date_str": "11/07/26",
+      "converted": "42.00",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "50 Back|LC": {
+      "time_str": "48.81",
+      "time_secs": 48.81,
+      "date_str": "11/07/26",
+      "converted": "48.40",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "100 Back|LC": {
+      "time_str": "1:46.93",
+      "time_secs": 106.93,
+      "date_str": "11/07/26",
+      "converted": "1:46.20",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
     "50 Free|SC": {
       "time_str": "41.46",
       "time_secs": 41.46,
@@ -253,6 +274,13 @@
     }
   },
   "Lavin Kaplan": {
+    "50 Free|LC": {
+      "time_str": "40.73",
+      "time_secs": 40.73,
+      "date_str": "11/07/26",
+      "converted": "40.20",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
     "100 Free|LC": {
       "time_str": "1:40.38",
       "time_secs": 100.38,
@@ -260,12 +288,47 @@
       "converted": "1:39.50",
       "meet_str": "BWFSC Gators Spring Meet"
     },
+    "200 Free|LC": {
+      "time_str": "3:32.57",
+      "time_secs": 212.57,
+      "date_str": "11/07/26",
+      "converted": "3:30.90",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
     "50 Breast|LC": {
-      "time_str": "54.67",
-      "time_secs": 54.67,
-      "date_str": "08/03/26",
-      "converted": "54.10",
-      "meet_str": "BWFSC Gators Spring Meet"
+      "time_str": "51.31",
+      "time_secs": 51.31,
+      "date_str": "12/07/26",
+      "converted": "50.70",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "100 Breast|LC": {
+      "time_str": "1:50.42",
+      "time_secs": 110.42,
+      "date_str": "11/07/26",
+      "converted": "1:49.30",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "200 Breast|LC": {
+      "time_str": "3:57.34",
+      "time_secs": 237.34,
+      "date_str": "12/07/26",
+      "converted": "3:55.10",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "50 Fly|LC": {
+      "time_str": "45.91",
+      "time_secs": 45.91,
+      "date_str": "12/07/26",
+      "converted": "45.50",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "200 Fly|LC": {
+      "time_str": "4:13.76",
+      "time_secs": 253.76,
+      "date_str": "11/07/26",
+      "converted": "4:12.50",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "50 Free|SC": {
       "time_str": "42.02",
@@ -519,11 +582,11 @@
       "meet_str": "Ealing Series Spring Invitational 2026"
     },
     "50 Breast|SC": {
-      "time_str": "49.99",
-      "time_secs": 49.99,
-      "date_str": "07/06/26",
-      "converted": "50.60",
-      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+      "time_str": "49.62",
+      "time_secs": 49.62,
+      "date_str": "04/07/26",
+      "converted": "50.30",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Breast|SC": {
       "time_str": "2:02.68",
@@ -533,11 +596,11 @@
       "meet_str": "Ealing Level 4 Spring Series 2025 Invitation"
     },
     "50 Fly|SC": {
-      "time_str": "42.13",
-      "time_secs": 42.13,
-      "date_str": "07/06/26",
-      "converted": "42.60",
-      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+      "time_str": "40.54",
+      "time_secs": 40.54,
+      "date_str": "04/07/26",
+      "converted": "41.00",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "50 Back|SC": {
       "time_str": "44.78",

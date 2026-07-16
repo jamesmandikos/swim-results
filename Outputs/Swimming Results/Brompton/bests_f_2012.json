@@ -57,11 +57,11 @@
       "meet_str": "2026 Middlesex County Championships"
     },
     "100 Back|LC": {
-      "time_str": "1:23.93",
-      "time_secs": 83.93,
-      "date_str": "23/03/25",
-      "converted": "1:23.00",
-      "meet_str": "Rushmoor Royals Spring L3 LC Open Meet 2025"
+      "time_str": "1:17.73",
+      "time_secs": 77.73,
+      "date_str": "11/07/26",
+      "converted": "1:16.70",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "200 Back|LC": {
       "time_str": "2:49.35",
@@ -348,18 +348,18 @@
       "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
     },
     "200 Free|LC": {
-      "time_str": "2:28.75",
-      "time_secs": 148.75,
-      "date_str": "15/03/26",
-      "converted": "2:26.40",
-      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      "time_str": "2:27.36",
+      "time_secs": 147.36,
+      "date_str": "11/07/26",
+      "converted": "2:25.00",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "400 Free|LC": {
-      "time_str": "5:37.78",
-      "time_secs": 337.78,
-      "date_str": "06/07/24",
-      "converted": "5:33.60",
-      "meet_str": "NUEL SC Joy Atotileto Memorial Open Meet 2024"
+      "time_str": "5:11.20",
+      "time_secs": 311.2,
+      "date_str": "12/07/26",
+      "converted": "5:06.70",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "50 Breast|LC": {
       "time_str": "44.87",
@@ -369,11 +369,11 @@
       "meet_str": "Chelsea & Westminster & Millfield March Grand Prix"
     },
     "100 Breast|LC": {
-      "time_str": "1:37.63",
-      "time_secs": 97.63,
-      "date_str": "07/07/24",
-      "converted": "1:36.30",
-      "meet_str": "NUEL SC Joy Atotileto Memorial Open Meet 2024"
+      "time_str": "1:34.76",
+      "time_secs": 94.75999999999999,
+      "date_str": "11/07/26",
+      "converted": "1:33.40",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "200 Breast|LC": {
       "time_str": "3:20.86",
@@ -567,18 +567,18 @@
       "meet_str": "BWFSC Gators Spring Meet"
     },
     "100 Free|LC": {
-      "time_str": "1:13.88",
-      "time_secs": 73.88,
-      "date_str": "08/03/26",
-      "converted": "1:12.70",
-      "meet_str": "BWFSC Gators Spring Meet"
+      "time_str": "1:11.30",
+      "time_secs": 71.3,
+      "date_str": "12/07/26",
+      "converted": "1:10.10",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "200 Free|LC": {
-      "time_str": "2:44.06",
-      "time_secs": 164.06,
-      "date_str": "08/03/26",
-      "converted": "2:41.90",
-      "meet_str": "BWFSC Gators Spring Meet"
+      "time_str": "2:40.14",
+      "time_secs": 160.14,
+      "date_str": "11/07/26",
+      "converted": "2:38.00",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "400 Free|LC": {
       "time_str": "5:57.26",
@@ -616,11 +616,11 @@
       "meet_str": "Middlesex County Championships 2023"
     },
     "50 Fly|LC": {
-      "time_str": "35.70",
-      "time_secs": 35.7,
-      "date_str": "22/06/25",
-      "converted": "35.20",
-      "meet_str": "Gators Summer Gala 2025"
+      "time_str": "35.24",
+      "time_secs": 35.24,
+      "date_str": "12/07/26",
+      "converted": "34.70",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "100 Fly|LC": {
       "time_str": "1:33.60",
@@ -630,25 +630,25 @@
       "meet_str": "2025 Wycombe Dual Award L3 Long Course Meet"
     },
     "50 Back|LC": {
-      "time_str": "36.21",
-      "time_secs": 36.21,
-      "date_str": "07/02/26",
-      "converted": "35.70",
-      "meet_str": "2026 Middlesex County Championships"
+      "time_str": "35.26",
+      "time_secs": 35.26,
+      "date_str": "11/07/26",
+      "converted": "34.70",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "100 Back|LC": {
-      "time_str": "1:18.85",
-      "time_secs": 78.85,
-      "date_str": "15/03/26",
-      "converted": "1:17.80",
-      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      "time_str": "1:17.57",
+      "time_secs": 77.57,
+      "date_str": "11/07/26",
+      "converted": "1:16.50",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "200 Back|LC": {
-      "time_str": "2:51.73",
-      "time_secs": 171.73,
-      "date_str": "15/03/26",
-      "converted": "2:49.80",
-      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      "time_str": "2:47.53",
+      "time_secs": 167.53,
+      "date_str": "12/07/26",
+      "converted": "2:45.50",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "200 IM|LC": {
       "time_str": "3:10.09",
@@ -1126,11 +1126,11 @@
   },
   "Chloe Mahoney": {
     "50 Free|LC": {
-      "time_str": "29.85",
-      "time_secs": 29.85,
-      "date_str": "28/03/26",
-      "converted": "29.10",
-      "meet_str": "London Legacy Swimming Meet 2026 (Long Course)"
+      "time_str": "28.80",
+      "time_secs": 28.8,
+      "date_str": "05/07/26",
+      "converted": "28.10",
+      "meet_str": "Campeonato de Baleares de Verano 2026"
     },
     "100 Free|LC": {
       "time_str": "1:02.88",
@@ -1154,11 +1154,11 @@
       "meet_str": "6to Control Federativo"
     },
     "100 Breast|LC": {
-      "time_str": "1:14.95",
-      "time_secs": 74.95,
-      "date_str": "29/03/26",
-      "converted": "1:13.30",
-      "meet_str": "London Legacy Swimming Meet 2026 (Long Course)"
+      "time_str": "1:13.65",
+      "time_secs": 73.65,
+      "date_str": "05/07/26",
+      "converted": "1:11.90",
+      "meet_str": "Campeonato de Baleares de Verano 2026"
     },
     "200 Breast|LC": {
       "time_str": "2:41.30",
@@ -1268,11 +1268,11 @@
       "meet_str": "London Legacy Swimming Meet 2026 (Long Course)"
     },
     "100 Free|LC": {
-      "time_str": "1:12.34",
-      "time_secs": 72.34,
-      "date_str": "14/03/26",
-      "converted": "1:11.20",
-      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      "time_str": "1:11.64",
+      "time_secs": 71.64,
+      "date_str": "12/07/26",
+      "converted": "1:10.50",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "200 Free|LC": {
       "time_str": "2:37.15",

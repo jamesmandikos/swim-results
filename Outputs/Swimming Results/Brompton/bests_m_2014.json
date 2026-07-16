@@ -290,10 +290,10 @@
       "meet_str": "Ealing SC Xmas County Qualifier 2025"
     },
     "50 Back|SC": {
-      "time_str": "37.50",
-      "time_secs": 37.5,
-      "date_str": "13/06/26",
-      "converted": "38.00",
+      "time_str": "37.12",
+      "time_secs": 37.12,
+      "date_str": "04/07/26",
+      "converted": "37.70",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Back|SC": {
@@ -318,10 +318,10 @@
       "meet_str": "Ealing 2026 Regional Qualifier"
     },
     "100 IM|SC": {
-      "time_str": "1:20.53",
-      "time_secs": 80.53,
-      "date_str": "17/05/26",
-      "converted": "1:20.50",
+      "time_str": "1:19.60",
+      "time_secs": 79.6,
+      "date_str": "04/07/26",
+      "converted": "1:19.60",
       "meet_str": "2026 West London National Arena Jr League"
     }
   },
@@ -1107,10 +1107,10 @@
       "meet_str": "Ealing SC Xmas County Qualifier 2025"
     },
     "100 IM|SC": {
-      "time_str": "1:12.25",
-      "time_secs": 72.25,
-      "date_str": "17/05/26",
-      "converted": "1:12.30",
+      "time_str": "1:11.36",
+      "time_secs": 71.36,
+      "date_str": "04/07/26",
+      "converted": "1:11.40",
       "meet_str": "2026 West London National Arena Jr League"
     }
   },

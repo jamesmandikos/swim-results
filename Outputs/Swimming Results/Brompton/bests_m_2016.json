@@ -164,10 +164,10 @@
       "meet_str": "Ealing SC Xmas County Qualifier 2025"
     },
     "50 Fly|SC": {
-      "time_str": "40.44",
-      "time_secs": 40.44,
-      "date_str": "13/06/26",
-      "converted": "40.90",
+      "time_str": "40.30",
+      "time_secs": 40.3,
+      "date_str": "04/07/26",
+      "converted": "40.80",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Fly|SC": {
@@ -278,10 +278,10 @@
       "meet_str": "Ealing Series Spring Invitational 2026"
     },
     "50 Breast|SC": {
-      "time_str": "46.68",
-      "time_secs": 46.68,
-      "date_str": "13/06/26",
-      "converted": "47.40",
+      "time_str": "45.13",
+      "time_secs": 45.13,
+      "date_str": "04/07/26",
+      "converted": "45.80",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Breast|SC": {
@@ -329,11 +329,18 @@
       "meet_str": "BWFSC Gators Spring Meet"
     },
     "100 Free|LC": {
-      "time_str": "1:28.16",
-      "time_secs": 88.16,
-      "date_str": "15/03/26",
-      "converted": "1:27.20",
-      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+      "time_str": "1:26.70",
+      "time_secs": 86.7,
+      "date_str": "11/07/26",
+      "converted": "1:25.70",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "50 Breast|LC": {
+      "time_str": "52.67",
+      "time_secs": 52.67,
+      "date_str": "11/07/26",
+      "converted": "52.10",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "100 Breast|LC": {
       "time_str": "1:58.97",
@@ -341,6 +348,20 @@
       "date_str": "08/03/26",
       "converted": "1:57.90",
       "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "200 Breast|LC": {
+      "time_str": "4:01.77",
+      "time_secs": 241.77,
+      "date_str": "11/07/26",
+      "converted": "3:59.60",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "50 Fly|LC": {
+      "time_str": "50.18",
+      "time_secs": 50.18,
+      "date_str": "11/07/26",
+      "converted": "49.80",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "50 Back|LC": {
       "time_str": "44.93",
@@ -355,6 +376,13 @@
       "date_str": "08/03/26",
       "converted": "1:35.90",
       "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "200 Back|LC": {
+      "time_str": "3:29.77",
+      "time_secs": 209.77,
+      "date_str": "11/07/26",
+      "converted": "3:28.20",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
     },
     "50 Free|SC": {
       "time_str": "37.80",
@@ -392,10 +420,10 @@
       "meet_str": "Ealing 2026 Regional Qualifier"
     },
     "50 Back|SC": {
-      "time_str": "43.88",
-      "time_secs": 43.88,
-      "date_str": "17/05/26",
-      "converted": "44.30",
+      "time_str": "43.48",
+      "time_secs": 43.48,
+      "date_str": "04/07/26",
+      "converted": "43.90",
       "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Back|SC": {
@@ -436,11 +464,11 @@
       "meet_str": "BWFSC Gators Spring Meet"
     },
     "50 Free|SC": {
-      "time_str": "38.97",
-      "time_secs": 38.97,
-      "date_str": "18/04/26",
-      "converted": "39.50",
-      "meet_str": "Ealing Series Spring Invitational 2026"
+      "time_str": "37.26",
+      "time_secs": 37.26,
+      "date_str": "04/07/26",
+      "converted": "37.80",
+      "meet_str": "2026 West London National Arena Jr League"
     },
     "100 Free|SC": {
       "time_str": "1:30.78",
