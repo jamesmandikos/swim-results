@@ -2656,7 +2656,402 @@
       "meet_str": "Ealing Level 4 Spring Series 2025 Invitation"
     }
   },
-  "Brooke Williams": {},
-  "Zofia Plotkowiak": {},
-  "Viola Matteis": {}
+  "Brooke Williams": {
+    "50 Free|LC": {
+      "time_str": "29.08",
+      "time_secs": 29.08,
+      "date_str": "12/06/26",
+      "converted": "28.40",
+      "meet_str": "2026 Mac Narwhal Invite"
+    },
+    "100 Free|LC": {
+      "time_str": "1:04.34",
+      "time_secs": 64.34,
+      "date_str": "28/05/26",
+      "converted": "1:03.00",
+      "meet_str": "2026 Cactus Classic"
+    },
+    "200 Free|LC": {
+      "time_str": "2:21.63",
+      "time_secs": 141.63,
+      "date_str": "28/05/26",
+      "converted": "2:19.20",
+      "meet_str": "2026 Cactus Classic"
+    },
+    "400 Free|LC": {
+      "time_str": "5:02.33",
+      "time_secs": 302.33,
+      "date_str": "16/05/25",
+      "converted": "4:57.60",
+      "meet_str": "2025 Phoenix May Cray"
+    },
+    "50 Breast|LC": {
+      "time_str": "36.65",
+      "time_secs": 36.65,
+      "date_str": "28/05/26",
+      "converted": "35.80",
+      "meet_str": "2026 Cactus Classic"
+    },
+    "100 Breast|LC": {
+      "time_str": "1:21.38",
+      "time_secs": 81.38,
+      "date_str": "28/05/26",
+      "converted": "1:19.80",
+      "meet_str": "2026 Cactus Classic"
+    },
+    "200 Breast|LC": {
+      "time_str": "2:58.13",
+      "time_secs": 178.13,
+      "date_str": "28/05/26",
+      "converted": "2:55.10",
+      "meet_str": "2026 Cactus Classic"
+    },
+    "50 Fly|LC": {
+      "time_str": "30.21",
+      "time_secs": 30.21,
+      "date_str": "28/05/26",
+      "converted": "29.60",
+      "meet_str": "2026 Cactus Classic"
+    },
+    "100 Fly|LC": {
+      "time_str": "1:08.94",
+      "time_secs": 68.94,
+      "date_str": "12/06/26",
+      "converted": "1:07.80",
+      "meet_str": "2026 Mac Narwhal Invite"
+    },
+    "200 Fly|LC": {
+      "time_str": "2:46.64",
+      "time_secs": 166.64,
+      "date_str": "11/04/25",
+      "converted": "2:44.70",
+      "meet_str": "2025 Phoenix Spring Invitational"
+    },
+    "50 Back|LC": {
+      "time_str": "36.19",
+      "time_secs": 36.19,
+      "date_str": "06/08/24",
+      "converted": "35.60",
+      "meet_str": "2024 Western Zones Age Group Championships"
+    },
+    "100 Back|LC": {
+      "time_str": "1:16.29",
+      "time_secs": 76.28999999999999,
+      "date_str": "12/06/26",
+      "converted": "1:15.20",
+      "meet_str": "2026 Mac Narwhal Invite"
+    },
+    "200 Back|LC": {
+      "time_str": "2:42.31",
+      "time_secs": 162.31,
+      "date_str": "01/05/26",
+      "converted": "2:40.20",
+      "meet_str": "2026 Phoenix May Cray"
+    },
+    "200 IM|LC": {
+      "time_str": "2:33.45",
+      "time_secs": 153.45,
+      "date_str": "12/06/26",
+      "converted": "2:30.90",
+      "meet_str": "2026 Mac Narwhal Invite"
+    },
+    "400 IM|LC": {
+      "time_str": "5:35.40",
+      "time_secs": 335.4,
+      "date_str": "10/04/26",
+      "converted": "5:30.10",
+      "meet_str": "2026 Phoenix Spring Invitational"
+    },
+    "50 Free|SC": {
+      "time_str": "32.19",
+      "time_secs": 32.19,
+      "date_str": "19/05/24",
+      "converted": "32.80",
+      "meet_str": "2024 West London National Arena Jr League R 1-3"
+    },
+    "100 Free|SC": {
+      "time_str": "1:14.20",
+      "time_secs": 74.2,
+      "date_str": "30/09/23",
+      "converted": "1:15.30",
+      "meet_str": "Ealing Autumn 2023 Lv4 Invite 2023"
+    },
+    "200 Free|SC": {
+      "time_str": "2:48.51",
+      "time_secs": 168.51,
+      "date_str": "19/11/23",
+      "converted": "2:50.60",
+      "meet_str": "Brompton SC 2023 Winter Club Championships"
+    },
+    "400 Free|SC": {
+      "time_str": "5:37.16",
+      "time_secs": 337.15999999999997,
+      "date_str": "28/10/23",
+      "converted": "5:41.30",
+      "meet_str": "Ealing Autumn 2023 Lv4 Invite 2023"
+    },
+    "50 Breast|SC": {
+      "time_str": "39.36",
+      "time_secs": 39.36,
+      "date_str": "14/06/25",
+      "converted": "40.20",
+      "meet_str": "2025 West London National Arena Jr League R2"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:36.06",
+      "time_secs": 96.06,
+      "date_str": "19/11/23",
+      "converted": "1:37.40",
+      "meet_str": "Brompton SC 2023 Winter Club Championships"
+    },
+    "200 Breast|SC": {
+      "time_str": "3:26.94",
+      "time_secs": 206.94,
+      "date_str": "19/11/23",
+      "converted": "3:29.50",
+      "meet_str": "Brompton SC 2023 Winter Club Championships"
+    },
+    "50 Fly|SC": {
+      "time_str": "32.91",
+      "time_secs": 32.91,
+      "date_str": "14/06/25",
+      "converted": "33.50",
+      "meet_str": "2025 West London National Arena Jr League R2"
+    },
+    "100 Fly|SC": {
+      "time_str": "1:23.74",
+      "time_secs": 83.74,
+      "date_str": "07/10/23",
+      "converted": "1:24.60",
+      "meet_str": "Saxon Crown (Lewisham) SC Autumn Showdown 2023"
+    },
+    "50 Back|SC": {
+      "time_str": "39.13",
+      "time_secs": 39.13,
+      "date_str": "17/09/23",
+      "converted": "39.60",
+      "meet_str": "National Arena Junior Swimming League Final 2023"
+    },
+    "100 Back|SC": {
+      "time_str": "1:22.66",
+      "time_secs": 82.66,
+      "date_str": "03/12/23",
+      "converted": "1:23.60",
+      "meet_str": "Ealing SC 2023 XMAS County Qualifier"
+    },
+    "200 Back|SC": {
+      "time_str": "2:53.35",
+      "time_secs": 173.35,
+      "date_str": "03/03/24",
+      "converted": "2:55.30",
+      "meet_str": "Ealing SC 2024 Regional Qualifier Open Meet"
+    },
+    "200 IM|SC": {
+      "time_str": "2:51.93",
+      "time_secs": 171.93,
+      "date_str": "03/03/24",
+      "converted": "2:54.20",
+      "meet_str": "Ealing SC 2024 Regional Qualifier Open Meet"
+    },
+    "100 IM|SC": {
+      "time_str": "1:11.84",
+      "time_secs": 71.84,
+      "date_str": "14/06/25",
+      "converted": "1:11.80",
+      "meet_str": "2025 West London National Arena Jr League R2"
+    }
+  },
+  "Zofia Plotkowiak": {
+    "50 Free|LC": {
+      "time_str": "32.66",
+      "time_secs": 32.66,
+      "date_str": "22/06/25",
+      "converted": "32.00",
+      "meet_str": "Gators Summer Gala 2025"
+    },
+    "100 Free|LC": {
+      "time_str": "1:13.82",
+      "time_secs": 73.82,
+      "date_str": "08/03/26",
+      "converted": "1:12.70",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "200 Free|LC": {
+      "time_str": "2:43.18",
+      "time_secs": 163.18,
+      "date_str": "22/03/25",
+      "converted": "2:41.00",
+      "meet_str": "Rushmoor Royals Spring L3 LC Open Meet 2025"
+    },
+    "800 Free|LC": {
+      "time_str": "12:19.18",
+      "time_secs": 739.18,
+      "date_str": "22/03/25",
+      "converted": "12:11.30",
+      "meet_str": "Rushmoor Royals Spring L3 LC Open Meet 2025"
+    },
+    "50 Breast|LC": {
+      "time_str": "46.00",
+      "time_secs": 46.0,
+      "date_str": "14/03/26",
+      "converted": "45.30",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "50 Fly|LC": {
+      "time_str": "35.18",
+      "time_secs": 35.18,
+      "date_str": "08/03/26",
+      "converted": "34.60",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "100 Fly|LC": {
+      "time_str": "1:27.38",
+      "time_secs": 87.38,
+      "date_str": "16/02/25",
+      "converted": "1:26.50",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "50 Back|LC": {
+      "time_str": "37.63",
+      "time_secs": 37.63,
+      "date_str": "14/03/26",
+      "converted": "37.10",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "100 Back|LC": {
+      "time_str": "1:24.25",
+      "time_secs": 84.25,
+      "date_str": "15/03/26",
+      "converted": "1:23.30",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "200 IM|LC": {
+      "time_str": "3:00.91",
+      "time_secs": 180.91,
+      "date_str": "22/06/25",
+      "converted": "2:58.70",
+      "meet_str": "Gators Summer Gala 2025"
+    },
+    "50 Free|SC": {
+      "time_str": "32.02",
+      "time_secs": 32.02,
+      "date_str": "09/11/25",
+      "converted": "32.70",
+      "meet_str": "Brompton SC 2025 Winter Club Championships"
+    },
+    "100 Free|SC": {
+      "time_str": "1:13.31",
+      "time_secs": 73.31,
+      "date_str": "05/10/25",
+      "converted": "1:14.40",
+      "meet_str": "Saxon Crown Autumn Showdown 2025"
+    },
+    "200 Free|SC": {
+      "time_str": "2:37.75",
+      "time_secs": 157.75,
+      "date_str": "09/11/25",
+      "converted": "2:39.90",
+      "meet_str": "Brompton SC 2025 Winter Club Championships"
+    },
+    "50 Breast|SC": {
+      "time_str": "45.42",
+      "time_secs": 45.42,
+      "date_str": "08/03/25",
+      "converted": "46.10",
+      "meet_str": "Ealing Level 4 Spring Series 2025 Invitation"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:43.05",
+      "time_secs": 103.05,
+      "date_str": "24/11/24",
+      "converted": "1:44.30",
+      "meet_str": "Brompton SC 2024 Winter Club Championships"
+    },
+    "200 Breast|SC": {
+      "time_str": "3:41.01",
+      "time_secs": 221.01,
+      "date_str": "07/12/24",
+      "converted": "3:43.40",
+      "meet_str": "Ealing SC 2024 XMAS County Qualifier Open 2024"
+    },
+    "50 Fly|SC": {
+      "time_str": "35.29",
+      "time_secs": 35.29,
+      "date_str": "30/11/25",
+      "converted": "35.80",
+      "meet_str": "Ealing SC Xmas County Qualifier 2025"
+    },
+    "100 Fly|SC": {
+      "time_str": "1:29.11",
+      "time_secs": 89.11,
+      "date_str": "08/12/24",
+      "converted": "1:30.00",
+      "meet_str": "Ealing SC 2024 XMAS County Qualifier Open 2024"
+    },
+    "50 Back|SC": {
+      "time_str": "37.53",
+      "time_secs": 37.53,
+      "date_str": "09/11/25",
+      "converted": "38.10",
+      "meet_str": "Brompton SC 2025 Winter Club Championships"
+    },
+    "100 Back|SC": {
+      "time_str": "1:22.97",
+      "time_secs": 82.97,
+      "date_str": "05/10/25",
+      "converted": "1:23.90",
+      "meet_str": "Saxon Crown Autumn Showdown 2025"
+    },
+    "200 IM|SC": {
+      "time_str": "2:55.33",
+      "time_secs": 175.32999999999998,
+      "date_str": "09/11/25",
+      "converted": "2:57.60",
+      "meet_str": "Brompton SC 2025 Winter Club Championships"
+    },
+    "100 IM|SC": {
+      "time_str": "1:26.25",
+      "time_secs": 86.25,
+      "date_str": "10/05/25",
+      "converted": "1:26.30",
+      "meet_str": "Ealing Level 4 Spring Series 2025 Invitation"
+    }
+  },
+  "Viola Matteis": {
+    "50 Free|LC": {
+      "time_str": "36.30",
+      "time_secs": 36.3,
+      "date_str": "08/03/26",
+      "converted": "35.70",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "100 Back|LC": {
+      "time_str": "1:38.09",
+      "time_secs": 98.09,
+      "date_str": "22/06/25",
+      "converted": "1:37.30",
+      "meet_str": "Gators Summer Gala 2025"
+    },
+    "50 Free|SC": {
+      "time_str": "40.43",
+      "time_secs": 40.43,
+      "date_str": "24/11/24",
+      "converted": "40.90",
+      "meet_str": "Brompton SC 2024 Winter Club Championships"
+    },
+    "100 Free|SC": {
+      "time_str": "1:29.70",
+      "time_secs": 89.7,
+      "date_str": "18/01/25",
+      "converted": "1:30.60",
+      "meet_str": "Ealing Level 4 Spring Series 2025 Invitation"
+    },
+    "50 Back|SC": {
+      "time_str": "48.33",
+      "time_secs": 48.33,
+      "date_str": "18/01/25",
+      "converted": "48.70",
+      "meet_str": "Ealing Level 4 Spring Series 2025 Invitation"
+    }
+  }
 }

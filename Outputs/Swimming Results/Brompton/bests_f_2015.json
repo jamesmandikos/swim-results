@@ -534,8 +534,320 @@
       "meet_str": "Brompton Swimming Club Summer Fun Meet"
     }
   },
-  "Sarina Hasan": {},
-  "Georgina Baring": {},
-  "Leia Brenke": {},
-  "Natalie Min": {}
+  "Sarina Hasan": {
+    "50 Free|LC": {
+      "time_str": "39.88",
+      "time_secs": 39.88,
+      "date_str": "22/06/25",
+      "converted": "39.40",
+      "meet_str": "Gators Summer Gala 2025"
+    },
+    "100 Free|LC": {
+      "time_str": "1:27.49",
+      "time_secs": 87.49,
+      "date_str": "14/03/26",
+      "converted": "1:26.50",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "50 Breast|LC": {
+      "time_str": "50.65",
+      "time_secs": 50.65,
+      "date_str": "14/03/26",
+      "converted": "50.00",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "100 Breast|LC": {
+      "time_str": "1:51.89",
+      "time_secs": 111.89,
+      "date_str": "14/03/26",
+      "converted": "1:50.80",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "50 Fly|LC": {
+      "time_str": "44.68",
+      "time_secs": 44.68,
+      "date_str": "22/06/25",
+      "converted": "44.30",
+      "meet_str": "Gators Summer Gala 2025"
+    },
+    "50 Back|LC": {
+      "time_str": "45.67",
+      "time_secs": 45.67,
+      "date_str": "14/03/26",
+      "converted": "45.20",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "200 IM|LC": {
+      "time_str": "3:33.90",
+      "time_secs": 213.9,
+      "date_str": "14/03/26",
+      "converted": "3:32.00",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "50 Free|SC": {
+      "time_str": "38.92",
+      "time_secs": 38.92,
+      "date_str": "18/04/26",
+      "converted": "39.50",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 Free|SC": {
+      "time_str": "1:26.35",
+      "time_secs": 86.35,
+      "date_str": "28/02/26",
+      "converted": "1:27.30",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "200 Free|SC": {
+      "time_str": "3:06.38",
+      "time_secs": 186.38,
+      "date_str": "01/03/26",
+      "converted": "3:08.20",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "50 Breast|SC": {
+      "time_str": "48.09",
+      "time_secs": 48.09,
+      "date_str": "28/02/26",
+      "converted": "48.70",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:44.33",
+      "time_secs": 104.33,
+      "date_str": "01/03/26",
+      "converted": "1:45.50",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "200 Breast|SC": {
+      "time_str": "3:45.15",
+      "time_secs": 225.15,
+      "date_str": "28/02/26",
+      "converted": "3:47.50",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "50 Fly|SC": {
+      "time_str": "46.02",
+      "time_secs": 46.02,
+      "date_str": "28/09/25",
+      "converted": "46.40",
+      "meet_str": "Ealing Swimming Club Autumn L4 Invitational 2025"
+    },
+    "50 Back|SC": {
+      "time_str": "43.47",
+      "time_secs": 43.47,
+      "date_str": "01/03/26",
+      "converted": "43.90",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "100 Back|SC": {
+      "time_str": "1:38.55",
+      "time_secs": 98.55,
+      "date_str": "09/11/25",
+      "converted": "1:39.40",
+      "meet_str": "Brompton SC 2025 Winter Club Championships"
+    },
+    "200 Back|SC": {
+      "time_str": "4:00.50",
+      "time_secs": 240.5,
+      "date_str": "24/11/24",
+      "converted": "4:01.90",
+      "meet_str": "Brompton SC 2024 Winter Club Championships"
+    },
+    "200 IM|SC": {
+      "time_str": "4:12.03",
+      "time_secs": 252.03,
+      "date_str": "23/06/24",
+      "converted": "4:13.60",
+      "meet_str": "2024 Brompton SC Summer Club Champs"
+    },
+    "100 IM|SC": {
+      "time_str": "1:38.89",
+      "time_secs": 98.89,
+      "date_str": "18/04/26",
+      "converted": "1:38.90",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    }
+  },
+  "Georgina Baring": {
+    "50 Free|LC": {
+      "time_str": "46.07",
+      "time_secs": 46.07,
+      "date_str": "22/06/25",
+      "converted": "45.60",
+      "meet_str": "Gators Summer Gala 2025"
+    },
+    "100 Breast|LC": {
+      "time_str": "2:00.36",
+      "time_secs": 120.36,
+      "date_str": "22/06/25",
+      "converted": "1:59.30",
+      "meet_str": "Gators Summer Gala 2025"
+    },
+    "50 Fly|LC": {
+      "time_str": "54.82",
+      "time_secs": 54.82,
+      "date_str": "22/06/25",
+      "converted": "54.50",
+      "meet_str": "Gators Summer Gala 2025"
+    },
+    "50 Free|SC": {
+      "time_str": "39.56",
+      "time_secs": 39.56,
+      "date_str": "07/06/26",
+      "converted": "40.10",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    },
+    "100 Free|SC": {
+      "time_str": "1:41.17",
+      "time_secs": 101.17,
+      "date_str": "28/09/25",
+      "converted": "1:42.00",
+      "meet_str": "Ealing Swimming Club Autumn L4 Invitational 2025"
+    },
+    "50 Breast|SC": {
+      "time_str": "49.06",
+      "time_secs": 49.06,
+      "date_str": "07/06/26",
+      "converted": "49.70",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:47.26",
+      "time_secs": 107.25999999999999,
+      "date_str": "04/10/25",
+      "converted": "1:48.40",
+      "meet_str": "Saxon Crown Autumn Showdown 2025"
+    },
+    "200 Breast|SC": {
+      "time_str": "4:00.91",
+      "time_secs": 240.91,
+      "date_str": "09/11/25",
+      "converted": "4:03.10",
+      "meet_str": "Brompton SC 2025 Winter Club Championships"
+    },
+    "50 Fly|SC": {
+      "time_str": "54.40",
+      "time_secs": 54.4,
+      "date_str": "18/01/25",
+      "converted": "54.70",
+      "meet_str": "Ealing Level 4 Spring Series 2025 Invitation"
+    },
+    "50 Back|SC": {
+      "time_str": "53.21",
+      "time_secs": 53.21,
+      "date_str": "18/01/25",
+      "converted": "53.60",
+      "meet_str": "Ealing Level 4 Spring Series 2025 Invitation"
+    },
+    "100 IM|SC": {
+      "time_str": "1:46.81",
+      "time_secs": 106.81,
+      "date_str": "04/10/25",
+      "converted": "1:46.80",
+      "meet_str": "Saxon Crown Autumn Showdown 2025"
+    }
+  },
+  "Leia Brenke": {
+    "50 Free|SC": {
+      "time_str": "44.63",
+      "time_secs": 44.63,
+      "date_str": "24/11/24",
+      "converted": "45.10",
+      "meet_str": "Brompton SC 2024 Winter Club Championships"
+    },
+    "100 Free|SC": {
+      "time_str": "1:41.79",
+      "time_secs": 101.78999999999999,
+      "date_str": "07/12/24",
+      "converted": "1:42.60",
+      "meet_str": "Ealing SC 2024 XMAS County Qualifier Open 2024"
+    },
+    "200 Free|SC": {
+      "time_str": "3:48.98",
+      "time_secs": 228.98,
+      "date_str": "23/11/24",
+      "converted": "3:50.50",
+      "meet_str": "2024 CWSC Development Competition"
+    },
+    "50 Breast|SC": {
+      "time_str": "55.78",
+      "time_secs": 55.78,
+      "date_str": "07/12/24",
+      "converted": "56.30",
+      "meet_str": "Ealing SC 2024 XMAS County Qualifier Open 2024"
+    },
+    "100 Breast|SC": {
+      "time_str": "2:07.74",
+      "time_secs": 127.74,
+      "date_str": "30/06/24",
+      "converted": "2:08.70",
+      "meet_str": "2024 Chelsea & Westminster SC Club Championships"
+    },
+    "50 Fly|SC": {
+      "time_str": "59.13",
+      "time_secs": 59.13,
+      "date_str": "23/11/24",
+      "converted": "59.50",
+      "meet_str": "2024 CWSC Development Competition"
+    },
+    "50 Back|SC": {
+      "time_str": "52.21",
+      "time_secs": 52.21,
+      "date_str": "29/06/24",
+      "converted": "52.60",
+      "meet_str": "2024 Chelsea & Westminster SC Club Championships"
+    },
+    "100 Back|SC": {
+      "time_str": "1:52.81",
+      "time_secs": 112.81,
+      "date_str": "23/11/24",
+      "converted": "1:53.50",
+      "meet_str": "2024 CWSC Development Competition"
+    },
+    "100 IM|SC": {
+      "time_str": "1:58.62",
+      "time_secs": 118.62,
+      "date_str": "29/06/24",
+      "converted": "1:58.60",
+      "meet_str": "2024 Chelsea & Westminster SC Club Championships"
+    }
+  },
+  "Natalie Min": {
+    "50 Free|SC": {
+      "time_str": "41.86",
+      "time_secs": 41.86,
+      "date_str": "07/06/26",
+      "converted": "42.40",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    },
+    "50 Breast|SC": {
+      "time_str": "55.38",
+      "time_secs": 55.38,
+      "date_str": "07/06/26",
+      "converted": "55.90",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    },
+    "50 Fly|SC": {
+      "time_str": "47.23",
+      "time_secs": 47.23,
+      "date_str": "07/06/26",
+      "converted": "47.60",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    },
+    "50 Back|SC": {
+      "time_str": "49.12",
+      "time_secs": 49.12,
+      "date_str": "07/06/26",
+      "converted": "49.50",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    },
+    "100 IM|SC": {
+      "time_str": "1:41.76",
+      "time_secs": 101.75999999999999,
+      "date_str": "07/06/26",
+      "converted": "1:41.80",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    }
+  }
 }

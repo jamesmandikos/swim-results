@@ -1492,5 +1492,202 @@
       "meet_str": "Brompton SC 2024 Winter Club Championships"
     }
   },
-  "Leon Frainer-Law": {}
+  "Leon Frainer-Law": {
+    "50 Free|LC": {
+      "time_str": "26.27",
+      "time_secs": 26.27,
+      "date_str": "08/02/26",
+      "converted": "25.50",
+      "meet_str": "2026 Middlesex County Championships"
+    },
+    "100 Free|LC": {
+      "time_str": "56.47",
+      "time_secs": 56.47,
+      "date_str": "25/04/26",
+      "converted": "55.00",
+      "meet_str": "SE London Summer Championships 2026"
+    },
+    "200 Free|LC": {
+      "time_str": "2:16.31",
+      "time_secs": 136.31,
+      "date_str": "06/05/24",
+      "converted": "2:13.70",
+      "meet_str": "SE London Region Summer Championships 2024"
+    },
+    "50 Breast|LC": {
+      "time_str": "33.75",
+      "time_secs": 33.75,
+      "date_str": "25/04/26",
+      "converted": "32.80",
+      "meet_str": "SE London Summer Championships 2026"
+    },
+    "100 Breast|LC": {
+      "time_str": "1:20.67",
+      "time_secs": 80.67,
+      "date_str": "15/02/25",
+      "converted": "1:19.10",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "50 Fly|LC": {
+      "time_str": "27.70",
+      "time_secs": 27.7,
+      "date_str": "26/04/26",
+      "converted": "27.00",
+      "meet_str": "SE London Summer Championships 2026"
+    },
+    "100 Fly|LC": {
+      "time_str": "1:09.57",
+      "time_secs": 69.57,
+      "date_str": "17/03/24",
+      "converted": "1:08.50",
+      "meet_str": "Derby Excel Spring Qualifier 2024"
+    },
+    "50 Back|LC": {
+      "time_str": "28.19",
+      "time_secs": 28.19,
+      "date_str": "02/05/26",
+      "converted": "27.50",
+      "meet_str": "SE London Summer Championships 2026"
+    },
+    "100 Back|LC": {
+      "time_str": "1:01.84",
+      "time_secs": 61.84,
+      "date_str": "15/02/26",
+      "converted": "1:00.50",
+      "meet_str": "2026 Middlesex County Championships"
+    },
+    "200 Back|LC": {
+      "time_str": "2:33.85",
+      "time_secs": 153.85,
+      "date_str": "03/02/24",
+      "converted": "2:31.70",
+      "meet_str": "2024 Middlesex County Championships"
+    },
+    "200 IM|LC": {
+      "time_str": "2:31.28",
+      "time_secs": 151.28,
+      "date_str": "09/02/25",
+      "converted": "2:28.70",
+      "meet_str": "2025 Middlesex County Championships"
+    },
+    "400 IM|LC": {
+      "time_str": "5:41.36",
+      "time_secs": 341.36,
+      "date_str": "17/03/24",
+      "converted": "5:36.20",
+      "meet_str": "Derby Excel Spring Qualifier 2024"
+    },
+    "50 Free|SC": {
+      "time_str": "25.99",
+      "time_secs": 25.99,
+      "date_str": "01/11/25",
+      "converted": "26.80",
+      "meet_str": "SE London Winter Championships 2025"
+    },
+    "100 Free|SC": {
+      "time_str": "56.84",
+      "time_secs": 56.84,
+      "date_str": "01/11/25",
+      "converted": "58.30",
+      "meet_str": "SE London Winter Championships 2025"
+    },
+    "200 Free|SC": {
+      "time_str": "2:09.87",
+      "time_secs": 129.87,
+      "date_str": "18/10/24",
+      "converted": "2:12.50",
+      "meet_str": "Cambridge Grand Prix 2024"
+    },
+    "400 Free|SC": {
+      "time_str": "4:53.33",
+      "time_secs": 293.33,
+      "date_str": "28/10/23",
+      "converted": "4:58.10",
+      "meet_str": "Ealing Autumn 2023 Lv4 Invite 2023"
+    },
+    "50 Breast|SC": {
+      "time_str": "32.71",
+      "time_secs": 32.71,
+      "date_str": "02/11/25",
+      "converted": "33.70",
+      "meet_str": "SE London Winter Championships 2025"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:15.52",
+      "time_secs": 75.52,
+      "date_str": "09/11/25",
+      "converted": "1:17.20",
+      "meet_str": "Brompton SC 2025 Winter Club Championships"
+    },
+    "200 Breast|SC": {
+      "time_str": "3:28.53",
+      "time_secs": 208.53,
+      "date_str": "18/12/21",
+      "converted": "3:31.10",
+      "meet_str": "The Hillingdon 2021 Fast and Festive Meet"
+    },
+    "50 Fly|SC": {
+      "time_str": "28.00",
+      "time_secs": 28.0,
+      "date_str": "23/11/25",
+      "converted": "28.70",
+      "meet_str": "Stockport Metro November Short Course Meet 2025"
+    },
+    "100 Fly|SC": {
+      "time_str": "1:07.00",
+      "time_secs": 67.0,
+      "date_str": "08/10/23",
+      "converted": "1:08.10",
+      "meet_str": "Swim England National County Team Champs 2023"
+    },
+    "200 Fly|SC": {
+      "time_str": "2:40.42",
+      "time_secs": 160.42000000000002,
+      "date_str": "21/05/23",
+      "converted": "2:42.40",
+      "meet_str": "Middlesex County Development Open Series 1 2023"
+    },
+    "50 Back|SC": {
+      "time_str": "27.41",
+      "time_secs": 27.41,
+      "date_str": "02/11/25",
+      "converted": "28.10",
+      "meet_str": "SE London Winter Championships 2025"
+    },
+    "100 Back|SC": {
+      "time_str": "59.26",
+      "time_secs": 59.26,
+      "date_str": "23/11/25",
+      "converted": "1:00.60",
+      "meet_str": "Stockport Metro November Short Course Meet 2025"
+    },
+    "200 Back|SC": {
+      "time_str": "2:21.16",
+      "time_secs": 141.16,
+      "date_str": "20/10/24",
+      "converted": "2:23.50",
+      "meet_str": "Cambridge Grand Prix 2024"
+    },
+    "200 IM|SC": {
+      "time_str": "2:32.20",
+      "time_secs": 152.2,
+      "date_str": "07/12/24",
+      "converted": "2:34.80",
+      "meet_str": "Ealing SC 2024 XMAS County Qualifier Open 2024"
+    },
+    "400 IM|SC": {
+      "time_str": "5:29.33",
+      "time_secs": 329.33,
+      "date_str": "21/05/23",
+      "converted": "5:34.60",
+      "meet_str": "Middlesex County Development Open Series 1 2023"
+    },
+    "100 IM|SC": {
+      "time_str": "1:02.38",
+      "time_secs": 62.38,
+      "date_str": "02/11/25",
+      "converted": "1:02.40",
+      "meet_str": "SE London Winter Championships 2025"
+    }
+  }
 }
