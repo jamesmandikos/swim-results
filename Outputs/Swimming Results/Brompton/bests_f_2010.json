@@ -1338,18 +1338,18 @@
       "meet_str": "Swim England National Summer Meet 2026"
     },
     "100 Free|LC": {
-      "time_str": "59.43",
-      "time_secs": 59.43,
-      "date_str": "14/02/26",
-      "converted": "58.00",
-      "meet_str": "2026 Middlesex County Championships"
+      "time_str": "58.77",
+      "time_secs": 58.77,
+      "date_str": "31/07/26",
+      "converted": "57.30",
+      "meet_str": "Swim England National Summer Meet 2026"
     },
     "200 Free|LC": {
-      "time_str": "2:10.71",
-      "time_secs": 130.71,
-      "date_str": "04/05/26",
-      "converted": "2:08.00",
-      "meet_str": "SE London Summer Championships 2026"
+      "time_str": "2:08.67",
+      "time_secs": 128.67,
+      "date_str": "29/07/26",
+      "converted": "2:05.90",
+      "meet_str": "Swim England National Summer Meet 2026"
     },
     "400 Free|LC": {
       "time_str": "4:39.93",
@@ -1408,11 +1408,11 @@
       "meet_str": "Derby Excel Spring Qualifier 2024"
     },
     "200 IM|LC": {
-      "time_str": "2:25.82",
-      "time_secs": 145.82,
-      "date_str": "07/02/26",
-      "converted": "2:23.10",
-      "meet_str": "2026 Middlesex County Championships"
+      "time_str": "2:23.28",
+      "time_secs": 143.28,
+      "date_str": "01/08/26",
+      "converted": "2:20.50",
+      "meet_str": "Swim England National Summer Meet 2026"
     },
     "50 Free|SC": {
       "time_str": "27.80",
