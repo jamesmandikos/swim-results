@@ -2679,11 +2679,11 @@
       "meet_str": "2026 Cactus Classic"
     },
     "400 Free|LC": {
-      "time_str": "5:02.33",
-      "time_secs": 302.33,
-      "date_str": "16/05/25",
-      "converted": "4:57.60",
-      "meet_str": "2025 Phoenix May Cray"
+      "time_str": "4:45.00",
+      "time_secs": 285.0,
+      "date_str": "23/07/26",
+      "converted": "4:40.00",
+      "meet_str": "2026 LC Age Group State Championship"
     },
     "50 Breast|LC": {
       "time_str": "36.65",
@@ -2714,11 +2714,11 @@
       "meet_str": "2026 Cactus Classic"
     },
     "100 Fly|LC": {
-      "time_str": "1:08.94",
-      "time_secs": 68.94,
-      "date_str": "12/06/26",
-      "converted": "1:07.80",
-      "meet_str": "2026 Mac Narwhal Invite"
+      "time_str": "1:07.25",
+      "time_secs": 67.25,
+      "date_str": "23/07/26",
+      "converted": "1:06.10",
+      "meet_str": "2026 LC Age Group State Championship"
     },
     "200 Fly|LC": {
       "time_str": "2:46.64",
@@ -2756,11 +2756,11 @@
       "meet_str": "2026 Mac Narwhal Invite"
     },
     "400 IM|LC": {
-      "time_str": "5:35.40",
-      "time_secs": 335.4,
-      "date_str": "10/04/26",
-      "converted": "5:30.10",
-      "meet_str": "2026 Phoenix Spring Invitational"
+      "time_str": "5:27.27",
+      "time_secs": 327.27,
+      "date_str": "23/07/26",
+      "converted": "5:21.90",
+      "meet_str": "2026 LC Age Group State Championship"
     },
     "50 Free|SC": {
       "time_str": "32.19",
