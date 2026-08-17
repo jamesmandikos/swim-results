@@ -1,7 +1,402 @@
 {
-  "Alexander Rich": {},
-  "Kimi Chen": {},
-  "Harry Xu": {},
+  "Alexander Rich": {
+    "50 Free|LC": {
+      "time_str": "33.74",
+      "time_secs": 33.74,
+      "date_str": "08/02/26",
+      "converted": "33.10",
+      "meet_str": "2026 Middlesex County Championships"
+    },
+    "100 Free|LC": {
+      "time_str": "1:18.61",
+      "time_secs": 78.61,
+      "date_str": "08/03/26",
+      "converted": "1:17.50",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "200 Free|LC": {
+      "time_str": "2:58.27",
+      "time_secs": 178.27,
+      "date_str": "14/03/26",
+      "converted": "2:56.30",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "50 Breast|LC": {
+      "time_str": "49.60",
+      "time_secs": 49.6,
+      "date_str": "08/03/26",
+      "converted": "49.00",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Fly|LC": {
+      "time_str": "42.61",
+      "time_secs": 42.61,
+      "date_str": "14/03/26",
+      "converted": "42.20",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "100 Fly|LC": {
+      "time_str": "1:38.31",
+      "time_secs": 98.31,
+      "date_str": "15/03/26",
+      "converted": "1:37.50",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "50 Back|LC": {
+      "time_str": "43.81",
+      "time_secs": 43.81,
+      "date_str": "08/03/26",
+      "converted": "43.30",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "100 Back|LC": {
+      "time_str": "1:47.73",
+      "time_secs": 107.72999999999999,
+      "date_str": "02/03/25",
+      "converted": "1:47.00",
+      "meet_str": "Bo Waltham Forest Gators Spring Gala 2025"
+    },
+    "200 IM|LC": {
+      "time_str": "3:23.91",
+      "time_secs": 203.91,
+      "date_str": "15/03/26",
+      "converted": "3:22.00",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "50 Free|SC": {
+      "time_str": "33.78",
+      "time_secs": 33.78,
+      "date_str": "17/05/26",
+      "converted": "34.40",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "100 Free|SC": {
+      "time_str": "1:22.24",
+      "time_secs": 82.24,
+      "date_str": "28/09/25",
+      "converted": "1:23.30",
+      "meet_str": "Ealing Swimming Club Autumn L4 Invitational 2025"
+    },
+    "50 Breast|SC": {
+      "time_str": "51.54",
+      "time_secs": 51.54,
+      "date_str": "28/09/25",
+      "converted": "52.10",
+      "meet_str": "Ealing Swimming Club Autumn L4 Invitational 2025"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:48.59",
+      "time_secs": 108.59,
+      "date_str": "28/02/26",
+      "converted": "1:49.70",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "50 Fly|SC": {
+      "time_str": "43.05",
+      "time_secs": 43.05,
+      "date_str": "28/02/26",
+      "converted": "43.50",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "100 Fly|SC": {
+      "time_str": "1:47.84",
+      "time_secs": 107.84,
+      "date_str": "09/11/25",
+      "converted": "1:48.50",
+      "meet_str": "Brompton SC 2025 Winter Club Championships"
+    },
+    "50 Back|SC": {
+      "time_str": "41.32",
+      "time_secs": 41.32,
+      "date_str": "13/06/26",
+      "converted": "41.80",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "100 Back|SC": {
+      "time_str": "1:44.15",
+      "time_secs": 104.15,
+      "date_str": "08/03/25",
+      "converted": "1:44.90",
+      "meet_str": "Ealing Level 4 Spring Series 2025 Invitation"
+    },
+    "200 Back|SC": {
+      "time_str": "3:43.02",
+      "time_secs": 223.02,
+      "date_str": "12/07/25",
+      "converted": "3:44.50",
+      "meet_str": "Ealing SC End of Season Summer Splash 2025"
+    },
+    "200 IM|SC": {
+      "time_str": "3:19.83",
+      "time_secs": 199.82999999999998,
+      "date_str": "28/02/26",
+      "converted": "3:21.80",
+      "meet_str": "Ealing 2026 Regional Qualifier"
+    },
+    "100 IM|SC": {
+      "time_str": "1:45.10",
+      "time_secs": 105.1,
+      "date_str": "24/11/24",
+      "converted": "1:45.10",
+      "meet_str": "Brompton SC 2024 Winter Club Championships"
+    }
+  },
+  "Kimi Chen": {
+    "50 Free|LC": {
+      "time_str": "35.45",
+      "time_secs": 35.45,
+      "date_str": "08/03/26",
+      "converted": "34.90",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "100 Free|LC": {
+      "time_str": "1:25.39",
+      "time_secs": 85.39,
+      "date_str": "08/03/26",
+      "converted": "1:24.40",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "200 Free|LC": {
+      "time_str": "3:29.70",
+      "time_secs": 209.7,
+      "date_str": "22/06/25",
+      "converted": "3:28.00",
+      "meet_str": "Gators Summer Gala 2025"
+    },
+    "50 Breast|LC": {
+      "time_str": "48.00",
+      "time_secs": 48.0,
+      "date_str": "08/03/26",
+      "converted": "47.30",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "100 Breast|LC": {
+      "time_str": "1:56.09",
+      "time_secs": 116.09,
+      "date_str": "22/06/25",
+      "converted": "1:55.00",
+      "meet_str": "Gators Summer Gala 2025"
+    },
+    "50 Fly|LC": {
+      "time_str": "43.18",
+      "time_secs": 43.18,
+      "date_str": "08/03/26",
+      "converted": "42.70",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Back|LC": {
+      "time_str": "44.25",
+      "time_secs": 44.25,
+      "date_str": "08/03/26",
+      "converted": "43.80",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Free|SC": {
+      "time_str": "34.00",
+      "time_secs": 34.0,
+      "date_str": "13/06/26",
+      "converted": "34.60",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "100 Free|SC": {
+      "time_str": "1:29.60",
+      "time_secs": 89.6,
+      "date_str": "09/11/25",
+      "converted": "1:30.50",
+      "meet_str": "Brompton SC 2025 Winter Club Championships"
+    },
+    "50 Breast|SC": {
+      "time_str": "48.25",
+      "time_secs": 48.25,
+      "date_str": "07/06/26",
+      "converted": "48.90",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:49.51",
+      "time_secs": 109.50999999999999,
+      "date_str": "18/04/26",
+      "converted": "1:50.70",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Fly|SC": {
+      "time_str": "42.60",
+      "time_secs": 42.6,
+      "date_str": "17/05/26",
+      "converted": "43.00",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "50 Back|SC": {
+      "time_str": "44.32",
+      "time_secs": 44.32,
+      "date_str": "07/06/26",
+      "converted": "44.80",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    },
+    "100 Back|SC": {
+      "time_str": "1:51.36",
+      "time_secs": 111.36,
+      "date_str": "08/03/25",
+      "converted": "1:52.10",
+      "meet_str": "Ealing Level 4 Spring Series 2025 Invitation"
+    },
+    "100 IM|SC": {
+      "time_str": "1:32.48",
+      "time_secs": 92.47999999999999,
+      "date_str": "07/06/26",
+      "converted": "1:32.50",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    }
+  },
+  "Harry Xu": {
+    "200 Free|LC": {
+      "time_str": "3:21.16",
+      "time_secs": 201.16,
+      "date_str": "21/02/26",
+      "converted": "3:19.40",
+      "meet_str": "Wycombe District SC Dual Award Level 3 Meet"
+    },
+    "400 Free|LC": {
+      "time_str": "6:34.48",
+      "time_secs": 394.48,
+      "date_str": "11/07/26",
+      "converted": "6:30.90",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "50 Breast|LC": {
+      "time_str": "48.67",
+      "time_secs": 48.67,
+      "date_str": "07/02/26",
+      "converted": "48.00",
+      "meet_str": "2026 Middlesex County Championships"
+    },
+    "100 Breast|LC": {
+      "time_str": "1:47.82",
+      "time_secs": 107.82,
+      "date_str": "12/07/26",
+      "converted": "1:46.60",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "200 Breast|LC": {
+      "time_str": "3:48.01",
+      "time_secs": 228.01,
+      "date_str": "11/07/26",
+      "converted": "3:45.70",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "50 Fly|LC": {
+      "time_str": "40.95",
+      "time_secs": 40.95,
+      "date_str": "11/07/26",
+      "converted": "40.50",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "200 Fly|LC": {
+      "time_str": "3:56.72",
+      "time_secs": 236.72,
+      "date_str": "12/07/26",
+      "converted": "3:55.40",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "50 Back|LC": {
+      "time_str": "48.49",
+      "time_secs": 48.49,
+      "date_str": "21/02/26",
+      "converted": "48.10",
+      "meet_str": "Wycombe District SC Dual Award Level 3 Meet"
+    },
+    "200 IM|LC": {
+      "time_str": "3:24.13",
+      "time_secs": 204.13,
+      "date_str": "12/07/26",
+      "converted": "3:22.20",
+      "meet_str": "Portsmouth Northsea End of Season 2026 LC L3 Meet"
+    },
+    "50 Free|SC": {
+      "time_str": "37.39",
+      "time_secs": 37.39,
+      "date_str": "18/04/26",
+      "converted": "37.90",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "100 Free|SC": {
+      "time_str": "1:31.77",
+      "time_secs": 91.77,
+      "date_str": "12/10/25",
+      "converted": "1:32.70",
+      "meet_str": "NUEL SC Early County Qualifier Open Meet 2025"
+    },
+    "200 Free|SC": {
+      "time_str": "3:04.67",
+      "time_secs": 184.67,
+      "date_str": "07/03/26",
+      "converted": "3:06.50",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Breast|SC": {
+      "time_str": "47.05",
+      "time_secs": 47.05,
+      "date_str": "13/06/26",
+      "converted": "47.70",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:44.92",
+      "time_secs": 104.92,
+      "date_str": "06/12/25",
+      "converted": "1:46.10",
+      "meet_str": "NUEL SC Late County Qualifier Open Meet 2025"
+    },
+    "200 Breast|SC": {
+      "time_str": "3:57.66",
+      "time_secs": 237.66,
+      "date_str": "11/10/25",
+      "converted": "3:59.90",
+      "meet_str": "NUEL SC Early County Qualifier Open Meet 2025"
+    },
+    "50 Fly|SC": {
+      "time_str": "38.64",
+      "time_secs": 38.64,
+      "date_str": "07/06/26",
+      "converted": "39.10",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    },
+    "100 Fly|SC": {
+      "time_str": "1:55.27",
+      "time_secs": 115.27000000000001,
+      "date_str": "07/12/25",
+      "converted": "1:55.90",
+      "meet_str": "NUEL SC Late County Qualifier Open Meet 2025"
+    },
+    "50 Back|SC": {
+      "time_str": "45.79",
+      "time_secs": 45.79,
+      "date_str": "07/06/26",
+      "converted": "46.20",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    },
+    "100 Back|SC": {
+      "time_str": "1:46.41",
+      "time_secs": 106.41,
+      "date_str": "11/10/25",
+      "converted": "1:47.20",
+      "meet_str": "NUEL SC Early County Qualifier Open Meet 2025"
+    },
+    "200 IM|SC": {
+      "time_str": "3:50.23",
+      "time_secs": 230.23,
+      "date_str": "23/03/25",
+      "converted": "3:51.90",
+      "meet_str": "Chelsea & Westminster 2025 Future Stars Dev Meet"
+    },
+    "100 IM|SC": {
+      "time_str": "1:29.02",
+      "time_secs": 89.02,
+      "date_str": "07/06/26",
+      "converted": "1:29.00",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    }
+  },
   "Skeat Francois": {
     "50 Free|LC": {
       "time_str": "43.30",
@@ -53,8 +448,178 @@
       "meet_str": "Brompton SC 2024 Winter Club Championships"
     }
   },
-  "Oscar Woodhouse": {},
-  "Alessandro Montesi": {},
+  "Oscar Woodhouse": {
+    "50 Free|SC": {
+      "time_str": "35.26",
+      "time_secs": 35.26,
+      "date_str": "04/07/26",
+      "converted": "35.80",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "100 Free|SC": {
+      "time_str": "1:25.33",
+      "time_secs": 85.33,
+      "date_str": "24/01/26",
+      "converted": "1:26.30",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Fly|SC": {
+      "time_str": "44.37",
+      "time_secs": 44.37,
+      "date_str": "24/01/26",
+      "converted": "44.80",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Back|SC": {
+      "time_str": "40.97",
+      "time_secs": 40.97,
+      "date_str": "04/07/26",
+      "converted": "41.50",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "100 IM|SC": {
+      "time_str": "1:42.86",
+      "time_secs": 102.86,
+      "date_str": "28/09/25",
+      "converted": "1:42.90",
+      "meet_str": "Ealing Swimming Club Autumn L4 Invitational 2025"
+    }
+  },
+  "Alessandro Montesi": {
+    "50 Free|LC": {
+      "time_str": "38.35",
+      "time_secs": 38.35,
+      "date_str": "08/03/26",
+      "converted": "37.80",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "100 Free|LC": {
+      "time_str": "1:39.71",
+      "time_secs": 99.71000000000001,
+      "date_str": "02/03/25",
+      "converted": "1:38.90",
+      "meet_str": "Bo Waltham Forest Gators Spring Gala 2025"
+    },
+    "200 Free|LC": {
+      "time_str": "3:08.20",
+      "time_secs": 188.2,
+      "date_str": "14/03/26",
+      "converted": "3:06.30",
+      "meet_str": "Rushmoor Royals Spring L3 Long Course Open Meet"
+    },
+    "50 Breast|LC": {
+      "time_str": "48.75",
+      "time_secs": 48.75,
+      "date_str": "07/02/26",
+      "converted": "48.10",
+      "meet_str": "2026 Middlesex County Championships"
+    },
+    "100 Breast|LC": {
+      "time_str": "1:55.15",
+      "time_secs": 115.15,
+      "date_str": "08/03/26",
+      "converted": "1:54.00",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "200 Breast|LC": {
+      "time_str": "3:48.10",
+      "time_secs": 228.1,
+      "date_str": "07/02/26",
+      "converted": "3:45.80",
+      "meet_str": "2026 Middlesex County Championships"
+    },
+    "50 Fly|LC": {
+      "time_str": "45.29",
+      "time_secs": 45.29,
+      "date_str": "08/03/26",
+      "converted": "44.90",
+      "meet_str": "BWFSC Gators Spring Meet"
+    },
+    "50 Back|LC": {
+      "time_str": "51.72",
+      "time_secs": 51.72,
+      "date_str": "02/03/25",
+      "converted": "51.30",
+      "meet_str": "Bo Waltham Forest Gators Spring Gala 2025"
+    },
+    "50 Free|SC": {
+      "time_str": "35.97",
+      "time_secs": 35.97,
+      "date_str": "07/06/26",
+      "converted": "36.50",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    },
+    "100 Free|SC": {
+      "time_str": "1:26.69",
+      "time_secs": 86.69,
+      "date_str": "30/11/25",
+      "converted": "1:27.70",
+      "meet_str": "Ealing SC Xmas County Qualifier 2025"
+    },
+    "200 Free|SC": {
+      "time_str": "3:10.61",
+      "time_secs": 190.61,
+      "date_str": "07/03/26",
+      "converted": "3:12.40",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "50 Breast|SC": {
+      "time_str": "47.61",
+      "time_secs": 47.61,
+      "date_str": "04/07/26",
+      "converted": "48.30",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "100 Breast|SC": {
+      "time_str": "1:50.24",
+      "time_secs": 110.24000000000001,
+      "date_str": "18/04/26",
+      "converted": "1:51.40",
+      "meet_str": "Ealing Series Spring Invitational 2026"
+    },
+    "200 Breast|SC": {
+      "time_str": "3:56.41",
+      "time_secs": 236.41,
+      "date_str": "30/11/25",
+      "converted": "3:58.60",
+      "meet_str": "Ealing SC Xmas County Qualifier 2025"
+    },
+    "50 Fly|SC": {
+      "time_str": "40.13",
+      "time_secs": 40.13,
+      "date_str": "13/06/26",
+      "converted": "40.60",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "50 Back|SC": {
+      "time_str": "42.49",
+      "time_secs": 42.49,
+      "date_str": "17/05/26",
+      "converted": "43.00",
+      "meet_str": "2026 West London National Arena Jr League"
+    },
+    "100 Back|SC": {
+      "time_str": "1:40.34",
+      "time_secs": 100.34,
+      "date_str": "13/07/25",
+      "converted": "1:41.10",
+      "meet_str": "Ealing SC End of Season Summer Splash 2025"
+    },
+    "200 IM|SC": {
+      "time_str": "3:50.40",
+      "time_secs": 230.4,
+      "date_str": "23/03/25",
+      "converted": "3:52.10",
+      "meet_str": "Chelsea & Westminster 2025 Future Stars Dev Meet"
+    },
+    "100 IM|SC": {
+      "time_str": "1:28.56",
+      "time_secs": 88.56,
+      "date_str": "07/06/26",
+      "converted": "1:28.60",
+      "meet_str": "Brompton Swimming Club Summer Fun Meet"
+    }
+  },
   "Milo Li": {
     "100 Free|LC": {
       "time_str": "1:41.34",
